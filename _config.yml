@@ -1,5 +1,5 @@
 # Site Settings
-title: Jekflix | A theme for Jekyll
+title: Sidnei Weber | A theme for Jekyll
 email: youremail@xyz.com
 description: Some text about your blog.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -7,13 +7,13 @@ url: "https://jekflix.rossener.com" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jekflix
-user_description: Some text about you.
-disqus_username: disqus_username
+username: Sidnei Weber
+user_description: Seja bem vindo.
+disqus_username: sidneiweber
 
 # Social Media
 # Remove the item if you don't need it
-github_username: github_username
+github_username: sidneiweber
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
@@ -38,10 +38,16 @@ plugins:
 links:
   - title: Home
     url: /
-  - title: About
+  - title: Sobre
     url: /about/
-  - title: Contact
-    url: /contact/
+  - title: Projetos
+    subfolderitems:
+      - page: Sistema vendas
+        url: /projetos/
+      - page: SCP Fácil
+        url: /projetos/scp-facil/
+      - page: Repositório CVS
+        url: /projetos/criar-repositorios-no-servidor-cvs/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
