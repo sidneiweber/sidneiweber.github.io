@@ -13,6 +13,8 @@ wp_review_type:
 image: /wp-content/uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
 categories:
   - Mongo
+tags:
+    - mongodb
 ---
 
 ### <span id="O_que_e_MongoDB">O que é MongoDB</span>
