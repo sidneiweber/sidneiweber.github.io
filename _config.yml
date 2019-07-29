@@ -1,5 +1,5 @@
 # Site Settings
-title: Sidnei Weber | A theme for Jekyll
+title: Sidnei Weber | Life of Sysadmin
 email: youremail@xyz.com
 description: Some text about your blog.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -42,10 +42,10 @@ links:
     url: /sobre/
   - title: Sistema Vendas PHP
     url: /projetos/sistema-vendas-php/
-      - page: SCP Fácil
-        url: /projetos/scp-facil/
-      - page: Repositório CVS
-        url: /projetos/criar-repositorios-no-servidor-cvs/
+  - title: SCP Fácil
+    url: /projetos/scp-facil/
+  - title: Repositório CVS
+    url: /projetos/criar-repositorios-no-servidor-cvs/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
