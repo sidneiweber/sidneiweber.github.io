@@ -40,10 +40,8 @@ links:
     url: /
   - title: Sobre
     url: /sobre/
-  - title: Projetos
-    subfolderitems:
-      - page: Sistema vendas
-        url: /projetos/
+  - title: Sistema Vendas PHP
+    url: /projetos/sistema-vendas-php/
       - page: SCP Fácil
         url: /projetos/scp-facil/
       - page: Repositório CVS
