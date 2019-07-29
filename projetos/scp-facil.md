@@ -32,12 +32,13 @@ wp_review_user_review_type:
   <p>
     Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra com o SCP. Programas necessários: nmap e yad
   </p>
-  
+
   <p>
     <img class="alignnone size-full wp-image-314" src="http://sidneiweber.com.br/wp-content/uploads/2015/07/scp.png" alt="scp" width="64" height="61" />
   </p>
-  
-  <pre class="lang:sh decode:true ">#!/bin/bash
+
+```shell
+#!/bin/bash
 # yad com FORMULARIOS, que bacana, tem algumas novidades aprecie com calma
 principal() {
 FORMULARIO=$( \
@@ -53,7 +54,7 @@ FORMULARIO=$( \
        --field="Porta:": "22"\
         --field="Senha:":H "123456"\
      #--field='Executar':BTN "scp -rp -P%4 %1 %3@%2:~" --no-buttons
-) 
+)
 # ver se o usuário clicou em 'sair' or no 'x' da janela
 ACAO="$?"
 test "$ACAO" -eq "1" || test "$ACAO" -eq "252"
@@ -72,12 +73,13 @@ sshpass -p "$SENHA" scp -rp -P$PORTA $ARQUIVO $USUARIO@$IP:~ && zenity --window-
 principal
 }
 principal
-#.EOF</pre>
-  
+#.EOF
+```
+
   <p>
     Pretendo melhorar ele com o tempo
   </p>
-  
+
   <p>
     Segue o link:<a href="https://github.com/emmilinux/scpfacil.git" target="_blank" rel="noopener"> scp-facil</a>
   </p>

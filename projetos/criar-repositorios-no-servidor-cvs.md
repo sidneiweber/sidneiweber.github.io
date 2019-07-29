@@ -28,4 +28,4 @@ wp_review_user_reviews:
 wp_review_review_count:
   - "0"
 ---
-<a href="https://gist.github.com/sidneiweber/d23e23e9436918291a58" target="_blank">Link no GitHub</a>
+<script src="https://gist.github.com/sidneiweber/d23e23e9436918291a58.js"></script>
