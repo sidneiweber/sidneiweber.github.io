@@ -5,42 +5,6 @@ date: 2009-07-16T04:07:27-03:00
 author: Sidnei Weber
 layout: page
 guid: http://clancpd.com.br/sidneiweber/?page_id=2
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-count_items:
-  - "0"
-wp_review_type:
-  - none
-wp_review_custom_location:
-  - "0"
-wp_review_custom_colors:
-  - "0"
-wp_review_custom_author:
-  - "0"
-wp_review_hide_desc:
-  - "0"
-wp_review_total:
-  - "0"
-wp_review_schema:
-  - null
-wp_review_rating_schema:
-  - author
-wp_review_show_schema_data:
-  - "0"
-wp_review_box_template:
-  - default
 ---
 <img itemprop="image" class="img-rounded" src="https://secure.gravatar.com/avatar/352dde096850c5cc2511b155ef263cd3?s=98&d=mm&r=g" alt="Sidnei Weber">
 
@@ -48,6 +12,9 @@ wp_review_box_template:
 
 Sou estudante de Gestão em Tecnologia da informação, apaixonado por software livre e novas descobertas.  
 Sempre em busca de conhecimento (como diria o ET Bilu).
+
+<img src="/wp-content/uploads/2018/05/comptia1.png" />
+<img src="/wp-content/uploads/2018/05/LPIC-1-Medium.png" />
 
 Meus contatos:  
 Email: sidnei.weber@gmail.com  
