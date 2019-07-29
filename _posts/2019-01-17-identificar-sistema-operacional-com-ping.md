@@ -9,6 +9,7 @@ permalink: /identificar-sistema-operacional-com-ping/
 count_items:
   - "0"
 wp_review_type:
+image: wp-content/ping-command.png
   - none
 categories:
   - Linux

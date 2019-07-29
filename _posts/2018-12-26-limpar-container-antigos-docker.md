@@ -10,7 +10,7 @@ wp_review_type:
   - none
 count_items:
   - "0"
-image: /wp-content/uploads/2016/11/índice-220x159.png
+image: /wp-content/docker.png
 categories:
   - Docker
 ---
