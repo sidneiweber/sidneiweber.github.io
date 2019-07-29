@@ -4,6 +4,7 @@ title: 'Comando fuser &#8211; Quem mexeu no meu arquivo'
 date: 2018-11-06T09:28:53-03:00
 author: Sidnei Weber
 layout: post
+image: /wp-content/fuser.png
 guid: http://sidneiweber.com.br/?p=640
 permalink: /comando-fuser-quem-mexeu-no-meu-arquivo/
 wp_review_location:
