@@ -3,7 +3,7 @@ title: Pigz &#8211; Compactador eficiente e rápido
 id: 611
 date: '2019-06-21 14:06:42 -0300'
 author: Sidnei Weber
-image: 'https://res.cloudinary.com/dm7h7e8xj/image/upload/c_fill,h_399,w_760/v1501268554/sunrise_ttb9nk.jpg'
+image: /wp-content/pigz.jpg
 layout: post
 guid: http://sidneiweber.com.br/?p=611
 permalink: "/pigz-compactador-eficiente-e-rapido/"
