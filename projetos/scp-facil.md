@@ -28,14 +28,11 @@ wp_review_bordercolor:
 wp_review_user_review_type:
   - star
 ---
-<div class="post-content box mark-links">
-  <p>
-    Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra com o SCP. Programas necessários: nmap e yad
-  </p>
+# SCP Fácil
 
-  <p>
-    <img class="alignnone size-full wp-image-314" src="http://sidneiweber.com.br/wp-content/uploads/2015/07/scp.png" alt="scp" width="64" height="61" />
-  </p>
+Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra com o SCP. Programas necessários: nmap e yad
+
+<img class="alignnone size-full wp-image-314" src="http://sidneiweber.com.br/wp-content/uploads/2015/07/scp.png" alt="scp" width="64" height="61" />
 
 ```shell
 #!/bin/bash
@@ -76,11 +73,6 @@ principal
 #.EOF
 ```
 
-  <p>
-    Pretendo melhorar ele com o tempo
-  </p>
+Pretendo melhorar ele com o tempo
 
-  <p>
-    Segue o link:<a href="https://github.com/emmilinux/scpfacil.git" target="_blank" rel="noopener"> scp-facil</a>
-  </p>
-</div>
+Segue o link:<a href="https://github.com/emmilinux/scpfacil.git" target="_blank" rel="noopener"> scp-facil</a>
