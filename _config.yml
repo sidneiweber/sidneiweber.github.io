@@ -40,12 +40,14 @@ links:
     url: /
   - title: Sobre
     url: /sobre/
-  - title: Sistema Vendas PHP
-    url: /projetos/sistema-vendas-php/
-  - title: SCP Fácil
-    url: /projetos/scp-facil/
-  - title: Repositório CVS
-    url: /projetos/criar-repositorios-no-servidor-cvs/
+  - title: Projetos
+    subfolderitems:
+      - page: Sistema Vendas PHP
+        url: /projetos/sistema-vendas-php/
+      - page: SCP Fácil
+        url: /projetos/scp-facil/
+      - page: Repositório CVS
+        url: /projetos/criar-repositorios-no-servidor-cvs/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
