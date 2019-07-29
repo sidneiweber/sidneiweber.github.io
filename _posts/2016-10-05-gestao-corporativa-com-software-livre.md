@@ -6,26 +6,6 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=282
 permalink: /gestao-corporativa-com-software-livre/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
 image: /wp-content/uploads/2016/10/Seleção_011-220x162.png
 categories:
   - Diversos
@@ -34,16 +14,9 @@ categories:
 ---
 Segue um trabalho que fiz na faculdade sobre gestão corporativa com software livre.
 
-<div class="ead-preview">
-  <div class="ead-document" style="position:relative;padding-top:90%;">
-  </div>
-</div>
+https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/edit?usp=sharing
 
 Também listarei aqui meu rascunho para apresentação do slide, caso alguem tenha interesse.
-
-<a href="http://sidneiweber.com.br/2016/10/05/gestao-corporativa-com-software-livre/" target="" class="buttons btn_blue "><span class="left">Continuar lendo</span></a> 
-
-<!--more-->
 
 <span style="color: #ff0000;">Slide 1 = Apresentação</span>  
 Assunto  
