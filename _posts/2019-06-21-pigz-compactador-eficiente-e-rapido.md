@@ -9,7 +9,8 @@ guid: http://sidneiweber.com.br/?p=611
 permalink: "/pigz-compactador-eficiente-e-rapido/"
 comments: true
 tags:
-- linux
+- gzip
+- pigz
 ---
 
 Talvez nem todos saibam mas a compactação usando gzip temos uma limitação da ferramenta não conseguir executar com múltiplos processadores. Para contornos essa limitação podemos usar uma ferramenta chama <a href="https://zlib.net/pigz/" target="_blank" rel="noopener noreferrer">PIGZ</a>, que usando threads consegue utilizar múltiplos processadores.
