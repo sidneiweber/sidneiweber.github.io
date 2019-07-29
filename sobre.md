@@ -13,8 +13,7 @@ guid: http://clancpd.com.br/sidneiweber/?page_id=2
 Sou estudante de Gestão em Tecnologia da informação, apaixonado por software livre e novas descobertas.  
 Sempre em busca de conhecimento (como diria o ET Bilu).
 
-<img src="/wp-content/uploads/2018/05/comptia1.png" />
-<img src="/wp-content/uploads/2018/05/LPIC-1-Medium.png" />
+<img src="/wp-content/uploads/2018/05/comptia1.png" /> <img src="/wp-content/uploads/2018/05/LPIC-1-Medium.png" />
 
 Meus contatos:  
 Email: sidnei.weber@gmail.com  
