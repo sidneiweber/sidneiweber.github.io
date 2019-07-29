@@ -39,7 +39,7 @@ links:
   - title: Home
     url: /
   - title: Sobre
-    url: /about/
+    url: /sobre/
   - title: Projetos
     subfolderitems:
       - page: Sistema vendas
