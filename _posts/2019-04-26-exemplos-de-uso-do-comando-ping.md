@@ -9,8 +9,8 @@ permalink: /exemplos-de-uso-do-comando-ping/
 count_items:
   - "0"
 wp_review_type:
-image: /wp-content/ping-command.png
   - none
+image: /wp-content/ping-command.png
 categories:
   - Linux
   - Rede
