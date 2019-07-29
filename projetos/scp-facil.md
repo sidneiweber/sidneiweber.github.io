@@ -34,6 +34,8 @@ Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra co
 
 <img class="alignnone size-full wp-image-314" src="http://sidneiweber.com.br/wp-content/uploads/2015/07/scp.png" alt="scp" width="64" height="61" />
 
+<img src="/wp-content/scp-facil.png" />
+
 ```shell
 #!/bin/bash
 # yad com FORMULARIOS, que bacana, tem algumas novidades aprecie com calma
