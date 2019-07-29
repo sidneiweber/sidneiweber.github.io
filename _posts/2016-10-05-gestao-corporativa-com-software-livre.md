@@ -14,7 +14,7 @@ categories:
 ---
 Segue um trabalho que fiz na faculdade sobre gestão corporativa com software livre.
 
-https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/edit?usp=sharing
+<iframe src="https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Também listarei aqui meu rascunho para apresentação do slide, caso alguem tenha interesse.
 
