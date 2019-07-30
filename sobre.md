@@ -39,3 +39,18 @@ Facebook: [https://www.facebook.com/sidnei.weber
 <img class="alignnone wp-image-435 size-full" src="https://sidneiweber.com.br/wp-content/uploads/2009/07/419183.png" alt="" width="190" height="110" />
 
 Agradeço pelas visitas e pelos comentários.
+
+# Formulário de contato
+
+<div class="container">
+<div id="form" class="contact-form">
+<form action="https://formspree.io/sidnei.weber@gmail.com" method="POST" ref="contact">
+<fieldset>
+  <input type="text" name="name" placeholder="Seu nome">
+  <input type="email" name="email" placeholder="Seu email">
+  <textarea name="message" placeholder="Mensagem"></textarea>
+  <input type="submit" value="Enviar">
+</fieldset>
+</form>
+</div>
+</div>

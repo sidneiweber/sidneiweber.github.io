@@ -1,10 +1,10 @@
 # Site Settings
 title: Sidnei Weber | Life of Sysadmin
 email: youremail@xyz.com
-description: Some text about your blog.
+description: Life of Sysadmin.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sidneiweber.github.io" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "UA-921545-12"
 
 # User Settings
 username: Sidnei Weber
@@ -44,8 +44,6 @@ links:
     url: /projetos/sistema-vendas-php/
   - title: SCP Fácil
     url: /projetos/scp-facil/
-  - title: Repositório CVS
-    url: /projetos/criar-repositorios-no-servidor-cvs/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
