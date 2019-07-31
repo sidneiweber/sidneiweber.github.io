@@ -39,7 +39,7 @@ tags:
   <p class="toc_title">
     P&aacute;gina de Posts
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Firewall_Iptables"><span class="toc_number toc_depth_1">1</span> Firewall Iptables</a><ul>
@@ -68,7 +68,7 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#Checagem_de_estado_dos_pacotes_state_match"><span class="toc_number toc_depth_2">1.6</span> Checagem de estado dos pacotes (state match):</a>
         </li>
@@ -93,7 +93,7 @@ tags:
 O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.  
 Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o  redirecinamento correto, servindo de filtro.
 
-<img class="alignnone size-full wp-image-382" src="http://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1.png" alt="" width="804" height="206" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1.png 804w, https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1-300x77.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1-768x197.png 768w" sizes="(max-width: 804px) 100vw, 804px" /> 
+<img class="alignnone size-full wp-image-382" src="http://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1.png" alt="" width="804" height="206" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1.png 804w, https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1-300x77.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1-768x197.png 768w" sizes="(max-width: 804px) 100vw, 804px" />
 
 O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.4 substituindo o ipchains.  
 Ele se baseia nas regras e parametros passados para fazer a filtragem dos pacotes, ou seja, compara as regras com os pacotes.
@@ -198,131 +198,184 @@ Todo tráfego que for registrado pelo iptables é registrado por padrão no arqu
 
 Exibir todas as regras:
 
-<pre class="lang:sh decode:true ">iptables -L -n -v</pre>
+```shell
+iptables -L -n -v</pre>
+```
 
 Verificar regras (padrão filter &#8211;line-numbers (Exibe linhas))
 
-<pre class="lang:sh decode:true ">iptables -L
+```shell
+iptables -L
 iptables -S (lista comandos do iptables)</pre>
+```
 
 Verificar regras tabela nat
 
-<pre class="lang:sh decode:true ">iptables -t nat -L</pre>
+```shell
+iptables -t nat -L
+```
 
 Criando uma regra, DROP em tudo que vai pra porta 123
 
-<pre class="lang:sh decode:true ">iptabels -A INPUT -p tcp --dport 123 -j DROP</pre>
+```shell
+iptabels -A INPUT -p tcp --dport 123 -j DROP
+```
 
 Inserindo uma regra, -I por padrao insere a regra no final  
 \# indicando a linha ja a regra para a posição referente
 
-<pre class="lang:sh decode:true ">iptables -I INPUT 1 -p tcp --sport 321 --dport 123 -J ACCEPT</pre>
+```shell
+iptables -I INPUT 1 -p tcp --sport 321 --dport 123 -J ACCEPT
+```
 
 Substituindo uma regra, parametro -R  
 \# Substitui a regra 1 (no caso do nosso exemplo)
 
-<pre class="lang:sh decode:true ">iptables -R INPUT 1 -p tcp --sport 321 --dport 123 -J ACCEPT</pre>
+```shell
+iptables -R INPUT 1 -p tcp --sport 321 --dport 123 -J ACCEPT
+```
 
 Deletar regra, parametro -D  
 \# remove linha 1
 
-<pre class="lang:sh decode:true ">iptables -D INPUT 1</pre>
+```shell
+iptables -D INPUT 1
+```
 
 \# apagar usando sintaxe, usar mesmo sintaxe com parametro -D
 
-<pre class="lang:sh decode:true ">iptables -D INPUT -p tcp --dport 80 -j ACCEPT</pre>
+```shell
+iptables -D INPUT -p tcp --dport 80 -j ACCEPT
+```
 
 Bloquear porta específica  
 Sainte:
 
-<pre class="lang:sh decode:true ">iptables -A OUTPUT -p tcp --dport xxx -j DROP</pre>
+```shell
+iptables -A OUTPUT -p tcp --dport xxx -j DROP
+```
 
 Entrante:
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -p tcp --dport xxx -j ACCEPT</pre>
+```shell
+iptables -A INPUT -p tcp --dport xxx -j ACCEPT
+```
 
 Ou múltiplas portas:
 
-<pre class="lang:sh decode:true ">iptables -A INPUT  -p tcp -m multiport --dports 22,80,443 -j ACCEPT
-iptables -A OUTPUT -p tcp -m multiport --sports 22,80,443 -j ACCEPT</pre>
+```shell
+iptables -A INPUT  -p tcp -m multiport --dports 22,80,443 -j ACCEPT
+iptables -A OUTPUT -p tcp -m multiport --sports 22,80,443 -j ACCEPT
+```
 
 Manter registros de Log’s de pacotes bloqueados:
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -i eth0 -j LOG --log-prefix "Quantidade pacotes bloqueados:"
-iptables -A INPUT -p tcp -dport 21 -j LOG -log-prefix “Serviço: ftp”</pre>
+```shell
+iptables -A INPUT -i eth0 -j LOG --log-prefix "Quantidade pacotes bloqueados:"
+iptables -A INPUT -p tcp -dport 21 -j LOG -log-prefix “Serviço: ftp”
+```
 
 Os log’s são salvos em /var/log/messages.
 
 Compartilhar internet, parametro ip\_forward precisa ser 1, geralemte altera-se no arquivo &#8220;/proc/sys/net/ipv4/ip\_forward&#8221;. Lembrando que a mudança não é permanente, a cada reinicialização deve-se alterar o parâmetro novamente ou quando criar um sript de firewall incluir o comando para alterar o arquivo com o cat.
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -m state --state RELATED.ESTABLISHED -j ACCEPT
-iptables -A FORWARD -m state --state RELATED.ESTABLISHED -j ACCEPT</pre>
+```shell
+iptables -A INPUT -m state --state RELATED.ESTABLISHED -j ACCEPT
+iptables -A FORWARD -m state --state RELATED.ESTABLISHED -j ACCEPT
+```
 
 Ip Masquarade
 
-<pre class="lang:sh decode:true ">iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</pre>
+```shell
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
 
 Encaminhamento de portas (Ip forwarding)  
 Tentando acessar pela interface wan
 
-<pre class="lang:sh decode:true ">iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j DNAT --to 192.168.10.10:80
-iptables -A FORWARD -p tcp -d 192.168.10.10 --dport 80 -j ACCPET</pre>
+```shell
+iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j DNAT --to 192.168.10.10:80
+iptables -A FORWARD -p tcp -d 192.168.10.10 --dport 80 -j ACCPET
+```
 
 Reject  
 Descarta pacote e envia um retorno a quem enviou o pacote.
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-net-unreachable
+```shell
+iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-net-unreachable
 iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-host-unreachable
-iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-proto-unreachable</pre>
+iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-proto-unreachable
+```
 
 entre outras opções do &#8211;reject-with
 
 Criar chain
 
-<pre class="lang:sh decode:true ">iptables -t filter -N [chain]</pre>
+```shell
+iptables -t filter -N [chain]
+```
 
 Limpar regras
 
-<pre class="lang:sh decode:true ">iptables -t filter -F [CHAIN]</pre>
+```shell
+iptables -t filter -F [CHAIN]
+```
 
 remover  Chain criada pelo usuario, parametro -X  
 zerar contador, parametro -Z
 
 Alterar regra padrão, o ideal INPUT ser drop por padrão
 
-<pre class="lang:sh decode:true ">iptables -P INPUT DROP</pre>
+```shell
+iptables -P INPUT DROP
+```
 
 Liberar servidor web
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -m state --state new -p tcp --dport 80 -j ACCEPT
-iptables -A INPUT -m state --state new -p tcp --dport 443 -j ACCEPT</pre>
+```shell
+iptables -A INPUT -m state --state new -p tcp --dport 80 -j ACCEPT
+iptables -A INPUT -m state --state new -p tcp --dport 443 -j ACCEPT
+```
 
 Liberar host especifico
 
-<pre class="lang:sh decode:true ">iptabels -A INPUT -s 192.168.1.20 -j ACCEPT</pre>
+```shell
+iptabels -A INPUT -s 192.168.1.20 -j ACCEPT
+```
 
 Liberar ping (resposta liberada se output esta ACCEPT tbm)
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT</pre>
+```shell
+iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+```
 
 Liberar respostas de ping para outras maquinas
 
-<pre class="lang:sh decode:true ">iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT</pre>
+```shell
+iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT
+```
 
 Proteção contra Syn-flood:
 
-<pre class="lang:sh decode:true ">iptables -A FORWARD -p tcp --syn -m limit --limit 1/s -j ACCEPT</pre>
+```shell
+iptables -A FORWARD -p tcp --syn -m limit --limit 1/s -j ACCEPT
+```
 
 Port scanner suspeito:
 
-<pre class="lang:sh decode:true ">iptables -A FORWARD -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s -j ACCEPT</pre>
+```shell
+iptables -A FORWARD -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s -j ACCEPT
+```
 
 Ping da morte:
 
-<pre class="lang:sh decode:true ">iptables -A FORWARD -p icmp --icmp-type echo-request -m limit --limit 1/s -j ACCEPT</pre>
+```shell
+iptables -A FORWARD -p icmp --icmp-type echo-request -m limit --limit 1/s -j ACCEPT
+```
 
 Salvando e restaurando as regras:
 
-<pre class="lang:sh decode:true">iptables-save &gt; arquivo
-iptables-restore &lt; arquivo
-</pre>
+```shell
+iptables-save > arquivo
+iptables-restore < arquivo
+```
