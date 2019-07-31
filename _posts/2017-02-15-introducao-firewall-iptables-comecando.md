@@ -199,14 +199,14 @@ Todo tráfego que for registrado pelo iptables é registrado por padrão no arqu
 Exibir todas as regras:
 
 ```shell
-iptables -L -n -v</pre>
+iptables -L -n -v
 ```
 
 Verificar regras (padrão filter &#8211;line-numbers (Exibe linhas))
 
 ```shell
 iptables -L
-iptables -S (lista comandos do iptables)</pre>
+iptables -S (lista comandos do iptables)
 ```
 
 Verificar regras tabela nat
