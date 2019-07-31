@@ -31,3 +31,5 @@ categories:
   - Shell Script
 ---
 Segue o meu .bashrc com vários atalhos e alterações.
+
+<script src="https://gist.github.com/sidneiweber/c567bb3bf019d93b00e6.js"></script>
