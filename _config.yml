@@ -40,6 +40,7 @@ links:
     url: /
   - title: Sobre
     url: /sobre/
+projetos:
   - title: Sistema Vendas PHP
     url: /projetos/sistema-vendas-php/
   - title: SCP Fácil
