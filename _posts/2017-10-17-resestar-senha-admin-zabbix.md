@@ -1,11 +1,11 @@
 ---
 id: 491
-title: Resestar senha Admin Zabbix
+title: Resetar senha Admin Zabbix
 date: 2017-10-17T09:44:49-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=491
-permalink: /resestar-senha-admin-zabbix/
+permalink: /resetar-senha-admin-zabbix/
 wp_review_location:
   - bottom
 wp_review_desc_title:
