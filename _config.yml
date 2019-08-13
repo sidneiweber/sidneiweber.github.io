@@ -3,7 +3,7 @@ title: Sidnei Weber | Life of Sysadmin
 email: youremail@xyz.com
 description: Life of Sysadmin.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sidneiweber.github.io" # the base hostname & protocol for your site
+url: "https://sidneiweber.com.br" # the base hostname & protocol for your site
 google_analytics: "UA-921545-12"
 
 # User Settings
@@ -40,6 +40,8 @@ links:
     url: /
   - title: Sobre
     url: /sobre/
+  - title: Teste
+    url: /teste/
 projetos:
   - title: Sistema Vendas PHP
     url: /projetos/sistema-vendas-php/
