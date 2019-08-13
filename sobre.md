@@ -1,10 +1,8 @@
 ---
-id: 38
 title: Sobre
 date: 2009-07-16T04:07:27-03:00
 author: Sidnei Weber
 layout: page
-guid: http://clancpd.com.br/sidneiweber/?page_id=2
 ---
 <img itemprop="image" class="img-rounded" src="https://secure.gravatar.com/avatar/352dde096850c5cc2511b155ef263cd3?s=98&d=mm&r=g" alt="Sidnei Weber">
 

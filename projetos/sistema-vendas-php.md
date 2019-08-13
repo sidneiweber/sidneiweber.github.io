@@ -1,10 +1,8 @@
 ---
-id: 114
 title: Sistema Vendas PHP Mysql
 date: 2014-02-08T16:13:44-03:00
 author: Sidnei Weber
 layout: page
-guid: http://sidiweber.wordpress.com/?page_id=114
 ---
 ## Sistema vendas PHP/Mysql (beta 1)
 
