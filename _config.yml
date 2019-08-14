@@ -47,7 +47,7 @@ projetos:
     url: /projetos/scp-facil/
 ferramentas:
   - title: Password Generator
-    url: /password-generator/
+    url: /password-generator.html
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
