@@ -40,13 +40,14 @@ links:
     url: /
   - title: Sobre
     url: /sobre/
-  - title: Teste
-    url: /teste/
 projetos:
   - title: Sistema Vendas PHP
     url: /projetos/sistema-vendas-php/
   - title: SCP Fácil
     url: /projetos/scp-facil/
+ferramentas:
+  - title: Password Generator
+    url: /password-generator/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
