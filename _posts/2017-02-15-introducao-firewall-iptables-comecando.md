@@ -1,40 +1,41 @@
 ---
-id: 380
-title: 'Introdução Firewall Iptables &#8211; Começando'
-date: 2017-02-15T10:44:41-03:00
-author: Sidnei Weber
 layout: post
+title: Introdução Firewall Iptables - Começando
+id: 380
+date: '2017-02-15 10:44:41 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=380
-permalink: /introducao-firewall-iptables-comecando/
+permalink: "/introducao-firewall-iptables-comecando/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2017/02/Sele��o_001.png
+- 0
+image: "/wp-content/uploads/2017/02/Sele��o_001.png"
 categories:
-  - Firewall
+- Firewall
 tags:
-  - começando com iptables
-  - firewall iptables
-  - introdução iptables
-  - iptables
+- começando com iptables
+- firewall iptables
+- introdução iptables
+- iptables
 ---
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     P&aacute;gina de Posts

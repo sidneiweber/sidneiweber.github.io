@@ -1,33 +1,34 @@
 ---
-id: 180
-title: 'Backup Mysql &#8211; Linha comando'
-date: 2015-07-06T15:48:02-03:00
-author: Sidnei Weber
 layout: post
+title: Backup Mysql - Linha comando
+id: 180
+date: '2015-07-06 15:48:02 -0300'
+author: Sidnei Weber
 guid: https://sidiweber.wordpress.com/?p=180
-permalink: /backup-mysql-linha-comando/
+permalink: "/backup-mysql-linha-comando/"
 geo_public:
-  - "0"
+- 0
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 categories:
-  - Linux
-  - Mysql
+- Linux
+- Mysql
 ---
+
 Backup de uma base específica
 
 <pre>mysqldump --database &lt;NOME DA BASE DE DADOS&gt; -u&lt;USUARIO&gt; -p &gt; c:meu_db.sql</pre>

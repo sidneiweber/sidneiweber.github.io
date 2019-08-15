@@ -1,31 +1,31 @@
 ---
-id: 525
-title: 'Ansible &#8211; O que é e para que serve'
-date: 2018-06-19T20:34:23-03:00
-author: Sidnei Weber
 layout: post
+title: Ansible - O que é e para que serve
+id: 525
+date: '2018-06-19 20:34:23 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=525
-permalink: /ansible-o-que-e-e-para-que-serve/
+permalink: "/ansible-o-que-e-e-para-que-serve/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
-image: /wp-content/uploads/2018/06/ansible.png
+- star
+image: "/wp-content/uploads/2018/06/ansible.png"
 categories:
-  - Ansible
-  - Devops
+- Ansible
+- Devops
 ---
 
 > ### <span id="ANSIBLE_LOVES_THE_REPETITIVE_WORK_YOUR_PEOPLE_HATE">ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE</span>

@@ -1,37 +1,38 @@
 ---
-id: 417
-title: 'Emmi Linux &#8211; Uma distribuição pequena e leve'
-date: 2017-03-24T13:34:39-03:00
-author: Sidnei Weber
 layout: post
+title: Emmi Linux - Uma distribuição pequena e leve
+id: 417
+date: '2017-03-24 13:34:39 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=417
-permalink: /emmi-linux-uma-distribuicao-pequena-e-leve/
+permalink: "/emmi-linux-uma-distribuicao-pequena-e-leve/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2017/03/Sele��o_009.png
+- 0
+image: "/wp-content/uploads/2017/03/Sele��o_009.png"
 categories:
-  - Linux
+- Linux
 tags:
-  - Emmi Linux
+- Emmi Linux
 ---
+
 Hoje vou falar um pouco sobre essa distribuição que conheci e acabei me envolvendo no projeto: **Emmi Linux.** Bom segue palavras do próprio autor do projeto, Jefferson Rocha:
 
 > Assim como Debian todas versões serão LTS, com suporte ativo por 5 anos.

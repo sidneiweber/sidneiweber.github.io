@@ -1,40 +1,41 @@
 ---
-id: 411
-title: 'Knock SSH &#8211; Adicionando uma camada extra de segurança no servidor'
-date: 2017-03-21T16:03:09-03:00
-author: Sidnei Weber
 layout: post
+title: Knock SSH - Adicionando uma camada extra de segurança no servidor
+id: 411
+date: '2017-03-21 16:03:09 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=411
-permalink: /knock-ssh-adicionando-uma-camada-extra-de-seguranca-no-servidor/
+permalink: "/knock-ssh-adicionando-uma-camada-extra-de-seguranca-no-servidor/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2017/03/Sele��o_008.png
+- 0
+image: "/wp-content/uploads/2017/03/Sele��o_008.png"
 categories:
-  - Servidores
-  - SSH
+- Servidores
+- SSH
 tags:
-  - knock ssh
-  - port ssh
-  - ssh knock
+- knock ssh
+- port ssh
+- ssh knock
 ---
+
 Hoje vamos falar do **Knock,** uma ferramenta muito interessante para quem precisar acessar seus servidores remotamente. Bom o que o Knock faz, ele adiciona essa camada a mais da seguinte forma, por exemplo se acessamos nosso servidor pela porta 22 do ssh ela deveria estar liberada. Porém com Knock ela pode estar bloqueada, você acertando uma sequência específica de portas ele irá liberar a porta 22, e somente se acertar a sequencia definida.
 
 ### No servidor

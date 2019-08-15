@@ -1,19 +1,20 @@
 ---
-id: 527
-title: 'Rundeck &#8211; Automatizando suas tarefas'
-date: 2018-04-09T21:08:17-03:00
-author: Sidnei Weber
 layout: post
+title: Rundeck - Automatizando suas tarefas
+id: 527
+date: '2018-04-09 21:08:17 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=527
-permalink: /rundeck-automatizando-suas-tarefas/
+permalink: "/rundeck-automatizando-suas-tarefas/"
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2018/04/índice.png
+- 0
+image: "/wp-content/uploads/2018/04/índice.png"
 categories:
-  - Devops
+- Devops
 ---
+
 O que é esse tal de Rundeck
 
 Falando a grosso modo Rundeck é um automatizador e agendador de tarefas. Obviamente que ele faz muito mais do que isso, ele consegue rodar essas tarefas tanto em Linux quanto em Windows. Consegue-se criar um workflow de tarefas, fazendo uma tarefa depender de outra ou conforme sua execução com sucesso ou insucesso.

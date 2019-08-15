@@ -1,36 +1,37 @@
 ---
-id: 464
-title: 'Dica rápida &#8211; Verificar pastas que ocupam mais espaço'
-date: 2017-08-17T13:15:51-03:00
-author: Sidnei Weber
 layout: post
+title: Dica rápida - Verificar pastas que ocupam mais espaço
+id: 464
+date: '2017-08-17 13:15:51 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=464
-permalink: /dica-rapida-verificar-pastas-que-ocupam-mais-espaco/
+permalink: "/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2016/12/Sele��o_003.png
+- 0
+image: "/wp-content/uploads/2016/12/Sele��o_003.png"
 categories:
-  - Linux
-  - Shell Script
+- Linux
+- Shell Script
 ---
+
 Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:
 
 <pre class="lang:sh decode:true ">du -Sh | sort -rh | head -5</pre>

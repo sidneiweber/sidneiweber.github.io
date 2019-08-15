@@ -1,55 +1,56 @@
 ---
-id: 359
-title: 'Instalando Nagios &#8211; Instalação básica'
-date: 2017-01-31T13:11:40-03:00
-author: Sidnei Weber
 layout: post
+title: Instalando Nagios - Instalação básica
+id: 359
+date: '2017-01-31 13:11:40 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=359
-permalink: /instalando-nagios-instalacao-basica/
+permalink: "/instalando-nagios-instalacao-basica/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_total:
-  - "0"
+- 0
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
+- 0
 count_items:
-  - "0"
+- 0
 wp_review_type:
-  - none
+- none
 wp_review_custom_location:
-  - "0"
+- 0
 wp_review_custom_colors:
-  - "0"
+- 0
 wp_review_custom_author:
-  - "0"
+- 0
 wp_review_hide_desc:
-  - "0"
+- 0
 wp_review_schema:
-  - null
+- 
 wp_review_rating_schema:
-  - author
+- author
 wp_review_show_schema_data:
-  - "0"
+- 0
 wp_review_box_template:
-  - default
-image: /wp-content/uploads/2017/01/nagios_logo_black.png
+- default
+image: "/wp-content/uploads/2017/01/nagios_logo_black.png"
 categories:
-  - Nagios
+- Nagios
 ---
+
 Vamos fazer a instação básica do Nagios. Pra quem não conhece o Nagios, segue um <a href="https://pt.wikipedia.org/wiki/Nagios" target="_blank" rel="noopener">link para conhecer melhor</a>.
 
 > **Nagios** é uma popular aplicação de monitoramento de rede de [código aberto](https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto "Código aberto") distribuída sob a licença [GPL](https://pt.wikipedia.org/wiki/GNU_General_Public_License "GNU General Public License"). Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.

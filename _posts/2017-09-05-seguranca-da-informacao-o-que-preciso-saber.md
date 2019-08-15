@@ -1,35 +1,36 @@
 ---
-id: 475
-title: 'Segurança da Informação &#8211; O que preciso saber?'
-date: 2017-09-05T13:55:37-03:00
-author: Sidnei Weber
 layout: post
+title: Segurança da Informação - O que preciso saber?
+id: 475
+date: '2017-09-05 13:55:37 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=475
-permalink: /seguranca-da-informacao-o-que-preciso-saber/
+permalink: "/seguranca-da-informacao-o-que-preciso-saber/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2017/09/Entenda-o-que-Segurana-da-Informao-e-reduza-riscos-na-empresa.png
+- 0
+image: "/wp-content/uploads/2017/09/Entenda-o-que-Segurana-da-Informao-e-reduza-riscos-na-empresa.png"
 categories:
-  - Segurança
+- Segurança
 ---
+
 Hoje falaremos sobre um assunto que a cada dia se torna mais importante no mundo técnologico e corporativo, Segurança da Informação.
 
 Segundo a **ISO 27002** segurança da informação é:  

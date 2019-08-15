@@ -1,36 +1,37 @@
 ---
-id: 153
-title: 'netstat -putona &#8211; Um comando para monitorar as conexões de rede'
-date: 2015-07-06T15:37:42-03:00
-author: Sidnei Weber
 layout: post
+title: netstat -putona - Um comando para monitorar as conexões de rede
+id: 153
+date: '2015-07-06 15:37:42 -0300'
+author: Sidnei Weber
 guid: https://sidiweber.wordpress.com/?p=153
-permalink: /netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/
+permalink: "/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/"
 geo_public:
-  - "0"
+- 0
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
+- 0
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_color:
-  - '#1e73be'
+- "#1e73be"
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 categories:
-  - Linux
+- Linux
 ---
+
 <pre class="lang:sh decode:true ">netstat -putona</pre>
 
 Onde os parâmetros significam:

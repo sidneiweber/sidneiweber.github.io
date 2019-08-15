@@ -1,16 +1,17 @@
 ---
-id: 29
-title: 'Hardware &#8211; Guia ilustrado'
-date: 2009-09-29T01:29:00-03:00
-author: Sidnei Weber
 layout: post
+title: Hardware - Guia ilustrado
+id: 29
+date: '2009-09-29 01:29:00 -0300'
+author: Sidnei Weber
 guid: http://clancpd.com.br/sidneiweber/?p=29
-permalink: /hardware-guia-ilustrado/
+permalink: "/hardware-guia-ilustrado/"
 wp_review_user_reviews:
-  - "0"
+- 0
 wp_review_review_count:
-  - "0"
+- 0
 categories:
-  - Hardware
+- Hardware
 ---
+
 <a href="http://cabelovivaolinux.files.wordpress.com/2009/07/guia-hardware.png" target="_blank">http://cabelovivaolinux.files.wordpress.com/2009/07/guia-hardware.png</a>

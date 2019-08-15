@@ -1,16 +1,17 @@
 ---
-id: 539
-title: 'Podcast &#8211; Conversa com Dionatan do Canal Diolinux'
-date: 2018-04-02T21:37:31-03:00
-author: Sidnei Weber
 layout: post
+title: Podcast - Conversa com Dionatan do Canal Diolinux
+id: 539
+date: '2018-04-02 21:37:31 -0300'
+author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=539
-permalink: /podcast-conversa-com-dionatan-do-canal-diolinux/
+permalink: "/podcast-conversa-com-dionatan-do-canal-diolinux/"
 categories:
-  - Linux
+- Linux
 tags:
-  - conversa com diolinux. podcast
+- conversa com diolinux. podcast
 ---
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NQ4_pc9gM8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Mais um podcast gravado para o canal do <a href="https://www.youtube.com/channel/UClz3DneoYlccluy4hBlx86Q" target="_blank" rel="noopener">Slackjeff</a>.

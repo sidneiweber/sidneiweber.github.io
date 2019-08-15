@@ -1,14 +1,15 @@
 ---
-id: 26
-title: 'Acesso negado &#8211; Squid'
-date: 2009-09-28T19:11:41-03:00
-author: Sidnei Weber
 layout: post
+title: Acesso negado - Squid
+id: 26
+date: '2009-09-28 19:11:41 -0300'
+author: Sidnei Weber
 guid: http://clancpd.com.br/sidneiweber/?p=26
-permalink: /acesso-negado-squid/
+permalink: "/acesso-negado-squid/"
 categories:
-  - Squid
+- Squid
 ---
+
 ACESSO NEGADO: A página não pode ser exibida  
 <!&#8211;BODY{background-color:#ffffff;font-family:verdana,sans-serif}PRE{font-family:sans-serif}&#8211;>
 

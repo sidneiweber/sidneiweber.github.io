@@ -1,49 +1,50 @@
 ---
-id: 640
-title: 'Comando fuser &#8211; Quem mexeu no meu arquivo'
-date: 2018-11-06T09:28:53-03:00
-author: Sidnei Weber
 layout: post
-image: /wp-content/fuser.png
+title: Comando fuser - Quem mexeu no meu arquivo
+id: 640
+date: '2018-11-06 09:28:53 -0300'
+author: Sidnei Weber
+image: "/wp-content/fuser.png"
 guid: http://sidneiweber.com.br/?p=640
-permalink: /comando-fuser-quem-mexeu-no-meu-arquivo/
+permalink: "/comando-fuser-quem-mexeu-no-meu-arquivo/"
 wp_review_location:
-  - bottom
+- bottom
 wp_review_desc_title:
-  - Resumo
+- Resumo
 wp_review_fontcolor:
-  - '#555555'
+- "#555555"
 wp_review_bgcolor1:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_bgcolor2:
-  - '#ffffff'
+- "#ffffff"
 wp_review_bordercolor:
-  - '#e7e7e7'
+- "#e7e7e7"
 wp_review_user_review_type:
-  - star
+- star
 wp_review_type:
-  - none
+- none
 wp_review_custom_location:
-  - "0"
+- 0
 wp_review_custom_colors:
-  - "0"
+- 0
 wp_review_custom_author:
-  - "0"
+- 0
 wp_review_hide_desc:
-  - "0"
+- 0
 wp_review_total:
-  - "0"
+- 0
 wp_review_schema:
-  - null
+- 
 wp_review_rating_schema:
-  - author
+- author
 wp_review_show_schema_data:
-  - "0"
+- 0
 wp_review_box_template:
-  - default
+- default
 categories:
-  - Linux
+- Linux
 ---
+
 O **fuser** é um programa que permite que saibamos qual processo está utilizando determinado arquivo, socket (portas) e sistema de arquivos especificado. Aprender sua manipulação é essencial para poder administrar um servidor para saber o que está acontecendo principalmente nas conexões. É um comando extremamente flexível, vamos ver suas opções e seu uso.
 
 <table border="1" cellpadding="4" align="center">
