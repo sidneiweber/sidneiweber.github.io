@@ -8,7 +8,7 @@ A redução de custos no ambiente de nuvem é um assunto constante, a utlizaçã
 
 Na primeira parte começaremos com o EC2, que permite a criação de instâncias ("máquinas virtuais") com facilidade, podendo ser usado tanto com Windows, quanto com Linux. Bom pra quem ainda não sabe, os recursos da AWS são cobrados por uso, então quando criamos uma instância no EC2, ela será cobrada pelo tempo que estiver ligada e veria de valor dependendo da [tipo de instância escolhida](https://aws.amazon.com/pt/ec2/instance-types/).
 
-Bom a dica pode ser usada por quem utiliza o recurso durante o expediente de trabalho, seja em produção para recursos não utilizados fora do horário de trabalho ou ambientes de desenvolvimento, que geralmente são usados por um determinado periodo do dia. A gente irá programar o start/stop dessas instâncias. Iremos utlizar funções [Lambdas](https://aws.amazon.com/pt/lambda/) combinadas com [eventos do Cloudwatch](https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html).
+Bom a dica pode ser usada por quem utiliza os recursos EC2 durante o expediente de trabalho, seja em produção, que precise estar funcionando somente no horário de trabalho ou ambientes de desenvolvimento, que geralmente são usados por um determinado periodo do dia. A gente irá programar o start/stop dessas instâncias. Iremos utlizar funções [Lambdas](https://aws.amazon.com/pt/lambda/) combinadas com [eventos do Cloudwatch](https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html).
 
 Precisaremos de uma função IAM com permissão para acessar os recursos EC2. Pode usar o nome que achar melhor. Aqui vai uma colinha da política, lembrando que a função precisa ser configurada com o serviço Lambda:
 ```json
@@ -95,7 +95,7 @@ Vamos criar uma nova regra para esse gatilho, dando um nome e escolhendo a Expre
 
 ![](http://www.sidneiweber.com.br/wp-content/aws/6.png)
 
-Paremos o mesmo na função de Start
+Faremos o mesmo na função de Start
 
 ![](http://www.sidneiweber.com.br/wp-content/aws/7.png)
 
