@@ -1,7 +1,7 @@
 # Site Settings
 title: Sidnei Weber | Life of Sysadmin
-email: youremail@xyz.com
-description: Life of Sysadmin.
+email: sidnei.weber@gmail.com
+description: A rotina de um Sysadmin. Falando sobre tecnologia, linux, aws, scripts e etc's
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sidneiweber.com.br" # the base hostname & protocol for your site
 google_analytics: "UA-921545-12"
