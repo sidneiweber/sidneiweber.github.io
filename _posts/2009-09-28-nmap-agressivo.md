@@ -6,7 +6,11 @@ author: Sidnei Weber
 layout: post
 guid: http://clancpd.com.br/sidneiweber/?p=17
 permalink: /nmap-agressivo/
-categories:
-  - Nmap
+tags:
+  - nmap
 ---
-> nmap -T Aggressive -A -v 127.0.0.1
+Executar comando NMAP de forma agressiva
+
+```bash
+nmap -T Aggressive -A -v 127.0.0.1
+```

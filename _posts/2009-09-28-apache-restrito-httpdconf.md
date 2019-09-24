@@ -6,19 +6,23 @@ author: Sidnei Weber
 layout: post
 guid: http://clancpd.com.br/sidneiweber/?p=19
 permalink: /apache-restrito-httpdconf/
-categories:
-  - Apache
+tags:
+  - ldap
+  - apache
 ---
+Exemplo de como restringir o acesso com apache realizando autenticação no LDAP.
+
 \# Diretório Restrito
 
+```bash
 Options Indexes FollowSymLinks Includes  
 AllowOverride AuthConfig
 
 #Autenticao  
-AuthName &#8220;Acesso ao SARG&#8221;  
+AuthName "Acesso ao SARG"
 AuthType Basic  
-AuthBasicProvider &#8220;ldap&#8221;  
-AuthLDAPURL &#8220;ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub&#8221;  
+AuthBasicProvider "ldap"
+AuthLDAPURL "ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub"
 authzldapauthoritative Off  
 #AuthUserfile /etc/apache2/apache_passwd  
 require user sweber  
@@ -27,19 +31,22 @@ require user sweber
 
 Order allow,deny  
 Allow from all
+```
 
 \# Diretorio Install
 
+```bash
 Options Indexes FollowSymLinks Includes  
 AllowOverride AuthConfig
 
-AuthName &#8220;Acesso ao INSTALL&#8221;  
+AuthName "Acesso ao INSTALL"
 AuthType Basic  
-AuthBasicProvider &#8220;ldap&#8221;  
-AuthLDAPURL &#8220;ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub&#8221;  
+AuthBasicProvider "ldap"
+AuthLDAPURL "ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub"
 authzldapauthoritative Off  
 #AuthUserfile /etc/apache2/apache_passwd  
 require user sweber
 
 Order allow,deny  
 Allow from all
+```
