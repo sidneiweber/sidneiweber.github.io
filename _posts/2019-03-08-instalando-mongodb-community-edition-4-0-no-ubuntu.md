@@ -2,6 +2,7 @@
 id: 801
 title: Instalando MongoDB Community Edition 4.0 no Ubuntu
 subtitle: Super fácil instalar o MongoDB no ubuntu usando gerenciador de pacotes.
+description: Super fácil instalar o MongoDB no ubuntu usando gerenciador de pacotes.
 date: 2019-03-08T16:12:05-03:00
 author: Sidnei Weber
 layout: post

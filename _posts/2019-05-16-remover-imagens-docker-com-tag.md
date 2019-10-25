@@ -2,6 +2,7 @@
 id: 832
 title: 'Remover imagens Docker com TAG "none"'
 subtitle: Imagens que não são usadas e acabam nos atrapalhando.
+description: Imagens que não são usadas e acabam nos atrapalhando.
 date: 2019-05-16T09:27:08-03:00
 author: Sidnei Weber
 layout: post
