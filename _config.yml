@@ -1,17 +1,19 @@
 # Site Settings
+name: Sidnei Weber
 title: Sidnei Weber | Life of Sysadmin
-email: sidnei.weber@gmail.com
 description: A rotina de um Sysadmin. Falando sobre tecnologia, linux, aws, scripts e etc's
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sidneiweber.com.br" # the base hostname & protocol for your site
-google_analytics: "UA-921545-12"
-
-# User Settings
-username: Sidnei Weber
-user_description: Seja bem vindo.
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+email: sidnei.weber@gmail.com
 disqus_username: sidneiweber
+show_hero: true
 
-# Social Media
+
+# Social Media Settings
 # Remove the item if you don't need it
 github_username: sidneiweber
 facebook_username: sidnei.weber
@@ -20,26 +22,66 @@ instagram_username:
 linkedin_username: sidnei-weber-143864169
 medium_username: sidnei.weber
 
+
+# Theme Settings
+themeColor: "#ff0a16"
+primaryDark: "#141414"
+accentDark: "#ffffff"
+lightGray: "#f2f2f2"
+texts: "#333333"
+
+
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sidneiweber.com.br" # the base hostname & protocol for your site
+google_analytics: "UA-921545-12"
+language: "pt-BR"
+
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-paginate: 12
+collections:
+  authors:
+    output: true
 paginate_path: "/page/:num/"
-svg_color: "#ff0a16"
+
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
 
 # Plugins
 plugins:
-  - jemoji
   - jekyll-paginate
-
-# Links to include in menu navigation
-# For external links add external: true
+  - jekyll-paginate-content
+  
 links:
   - title: Home
     url: /
   - title: Sobre
-    url: /sobre/
+    url: /pages/sobre/
 projetos:
   - title: Sistema Vendas PHP
     url: /projetos/sistema-vendas-php/
@@ -50,4 +92,14 @@ ferramentas:
     url: /password-generator.html
 
 # Exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]

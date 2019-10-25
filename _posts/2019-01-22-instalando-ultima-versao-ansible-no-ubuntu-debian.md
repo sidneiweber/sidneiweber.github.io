@@ -10,7 +10,7 @@ count_items:
   - "0"
 wp_review_type:
   - none
-image: /wp-content/uploads/2018/06/ansible.png
+image: "/wp-content/ansible_ubuntu.png"
 categories:
   - Ansible
   - Debian

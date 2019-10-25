@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Instalar Ansible AWX com Docker no Centos 7
+subtitle: Passo a passo da instalação usando Docker.
 tags:
 - ansible
 image: "/wp-content/ansible.png"

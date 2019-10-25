@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reduzindo custos na AWS (EC2) - Parte 1
+subtitle: Usando o desligamento programado podemos reduzir custos.
 image: "/wp-content/aws/0.jpg"
 tags:
 - aws

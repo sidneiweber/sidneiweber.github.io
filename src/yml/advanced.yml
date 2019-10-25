@@ -1,0 +1,4 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sidneiweber.com.br" # the base hostname & protocol for your site
+google_analytics: "UA-921545-12"
+language: "pt-BR"

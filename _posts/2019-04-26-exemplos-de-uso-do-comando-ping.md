@@ -1,6 +1,7 @@
 ---
 id: 821
 title: Exemplos de uso do comando ping
+subtitle: Alguns usos pouco conhecidos do comando ping.
 date: 2019-04-26T09:56:31-03:00
 author: Sidnei Weber
 layout: post
