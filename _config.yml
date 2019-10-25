@@ -1,68 +1,50 @@
-# Site Settings
 name: Sidnei Weber
 title: Sidnei Weber | Life of Sysadmin
-description: A rotina de um Sysadmin. Falando sobre tecnologia, linux, aws, scripts e etc's
+description: 'A rotina de um Sysadmin. Falando sobre tecnologia, linux, aws, scripts e etc''s'
 tags:
   - blog
-  - template
   - jekyll
-  - theme
-  - netlify
+  - aws
+  - linux
+  - sysadmin
+  - devops
 email: sidnei.weber@gmail.com
 disqus_username: sidneiweber
 show_hero: true
-
-
-# Social Media Settings
-# Remove the item if you don't need it
 github_username: sidneiweber
 facebook_username: sidnei.weber
-twitter_username:
-instagram_username:
+twitter_username: null
+instagram_username: null
 linkedin_username: sidnei-weber-143864169
 medium_username: sidnei.weber
-
-
-# Theme Settings
-themeColor: "#ff0a16"
-primaryDark: "#141414"
-accentDark: "#ffffff"
-lightGray: "#f2f2f2"
-texts: "#333333"
-
-
-# Posts Settings
+themeColor: '#ff0a16'
+primaryDark: '#141414'
+accentDark: '#ffffff'
+lightGray: '#f2f2f2'
+texts: '#333333'
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
 two_columns_layout: true
-
-
-# Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sidneiweber.com.br" # the base hostname & protocol for your site
-google_analytics: "UA-921545-12"
-language: "pt-BR"
-
-
-# Build settings
+baseurl: ''
+url: 'https://sidneiweber.com.br'
+google_analytics: UA-921545-12
+language: pt-BR
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: '/:title/'
 collections:
   authors:
     output: true
-paginate_path: "/page/:num/"
-
-# Content paginator
+paginate_path: '/page/:num/'
 paginate_content:
   enabled: true
   debug: false
   collections:
     - posts
   auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
+  separator: '--page-break--'
+  permalink: '/:num/'
   seo_canonical: true
   properties:
     part:
@@ -71,12 +53,9 @@ paginate_content:
       is_generated: true
     single:
       is_generated: true
-
-# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
-  
 links:
   - title: Home
     url: /
@@ -90,16 +69,13 @@ projetos:
 ferramentas:
   - title: Password Generator
     url: /password-generator.html
-
-# Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  - package.json
+  - package-lock.json
+  - src
+  - node_modules
+  - initpost.sh
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - README.md
