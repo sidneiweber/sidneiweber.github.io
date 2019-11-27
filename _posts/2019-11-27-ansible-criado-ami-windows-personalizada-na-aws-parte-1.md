@@ -42,7 +42,7 @@ ansible_ssh_user=Administrator
 ansible_ssh_pass=myTempPassword123!
 ```
 
-Após alguns instantes estando a instância disponível para acesso. Podemos testar usando o módulo do ansible [win_ping](https://docs.ansible.com/ansible/latest/modules/win_ping_module.html). No nosso exemplo usando o comando *ansible windows -i hosts -m winping* o retorno deve ser parecido com esse:
+Após alguns instantes estando a instância disponível para acesso. Podemos testar usando o módulo do ansible [win_ping](https://docs.ansible.com/ansible/latest/modules/win_ping_module.html). No nosso exemplo usando o comando *ansible windows -i hosts -m win_ping*. O retorno deve ser parecido com esse:
 
 ![Win Ping](http://www.sidneiweber.com.br/wp-content/aws-ami/win-ping.png) 
 
