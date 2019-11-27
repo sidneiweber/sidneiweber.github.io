@@ -23,7 +23,7 @@ Invoke-Expression ((New-Object System.Net.Webclient).DownloadString('https://raw
 </powershell>
 ```
 
-![UserData](http://www.sidneiweber.com.br/wp-content/aws-admi/user-data.png)
+![UserData](http://www.sidneiweber.com.br/wp-content/aws-ami/user-data.png)
 
 Caso você use o [Packer](https://www.packer.io) para gerar suas imagens esse script também por ser usado no parâmetro **user_data_file**.
 
@@ -44,6 +44,6 @@ ansible_ssh_pass=myTempPassword123!
 
 Após alguns instantes estando a instância disponível para acesso. Podemos testar usando o módulo do ansible [win_ping](https://docs.ansible.com/ansible/latest/modules/win_ping_module.html). No nosso exemplo usando o comando *ansible windows -i hosts -m winping* o retorno deve ser parecido com esse:
 
-![Win Ping](http://www.sidneiweber.com.br/wp-content/aws-admi/win_ping.png) 
+![Win Ping](http://www.sidneiweber.com.br/wp-content/aws-ami/win_ping.png) 
 
 Bom essa é a primeira etapa, na parte 2 iremos ver como configurar o Windows e gerar uma nova AMI personalizada usando o Ansible
