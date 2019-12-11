@@ -60,7 +60,7 @@ zabbix:
     ZS_DBHost: zabbix.db
     ZS_DBUser: zabbix
     ZS_DBPassword: senha
-TERM: xterm
+    TERM: xterm
 ```
 
 E iremos executar o seguinte comando:
