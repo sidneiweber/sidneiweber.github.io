@@ -61,6 +61,8 @@ links:
     url: /
   - title: Sobre
     url: /pages/sobre/
+  - title: Contato
+    url: /contato/
 projetos:
   - title: Sistema Vendas PHP
     url: /projetos/sistema-vendas-php/
