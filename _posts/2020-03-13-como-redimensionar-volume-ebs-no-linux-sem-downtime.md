@@ -2,7 +2,7 @@
 layout: post
 title: Como redimensionar volume EBS no Linux sem downtime
 subtitle: Como redimensionar volume principal no Linux EC2 sem precisar reiniciar
-description: Como usar Ansible e Windows na AWS para criar AMI personalizada
+description: Como redimensionar volume principal no Linux EC2 sem precisar reiniciar
 date: '2020-03-13 21:54:28'
 tags:
 - ''
