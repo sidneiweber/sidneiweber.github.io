@@ -37,7 +37,7 @@ permalink: '/:title/'
 collections:
   authors:
     output: true
-paginate: 8
+#paginate: 8
 paginate_path: '/page/:num/'
 paginate_content:
   enabled: true
