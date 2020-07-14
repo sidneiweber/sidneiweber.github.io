@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5f205b3a-73c2-472c-b052-82b95bdf36b7/deploy-status)](https://app.netlify.com/sites/sleepy-bhabha-00eedf/deploys)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sidneiweber_sidneiweber.github.io)](https://sonarcloud.io/dashboard?id=sidneiweber_sidneiweber.github.io)
 
 # Jekflix Template
 
