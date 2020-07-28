@@ -24,7 +24,7 @@ email: sidnei.weber@gmail.com
 
 # Comments
 discus-identifier: sidneiweber
-site.analytics: : UA-921545-12
+site.analytics: UA-921545-12
 # Paginate
 paginate: 5
 paginate_path: /page:num/
