@@ -10,7 +10,7 @@ categories:
   - Linux
   - Servidores
 ---
-[<img class="alignnone size-large wp-image-112" alt="Screen-Shot-2014-01-28-at-11.09.031" src="http://sidneiweber.com.br/wp-content/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?w=605" width="605" height="384" srcset="https://sidneiweber.com.br/wp-content/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png 1024w, https://sidneiweber.com.br/wp-content/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031-300x191.png 300w, https://sidneiweber.com.br/wp-content/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031-768x488.png 768w" sizes="(max-width: 605px) 100vw, 605px" />](http://sidneiweber.com.br/wp-content/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png)
+[<img class="alignnone size-large wp-image-112" alt="Screen-Shot-2014-01-28-at-11.09.031" src="/assets/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?w=605" width="605" height="384" srcset="https://sidneiweber.com.br/assets/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png 1024w, https://sidneiweber.com.br/assets/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031-300x191.png 300w, https://sidneiweber.com.br/assets/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031-768x488.png 768w" sizes="(max-width: 605px) 100vw, 605px" />](/assets/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png)
 
 <pre>cd /var/www/
 # git clone https://github.com/afaqurk/linux-dash.git

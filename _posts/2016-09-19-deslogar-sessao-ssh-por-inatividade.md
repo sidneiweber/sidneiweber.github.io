@@ -22,7 +22,7 @@ wp_review_bordercolor:
   - '#e7e7e7'
 wp_review_user_review_type:
   - star
-image: /wp-content/uploads/2016/09/Artigo_07_002-220x162.jpg
+img: /uploads/2016/09/Artigo_07_002-220x162.jpg
 categories:
   - SSH
 tags:

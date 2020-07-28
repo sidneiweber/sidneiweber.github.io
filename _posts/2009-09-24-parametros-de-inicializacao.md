@@ -4,7 +4,6 @@ title: Parâmetros de Inicialização
 date: 2009-09-24T20:10:48-03:00
 author: Sidnei Weber
 layout: post
-guid: http://clancpd.com.br/sidneiweber/?p=12
 permalink: /parametros-de-inicializacao/
 categories:
   - Boot

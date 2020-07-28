@@ -22,7 +22,7 @@ wp_review_bordercolor:
   - '#e7e7e7'
 wp_review_user_review_type:
   - star
-image: /wp-content/uploads/2016/07/mysql_hosting-220x162.png
+img: /uploads/2016/07/mysql_hosting-220x162.png
 categories:
   - Mysql
 tags:
@@ -57,19 +57,19 @@ Começamos pela instalação, que nas distribuições Debian like seria:
 
 Esse comando instalará a última versão do Mysql e do administrador visual que mais gosto o PHPmyadmin. A instalação irá pedir uma senha para o usuário padrão (root):
 
-<img class="alignnone size-full wp-image-257" src="http://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_003.png" alt="Seleção_003" width="719" height="401" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_003.png 719w, https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_003-300x167.png 300w" sizes="(max-width: 719px) 100vw, 719px" /> 
+<img class="alignnone size-full wp-image-257" src="/assets/img/uploads/2016/07/Seleção_003.png" alt="Seleção_003" width="719" height="401" srcset="https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_003.png 719w, https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_003-300x167.png 300w" sizes="(max-width: 719px) 100vw, 719px" /> 
 
 A confirmação da senha:
 
-<img class="alignnone size-full wp-image-259" src="http://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_004.png" alt="Seleção_004" width="713" height="386" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_004.png 713w, https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_004-300x162.png 300w" sizes="(max-width: 713px) 100vw, 713px" /> 
+<img class="alignnone size-full wp-image-259" src="/assets/img/uploads/2016/07/Seleção_004.png" alt="Seleção_004" width="713" height="386" srcset="https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_004.png 713w, https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_004-300x162.png 300w" sizes="(max-width: 713px) 100vw, 713px" /> 
 
 Em qual servidor web o Phpmyadmin irá rodar, no meu caso apache:
 
-<img class="alignnone size-full wp-image-260" src="http://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_005.png" alt="Seleção_005" width="711" height="392" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_005.png 711w, https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_005-300x165.png 300w" sizes="(max-width: 711px) 100vw, 711px" /> 
+<img class="alignnone size-full wp-image-260" src="/assets/img/uploads/2016/07/Seleção_005.png" alt="Seleção_005" width="711" height="392" srcset="https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_005.png 711w, https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_005-300x165.png 300w" sizes="(max-width: 711px) 100vw, 711px" /> 
 
 E diga não a próxima opção:
 
-<img class="alignnone size-full wp-image-261" src="http://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_006.png" alt="Seleção_006" width="717" height="392" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_006.png 717w, https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_006-300x164.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> 
+<img class="alignnone size-full wp-image-261" src="/assets/img/uploads/2016/07/Seleção_006.png" alt="Seleção_006" width="717" height="392" srcset="https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_006.png 717w, https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_006-300x164.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> 
 
 ## <span id="Administrando_via_linha_de_comando">Administrando via linha de comando</span>
 
@@ -122,7 +122,7 @@ Exibir informações das tabelas, a formação das informações:
 
 <pre class="lang:mysql decode:true ">describe nometabela;</pre>
 
-##<img class="alignnone size-full wp-image-269" src="http://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_007.png" alt="Seleção_007" width="555" height="202" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_007.png 555w, https://sidneiweber.com.br/wp-content/uploads/2016/07/Seleção_007-300x109.png 300w" sizes="(max-width: 555px) 100vw, 555px" /> 
+##<img class="alignnone size-full wp-image-269" src="/assets/img/uploads/2016/07/Seleção_007.png" alt="Seleção_007" width="555" height="202" srcset="https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_007.png 555w, https://sidneiweber.com.br/assets/img/uploads/2016/07/Seleção_007-300x109.png 300w" sizes="(max-width: 555px) 100vw, 555px" /> 
 
 ## <span id="Exportar_e_importar_via_linha_de_comando">Exportar e importar via linha de comando</span>
 

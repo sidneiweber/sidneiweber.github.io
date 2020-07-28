@@ -6,7 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=559
 permalink: /instalacao-postresql-no-centos-a-partir-do-codigo-fonte/
-image: /wp-content/uploads/2018/05/download.png
+img: /uploads/2018/05/download.png
 categories:
   - Postgresql
 tags:
@@ -72,6 +72,6 @@ Type "help" for help.
 teste=#
 ```
 
-<img class="alignnone size-full wp-image-563" src="http://sidneiweber.com.br/wp-content/uploads/2018/05/Captura-de-tela-de-2018-05-03-21-27-17.png" alt="" width="835" height="230" srcset="https://sidneiweber.com.br/wp-content/uploads/2018/05/Captura-de-tela-de-2018-05-03-21-27-17.png 835w, https://sidneiweber.com.br/wp-content/uploads/2018/05/Captura-de-tela-de-2018-05-03-21-27-17-300x83.png 300w, https://sidneiweber.com.br/wp-content/uploads/2018/05/Captura-de-tela-de-2018-05-03-21-27-17-768x212.png 768w" sizes="(max-width: 835px) 100vw, 835px" />
+<img class="alignnone size-full wp-image-563" src="/assets/img/uploads/2018/05/Captura-de-tela-de-2018-05-03-21-27-17.png" alt="" width="835" height="230" />
 
 Instalação finalizada com sucesso 🙂

@@ -6,27 +6,7 @@ date: '2017-02-15 10:44:41 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=380
 permalink: "/introducao-firewall-iptables-comecando/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_color:
-- "#1e73be"
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-image: "/wp-content/uploads/2017/02/Sele��o_001.png"
+img: "/uploads/2017/02/Selecao_001.png"
 categories:
 - Firewall
 tags:
@@ -94,7 +74,7 @@ tags:
 O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.  
 Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o  redirecinamento correto, servindo de filtro.
 
-<img class="alignnone size-full wp-image-382" src="http://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1.png" alt="" width="804" height="206" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1.png 804w, https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1-300x77.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/02/firewall1-768x197.png 768w" sizes="(max-width: 804px) 100vw, 804px" />
+<img class="alignnone size-full wp-image-382" src="/assets/img/uploads/2017/02/firewall1.png" />
 
 O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.4 substituindo o ipchains.  
 Ele se baseia nas regras e parametros passados para fazer a filtragem dos pacotes, ou seja, compara as regras com os pacotes.

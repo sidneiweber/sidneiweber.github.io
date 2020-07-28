@@ -6,27 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=431
 permalink: /monitoramento-via-tcp-no-nagios/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19.png
+img: /uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19.png
 categories:
   - Nagios
 ---
@@ -162,7 +142,7 @@ killall nagios
 
 Pronto, primeiro serviço monitorado, e isso pode ser feito com qualquer site ou serviço de ping, uma monitoração simples, mas não deixa de ser um monitoramento.
 
-<img class="alignnone size-full wp-image-432" src="http://sidneiweber.com.br/wp-content/uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19.png" alt="" width="1011" height="280" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19.png 1011w, https://sidneiweber.com.br/wp-content/uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19-300x83.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19-768x213.png 768w" sizes="(max-width: 1011px) 100vw, 1011px" /> 
+<img class="alignnone size-full wp-image-432" src="/assets/img/uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19.png" alt="" width="1011" height="280" /> 
 
 &nbsp;
 

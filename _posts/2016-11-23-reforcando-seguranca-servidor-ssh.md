@@ -6,27 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=276
 permalink: /reforcando-seguranca-servidor-ssh/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2016/09/Artigo_07_002-220x162.jpg
+img: /uploads/2016/09/Artigo_07_002-220x162.jpg
 categories:
   - Linux
   - Servidores
@@ -103,13 +83,13 @@ Gerar a chave
 
 <pre class="lang:sh decode:true">ssh-keygen -b 1024 -t dsa</pre>
 
-<img class="alignnone size-full wp-image-278" src="http://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_009.png" alt="selecao_009" width="595" height="386" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_009.png 595w, https://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_009-300x195.png 300w" sizes="(max-width: 595px) 100vw, 595px" /> 
+<img class="alignnone size-full wp-image-278" src="/assets/img/uploads/2016/09/Seleção_009.png" /> 
 
 Copiar para a outra máquina a chave pública
 
 <pre class="lang:sh decode:true ">ssh-copy-id -i ~/.ssh/id_dsa.pub 192.168.1.100</pre>
 
-<img class="alignnone size-full wp-image-279" src="http://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_010.png" alt="selecao_010" width="1052" height="188" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_010.png 1052w, https://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_010-300x54.png 300w, https://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_010-768x137.png 768w, https://sidneiweber.com.br/wp-content/uploads/2016/09/Seleção_010-1024x183.png 1024w" sizes="(max-width: 1052px) 100vw, 1052px" /> 
+<img class="alignnone size-full wp-image-279" src="/assets/img/uploads/2016/09/Seleção_010.png" /> 
 
 Verificar se o arquivo foi copiado para o destino em .ssh/authorized_keys e modificar a permissão para 600, por questões de segurança
 

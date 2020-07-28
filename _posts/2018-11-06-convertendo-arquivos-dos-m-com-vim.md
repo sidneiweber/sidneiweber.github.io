@@ -4,7 +4,7 @@ title: Convertendo arquivos DOS ^M com Vim
 date: 2018-11-06T10:03:27-03:00
 author: Sidnei Weber
 layout: post
-image: /wp-content/character-data.png
+img: /character-data.png
 guid: http://sidneiweber.com.br/?p=659
 permalink: /convertendo-arquivos-dos-m-com-vim/
 wp_review_type:

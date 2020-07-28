@@ -4,43 +4,9 @@ title: Comando fuser - Quem mexeu no meu arquivo
 id: 640
 date: '2018-11-06 09:28:53 -0300'
 author: Sidnei Weber
-image: "/wp-content/fuser.png"
+img: "/fuser.png"
 guid: http://sidneiweber.com.br/?p=640
 permalink: "/comando-fuser-quem-mexeu-no-meu-arquivo/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_type:
-- none
-wp_review_custom_location:
-- 0
-wp_review_custom_colors:
-- 0
-wp_review_custom_author:
-- 0
-wp_review_hide_desc:
-- 0
-wp_review_total:
-- 0
-wp_review_schema:
-- 
-wp_review_rating_schema:
-- author
-wp_review_show_schema_data:
-- 0
-wp_review_box_template:
-- default
 categories:
 - Linux
 ---

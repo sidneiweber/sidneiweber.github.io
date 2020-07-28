@@ -8,7 +8,7 @@ guid: https://sidiweber.wordpress.com/?p=219
 permalink: /systemctl-para-administrar-servicos-no-systemd/
 geo_public:
   - "0"
-image: /wp-content/uploads/2016/05/img_3127-220x162.jpg
+img: /uploads/2016/05/img_3127-220x162.jpg
 categories:
   - Linux
 tags:

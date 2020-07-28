@@ -5,7 +5,7 @@ subtitle: Passo a passo da instalação usando Docker.
 description: Passo a passo da instalação usando Docker.
 tags:
 - ansible
-image: "/wp-content/ansible.png"
+img: "/ansible.png"
 ---
 
 Ansible AWX é a versão OpenSource do [ansible Tower](https://www.ansible.com/products/tower), produto  comercial desenvolvido pela Red Hat. O AWX fornece uma interface de usuário baseada na Web, API REST e um mecanismo de tarefas construído sobre o Ansible.
@@ -14,7 +14,7 @@ Neste tutorial, mostrarei como instalar e configurar o AWX usando o Docker.
 
 Desabilitar SELinux:
 
-```bash
+```shell
 [root@awx installer]# systemctl stop firewalld
 [root@awx installer]# systemctl disable firewalld
 Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
@@ -36,7 +36,7 @@ yum install -y yum-utils device-mapper-persistent-data lvm2 ansible git python-d
 
 Configurar repositório stable do Docker e instalá-lo
 
-```bash
+```shell
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum install docker-ce -y
 ```
@@ -86,4 +86,4 @@ ada52935513a        postgres:9.6              "docker-entrypoint.s."   19 minute
 Para acessar basta acessar no navegador o endereço do seu computador. Se aparecer a tela login está tudo pronto para usar.
 O usuário para login é "admin" e a senha é "password".
 
-![Login AWX](http://www.sidneiweber.com.br/wp-content/awx.jpg)
+![Login AWX](/assets/img/awx.jpg)

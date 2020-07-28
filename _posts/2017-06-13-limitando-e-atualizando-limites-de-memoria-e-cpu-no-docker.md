@@ -6,22 +6,6 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=451
 permalink: /limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
 categories:
   - Docker
 ---
@@ -29,7 +13,7 @@ Bom hoje vamos seguir com nosso aprendizado em docker, já vimos sobre <a href="
 
 Antes da dica, vamos a outra dica :), com o comando _**docker stats**_ podemos ver o consumo de nossos containers:
 
-<img src="http://sidneiweber.com.br/wp-content/uploads/2017/06/Captura-de-tela_2017-06-13_13-47-34-1024x79.png" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/06/Captura-de-tela_2017-06-13_13-47-34-1024x79.png 1024w, https://sidneiweber.com.br/wp-content/uploads/2017/06/Captura-de-tela_2017-06-13_13-47-34-300x23.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/06/Captura-de-tela_2017-06-13_13-47-34-768x59.png 768w, https://sidneiweber.com.br/wp-content/uploads/2017/06/Captura-de-tela_2017-06-13_13-47-34.png 1033w" />
+<img src="/assets/img/uploads/2017/06/Captura-de-tela_2017-06-13_13-47-34-1024x79.png" />
 
 Agora vamos as nossas dicas de hoje.
 

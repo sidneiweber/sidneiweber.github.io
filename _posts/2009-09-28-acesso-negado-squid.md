@@ -4,7 +4,6 @@ title: Acesso negado - Squid
 id: 26
 date: '2009-09-28 19:11:41 -0300'
 author: Sidnei Weber
-guid: http://clancpd.com.br/sidneiweber/?p=26
 permalink: "/acesso-negado-squid/"
 categories:
 - Squid

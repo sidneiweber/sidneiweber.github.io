@@ -6,7 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=282
 permalink: /gestao-corporativa-com-software-livre/
-image: /wp-content/uploads/2016/10/Seleção_011-220x162.png
+img: /uploads/2016/10/Seleção_011-220x162.png
 categories:
   - Diversos
   - Linux

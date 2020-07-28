@@ -6,27 +6,7 @@ date: '2017-09-05 13:55:37 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=475
 permalink: "/seguranca-da-informacao-o-que-preciso-saber/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_color:
-- "#1e73be"
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-image: "/wp-content/uploads/2017/09/Entenda-o-que-Segurana-da-Informao-e-reduza-riscos-na-empresa.png"
+img: "/uploads/2017/09/Entenda-o-que-Segurana-da-Informao-e-reduza-riscos-na-empresa.png"
 categories:
 - Segurança
 ---
@@ -96,7 +76,7 @@ Com a evolução da internet a empresas ampliaram seus aspectos de negócio, che
 
 Para a segurança da informação é importante lembrar que a proteção é indiferente de onde a informação esteja, papel, computador, trafegando na rede, backup.
 
-<img class="alignnone size-medium wp-image-477" src="http://sidneiweber.com.br/wp-content/uploads/2017/09/seguranca-da-informacao-em-profundidade-300x186.jpg" alt="" width="300" height="186" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/09/seguranca-da-informacao-em-profundidade-300x186.jpg 300w, https://sidneiweber.com.br/wp-content/uploads/2017/09/seguranca-da-informacao-em-profundidade.jpg 540w" sizes="(max-width: 300px) 100vw, 300px" /> 
+<img class="alignnone size-medium wp-image-477" src="/assets/img/uploads/2017/09/seguranca-da-informacao-em-profundidade-300x186.jpg" alt="" width="300" height="186" /> 
 
 #### <span id="O_que_um_ataque_a_essas_informacoes_pode_acarretar">O que um ataque a essas informações pode acarretar:</span>
 

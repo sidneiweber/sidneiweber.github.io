@@ -6,13 +6,8 @@ description: Primeitos passos usando o shell do Mongo.
 date: 2019-04-02T16:59:07-03:00
 author: Sidnei Weber
 layout: post
-guid: https://sidneiweber.com.br/?p=813
 permalink: /iniciando-com-mongodb/
-count_items:
-  - "0"
-wp_review_type:
-  - none
-image: /wp-content/uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
+img: /uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
 categories:
   - Mongo
 tags:

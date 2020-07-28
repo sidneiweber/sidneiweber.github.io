@@ -6,11 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: https://sidneiweber.com.br/?p=712
 permalink: /identificar-sistema-operacional-com-ping/
-count_items:
-  - "0"
-wp_review_type:
-  - none
-image: /wp-content/ping-command.png
+img: /ping-command.png
 categories:
   - Linux
 ---

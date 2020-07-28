@@ -20,4 +20,4 @@ Este plugin coloca WooCommerce em destaque na administração do WordPress, com 
 
 [Link para o plugin.](http://wordpress.org/plugins/woocommerce-domination/)
 
-<a href="http://sidneiweber.site11.com/wp-content/uploads/2014/03/screenshot-1.png" target="_blank"><img class="alignnone size-full wp-image-209" src="http://sidneiweber.site11.com/wp-content/uploads/2014/03/screenshot-1.png" alt="WooCommerce" width="920" height="764" /></a>
+<a href="http://sidneiweber.site11.com/assets/img/uploads/2014/03/screenshot-1.png" target="_blank"><img class="alignnone size-full wp-image-209" src="http://sidneiweber.site11.com/assets/img/uploads/2014/03/screenshot-1.png" alt="WooCommerce" width="920" height="764" /></a>

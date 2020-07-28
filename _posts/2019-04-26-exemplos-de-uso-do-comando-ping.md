@@ -6,13 +6,8 @@ description: Alguns usos pouco conhecidos do comando ping.
 date: 2019-04-26T09:56:31-03:00
 author: Sidnei Weber
 layout: post
-guid: https://sidneiweber.com.br/?p=821
 permalink: /exemplos-de-uso-do-comando-ping/
-count_items:
-  - "0"
-wp_review_type:
-  - none
-image: /wp-content/ping-command.png
+img: /ping-command.png
 categories:
   - Linux
   - Rede

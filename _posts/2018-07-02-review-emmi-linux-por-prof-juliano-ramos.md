@@ -4,7 +4,6 @@ title: Review Emmi Linux por Prof. Juliano Ramos
 date: 2018-07-02T19:51:27-03:00
 author: Sidnei Weber
 layout: post
-guid: http://sidneiweber.com.br/?p=587
 permalink: /review-emmi-linux-por-prof-juliano-ramos/
 wp_review_location:
   - bottom
@@ -25,4 +24,6 @@ wp_review_user_review_type:
 categories:
   - Linux
 ---
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rUNrFIn9gT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>

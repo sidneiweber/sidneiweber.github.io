@@ -6,11 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: https://sidneiweber.com.br/?p=721
 permalink: /instalando-ultima-versao-ansible-no-ubuntu-debian/
-count_items:
-  - "0"
-wp_review_type:
-  - none
-image: "/wp-content/ansible_ubuntu.png"
+img: "/ansible_ubuntu.png"
 categories:
   - Ansible
   - Debian

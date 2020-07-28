@@ -1,6 +1,10 @@
+# Profile information
 name: Sidnei Weber
 title: Sidnei Weber | Life of Sysadmin
 description: 'A rotina de um Sysadmin. Falando sobre tecnologia, linux, aws, scripts e etc''s'
+permalink: ':title/'
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://sidneiweber.com.br'
 tags:
   - blog
   - jekyll
@@ -9,77 +13,29 @@ tags:
   - sysadmin
   - devops
   - shell
-email: sidnei.weber@gmail.com
-disqus_username: sidneiweber
-show_hero: false
-github_username: sidneiweber
-facebook_username: sidnei.weber
-twitter_username: null
-instagram_username: null
+
+# Social
+github: sidneiweber
 linkedin_username: sidnei-weber-143864169
-medium_username: sidnei.weber
-themeColor: '#ff0a16'
-primaryDark: '#141414'
-accentDark: '#ffffff'
-lightGray: '#f2f2f2'
-texts: '#333333'
-show_time_bar: true
-show_modal_on_exit: true
-show_modal_on_finish_post: true
-two_columns_layout: false
-baseurl: ''
-url: 'https://sidneiweber.com.br'
-google_analytics: UA-921545-12
-language: pt-BR
+medium: sidnei.weber
+
+# Contact form
+email: sidnei.weber@gmail.com
+
+# Comments
+discus-identifier: sidneiweber
+site.analytics: : UA-921545-12
+# Paginate
+paginate: 5
+paginate_path: /page:num/
+
+# Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: '/:title/'
-collections:
-  authors:
-    output: true
-#paginate: 8
-paginate_path: '/page/:num/'
-paginate_content:
-  enabled: true
-  debug: false
-  collections:
-    - posts
-  auto: false
-  separator: '--page-break--'
-  permalink: '/:num/'
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
-plugins:
+gems:
+  - jekyll-feed
   - jekyll-paginate
-  - jekyll-paginate-content
-links:
-  - title: Home
-    url: /
-  - title: Sobre
-    url: /pages/sobre/
-  - title: Contato
-    url: /contato/
-projetos:
-  - title: Sistema Vendas PHP
-    url: /projetos/sistema-vendas-php/
-  - title: SCP Fácil
-    url: /projetos/scp-facil/
-ferramentas:
-  - title: Password Generator
-    url: /password-generator.html
 exclude:
-  - package.json
-  - package-lock.json
-  - src
-  - node_modules
-  - initpost.sh
   - Gemfile
   - Gemfile.lock
-  - gulpfile.js
-  - README.md
+include: [_pages]

@@ -4,7 +4,6 @@ title: Atualizar Openfire
 date: 2009-09-29T12:19:12-03:00
 author: Sidnei Weber
 layout: post
-guid: http://clancpd.com.br/sidneiweber/?p=38
 permalink: /atualizar-openfire/
 categories:
   - Openfire

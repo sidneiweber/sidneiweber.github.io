@@ -4,24 +4,8 @@ title: 'VirtualBox: Reduzindo imagens VDI'
 date: 2009-09-29T12:35:08-03:00
 author: Sidnei Weber
 layout: post
-guid: http://clancpd.com.br/sidneiweber/?p=39
 permalink: /virtualbox-reduzindo-imagens-vdi/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
+img: "/virtualbox.jpg"
 categories:
   - Virtualização
 ---
@@ -33,7 +17,9 @@ Para resolver isto, é preciso seguir as seguintes etapas:
 
 2) Rode o seguinte programa (na máquina hospedeira):
 
-<pre class="lang:sh decode:true ">vboxmanage modifyvdi nome_do_seu_arquivo.vdi compact</pre>
+```bash
+vboxmanage modifyvdi nome_do_seu_arquivo.vdi compact
+```
 
 Aqui consegui reduzir de 5 para 3,8GB o meu arquivo.
 

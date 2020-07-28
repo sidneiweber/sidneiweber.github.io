@@ -4,7 +4,6 @@ title: Apache restrito httpd.conf
 date: 2009-09-28T18:51:29-03:00
 author: Sidnei Weber
 layout: post
-guid: http://clancpd.com.br/sidneiweber/?p=19
 permalink: /apache-restrito-httpdconf/
 tags:
   - ldap

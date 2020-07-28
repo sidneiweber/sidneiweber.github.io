@@ -6,7 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=550
 permalink: /instalando-e-gerenciando-programas-no-windows-com-chocolatey/
-image: /wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-17-20-38-48.png
+img: /uploads/2018/04/Captura-de-tela-de-2018-04-17-20-38-48.png
 categories:
   - Windows
 tags:
@@ -41,7 +41,7 @@ Caso queiramos instalar o VLC por exemplo:
 choco install vlc
 ```
 
-<img src="http://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-17-20-32-04.png" alt="" width="647" height="348" srcset="https://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-17-20-32-04.png 647w, https://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-17-20-32-04-300x161.png 300w" sizes="(max-width: 647px) 100vw, 647px" />
+<img src="/assets/img/uploads/2018/04/Captura-de-tela-de-2018-04-17-20-32-04.png" alt="" width="647" height="348" />
 
 Há também uma página onde pode se verificar uma lista com os pacotes pelo link <a href="https://chocolatey.org/packages." target="_blank" rel="noopener">https://chocolatey.org/packages.</a>
 

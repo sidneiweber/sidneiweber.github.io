@@ -3,7 +3,7 @@ layout: post
 title: Reduzindo custos na AWS (EC2) - Parte 1
 subtitle: Usando o desligamento programado podemos reduzir custos.
 description: Usando o desligamento programado podemos reduzir custos.
-image: "/wp-content/aws/0.jpg"
+img: "/aws/0.jpg"
 tags:
 - aws
 - ec2
@@ -55,14 +55,14 @@ Precisaremos de uma função IAM com permissão para acessar os recursos EC2. Po
 ```
 
 Acessando Lambda no Console da AWS, clicaremos em criar uma função:
-![Criar função](http://www.sidneiweber.com.br/wp-content/aws/1.png)
+![Criar função](/assets/img/aws/1.png)
 
 Iremos escolher a opção para criar do zero, escolheremos um nome, a linguagem Python 2.7, usar uma função existente e escolher a função IAM criada anteriormente. A primeira função será para realizar o stop das instâncias.
-![](http://www.sidneiweber.com.br/wp-content/aws/2.png)
+![](/assets/img/aws/2.png)
 
 No código da função (imagem abaixo) iremos alterar para o seguinte código, lembrando de alterar na linha 3 a região utilizada e na linha 5 os seus Instances IDs, se tiver mais de um basta separar por vírgula:
 
-![](http://www.sidneiweber.com.br/wp-content/aws/3.png)
+![](/assets/img/aws/3.png)
 
 ```python
 import boto3
@@ -93,15 +93,15 @@ def lambda_handler(event, context):
 
 Agora vamos a criação do gatilho para acionar os eventos do Cloudwatch. Clicando em adicionar gatilho, vamos escolher a opção Eventos do Cloudwatch.
 
-![](http://www.sidneiweber.com.br/wp-content/aws/4.png)
-![](http://www.sidneiweber.com.br/wp-content/aws/5.png)
+![](/assets/img/aws/4.png)
+![](/assets/img/aws/5.png)
 
 Vamos criar uma nova regra para esse gatilho, dando um nome e escolhendo a Expressão de programação, que é uma expressão Cron. Não esquecendo que esse cron é ajustado para UTC. Podemos adicionar o gatilho
 
-![](http://www.sidneiweber.com.br/wp-content/aws/6.png)
+![](/assets/img/aws/6.png)
 
 Faremos o mesmo na função de Start
 
-![](http://www.sidneiweber.com.br/wp-content/aws/7.png)
+![](/assets/img/aws/7.png)
 
 E está pronto, nos horários programados as instâncias definidas irão ser desligadas e ligadas, reduzindo o custo nesse tempo que irá permanecer desligadas. Qualquer dúvida ou correção basta deixar nos comentários :).

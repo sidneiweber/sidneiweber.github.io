@@ -6,23 +6,7 @@ date: '2018-06-19 20:34:23 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=525
 permalink: "/ansible-o-que-e-e-para-que-serve/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_color:
-- "#1e73be"
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-image: "/wp-content/uploads/2018/06/ansible.png"
+img: "/uploads/2018/06/ansible.png"
 categories:
 - Ansible
 - Devops

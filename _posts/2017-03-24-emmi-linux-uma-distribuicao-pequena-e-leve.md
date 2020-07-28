@@ -6,27 +6,7 @@ date: '2017-03-24 13:34:39 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=417
 permalink: "/emmi-linux-uma-distribuicao-pequena-e-leve/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_color:
-- "#1e73be"
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-image: "/wp-content/uploads/2017/03/Sele��o_009.png"
+img: "/uploads/2017/03/Selecao_009.png"
 categories:
 - Linux
 tags:

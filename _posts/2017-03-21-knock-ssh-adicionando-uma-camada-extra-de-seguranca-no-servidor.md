@@ -6,27 +6,7 @@ date: '2017-03-21 16:03:09 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=411
 permalink: "/knock-ssh-adicionando-uma-camada-extra-de-seguranca-no-servidor/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_color:
-- "#1e73be"
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-image: "/wp-content/uploads/2017/03/Sele��o_008.png"
+img: "/assets/img/uploads/2017/03/Selecao_008.png"
 categories:
 - Servidores
 - SSH
@@ -46,7 +26,7 @@ Precisamos instalar somente um pacote em nosso servidor:
 
 O arquivo de configuração fica no **_/etc/knockd.conf._** Eis a configuração padrão que veio no Debian.
 
-<img class="alignnone size-full wp-image-412" src="http://sidneiweber.com.br/wp-content/uploads/2017/03/Sele��o_007.png" alt="" width="722" height="402" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/03/Sele��o_007.png 722w, https://sidneiweber.com.br/wp-content/uploads/2017/03/Sele��o_007-300x167.png 300w" sizes="(max-width: 722px) 100vw, 722px" /> 
+<img class="alignnone size-full wp-image-412" src="/assets/img/uploads/2017/03/Selecao_007.png" alt="" width="722" height="402" /> 
 
 Eu alterei para a configuração ficar como no exemplo abaixo, sempre colocando a regra de ACCEPT na primeira linha, pois caso tenha sido bloqueada e seja adiciona no final do arquivo a regra não funcionará.
 

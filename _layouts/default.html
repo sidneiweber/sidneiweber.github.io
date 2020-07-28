@@ -1,18 +1,16 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
-<html lang="{{ site.language }}" class="no-js">
-    {% include head.html %}
-    <body class="has-push-menu">
-        {% include svg-icons.html %}
-        {% include header.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include adsense.html %}
-        {% include footer.html %}
-    </body>
-</html>
+<html lang="pt-br">
+{% include head.html %}
+<body>
 
+  {% include sidebar.html %}
+
+  <main role="main">
+    <div class="content">
+      {{content}}
+    </div>
+  </main>
+
+{% include analytics.html %}
+</body>
+</html>

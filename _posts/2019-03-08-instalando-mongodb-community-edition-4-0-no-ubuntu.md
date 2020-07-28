@@ -8,11 +8,7 @@ author: Sidnei Weber
 layout: post
 guid: https://sidneiweber.com.br/?p=801
 permalink: /instalando-mongodb-community-edition-4-0-no-ubuntu/
-count_items:
-  - "0"
-wp_review_type:
-  - none
-image: /wp-content/uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
+img: /uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
 categories:
   - Mongo
 tags:

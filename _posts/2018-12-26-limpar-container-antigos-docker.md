@@ -6,11 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=662
 permalink: /limpar-container-antigos-docker/
-wp_review_type:
-  - none
-count_items:
-  - "0"
-image: /wp-content/docker.png
+img: /docker.png
 categories:
   - Docker
 ---

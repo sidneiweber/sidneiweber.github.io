@@ -3,11 +3,9 @@ layout: post
 title: Pigz - Compactador eficiente e rápido
 subtitle: Esse compactador consegue usar múltiplos núcleos.
 description: Esse compactador consegue usar múltiplos núcleos.
-id: 611
 date: '2019-06-21 14:06:42 -0300'
 author: Sidnei Weber
-image: "/wp-content/pigz.jpg"
-guid: http://sidneiweber.com.br/?p=611
+img: "/pigz.jpg"
 permalink: "/pigz-compactador-eficiente-e-rapido/"
 comments: true
 tags:

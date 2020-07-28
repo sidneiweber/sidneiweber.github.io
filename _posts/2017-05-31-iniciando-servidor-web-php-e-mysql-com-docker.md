@@ -6,27 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=446
 permalink: /iniciando-servidor-web-php-e-mysql-com-docker/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
-image: /wp-content/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26.png
+img: /uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26.png
 categories:
   - Docker
 ---
@@ -97,6 +77,6 @@ Subiremos a aplicação com o seguinte comando:
 
 Basta acessar seu localhost, ou ip de sua máquina que o servidor estará UP. A pasta onde foi criado os arquivos anteriores será a pasta raíz do servidor web. Ao iniciar será gerado uma saída parecido com a abaixo:
 
-<img class="alignnone size-large wp-image-447" src="http://sidneiweber.com.br/wp-content/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26-1024x233.png" alt="" width="648" height="147" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26-1024x233.png 1024w, https://sidneiweber.com.br/wp-content/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26-300x68.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26-768x175.png 768w, https://sidneiweber.com.br/wp-content/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26.png 1394w" sizes="(max-width: 648px) 100vw, 648px" /> 
+<img class="alignnone size-large wp-image-447" src="/assets/img/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26-1024x233.png" alt="" width="648" height="147" /> 
 
 <a href="http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/docker-php-em-5-minutos/" target="_blank" rel="noopener noreferrer">Fonte</a>

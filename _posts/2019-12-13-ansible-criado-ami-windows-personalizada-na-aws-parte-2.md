@@ -9,7 +9,7 @@ tags:
 - aws
 - ansible
 - windows
-image: "/wp-content/aws-ami/ansible-aws.png"
+img: "/aws-ami/ansible-aws.png"
 ---
 
 Na [parte 1](https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/) aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos.  Vamos estruturar nosso projeto e manter as coisas organizadas.
@@ -47,7 +47,18 @@ volumes:
 
 Nosso arquivo hosts ficará assim. O grupo win é onde será adicionada a instância após a criação: <br />
 
-<script src="https://gist.github.com/sidneiweber/af4afb10f80cae794437753ff1ec0ded.js"></script>
+```yml
+localhost ansible_connection=local
+
+[win]
+
+[win:vars]
+ansible_connection=winrm
+ansible_ssh_port=5986
+ansible_ssh_user=Administrator
+ansible_ssh_pass="{{ win_initial_password }}"
+ansible_winrm_server_cert_validation=ignore
+```
 
 Com essas váriaveis em mãos, vamos iniciar nossa instância base já usando o userdata assim como fizemos no painel da AWS, só que dessa vez diretamente pelo ansible: <br />
 
@@ -76,27 +87,27 @@ E para rodar tudo e ser feliz basta executar: ***ansible-playbook -i hosts deplo
 
 **Iniciando a execução:**
 
-![Iniciando Instância](http://www.sidneiweber.com.br/wp-content/aws-ami/1.png)
+![Iniciando Instância](/assets/img/aws-ami/1.png)
 
 **Instância rodando na AWS:**
 
-![Instância iniciada](http://www.sidneiweber.com.br/wp-content/aws-ami/5.png)
+![Instância iniciada](/assets/img/aws-ami/5.png)
 
 **Instalando aplicações e configurações:**
 
-![Realizando deploy das aplicações](http://www.sidneiweber.com.br/wp-content/aws-ami/2.png)
+![Realizando deploy das aplicações](/assets/img/aws-ami/2.png)
 
 **Gerando a AMI e encerrando a instância base:**
 
-![Gerando a AMI e encerrando instância](http://www.sidneiweber.com.br/wp-content/aws-ami/3.png)
+![Gerando a AMI e encerrando instância](/assets/img/aws-ami/3.png)
 
 **AMI gerada no painel da AWS:**
 
-![AMI gerada](http://www.sidneiweber.com.br/wp-content/aws-ami/6.png)
+![AMI gerada](/assets/img/aws-ami/6.png)
 
 **Resumo das execuções no Ansible:**
 
-![Resumo das execuções](http://www.sidneiweber.com.br/wp-content/aws-ami/4.png)
+![Resumo das execuções](/assets/img/aws-ami/4.png)
 
 
 Referencia: http://blog.rolpdog.com/2015/09/manage-stock-windows-amis-with-ansible_3.html

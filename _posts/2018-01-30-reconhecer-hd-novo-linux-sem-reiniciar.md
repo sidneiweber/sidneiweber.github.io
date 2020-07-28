@@ -10,7 +10,7 @@ wp_review_user_reviews:
   - "0"
 wp_review_review_count:
   - "0"
-image: /wp-content/uploads/2018/01/vmware_client_failed.jpg
+img: /uploads/2018/01/vmware_client_failed.jpg
 categories:
   - Linux
   - Virtualização

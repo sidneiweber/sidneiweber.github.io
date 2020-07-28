@@ -24,7 +24,7 @@ wp_review_bordercolor:
   - '#e7e7e7'
 wp_review_user_review_type:
   - star
-image: /wp-content/uploads/2015/11/Java_620X0-220x162.jpg
+img: /uploads/2015/11/Java_620X0-220x162.jpg
 categories:
   - Arch
   - Java

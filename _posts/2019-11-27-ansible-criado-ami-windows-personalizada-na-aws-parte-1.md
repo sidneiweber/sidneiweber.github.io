@@ -8,7 +8,7 @@ tags:
 - ''
 - aws
 - ansible
-image: "/wp-content/aws-ami/ansible-aws.png"
+img: "/aws-ami/ansible-aws.png"
 ---
 
 Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. [Conectando em uma instância Windows](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html).
@@ -23,7 +23,7 @@ Invoke-Expression ((New-Object System.Net.Webclient).DownloadString('https://raw
 </powershell>
 ```
 
-![UserData](http://www.sidneiweber.com.br/wp-content/aws-ami/user-data.png)
+![UserData](/assets/img/aws-ami/user-data.png)
 
 Caso você use o [Packer](https://www.packer.io) para gerar suas imagens esse script também por ser usado no parâmetro **user_data_file**.
 
@@ -31,7 +31,7 @@ Na configuração de **Security Group** da instância lembre-se de liberar as po
 
 No arquivo de hosts do ansible, configure usando os dados abaixo e a senha definida no script acima
 
-```
+```yaml
 [windows]
 ip-host-windows
 
@@ -44,6 +44,6 @@ ansible_ssh_pass=myTempPassword123!
 
 Após alguns instantes estando a instância disponível para acesso. Podemos testar usando o módulo do ansible [win_ping](https://docs.ansible.com/ansible/latest/modules/win_ping_module.html). No nosso exemplo usando o comando *ansible windows -i hosts -m win_ping*. O retorno deve ser parecido com esse:
 
-![Win Ping](http://www.sidneiweber.com.br/wp-content/aws-ami/win-ping.png) 
+![Win Ping](/assets/img/aws-ami/win-ping.png) 
 
 Bom essa é a primeira etapa, na parte 2 iremos ver como configurar o Windows e gerar uma nova AMI personalizada usando o Ansible

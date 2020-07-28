@@ -6,23 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=592
 permalink: /gerenciando-servicos-com-systemd/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-image: /wp-content/uploads/2018/07/Captura-de-tela-de-2018-07-13-20-55-02.png
+img: /uploads/2018/07/Captura-de-tela-de-2018-07-13-20-55-02.png
 categories:
   - Linux
 tags:

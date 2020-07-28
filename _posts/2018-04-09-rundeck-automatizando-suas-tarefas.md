@@ -10,7 +10,7 @@ wp_review_user_reviews:
 - 0
 wp_review_review_count:
 - 0
-image: "/wp-content/uploads/2018/04/índice.png"
+img: "/uploads/2018/04/índice.png"
 categories:
 - Devops
 ---
@@ -24,7 +24,7 @@ Escrito em java e tem sua administração por uma interface web bem simples de s
 Tem uma grande vantagem pois não precisa de agentes rodando nas máquinas clientes e se consegue fazer uma verdadeira orquestração de jobs, podendo escolher se os jobs vão rodar em paralelo ou sequência e assim por diante. Se consegue criar chaves de acesso, ou chaves com senhas dentro do próprio dashboard.  
 Existe uma integração com diversos serviços:
 
-<img class="alignnone size-medium wp-image-545" src="http://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-300x142.png" alt="" width="300" height="142" srcset="https://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-300x142.png 300w, https://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-768x364.png 768w, https://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-1024x485.png 1024w, https://sidneiweber.com.br/wp-content/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32.png 1042w" sizes="(max-width: 300px) 100vw, 300px" />
+<img class="alignnone size-medium wp-image-545" src="/assets/img/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-300x142.png" alt="" width="300" height="142" />
 
 Uma das poucas desvantagens que achei até o momento, que algumas configurações como de usuários, nodes, terem que ser feitas pela linha de comando editando diretamente os arquivos.
 
@@ -54,7 +54,7 @@ tcp46      0      0  *.4440                 *.*                    LISTEN
 
 Agora basta acessarmos o IP do nosso servidor seguido da porta. Ex: http://localhost:4440 e usar a famosa senha de admin/admin
 
-<img class="alignnone size-medium wp-image-542" src="http://sidneiweber.com.br/wp-content/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-300x300.png" alt="" width="300" height="300" srcset="https://sidneiweber.com.br/wp-content/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-300x300.png 300w, https://sidneiweber.com.br/wp-content/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-150x150.png 150w, https://sidneiweber.com.br/wp-content/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-65x65.png 65w, https://sidneiweber.com.br/wp-content/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-60x60.png 60w, https://sidneiweber.com.br/wp-content/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ.png 500w" sizes="(max-width: 300px) 100vw, 300px" />
+<img class="alignnone size-medium wp-image-542" src="/assets/img/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-300x300.png" alt="" width="300" height="300" />
 
 Bom de momento vamos ficar somente com a instalação, nos próximos artigos vamos aprender a cadastrar nodes, executar comandos, scripts e demais coisas que essa baita ferramenta disponibiliza.
 

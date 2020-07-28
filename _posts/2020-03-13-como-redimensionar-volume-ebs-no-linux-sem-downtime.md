@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Como redimensionar volume EBS no Linux sem downtime
-subtitle: Como redimensionar volume principal no Linux EC2 sem precisar reiniciar
-description: Como redimensionar volume principal no Linux EC2 sem precisar reiniciar
+description: Como redimensionar volume principal no Linux EC2 sem precisar reiniciar, o famoso /. Sem nenhum downtime
 date: '2020-03-13 21:54:28'
 tags:
 - ''
 - aws
 - ec2
 - linux
-image: "/wp-content/ebs/ebs.png"
+img: "/ebs/ebs.png"
 ---
 
 Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.
@@ -21,7 +20,7 @@ Alterações em produção? Nesse caso sim :)
 - Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em **"Modify Volume"**
 
 Verá uma janela como essa:
-![Modify Volume](http://www.sidneiweber.com.br/wp-content/ebs/modify-volume.png)
+![Modify Volume](/assets/img/ebs/modify-volume.png)
 
 - Defina o novo tamanho para o volume, como no exemplo da imagem estamos estendendo o volume para 20GB
 - Confirme no botão "Modify"

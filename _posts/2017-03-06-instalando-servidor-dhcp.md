@@ -6,23 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=392
 permalink: /instalando-servidor-dhcp/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-image: /wp-content/uploads/2017/03/dhcp.png
+img: /uploads/2017/03/dhcp.png
 categories:
   - Servidores
 tags:
@@ -41,7 +25,7 @@ Fonte: <a href="https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protoco
 
 Esse seria o desenho dos envios de pacotes de um cliente para um servidor DHCP.<figure id="attachment_395" aria-describedby="caption-attachment-395" style="width: 400px" class="wp-caption alignnone">
 
-<img class="size-full wp-image-395" src="http://sidneiweber.com.br/wp-content/uploads/2017/03/dhcp.jpg" alt="" width="400" height="276" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/03/dhcp.jpg 400w, https://sidneiweber.com.br/wp-content/uploads/2017/03/dhcp-300x207.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" /> <figcaption id="caption-attachment-395" class="wp-caption-text">http://www.comutadores.com.br</figcaption></figure> 
+<img class="size-full wp-image-395" src="/assets/img/uploads/2017/03/dhcp.jpg" /> <figcaption id="caption-attachment-395" class="wp-caption-text">http://www.comutadores.com.br</figcaption></figure> 
 
 ### Instalação:
 

@@ -6,47 +6,7 @@ date: '2017-01-31 13:11:40 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=359
 permalink: "/instalando-nagios-instalacao-basica/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_total:
-- 0
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-count_items:
-- 0
-wp_review_type:
-- none
-wp_review_custom_location:
-- 0
-wp_review_custom_colors:
-- 0
-wp_review_custom_author:
-- 0
-wp_review_hide_desc:
-- 0
-wp_review_schema:
-- 
-wp_review_rating_schema:
-- author
-wp_review_show_schema_data:
-- 0
-wp_review_box_template:
-- default
-image: "/wp-content/uploads/2017/01/nagios_logo_black.png"
+img: "/uploads/2017/01/nagios_logo_black.png"
 categories:
 - Nagios
 ---
@@ -154,7 +114,7 @@ Antes de fazer qualquer alteração nas configurações, teste se está tudo ok 
 
 <pre class="lang:sh decode:true">/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg</pre><figure id="attachment_366" aria-describedby="caption-attachment-366" style="width: 717px" class="wp-caption alignnone">
 
-<img class="size-full wp-image-366" src="http://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_006.png" alt="" width="717" height="350" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_006.png 717w, https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_006-300x146.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> <figcaption id="caption-attachment-366" class="wp-caption-text">0 erros</figcaption></figure> 
+<img class="size-full wp-image-366" src="/assets/img/uploads/2017/01/Selecao_006.png" /> <figcaption id="caption-attachment-366" class="wp-caption-text">0 erros</figcaption></figure> 
 
 Caso não ocorra nenhum erro, podemos iniciar o serviço:
 
@@ -162,4 +122,4 @@ Caso não ocorra nenhum erro, podemos iniciar o serviço:
 
 Basta acessar pelo endereço IP/nagios (ip da máquina na qual foi instalado ou localhost se for local), com usuário nagiosadmin e a senha criada anteriormente. Segue um print do meu nagios com alguns hosts sendo monitorados e com uma interface diferente. Falaremos desses detalhes em outros posts.
 
-<a href="https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_005.png" target="_blank" rel="noopener"><img class="alignnone wp-image-363 size-large" src="https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_005-1024x517.png" alt="" width="648" height="327" srcset="https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_005-1024x517.png 1024w, https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_005-300x151.png 300w, https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_005-768x388.png 768w, https://sidneiweber.com.br/wp-content/uploads/2017/01/Sele��o_005.png 1579w" sizes="(max-width: 648px) 100vw, 648px" /></a>
+<a href="/assets/img/uploads/2017/01/Selecao_005.png" target="_blank" rel="noopener"></a>

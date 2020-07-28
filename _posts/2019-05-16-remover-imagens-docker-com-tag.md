@@ -8,7 +8,7 @@ author: Sidnei Weber
 layout: post
 guid: https://sidneiweber.com.br/?p=832
 permalink: /remover-imagens-docker-com-tag/
-image: /wp-content/docker.png
+img: /docker.png
 count_items:
   - "0"
 wp_review_type:

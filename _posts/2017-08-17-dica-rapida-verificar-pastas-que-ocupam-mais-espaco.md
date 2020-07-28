@@ -6,27 +6,7 @@ date: '2017-08-17 13:15:51 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=464
 permalink: "/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/"
-wp_review_location:
-- bottom
-wp_review_desc_title:
-- Resumo
-wp_review_color:
-- "#1e73be"
-wp_review_fontcolor:
-- "#555555"
-wp_review_bgcolor1:
-- "#e7e7e7"
-wp_review_bgcolor2:
-- "#ffffff"
-wp_review_bordercolor:
-- "#e7e7e7"
-wp_review_user_review_type:
-- star
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-image: "/wp-content/uploads/2016/12/Sele��o_003.png"
+img: "/uploads/2016/12/Selecao_003.png"
 categories:
 - Linux
 - Shell Script

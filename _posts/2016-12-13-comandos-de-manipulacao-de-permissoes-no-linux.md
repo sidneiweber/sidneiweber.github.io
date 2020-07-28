@@ -6,26 +6,6 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=334
 permalink: /comandos-de-manipulacao-de-permissoes-no-linux/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
 categories:
   - Linux
 ---
@@ -109,7 +89,7 @@ Dentro de cada classe citada anteriormente, temos os tipos de acesso:
 
 Quando a gente executa um ls -la no terminal, podemos ver como funciona:
 
-<img class="alignnone size-full wp-image-339" src="http://sidneiweber.com.br/wp-content/uploads/2016/12/Sele��o_003.png" alt="" width="655" height="233" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/12/Sele��o_003.png 655w, https://sidneiweber.com.br/wp-content/uploads/2016/12/Sele��o_003-300x107.png 300w" sizes="(max-width: 655px) 100vw, 655px" /> 
+<img class="alignnone size-full wp-image-339" src="/assets/img/uploads/2016/12/Sele��o_003.png" /> 
 
 No começo de cada linha temos 10 colunas referente as permissões de cada arquivo, onde a primeira coluna identifica o tipo do arquivo, se é um arquivo, um diretório, um link, etc. Após a primeira coluna, temos um conjunto de três colunas para cada classe de permissões, ou seja, do dono, do grupo e outros contando da esquerda para direita.
 
@@ -216,7 +196,7 @@ chmod a+x teste.txt
 chmod 777 teste.txt
 # Coloca permissão total de escrita, leitura e execução no arquivo teste.txt para todos usuários</pre>
 
-###<img class="alignnone size-full wp-image-347" src="http://sidneiweber.com.br/wp-content/uploads/2016/12/Sele��o_004.png" alt="sele%ef%bf%bd%ef%bf%bdo_004" width="405" height="153" srcset="https://sidneiweber.com.br/wp-content/uploads/2016/12/Sele��o_004.png 405w, https://sidneiweber.com.br/wp-content/uploads/2016/12/Sele��o_004-300x113.png 300w" sizes="(max-width: 405px) 100vw, 405px" /> 
+###<img class="alignnone size-full wp-image-347" src="/assets/img/uploads/2016/12/Sele��o_004.png" /> 
 
 ### <span id="chgrp">chgrp</span>
 
