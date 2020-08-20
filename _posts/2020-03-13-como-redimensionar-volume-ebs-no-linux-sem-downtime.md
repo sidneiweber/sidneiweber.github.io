@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Como redimensionar volume EBS no Linux sem downtime
-description: Como redimensionar volume principal no Linux EC2 sem precisar reiniciar, o famoso /. Sem nenhum downtime
+description: Quanto acaba o espaço de uma instância Linux em produção, não podemos desligar ou reiniciar para dar manutenção, vamos ver como redimensionar volume principal no Linux EC2 sem precisar reiniciar, o famoso root. Sem nenhum downtime, com alguns poucos comandos.
 date: '2020-03-13 21:54:28'
 tags:
 - ''
