@@ -560,13 +560,13 @@ pre code {
   list-style: none;
 }
 .sidebar-menu .menu-links {
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   display: block;
   text-decoration: none;
   padding: 1rem 1.3rem;
   color: #fff;
-  font-weight: 700;
+  font-weight: 300;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
@@ -597,11 +597,11 @@ pre code {
 
 .sidebar-logo .logo {
   font-family: 'Roboto', cursive;
-  color: #099;
+  color: #FFF;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .sidebar-social {
