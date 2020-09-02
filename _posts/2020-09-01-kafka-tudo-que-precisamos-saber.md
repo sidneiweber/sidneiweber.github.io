@@ -18,13 +18,17 @@ img: "/kafka/kafka.png"
 Resumidamente o Kafka é usado para trabalhar com fila de mensagens e uma plataforma de streaming de eventos, usando um modelo de "publicar/assinar". Foi criado e disponibilizado pelo [Linkedin](https://github.com/linkedin/kafka) em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidos por um ou mais consumidor. Esses registros não podem ser modificados após serem enviados para o Kafka.
 Ele é executado como um cluster de um ou mais servidores, ou seja, mesmo que só tenhamos um servidor ele mesmo assim é considerado um cluster. Cada nó desse cluster é também chamado de **broker**.
 
-![Kafka Cluster](/assets/img/kafka/cluster.png)
+<p align="center">
+<img src="/assets/img/kafka/cluster.png" alt="Kafka Cluster"/>
+</p>
 
 ### Tópicos
 
 Os registros são registrados em tópicos. Cada consumidor pode assinar um ou mais tópicos para ler os registros. Esses registros consistem em uma chave, um valor e data/hora. Cada tópico pode ser separado em várias partições dependendo do seu tamanho e configuração, por padrão só uma partição é utilizada, mas para escalar os consumidores o aumento de partições se faz necessária.
 
-![Kafka Tópico](/assets/img/kafka/topic.png)
+<p align="center">
+<img src="/assets/img/kafka/topic.png" alt="Kafka Tópico"/>
+</p>
 
 ### Grupo de consumidores
 
@@ -33,7 +37,9 @@ Os consumidores são identificados com um nome de grupo de consumidores. Esse gr
 ### Offset
 Uma questão bem importante para uso do Kafka é o entendimento dos **offsets**. O offset é quem controla a posição onde o consumidor parou de ler as mensagens. Esse controle é feito pelo próprio consumidor. Por exemplo, cada vez que um determinado consumidor ler uma mensagem, ele vai incrementando seu offset para saber exatamente onde ele parou e caso desconecte e conecte novamente, tenha um ponto de partida. O consumidor ainda pode ser configurado para iniciar seu offset, caso não tenha nenhum, da [primeira ou da última](https://kafka.apache.org/documentation/#auto.offset.reset) mensagem do tópico.
 
-![Kafka Offest](/assets/img/kafka/offset.png)
+<p align="center">
+<img src="/assets/img/kafka/offset.png" alt="Kafka Offset"/>
+</p>
 
 ### Tempo de retenção
 Um ponto que se deve ter bastante atenção em entender e configurar da maneira correta, para não termos dores de cabeça (experiência própria), é com o tempo de retenção dos dados. Vou citar aqui duas das principais configurações relativas a retenção, na [documentação](https://kafka.apache.org/documentation) podemos achar várias outra.
