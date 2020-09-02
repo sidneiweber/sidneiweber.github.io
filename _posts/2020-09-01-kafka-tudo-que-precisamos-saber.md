@@ -2,8 +2,8 @@
 layout: post
 title: Kafka tudo o que precisamos saber
 description: '
-Resumidamente o Kafka é usado para trabalhar com fila de mensagens e uma plataforma de streaming de eventos, usando um modelo de "publicar/assinar". Foi criado e disponibilizado pelo [Linkedin](https://github.com/linkedin/kafka) em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidos por um ou mais consumidor. Esses registros não podem ser modificados após serem enviados para o Kafka.
-Ele é executado como um cluster de um ou mais servidores, ou seja, mesmo que só tenhamos um servidor ele mesmo assim é considerado um cluster. Cada nó desse cluster é também chamado de **broker**.
+Resumidamente o Kafka é usado para trabalhar com fila de mensagens e uma plataforma de streaming de eventos, usando um modelo de "publicar/assinar". Foi criado e disponibilizado pelo Linkedin em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidos por um ou mais consumidor. Esses registros não podem ser modificados após serem enviados para o Kafka.
+Ele é executado como um cluster de um ou mais servidores, ou seja, mesmo que só tenhamos um servidor ele mesmo assim é considerado um cluster. Cada nó desse cluster é também chamado de broker.
 '
 date: '2020-09-01 22:20:00'
 tags:
