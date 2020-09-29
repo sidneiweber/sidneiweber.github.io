@@ -5,7 +5,6 @@ subtitle: Comandos para gerenciar Bucket e Objetos no S3 da AWS
 description: Este tutorial explica os conceitos básicos de como gerenciar buckets do S3 e seus objetos usando o aws s3 cli usando os seguintes exemplos
 date: '2019-10-25 16:55:50'
 tags:
-- ''
 - aws
 - s3
 img: "/awss3.png"

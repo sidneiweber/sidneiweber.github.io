@@ -2,10 +2,8 @@
 layout: post
 title: Instalar Ansible AWX com Docker no Centos 7
 subtitle: Passo a passo da instalação usando Docker.
-description: |
-Ansible AWX é a versão OpenSource do [ansible Tower](https://www.ansible.com/products/tower), produto  comercial desenvolvido pela Red Hat. O AWX fornece uma interface de usuário baseada na Web, API REST e um mecanismo de tarefas construído sobre o Ansible.
-
-Neste tutorial, mostrarei como instalar e configurar o AWX usando o Docker.
+description: Ansible AWX é a versão OpenSource do [ansible Tower](https://www.ansible.com/products/tower), produto  comercial desenvolvido pela Red Hat. O AWX fornece uma interface de usuário baseada na Web, API REST e um mecanismo de tarefas construído sobre o Ansible. Neste tutorial, mostrarei como instalar e configurar o AWX usando o Docker.
+date: '2019-09-09 16:55:50'
 tags:
 - ansible
 img: "/ansible.png"
