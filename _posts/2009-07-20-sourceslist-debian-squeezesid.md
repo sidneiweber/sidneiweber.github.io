@@ -1,6 +1,7 @@
 ---
 id: 39
 title: sources.list | Debian Squeeze/Sid
+description: sources.list | Debian Squeeze/Sid
 date: 2009-07-20T13:02:45-03:00
 author: Sidnei Weber
 layout: post

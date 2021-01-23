@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Acesso negado - Squid
+description: Acesso negado - Squid
 id: 26
 date: '2009-09-28 19:11:41 -0300'
 author: Sidnei Weber

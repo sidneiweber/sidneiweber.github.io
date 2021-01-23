@@ -6,9 +6,8 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=550
 permalink: /instalando-e-gerenciando-programas-no-windows-com-chocolatey/
+description: Instalando e gerenciando programas no Windows com Chocolatey
 img: /uploads/2018/04/Captura-de-tela-de-2018-04-17-20-38-48.png
-categories:
-  - Windows
 tags:
   - chocolatey
 ---

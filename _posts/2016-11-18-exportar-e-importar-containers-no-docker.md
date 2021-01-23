@@ -7,8 +7,7 @@ layout: post
 guid: http://sidneiweber.com.br/?p=307
 permalink: /exportar-e-importar-containers-no-docker/
 img: /uploads/2016/11/índice-220x159.png
-categories:
-  - Docker
+tag: [docker]
 ---
 ### Exportando imagem
 

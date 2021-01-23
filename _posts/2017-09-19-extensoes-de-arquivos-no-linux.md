@@ -6,8 +6,7 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=484
 permalink: /extensoes-de-arquivos-no-linux/
-categories:
-  - Linux
+tag: [linux]
 ---
 Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tipo de arquivo é reconhecido pelo seu conteúdo e não pela sua extensão. Mas para facilitar a vida é bom conhecer algumas extensões no Linux.
 

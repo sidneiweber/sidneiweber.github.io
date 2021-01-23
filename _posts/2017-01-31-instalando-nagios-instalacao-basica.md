@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Instalando Nagios - Instalação básica
+description: Vamos fazer a instalação básica do Nagios
 id: 359
 date: '2017-01-31 13:11:40 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=359
 permalink: "/instalando-nagios-instalacao-basica/"
 img: "/uploads/2017/01/nagios_logo_black.png"
-categories:
-- Nagios
+tag: [nagios]
 ---
 
-Vamos fazer a instação básica do Nagios. Pra quem não conhece o Nagios, segue um <a href="https://pt.wikipedia.org/wiki/Nagios" target="_blank" rel="noopener">link para conhecer melhor</a>.
+Vamos fazer a instalação básica do Nagios. Pra quem não conhece o Nagios, segue um <a href="https://pt.wikipedia.org/wiki/Nagios" target="_blank" rel="noopener">link para conhecer melhor</a>.
 
 > **Nagios** é uma popular aplicação de monitoramento de rede de [código aberto](https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto "Código aberto") distribuída sob a licença [GPL](https://pt.wikipedia.org/wiki/GNU_General_Public_License "GNU General Public License"). Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.
 

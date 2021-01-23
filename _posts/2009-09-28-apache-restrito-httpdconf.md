@@ -1,6 +1,7 @@
 ---
 id: 19
 title: Apache restrito httpd.conf
+description: Apache restrito httpd.conf
 date: 2009-09-28T18:51:29-03:00
 author: Sidnei Weber
 layout: post
@@ -11,7 +12,7 @@ tags:
 ---
 Exemplo de como restringir o acesso com apache realizando autenticação no LDAP.
 
-\# Diretório Restrito
+# Diretório Restrito
 
 ```bash
 Options Indexes FollowSymLinks Includes  
@@ -32,7 +33,7 @@ Order allow,deny
 Allow from all
 ```
 
-\# Diretorio Install
+# Diretorio Install
 
 ```bash
 Options Indexes FollowSymLinks Includes  

@@ -7,8 +7,7 @@ layout: post
 guid: http://sidneiweber.com.br/?p=508
 permalink: /configurar-sudo-sem-senha/
 img: /uploads/2016/12/Selecao_003.png
-categories:
-  - Linux
+tag: [linux, sudo]
 ---
 Para configurar o uso do uso sem senha, o que não é recomendado, somente em casos de algum programa precise de permissão para executar determinado comando. Podemos usar como exemplo o Zabbix que quer rodar algum programa com privilégio de root sem comprometer a segurança. O arquivo a ser editado será o /etc/sudoers:
 

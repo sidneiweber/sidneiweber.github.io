@@ -1,10 +1,10 @@
 ---
 id: 111
 title: Instalando um dashboard para seu servidor linux
+description: Instalando um dashboard para seu servidor linux
 date: 2014-02-04T23:31:35-03:00
 author: Sidnei Weber
 layout: post
-guid: http://sidiweber.wordpress.com/?p=111
 permalink: /instalando-um-dashboard-para-seu-servidor-linux/
 categories:
   - Linux

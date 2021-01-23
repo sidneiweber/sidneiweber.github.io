@@ -1,6 +1,6 @@
 ---
-id: 10
 title: Codecs ubuntu 9.04
+description: Codecs ubuntu 9.04
 date: 2009-09-23T19:27:02-03:00
 author: Sidnei Weber
 layout: post

@@ -1,6 +1,7 @@
 ---
 id: 170
 title: Códigos do Squid
+description: Códigos do Squid
 date: 2015-07-06T15:44:15-03:00
 author: Sidnei Weber
 layout: post

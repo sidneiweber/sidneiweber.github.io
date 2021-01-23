@@ -1,16 +1,13 @@
 ---
 id: 282
 title: Gestão corporativa com Software Livre
+description: Gestão corporativa com Software Livre
 date: 2016-10-05T12:41:19-03:00
 author: Sidnei Weber
 layout: post
-guid: http://sidneiweber.com.br/?p=282
 permalink: /gestao-corporativa-com-software-livre/
 img: /uploads/2016/10/Seleção_011-220x162.png
-categories:
-  - Diversos
-  - Linux
-  - Multimidia
+tags: [linux]
 ---
 Segue um trabalho que fiz na faculdade sobre gestão corporativa com software livre.
 

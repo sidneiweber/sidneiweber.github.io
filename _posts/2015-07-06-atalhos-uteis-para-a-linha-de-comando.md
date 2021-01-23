@@ -1,6 +1,7 @@
 ---
 id: 155
 title: Atalhos úteis para a linha de comando
+description: Atalhos úteis para a linha de comando
 date: 2015-07-06T15:38:45-03:00
 author: Sidnei Weber
 layout: post

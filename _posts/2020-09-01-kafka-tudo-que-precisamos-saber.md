@@ -6,11 +6,8 @@ Resumidamente o Kafka é usado para trabalhar com fila de mensagens e uma plataf
 Ele é executado como um cluster de um ou mais servidores, ou seja, mesmo que só tenhamos um servidor ele mesmo assim é considerado um cluster. Cada nó desse cluster é também chamado de broker.
 '
 date: '2020-09-01 22:20:00'
-tags:
-- ''
-- kafka
-- zookeeper
-img: "/kafka/kafka.png"
+tags: [kafka, zookeeper]
+image: "/assets/img/kafka/kafka.png"
 ---
 
 ## O que é o Kafka

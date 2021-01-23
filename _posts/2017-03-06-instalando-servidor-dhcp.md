@@ -7,12 +7,10 @@ layout: post
 guid: http://sidneiweber.com.br/?p=392
 permalink: /instalando-servidor-dhcp/
 img: /uploads/2017/03/dhcp.png
-categories:
-  - Servidores
 tags:
-  - instalação servidor dhcp
-  - instalando servidor dhcp
-  - servidor dhcp
+  - linux
+  - rede
+  - dhcp
 ---
 ### Definição:
 

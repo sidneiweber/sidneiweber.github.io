@@ -7,9 +7,7 @@ author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=525
 permalink: "/ansible-o-que-e-e-para-que-serve/"
 img: "/uploads/2018/06/ansible.png"
-categories:
-- Ansible
-- Devops
+tag: [ansible, devops]
 ---
 
 > ### <span id="ANSIBLE_LOVES_THE_REPETITIVE_WORK_YOUR_PEOPLE_HATE">ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE</span>

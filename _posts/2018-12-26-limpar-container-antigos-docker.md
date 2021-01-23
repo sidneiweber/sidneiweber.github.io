@@ -6,9 +6,8 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=662
 permalink: /limpar-container-antigos-docker/
-img: /docker.png
-categories:
-  - Docker
+image: /assets/img/docker.png
+tag: [docker]
 ---
 Caso sua lista de container esteja muito grande e queira remover alguns containers do seu host, podemos usar o comando abaixo para remover container parados a mais tempo:
 

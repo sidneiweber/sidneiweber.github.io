@@ -1,13 +1,14 @@
 ---
 id: 334
 title: Comandos de manipulação de permissões no Linux
+description: Comandos de manipulação de permissões no Linux
 date: 2016-12-13T15:54:07-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=334
 permalink: /comandos-de-manipulacao-de-permissoes-no-linux/
-categories:
-  - Linux
+tag:
+  - linux
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

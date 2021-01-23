@@ -1,17 +1,14 @@
 ---
 id: 109
 title: Dicas segurança WordPress
+description: Dicas segurança WordPress
 date: 2014-01-20T22:38:07-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidiweber.wordpress.com/?p=109
 permalink: /dicas-seguranca-wordpress/
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
-categories:
-  - Wordpress
+tags:
+  - wordpress
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

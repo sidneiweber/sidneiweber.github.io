@@ -1,19 +1,12 @@
 ---
-id: 721
-title: Instalando última versão do Ansible no Ubuntu/Debian
-date: 2019-01-22T12:54:16-03:00
-author: Sidnei Weber
 layout: post
-guid: https://sidneiweber.com.br/?p=721
-permalink: /instalando-ultima-versao-ansible-no-ubuntu-debian/
-img: "/ansible_ubuntu.png"
-categories:
-  - Ansible
-  - Debian
-  - Linux
-  - Ubuntu
-tags:
-  - instalando ansible
+title: Instalando última versão do Ansible no Ubuntu/Debian
+description: '
+Instalando última versão do Ansible no Ubuntu/Debian.
+'
+date: '2019-01-22 22:20:00'
+image: "/assets/img/ansible_ubuntu.png"
+tags: [ansible]
 ---
 Caso não saiba o que é Ansible, pode dar uma lida <a href="https://sidneiweber.com.br/2018/06/19/ansible-o-que-e-e-para-que-serve/" target="_blank">nesse post.</a>
 

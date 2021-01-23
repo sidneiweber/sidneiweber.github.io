@@ -7,10 +7,8 @@ date: 2019-04-26T09:56:31-03:00
 author: Sidnei Weber
 layout: post
 permalink: /exemplos-de-uso-do-comando-ping/
-img: /ping-command.png
-categories:
-  - Linux
-  - Rede
+image: /assets/img/ping-command.png
+tag: [linux, rede]
 ---
 Segundo o Wikipédia ping é …
 

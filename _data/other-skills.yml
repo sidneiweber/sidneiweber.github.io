@@ -1,0 +1,7 @@
+- name: Python
+  percentage: 90
+  color: info
+
+- name: Shell
+  percentage: 80
+  color: success

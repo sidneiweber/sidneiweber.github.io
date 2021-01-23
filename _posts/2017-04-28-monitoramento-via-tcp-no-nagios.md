@@ -1,14 +1,14 @@
 ---
 id: 431
 title: Monitoramento via TCP no Nagios
+description: Monitoramento via TCP no Nagios
 date: 2017-04-28T11:06:44-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=431
 permalink: /monitoramento-via-tcp-no-nagios/
 img: /uploads/2017/04/Captura-de-tela_2017-04-28_11-05-19.png
-categories:
-  - Nagios
+tag: [nagios]
 ---
 Hoje vamos dar seguinte a configuração do Nagios <a href="http://sidneiweber.com.br/2017/01/31/instalando-nagios-instalacao-basica/" target="_blank" rel="noopener noreferrer">que instalamos um tempo atrás.</a>
 

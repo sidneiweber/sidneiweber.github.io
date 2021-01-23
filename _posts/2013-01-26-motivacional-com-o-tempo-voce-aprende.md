@@ -1,6 +1,7 @@
 ---
 id: 54
 title: 'Motivacional: Com o tempo você aprende'
+description: 'Vídeo - Motivacional: Com o tempo você aprende'
 date: 2013-01-26T00:36:24-03:00
 author: Sidnei Weber
 layout: post

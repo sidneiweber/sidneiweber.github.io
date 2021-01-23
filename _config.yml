@@ -1,41 +1,86 @@
-# Profile information
-name: Sidnei Weber
-title: Sidnei Weber | Life of Sysadmin
-description: 'A rotina de um Sysadmin. Falando sobre tecnologia, linux, aws, scripts e etc''s'
-permalink: ':title/'
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://sidneiweber.com.br'
-tags:
-  - blog
-  - jekyll
-  - aws
-  - linux
-  - sysadmin
-  - devops
-  - shell
+### Site Settings ###
+title               : Sidnei Weber
+description         : >-
+                      Trago o servidor amado em 3 minutos,
+                      transformo infraestrutura em código :package:,
+                      migro serviços para a nuvem :cloud: e outras coisinhas mais...
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : sidneiweber/sidneiweber.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 
-# Social
-github: sidneiweber
-linkedin_username: sidnei-weber-143864169
-medium: sidnei.weber
+### Plugins ###
+plugins:
+  - jemoji
 
-# Contact form
-email: sidnei.weber@gmail.com
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
 
-# Comments
+
+### Author Info ###
+author:
+  name              : Sidnei Weber
+  image             : https://avatars0.githubusercontent.com/u/6644629?s=460&u=093900f59ccadb32ea978d93e00a5cdda11d5dce&v=4
+  email             : sidnei.weber@gmail.com
+ # facebook          : your_username
+  github            : sidneiweber
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : sidnei-weber-143864169
+  medium            : sidnei.weber
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# twitch            : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+# keybase           : your_username
+
+
+### Posts ###
+permalink: /:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projetos/:name
+  elements:                                             # For Documentation Only
+    output: true                                        # For Documentation Only
+
+
+### Disqus ###
 discus-identifier: sidneiweber
-google_analytics: UA-921545-12
-# Paginate
-paginate: 5
-paginate_path: /page:num/
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-gems:
-  - jekyll-feed
-  - jekyll-paginate
+### Analytics ###
+analytics:
+  enabled: true                                        # Set true to enable analytics
+  google:
+    tracking_id: UA-921545-12
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:                                              # For Documentation Only
+      path: ""                                          # For Documentation Only
+      type: "elements"                                  # For Documentation Only
+    values:                                             # For Documentation Only
+      layout: "element"                                 # For Documentation Only
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true                                   # Set to true to enable disqus comments
+
+### Exclude from processing ###
 exclude:
-  - Gemfile
-  - Gemfile.lock
-include: [_pages]
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

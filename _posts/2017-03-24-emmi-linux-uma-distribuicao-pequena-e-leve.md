@@ -7,10 +7,8 @@ author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=417
 permalink: "/emmi-linux-uma-distribuicao-pequena-e-leve/"
 img: "/uploads/2017/03/Selecao_009.png"
-categories:
-- Linux
 tags:
-- Emmi Linux
+- emmi linux
 ---
 
 Hoje vou falar um pouco sobre essa distribuição que conheci e acabei me envolvendo no projeto: **Emmi Linux.** Bom segue palavras do próprio autor do projeto, Jefferson Rocha:

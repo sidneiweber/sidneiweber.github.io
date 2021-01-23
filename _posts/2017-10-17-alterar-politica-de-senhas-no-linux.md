@@ -7,9 +7,7 @@ layout: post
 guid: http://sidneiweber.com.br/?p=495
 permalink: /alterar-politica-de-senhas-no-linux/
 img: /uploads/2017/10/pam1.png
-categories:
-  - Linux
-  - Segurança
+tags: [linux, segurança]
 ---
 Para podermos ter um controle maior sobre a segurança dos nossos sistemas e rede de computadores, podemos definir uma política de senhas onde as mesmas devem ter um grau alto de dificuldade. Podendo definir quantidade de caracteres especiais, números, tamanho da senha, tempo que ela vai expirar, não repetir a mesma senha digitada anteriormente, etc.
 

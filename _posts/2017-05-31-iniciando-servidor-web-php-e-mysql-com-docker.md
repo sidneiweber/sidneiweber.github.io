@@ -7,8 +7,7 @@ layout: post
 guid: http://sidneiweber.com.br/?p=446
 permalink: /iniciando-servidor-web-php-e-mysql-com-docker/
 img: /uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26.png
-categories:
-  - Docker
+tag: [docker, mysql, php, apache]
 ---
 De uma maneira muito rápida podemos iniciar um servidor web para testarmos aplicações, páginas, sistemas, etc. Para isso precisaremos de duas ferramentas:
 

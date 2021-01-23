@@ -7,8 +7,7 @@ author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=475
 permalink: "/seguranca-da-informacao-o-que-preciso-saber/"
 img: "/uploads/2017/09/Entenda-o-que-Segurana-da-Informao-e-reduza-riscos-na-empresa.png"
-categories:
-- Segurança
+tag: [segurança]
 ---
 
 Hoje falaremos sobre um assunto que a cada dia se torna mais importante no mundo técnologico e corporativo, Segurança da Informação.

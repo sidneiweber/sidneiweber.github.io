@@ -7,8 +7,7 @@ layout: post
 guid: http://sidneiweber.com.br/?p=491
 permalink: /resetar-senha-admin-zabbix/
 img: /uploads/2017/10/zabbix.png
-categories:
-  - Zabbix
+tag: [zabbix]
 ---
 Hoje vamos a uma dica rápida para quem esqueceu ou não sabe a senha de Admin do painel de administração do Zabbix. Eu estava testando a ferramenta e depois de um tempo se mexer havia esquecido a senha, tive que resetá-la. Para isso a única coisa que precisamos é ter a senha de root do mysql, tendo ela podemos logar no terminal:
 

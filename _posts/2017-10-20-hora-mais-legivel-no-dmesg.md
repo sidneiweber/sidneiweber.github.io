@@ -1,13 +1,13 @@
 ---
 id: 501
 title: Hora mais legível no dmesg
+description: Como deixar a hora mais legível no dmesg
 date: 2017-10-20T22:34:17-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=501
 permalink: /hora-mais-legivel-no-dmesg/
-categories:
-  - Linux
+tag: [linux, dmesg]
 ---
 Saída padrão do **dmesg:**
 

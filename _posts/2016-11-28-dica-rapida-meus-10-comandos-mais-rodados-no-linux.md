@@ -1,14 +1,15 @@
 ---
 id: 330
 title: '[Dica rápida] Meus 10 comandos mais rodados no linux'
+description: Com este comando podemos conferir quais os 10 comandos mais rodados em nossa máquina
 date: 2016-11-28T15:39:52-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=330
 permalink: /dica-rapida-meus-10-comandos-mais-rodados-no-linux/
 img: /uploads/2015/07/cropped-captura_de_tela-220x162.jpg
-categories:
-  - Linux
+tag:
+  - linux
 ---
 Com este comando podemos conferir quais os 10 comandos mais rodados em nossa máquina:
 

@@ -7,9 +7,7 @@ author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=464
 permalink: "/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/"
 img: "/uploads/2016/12/Selecao_003.png"
-categories:
-- Linux
-- Shell Script
+tag: [linux, shell script]
 ---
 
 Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:

@@ -1,6 +1,7 @@
 ---
 id: 72
 title: Pac-Man no terminal Ubuntu
+description: Pac-Man no terminal Ubuntu
 date: 2013-04-19T16:58:35-03:00
 author: Sidnei Weber
 layout: post

@@ -6,13 +6,7 @@ date: '2018-04-09 21:08:17 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=527
 permalink: "/rundeck-automatizando-suas-tarefas/"
-wp_review_user_reviews:
-- 0
-wp_review_review_count:
-- 0
-img: "/uploads/2018/04/índice.png"
-categories:
-- Devops
+tag: [devops, rundeck]
 ---
 
 O que é esse tal de Rundeck

@@ -1,10 +1,10 @@
 ---
 id: 158
 title: Alerta de espaço em disco via e-mail
+description: Alerta de espaço em disco via e-mail
 date: 2015-07-06T15:39:40-03:00
 author: Sidnei Weber
 layout: post
-guid: https://sidiweber.wordpress.com/?p=158
 permalink: /alerta-de-espaco-em-disco-via-e-mail/
 geo_public:
   - "0"

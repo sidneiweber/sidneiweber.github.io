@@ -7,11 +7,9 @@ layout: post
 guid: http://sidneiweber.com.br/?p=559
 permalink: /instalacao-postresql-no-centos-a-partir-do-codigo-fonte/
 img: /uploads/2018/05/download.png
-categories:
-  - Postgresql
 tags:
   - postgresql
-  - postrgresql centos
+  - centos
 ---
 Estou realizando a instalação na última versão do Centos no momento, que seria a 7. Porém o procedimento para outras versões deve seguir o mesmo padrão.
 

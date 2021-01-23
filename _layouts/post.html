@@ -1,19 +1,37 @@
 ---
-layout: default
+layout: page
 ---
-<article class="page-article">
-  <div class="wrap-content">
-    <header class="page-header">
-      <h1 class="page-title">{{page.title}}</h1>
-      {% include minutes-to-read.html %}
-      <div class="page-date"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%d %b, %Y'}}&nbsp;&nbsp;&nbsp;&nbsp;</span> <span><i class="fa fa-clock-o" aria-hidden="true"></i> {{ minutesText }}</span> </div>
-    </header>
-    <div class="page-content">
-      {% if page.img %}
-      <img class="page-img" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
-      {% endif %}
-      {{page.content | markdownify}}
-    </div>
-    {% include disqus.html %}
-  </div>
-</article>
+
+<h1><b>{{ page.title }}</b></h1>
+
+<p class="post-metadata text-muted">
+  {{ page.date | date_to_long_string }} -  
+  <b>
+  {%- assign words = content | number_of_words -%}
+  {%- if words < 360 -%}
+    less than 1 min read time
+  {%- else -%}
+    {{ words | divided_by: 180 }} mins read time
+  {%- endif -%}
+  </b>
+
+  <br>
+
+  {%- if page.tags != empty -%}
+    Tags: 
+    {% for tag in page.tags %}
+    <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
+      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+    </a>
+    {% endfor %}
+  {%- endif -%}
+
+</p>
+
+{{ content }}
+
+{% if page.comments %}
+<div class="pt-5">
+  {% include blog/disqus.html %}
+</div>
+{% endif %}

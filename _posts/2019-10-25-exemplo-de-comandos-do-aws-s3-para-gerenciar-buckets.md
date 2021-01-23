@@ -7,7 +7,8 @@ date: '2019-10-25 16:55:50'
 tags:
 - aws
 - s3
-img: "/awss3.png"
+image: "/assets/img/awss3.png"
+color: warning
 ---
 
 Este tutorial explica os conceitos básicos de como gerenciar buckets do S3 e seus objetos usando o aws s3 cli usando os seguintes exemplos:

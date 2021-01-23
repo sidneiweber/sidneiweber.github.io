@@ -1,30 +1,13 @@
 ---
 id: 248
 title: Tutorial básico e rápido de Mysql
+description: Tutorial básico e rápido de Mysql
 date: 2016-07-12T13:10:54-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=248
 permalink: /tutorial-basico-e-rapido-de-mysql/
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
 img: /uploads/2016/07/mysql_hosting-220x162.png
-categories:
-  - Mysql
 tags:
   - mysql
 ---

@@ -6,18 +6,9 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=521
 permalink: /reconhecer-hd-novo-linux-sem-reiniciar/
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
 img: /uploads/2018/01/vmware_client_failed.jpg
-categories:
-  - Linux
-  - Virtualização
 tags:
-  - hd novo
-  - reconhecer hd sem reiniciar
-  - vmware hd novo
+  - linux
 ---
 Hoje vamos a mais uma dica rápida. Pra que usa seus servidores virtualizados e precisa adicionar um novo HD seja por falta de espaço ou pelo motivo que for, não precisa reiniciar o servidor para ter o HD reconhecido. Basta apenas executar um simples comando que ordena um "scan" no barramento.
 

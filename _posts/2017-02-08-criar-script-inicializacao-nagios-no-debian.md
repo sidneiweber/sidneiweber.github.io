@@ -7,8 +7,7 @@ layout: post
 guid: http://sidneiweber.com.br/?p=377
 permalink: /criar-script-inicializacao-nagios-no-debian/
 img: /uploads/2017/01/nagios_logo_black.png
-categories:
-  - Nagios
+tag: [nagios]
 ---
 Após a instalação e inicialização do Nagios no nosso servidor Debian, temos que configurar um script de inicialização, para que cada vez que a gente precisa reiniciar o serviço ou a própria máquina não precisaremos subir tudo na mão.
 

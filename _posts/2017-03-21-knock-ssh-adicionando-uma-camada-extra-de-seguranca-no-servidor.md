@@ -11,9 +11,8 @@ categories:
 - Servidores
 - SSH
 tags:
-- knock ssh
-- port ssh
-- ssh knock
+- ssh
+- segurança
 ---
 
 Hoje vamos falar do **Knock,** uma ferramenta muito interessante para quem precisar acessar seus servidores remotamente. Bom o que o Knock faz, ele adiciona essa camada a mais da seguinte forma, por exemplo se acessamos nosso servidor pela porta 22 do ssh ela deveria estar liberada. Porém com Knock ela pode estar bloqueada, você acertando uma sequência específica de portas ele irá liberar a porta 22, e somente se acertar a sequencia definida.

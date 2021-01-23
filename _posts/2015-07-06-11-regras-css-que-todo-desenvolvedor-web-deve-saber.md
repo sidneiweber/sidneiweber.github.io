@@ -1,10 +1,10 @@
 ---
 id: 168
 title: 11 regras CSS que todo desenvolvedor web deve saber
+description: 11 regras CSS que todo desenvolvedor web deve saber
 date: 2015-07-06T15:43:13-03:00
 author: Sidnei Weber
 layout: post
-guid: https://sidiweber.wordpress.com/?p=168
 permalink: /11-regras-css-que-todo-desenvolvedor-web-deve-saber/
 geo_public:
   - "0"

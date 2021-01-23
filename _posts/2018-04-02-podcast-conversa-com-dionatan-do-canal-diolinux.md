@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Podcast - Conversa com Dionatan do Canal Diolinux
+description: Podcast - Conversa com Dionatan do Canal Diolinux [Vídeo]
 id: 539
 date: '2018-04-02 21:37:31 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=539
 permalink: "/podcast-conversa-com-dionatan-do-canal-diolinux/"
-categories:
-- Linux
-tags:
-- conversa com diolinux. podcast
+tags: [diolinux, podcast]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NQ4_pc9gM8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

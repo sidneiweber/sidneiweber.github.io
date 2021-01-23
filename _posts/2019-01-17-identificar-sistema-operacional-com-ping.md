@@ -4,11 +4,10 @@ title: Identificar sistema operacional com ping
 date: 2019-01-17T15:21:50-03:00
 author: Sidnei Weber
 layout: post
-guid: https://sidneiweber.com.br/?p=712
 permalink: /identificar-sistema-operacional-com-ping/
-img: /ping-command.png
-categories:
-  - Linux
+image: /assets/img/ping-command.png
+tag: [rede]
+
 ---
 O comando ping utiliza o protocolo icmp e é muito útil para alguns testes de rede. O que pouca gente sabe é que durante a resposta do comando ping, uma informação pode nos informar qual o sistema operacional está respondendo. Essa informação é TTL (Time to Live).
 

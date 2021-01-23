@@ -5,7 +5,7 @@ subtitle: Esse compactador consegue usar múltiplos núcleos.
 description: Esse compactador consegue usar múltiplos núcleos.
 date: '2019-06-21 14:06:42 -0300'
 author: Sidnei Weber
-img: "/pigz.jpg"
+image: "/assets/img/pigz.jpg"
 permalink: "/pigz-compactador-eficiente-e-rapido/"
 comments: true
 tags:

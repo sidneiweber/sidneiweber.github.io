@@ -7,11 +7,10 @@ date: 2019-04-02T16:59:07-03:00
 author: Sidnei Weber
 layout: post
 permalink: /iniciando-com-mongodb/
-img: /uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
-categories:
-  - Mongo
-tags:
-  - mongodb
+image: /assets/img/uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
+tags: [mongodb]
+style: fill
+color: success
 ---
 Após termos realizado a instalação do MongoDB <a href="https://sidneiweber.com.br/2019/03/08/instalando-mongodb-community-edition-4-0-no-ubuntu/" target="_blank">nesse post</a>, hoje vamos iniciar com os primeiros passos com nosso banco de dados.
 

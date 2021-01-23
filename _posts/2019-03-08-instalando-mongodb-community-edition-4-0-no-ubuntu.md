@@ -8,11 +8,11 @@ author: Sidnei Weber
 layout: post
 guid: https://sidneiweber.com.br/?p=801
 permalink: /instalando-mongodb-community-edition-4-0-no-ubuntu/
-img: /uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
-categories:
-  - Mongo
+image: /assets/img/uploads/2019/03/mongodb-logo-rgb-j6w271g1xn-768x203.jpg
 tags:
     - mongodb
+style: fill
+color: success
 ---
 
 ### <span id="O_que_e_MongoDB">O que é MongoDB</span>

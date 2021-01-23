@@ -6,12 +6,9 @@ author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=455
 permalink: /gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/
-categories:
-  - Debian
-  - Linux
 tags:
   - dpkg
-  - lista de pacotes
+  - linux
 ---
 Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o **dpkg** para isso. Pode ser muito útil na hora de criar sistemas com a mesma base
 

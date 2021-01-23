@@ -1,19 +1,17 @@
 ---
 layout: post
 title: Introdução Firewall Iptables - Começando
+description: Introdução Firewall Iptables - Começando
 id: 380
 date: '2017-02-15 10:44:41 -0300'
 author: Sidnei Weber
 guid: http://sidneiweber.com.br/?p=380
 permalink: "/introducao-firewall-iptables-comecando/"
 img: "/uploads/2017/02/Selecao_001.png"
-categories:
-- Firewall
 tags:
-- começando com iptables
-- firewall iptables
-- introdução iptables
 - iptables
+- segurança
+- linux
 ---
 
 <div id="toc_container" class="no_bullets">

@@ -1,19 +1,14 @@
 ---
 id: 276
 title: Reforçando segurança servidor ssh
+description: Reforçando segurança servidor ssh
 date: 2016-11-23T10:07:22-03:00
 author: Sidnei Weber
 layout: post
 guid: http://sidneiweber.com.br/?p=276
 permalink: /reforcando-seguranca-servidor-ssh/
 img: /uploads/2016/09/Artigo_07_002-220x162.jpg
-categories:
-  - Linux
-  - Servidores
-  - SSH
-tags:
-  - seguranca ssh
-  - servidor ssh
+tag: [linux, segurança, ssh]
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

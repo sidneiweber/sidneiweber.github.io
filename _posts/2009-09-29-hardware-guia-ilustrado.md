@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hardware - Guia ilustrado
+description: Hardware - Guia ilustrado
 id: 29
 date: '2009-09-29 01:29:00 -0300'
 author: Sidnei Weber

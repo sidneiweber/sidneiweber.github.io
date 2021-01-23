@@ -5,9 +5,10 @@ date: 2018-09-06T23:16:18-03:00
 author: Sidnei Weber
 layout: post
 permalink: /iniciando-zabbix-com-docker-compose/
-img: /uploads/2017/10/zabbix.png
-categories:
-  - Zabbix
+description: Iniciando Zabbix com Docker Compose
+image: /assets/img/uploads/2017/10/zabbix.png
+tags: [zabbix]
+color: danger
 ---
 Obviamente precisaremos ter instalado o docker e docker-compose, caso não saiba como instalar pode acessar o <a href="https://docs.docker.com/install/" target="_blank" rel="noopener">link</a> e esse outro <a href="https://docs.docker.com/compose/install/" target="_blank">link</a> . Precisaremos criar um arquivo **docker-compose.yml** com o seguinte conteúdo:
 

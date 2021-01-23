@@ -4,14 +4,10 @@ title: Convertendo arquivos DOS ^M com Vim
 date: 2018-11-06T10:03:27-03:00
 author: Sidnei Weber
 layout: post
-img: /character-data.png
+image: /assets/img/character-data.png
 guid: http://sidneiweber.com.br/?p=659
 permalink: /convertendo-arquivos-dos-m-com-vim/
-wp_review_type:
-  - none
-categories:
-  - Linux
-  - Shell Script
+tag: [linux, shell script]
 ---
 Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.
 
