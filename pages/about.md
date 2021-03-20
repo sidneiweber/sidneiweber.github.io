@@ -34,7 +34,7 @@ Sou estudante de Segurança da Informação, apaixonado por software livre, semp
 
 ## Certificações
 <div class="row">
-<img src="/assets/img/awssaa.png" /> <img src="/assets/img/uploads/2018/05/comptia1.png" /> <img src="/assets/img/uploads/2018/05/LPIC-1-Medium.png" />
+<img src="/assets/img/awssaa.png" /> <img src="/assets/img/comptia.png" /> <img src="/assets/img/uploads/2018/05/LPIC-1-Medium.png" />
 </div>
 
 ## Cursos
