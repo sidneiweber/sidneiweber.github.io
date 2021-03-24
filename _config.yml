@@ -10,6 +10,7 @@ repository          : sidneiweber/sidneiweber.github.io     # Change to <your-us
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-feed
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
@@ -23,12 +24,12 @@ author:
   name              : Sidnei Weber
   image             : https://avatars0.githubusercontent.com/u/6644629?s=460&u=093900f59ccadb32ea978d93e00a5cdda11d5dce&v=4
   email             : sidnei.weber@gmail.com
- # facebook          : your_username
   github            : sidneiweber
 # gitlab            : your_username
 # instagram         : your_username
   linkedin          : sidnei-weber-143864169
   medium            : sidnei.weber
+  rss               : feed.xml
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id

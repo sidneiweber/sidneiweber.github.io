@@ -95,3 +95,8 @@ keybase:
   url   : https://www.keybase.io/
   icon  : fab fa-keybase
   color : 66ccff
+
+rss:
+  url   : https://sidneiweber.com.br/
+  icon  : fas fa-rss-square
+  color : f48924
