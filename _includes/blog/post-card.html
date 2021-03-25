@@ -40,9 +40,9 @@
       </p>
       <p class="card-text">
         {%- if post.description -%}
-        {{ post.description }}
+        {{ post.description | truncatewords: 40, "<small><i>  leia mais...</i></small>" }}
         {%- else -%}
-        {{ post.content | truncatewords: 25, "<small><i>  leia mais...</i></small>" }}
+        {{ post.content | truncatewords: 40, "<small><i>  leia mais...</i></small>" }}
         {%- endif -%}
       </p>
     </div>
