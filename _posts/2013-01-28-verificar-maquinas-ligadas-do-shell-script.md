@@ -6,26 +6,6 @@ author: Sidnei Weber
 layout: post
 guid: http://sidiweber.wordpress.com/?p=56
 permalink: /verificar-maquinas-ligadas-do-shell-script/
-wp_review_user_reviews:
-  - "0"
-wp_review_review_count:
-  - "0"
-wp_review_location:
-  - bottom
-wp_review_desc_title:
-  - Resumo
-wp_review_color:
-  - '#1e73be'
-wp_review_fontcolor:
-  - '#555555'
-wp_review_bgcolor1:
-  - '#e7e7e7'
-wp_review_bgcolor2:
-  - '#ffffff'
-wp_review_bordercolor:
-  - '#e7e7e7'
-wp_review_user_review_type:
-  - star
 categories:
   - Linux
   - Rede
@@ -44,7 +24,8 @@ nmap:
 
 Copie o código e cole em um arquivo texto e salve com um nome de sua preferência, de permissão para executar (chmod +x nome\_do\_arquivo.sh) e em seguida execute-o (./nome\_do\_arquivo.sh):
 
-<pre class="lang:sh decode:true ">#!/bin/bash
+```bash
+#!/bin/bash
 
 Principal ( ) { ## Inicio Primeiro Bloco
 clear
@@ -174,9 +155,6 @@ clear
 exit
 }
 Principal</pre>
-
-``
-
-\## FIM ##
+```
 
 Fonte: http://www.vivaolinux.com.br/dica/Ipscan-com-shell-script+dialog+nmap
