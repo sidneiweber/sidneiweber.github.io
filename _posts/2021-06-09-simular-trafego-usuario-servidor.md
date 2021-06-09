@@ -4,7 +4,7 @@ title: Simular tráfego de usuário para um servidor
 description: '
 Quando queremos testar algumas coisas servidor, como teste de carga ou teste de desempenho podemos utilizar essa ferramenta que simula conexões dos usuários.
 '
-date: '2021-01-29 22:00:00'
+date: '2021-06-09 11:00:00'
 tags: [linux]
 ---
 
