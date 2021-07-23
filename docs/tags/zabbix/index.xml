@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zabbix on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/zabbix/</link>
+    <description>Recent content in zabbix on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 06 Sep 2018 23:16:18 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/zabbix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iniciando Zabbix com Docker Compose</title>
+      <link>https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/</link>
+      <pubDate>Thu, 06 Sep 2018 23:16:18 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/</guid>
+      <description>Obviamente precisaremos ter instalado o docker e docker-compose, caso não saiba como instalar pode acessar o link e esse outro link. Precisaremos criar um arquivo docker-compose.yml com o seguinte conteúdo:
+persistentDB: img &amp;#34;busybox:latest&amp;#34; volumes: - /var/lib/mysql zabbixDB: img &amp;#34;monitoringartist/zabbix-db-mariadb&amp;#34; environment: MARIADB_USER: zabbix MARIADB_PASS: senha PHP_date_timezone: America/Sao_Paulo ZS_StartDiscoverers: &amp;#34;5&amp;#34; ZS_StartPingers: &amp;#34;5&amp;#34; volumes_from: - persistentDB volumes: - &amp;#34;/etc/localtime:/etc/localtime:ro&amp;#34; - &amp;#34;/srv/zabbix/backups:/backups&amp;#34; hostname: zabbix-db zabbix: img &amp;#34;monitoringartist/zabbix-3.0-xxl:latest&amp;#34; ports: - &amp;#34;80:80&amp;#34; - &amp;#34;10051:10051&amp;#34; volumes: - &amp;#34;/etc/localtime:/etc/localtime:ro&amp;#34; links: - &amp;#34;zabbixDB:zabbix.</description>
+    </item>
+    
+    <item>
+      <title>Resetar senha Admin Zabbix</title>
+      <link>https://sidneiweber.com.br/resetar-senha-admin-zabbix/</link>
+      <pubDate>Tue, 17 Oct 2017 09:44:49 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/resetar-senha-admin-zabbix/</guid>
+      <description>Hoje vamos a uma dica rápida para quem esqueceu ou não sabe a senha de Admin do painel de administração do Zabbix. Eu estava testando a ferramenta e depois de um tempo se mexer havia esquecido a senha, tive que resetá-la. Para isso a única coisa que precisamos é ter a senha de root do mysql, tendo ela podemos logar no terminal:
+mysql -u root -p Enter password: Dentro do terminal a gente vai fazer o seguinte:</description>
+    </item>
+    
+  </channel>
+</rss>

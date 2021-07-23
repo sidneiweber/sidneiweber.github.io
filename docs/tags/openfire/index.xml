@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>openfire on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/openfire/</link>
+    <description>Recent content in openfire on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 29 Sep 2009 12:19:12 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/openfire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atualizar Openfire</title>
+      <link>https://sidneiweber.com.br/atualizar-openfire/</link>
+      <pubDate>Tue, 29 Sep 2009 12:19:12 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/atualizar-openfire/</guid>
+      <description>Uma dúvida muito constante dos usuários Openfire é como fazer para atualizarem seu servidor para uma versão mais recente.
+Segue então um pequeno howto (adaptado do orginal da Ignite Realtime):
+ Pare o Openfire Faça um backup do diretório de instalação do Openfire (isso é preciso porque ao abrir o novo .tar.gz ou .zip os dados serão sobreescritos). No meu caso, que mantenho o openfire no /opt, um simples mv /opt/openfire /opt/openfire.</description>
+    </item>
+    
+  </channel>
+</rss>

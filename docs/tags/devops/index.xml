@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/devops/</link>
+    <description>Recent content in devops on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 19 Jun 2018 20:34:23 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible - O que é e para que serve</title>
+      <link>https://sidneiweber.com.br/ansible-o-que-%C3%A9-e-para-que-serve/</link>
+      <pubDate>Tue, 19 Jun 2018 20:34:23 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/ansible-o-que-%C3%A9-e-para-que-serve/</guid>
+      <description>ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE
+ Com essa frase começa a apresentação da ferramenta Ansible em seu próprio site. Bom, resumidamente o Ansible é um software que automatiza o provisionamento de software, gerenciamento de configuração e implantação de aplicativos. Ou seja, tudo aquilo que era feito repetidas vezes para configurar, atualizar um servidor ou serviço, pode ser automatizado com Ansible.
+Bem vindo ao mundo da automação 🙂</description>
+    </item>
+    
+    <item>
+      <title>Rundeck - Automatizando suas tarefas</title>
+      <link>https://sidneiweber.com.br/rundeck-automatizando-suas-tarefas/</link>
+      <pubDate>Mon, 09 Apr 2018 21:08:17 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/rundeck-automatizando-suas-tarefas/</guid>
+      <description>O que é esse tal de Rundeck
+Falando a grosso modo Rundeck é um automatizador e agendador de tarefas. Obviamente que ele faz muito mais do que isso, ele consegue rodar essas tarefas tanto em Linux quanto em Windows. Consegue-se criar um workflow de tarefas, fazendo uma tarefa depender de outra ou conforme sua execução com sucesso ou insucesso.
+Escrito em java e tem sua administração por uma interface web bem simples de ser usado e usa ssh para conexões com Linux e Winrm para conexões com Windows.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>centos on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/centos/</link>
+    <description>Recent content in centos on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 03 May 2018 21:28:13 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalação Postresql no Centos a partir do código fonte</title>
+      <link>https://sidneiweber.com.br/instala%C3%A7%C3%A3o-postresql-no-centos-a-partir-do-c%C3%B3digo-fonte/</link>
+      <pubDate>Thu, 03 May 2018 21:28:13 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/instala%C3%A7%C3%A3o-postresql-no-centos-a-partir-do-c%C3%B3digo-fonte/</guid>
+      <description>Estou realizando a instalação na última versão do Centos no momento, que seria a 7. Porém o procedimento para outras versões deve seguir o mesmo padrão.
+Instalando dependências:
+yum install -y make wget gcc readline-devel zlib-devel Vamos baixar a última versão do Postresql (10.3 no momento dos testes) e após o download concluído iremos descompactar:
+wget -c https://ftp.postgresql.org/pub/source/v10.3/postgresql-10.3.tar.gz tar -xzvf postgresql-10.3.tar.gz Após isso vamos realizar o processo de compilação, instalação e criação do usuário postgres.</description>
+    </item>
+    
+  </channel>
+</rss>
