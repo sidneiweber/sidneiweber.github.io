@@ -1,6 +1,8 @@
 baseURL = "https://sidneiweber.com.br"
 title   = "Sidnei Weber"
 languageCode = "en-us"
+timeout = 100000
+
 theme = "hello-friend-ng"
 disqusShortname = "sidneiweber"
 googleAnalytics = "UA-921545-12"
