@@ -1,0 +1,75 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 5
+disqusShortname = "sidneiweber"
+googleAnalytics = "UA-921545-12"
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 1
+  # Enable to show reading time in minutes for posts
+  showReadingTime = true
+
+  # Social {{ .Site.Params.instagramLink }}
+  #instagramLink = "https://instagram.com/EXAMPLE"
+
+[permalinks]
+  "/post" = "/:title"
+
+[author]
+  "github" = "sidneiweber"
+
+[languages]
+  [languages.en]
+    title = "Sidnei Weber"
+    subtitle = "Do sysadmin ao DevOps"
+    keywords = ""
+    copyright = ""
+    menuMore = "Mostrar mais"
+    writtenBy = "Escrito por"
+    readMore = "Continue lendo"
+    readOtherPosts = "Ler outros posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min de leitura"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      logoText = "Sidnei Weber"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "sobre"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "password-generator"
+        name = "Password Generator"
+        url = "/password-generator"
+      [[languages.en.menu.main]]
+        identifier = "catalogo-auto-pecas"
+        name = "Catalogo Auto Peças"
+        url = "/catalogo-auto-pecas"
+      [[languages.en.menu.main]]
+        identifier = "projeto-pri"
+        name = "Projeto PRI"
+        url = "/projeto-pri"
+      [[languages.en.menu.main]]
+        identifier = "scp-facil"
+        name = "SCP Fácil"
+        url = "/scp-facil"
+      [[languages.en.menu.main]]
+        identifier = "RSS"
+        name = "RSS"
+        url = "/index.xml"
