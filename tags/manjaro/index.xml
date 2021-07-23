@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>manjaro on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/manjaro/</link>
+    <description>Recent content in manjaro on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 12 Nov 2015 00:10:33 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalar Java 8 no Manjaro/Archlinux</title>
+      <link>https://sidneiweber.com.br/instalar-java-8-no-manjaro/archlinux/</link>
+      <pubDate>Thu, 12 Nov 2015 00:10:33 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/instalar-java-8-no-manjaro/archlinux/</guid>
+      <description>Primeiro atualize o sistema
+pacman -Sy Após isso baixamos a última versão (Na data da postagem essa era última versão)
+wget http://javadl.sun.com/webapps/download/AutoDL?BundleId=111679 -O Java-latest Descompactamos
+tar -zxvf Java-latest Copiamos para a pasta correta
+cp -pr jre1.8.0_60 /opt Criamos o link para o programa
+ln -s /opt/jre1.8.0_60/bin/java /usr/bin/java E o link para os plugins:
+ln -s /opt/jre1.8.0_65/lib/amd64/libnpjp2.so ~/.mozilla/plugins/libnpjp2.so Fonte</description>
+    </item>
+    
+  </channel>
+</rss>

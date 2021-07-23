@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nagios on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/nagios/</link>
+    <description>Recent content in nagios on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 28 Apr 2017 11:06:44 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/nagios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitoramento via TCP no Nagios</title>
+      <link>https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/</link>
+      <pubDate>Fri, 28 Apr 2017 11:06:44 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/</guid>
+      <description>Hoje vamos dar seguinte a configuração do Nagios que instalamos um tempo atrás.
+Iniciaremos por um dos monitramentos mais simples que é o monitoramento via TCP, caso tennha alguns sites e queira monitorar caso algum deles caia, será muito útil.
+Bom a estrutura do Nagios é bem simples mas não mostrarei hoje, para melhorar nos organizarmos vamos criar um arquivo de template próprio, dentro da pasta /usr/local/nagios/etc. Aqui no meu caso crei o arquivo templatesNagios.</description>
+    </item>
+    
+    <item>
+      <title>Script instalação automatizada Nagios no Debian</title>
+      <link>https://sidneiweber.com.br/script-instala%C3%A7%C3%A3o-automatizada-nagios-no-debian/</link>
+      <pubDate>Wed, 26 Apr 2017 13:27:40 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/script-instala%C3%A7%C3%A3o-automatizada-nagios-no-debian/</guid>
+      <description>Script para instalação do Nagios e Nagios plugins no Debian baixando o código fonte. Script está funcional, porém pode vir a melhorar.
+Retirado de https://github.com/sidneiweber/meu-canivete-suico/blob/master/nagios/instalar-nagios-debian.sh
+#!/bin/bash # instalar-nagios-debian.sh # Criado por Sidnei Weber # Variaveis VERSAO_NAGIOS=4.2.4 VERSAO_PLUGINS=2.1.4 USUARIO=`whoami` # Verificar se é root if [ &amp;#34;$USUARIO&amp;#34; == &amp;#34;root&amp;#34; ] then echo &amp;#34;O poder está em suas mãos!&amp;#34; else echo &amp;#34;Você precisa ter poderes de Super Vaca!&amp;#34; exit 0 fi # Verificar internet clear echo &amp;#34;Verificando conexão com internet&amp;#34; curl www.</description>
+    </item>
+    
+    <item>
+      <title>Criar script inicialização Nagios no Debian</title>
+      <link>https://sidneiweber.com.br/criar-script-inicializa%C3%A7%C3%A3o-nagios-no-debian/</link>
+      <pubDate>Wed, 08 Feb 2017 14:17:09 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/criar-script-inicializa%C3%A7%C3%A3o-nagios-no-debian/</guid>
+      <description>Após a instalação e inicialização do Nagios no nosso servidor Debian, temos que configurar um script de inicialização, para que cada vez que a gente precisa reiniciar o serviço ou a própria máquina não precisaremos subir tudo na mão.
+A primeira coisa é deletar o script já existente, lembrando que esse tutorial é válido para o Debian.
+rm -rf /etc/init.d/nagios Copiar um esqueleto do sistema:
+cp /etc/init.d/skeleton /etc/init.d/nagios Vamos editar o arquivo /etc/init.</description>
+    </item>
+    
+    <item>
+      <title>Instalando Nagios - Instalação básica</title>
+      <link>https://sidneiweber.com.br/instalando-nagios-instala%C3%A7%C3%A3o-b%C3%A1sica/</link>
+      <pubDate>Tue, 31 Jan 2017 13:11:40 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/instalando-nagios-instala%C3%A7%C3%A3o-b%C3%A1sica/</guid>
+      <description>Vamos fazer a instalação básica do Nagios. Pra quem não conhece o Nagios, segue um link para conhecer melhor.
+ Nagios é uma popular aplicação de monitoramento de rede de código aberto distribuída sob a licença GPL. Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.
+ Faremos a instalação no Debian, que é uma distribuição de minha preferência. O Nagios pode ser instalado em qualquer sistema Linux, a única diferença que pode ocorrer é a instalação de dependências e/ou alguma localização de pastas</description>
+    </item>
+    
+  </channel>
+</rss>

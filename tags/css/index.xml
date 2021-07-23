@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Sidnei Weber</title>
+    <link>https://sidneiweber.com.br/tags/css/</link>
+    <description>Recent content in css on Sidnei Weber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 06 Jul 2015 15:43:13 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>11 regras CSS que todo desenvolvedor web deve saber</title>
+      <link>https://sidneiweber.com.br/11-regras-css-que-todo-desenvolvedor-web-deve-saber/</link>
+      <pubDate>Mon, 06 Jul 2015 15:43:13 -0300</pubDate>
+      
+      <guid>https://sidneiweber.com.br/11-regras-css-que-todo-desenvolvedor-web-deve-saber/</guid>
+      <description>@media A regra @media não só nos permite definir estilos para nossa página da web quando impressa na tela. Hoje em dia esta regra atingiu um patamar mais avançado com as “media queries“, que são associadas à criação de sites “adaptativos” ou “responsivos”, ou seja, que se ajustam ao tamanho da tela do dispositivo no qual estiverem sendo acessados.
+Você pode criar uma media query usando propriedades como min-width para ajustar seu layout de acordo com o tamanho do “viewport” do dispositivo do usuário.</description>
+    </item>
+    
+  </channel>
+</rss>
