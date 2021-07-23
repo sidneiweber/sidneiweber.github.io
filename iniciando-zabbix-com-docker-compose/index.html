@@ -6,12 +6,12 @@
 <meta name=author content="Sidnei Weber">
 <meta name=description content="Obviamente precisaremos ter instalado o docker e docker-compose, caso não saiba como instalar pode acessar o link e esse outro link. Precisaremos criar um arquivo docker-compose.yml com o seguinte conteúdo:
 persistentDB: img &amp;#34;busybox:latest&amp;#34; volumes: - /var/lib/mysql zabbixDB: img &amp;#34;monitoringartist/zabbix-db-mariadb&amp;#34; environment: MARIADB_USER: zabbix MARIADB_PASS: senha PHP_date_timezone: America/Sao_Paulo ZS_StartDiscoverers: &amp;#34;5&amp;#34; ZS_StartPingers: &amp;#34;5&amp;#34; volumes_from: - persistentDB volumes: - &amp;#34;/etc/localtime:/etc/localtime:ro&amp;#34; - &amp;#34;/srv/zabbix/backups:/backups&amp;#34; hostname: zabbix-db zabbix: img &amp;#34;monitoringartist/zabbix-3.0-xxl:latest&amp;#34; ports: - &amp;#34;80:80&amp;#34; - &amp;#34;10051:10051&amp;#34; volumes: - &amp;#34;/etc/localtime:/etc/localtime:ro&amp;#34; links: - &amp;#34;zabbixDB:zabbix.">
-<meta name=keywords content=",zabbix">
+<meta name=keywords content="devops,aws,ansible,docker,linux,python,zabbix">
 <meta name=robots content="noodp">
 <meta name=theme-color content>
 <link rel=canonical href=https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/>
 <title>
-Iniciando Zabbix com Docker Compose :: Sidnei Weber — Hello Friend NG Theme
+Iniciando Zabbix com Docker Compose :: Sidnei Weber — Do Sysadmin ao DevOps
 </title>
 <link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
 <link rel=stylesheet href=https://sidneiweber.com.br/main.de188b3201233c251f4fd6306dbd2cb41e408fb8846c09781b2925de7df5025c.css>
@@ -50,7 +50,7 @@ persistentDB: img &#34;busybox:latest&#34; volumes: - /var/lib/mysql zabbixDB: i
 <a href=https://sidneiweber.com.br/ style=text-decoration:none>
 <div class=logo>
 <span class=logo__mark>></span>
-<span class=logo__text>$ cd /home/</span>
+<span class=logo__text>$ cd /home/sidnei</span>
 <span class=logo__cursor>
 </span>
 </div>

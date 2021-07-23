@@ -8,12 +8,12 @@
 apt-get install samba Depois alteramos a configuração do arquivo:
 vi /etc/samba/smb.conf E alteramos alguns parametros:
 [global] #nome do grupo de trabalho workgroup = casa #como a maquina irá aparecer na rede Windows netbios name = servidor de arquivos #autenticação #modo de acesso ao servidor security = user / share #lembrado que user é quando se criará um usuário no sistema, e share sem usuário #compartilhamentos [arquivos] #descrição do compartilhamento comment = meus arquivos #caminho da pasta no servidor path = /arquivos # ou o diretório desejado public = yes browseable = yes #se está visível ou oculto na rede writeable = yes #permite escrita read only = no #somente leitura valid users = VOCE # define a mascara em que os arquivos serão criados create mask = 0700 #(terão a permissão rwx somente para o root) # define a mascara em que os diretórios serão criados directory mask = 0700 Vamos criar o diretório compartilhado no servidor:">
-<meta name=keywords content=",samba,servidores">
+<meta name=keywords content="devops,aws,ansible,docker,linux,python,samba,servidores">
 <meta name=robots content="noodp">
 <meta name=theme-color content>
 <link rel=canonical href=https://sidneiweber.com.br/instalar-servidor-samba-dica-r%C3%A1pida/>
 <title>
-Instalar servidor Samba [Dica rápida] :: Sidnei Weber — Hello Friend NG Theme
+Instalar servidor Samba [Dica rápida] :: Sidnei Weber — Do Sysadmin ao DevOps
 </title>
 <link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
 <link rel=stylesheet href=https://sidneiweber.com.br/main.de188b3201233c251f4fd6306dbd2cb41e408fb8846c09781b2925de7df5025c.css>
@@ -58,7 +58,7 @@ vi /etc/samba/smb.conf E alteramos alguns parametros:
 <a href=https://sidneiweber.com.br/ style=text-decoration:none>
 <div class=logo>
 <span class=logo__mark>></span>
-<span class=logo__text>$ cd /home/</span>
+<span class=logo__text>$ cd /home/sidnei</span>
 <span class=logo__cursor>
 </span>
 </div>

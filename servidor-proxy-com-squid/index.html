@@ -7,12 +7,12 @@
 <meta name=description content="Instalação:
 apt-get install squid Arquivo base de configuração (/etc/squid/squid.conf):
 http_port 3128 visible_hostname KORZOS acl all src 0.0.0.0/0.0.0.0 acl manager proto cache_object acl localhost src 127.0.0.1/255.255.255.255 acl SSL_ports port 443 563 acl Safe_ports port 21 80 443 563 70 210 280 488 59 777 901 1025-65535 acl purge method PURGE acl CONNECT method CONNECT http_access allow manager localhost http_access deny manager http_access allow purge localhost http_access deny purge http_access deny !Safe_ports http_access deny CONNECT !">
-<meta name=keywords content=",servidores,squid">
+<meta name=keywords content="devops,aws,ansible,docker,linux,python,servidores,squid">
 <meta name=robots content="noodp">
 <meta name=theme-color content>
 <link rel=canonical href=https://sidneiweber.com.br/servidor-proxy-com-squid/>
 <title>
-Servidor Proxy com squid :: Sidnei Weber — Hello Friend NG Theme
+Servidor Proxy com squid :: Sidnei Weber — Do Sysadmin ao DevOps
 </title>
 <link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
 <link rel=stylesheet href=https://sidneiweber.com.br/main.de188b3201233c251f4fd6306dbd2cb41e408fb8846c09781b2925de7df5025c.css>
@@ -54,7 +54,7 @@ http_port 3128 visible_hostname KORZOS acl all src 0.0.0.0/0.0.0.0 acl manager p
 <a href=https://sidneiweber.com.br/ style=text-decoration:none>
 <div class=logo>
 <span class=logo__mark>></span>
-<span class=logo__text>$ cd /home/</span>
+<span class=logo__text>$ cd /home/sidnei</span>
 <span class=logo__cursor>
 </span>
 </div>

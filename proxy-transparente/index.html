@@ -8,12 +8,12 @@
 Criar o arquivo:
 cd /etc/init.d touch rc.firewall Adicionar o código:
 #! /bin/sh # Limpando tabelas do iptables iptables -F iptables -t nat -F iptables -t mangle -F # Definição da rede local rede_interna=”192.168.0.0/16” # Habilitando encaminhamento de pacotes e outras opções echo “1″ &amp;gt; /proc/sys/net/ipv4/ip_forward echo “1″ &amp;gt; /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts echo “1″ &amp;gt; /proc/sys/net/ipv4/icmp_echo_ignore_all # Carregando modulos necessários para o iptables /sbin/modprobe iptable_nat /sbin/modprobe ip_tables /sbin/modprobe ipt_state /sbin/modprobe ip_conntrack /sbin/modprobe ipt_multiport /sbin/modprobe iptable_mangle iptables -I PREROUTING -t nat -p tcp -s $rede_interna –dport 80 -j REDIRECT –to-port 3128 iptables -t nat -I POSTROUTING -s $rede_interna -j MASQUERADE iptables -A FORWARD -s $rede_interna -d loginnet.">
-<meta name=keywords content=",firewall,squid">
+<meta name=keywords content="devops,aws,ansible,docker,linux,python,firewall,squid">
 <meta name=robots content="noodp">
 <meta name=theme-color content>
 <link rel=canonical href=https://sidneiweber.com.br/proxy-transparente/>
 <title>
-Proxy transparente :: Sidnei Weber — Hello Friend NG Theme
+Proxy transparente :: Sidnei Weber — Do Sysadmin ao DevOps
 </title>
 <link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
 <link rel=stylesheet href=https://sidneiweber.com.br/main.de188b3201233c251f4fd6306dbd2cb41e408fb8846c09781b2925de7df5025c.css>
@@ -58,7 +58,7 @@ cd /etc/init.d touch rc.firewall Adicionar o código:
 <a href=https://sidneiweber.com.br/ style=text-decoration:none>
 <div class=logo>
 <span class=logo__mark>></span>
-<span class=logo__text>$ cd /home/</span>
+<span class=logo__text>$ cd /home/sidnei</span>
 <span class=logo__cursor>
 </span>
 </div>
