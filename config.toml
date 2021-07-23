@@ -197,10 +197,10 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
-  # [[menu.main]]
-  #   identifier = "password-generator"
-  #   name = "Password Generator"
-  #   url = "/password-generator"
+  [[menu.main]]
+    identifier = "password-generator"
+    name = "Password Generator"
+    url = "/password-generator"
   # [[menu.main]]
   #   identifier = "catalogo-auto-pecas"
   #   name = "Catalogo Auto Peças"
@@ -213,7 +213,7 @@ disableHugoGeneratorInject = false
   #   identifier = "scp-facil"
   #   name = "SCP Fácil"
   #   url = "/scp-facil"
-  # [[menu.main]]
-  #   identifier = "RSS"
-  #   name = "RSS"
-  #   url = "/index.xml"
+  [[menu.main]]
+    identifier = "RSS"
+    name = "RSS"
+    url = "/index.xml"
