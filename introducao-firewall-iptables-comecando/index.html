@@ -1,0 +1,359 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=author content="Sidnei Weber">
+<meta name=description content="Conceito de Firewall: O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.
+Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o redirecinamento correto, servindo de filtro.
+O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.">
+<meta name=keywords content="devops,aws,ansible,docker,linux,python,iptables,segurança,linux">
+<meta name=robots content="noodp">
+<meta name=theme-color content>
+<link rel=canonical href=https://sidneiweber.com.br/introducao-firewall-iptables-comecando/>
+<title>
+Introdução Firewall Iptables - Começando :: Sidnei Weber — Do Sysadmin ao DevOps
+</title>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
+<link rel=stylesheet href=https://sidneiweber.com.br/main.de188b3201233c251f4fd6306dbd2cb41e408fb8846c09781b2925de7df5025c.css>
+<link rel=apple-touch-icon sizes=180x180 href=https://sidneiweber.com.br/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=https://sidneiweber.com.br/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://sidneiweber.com.br/favicon-16x16.png>
+<link rel=manifest href=https://sidneiweber.com.br/site.webmanifest>
+<link rel=mask-icon href=https://sidneiweber.com.br/safari-pinned-tab.svg color=#1b1c1d>
+<link rel="shortcut icon" href=https://sidneiweber.com.br/favicon.ico>
+<meta name=msapplication-TileColor content="#1b1c1d">
+<meta name=theme-color content="#1b1c1d">
+<meta itemprop=name content="Introdução Firewall Iptables - Começando">
+<meta itemprop=description content="Conceito de Firewall: O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.
+Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o redirecinamento correto, servindo de filtro.
+O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2."><meta itemprop=datePublished content="2017-02-15T10:44:41-03:00">
+<meta itemprop=dateModified content="2017-02-15T10:44:41-03:00">
+<meta itemprop=wordCount content="1214"><meta itemprop=image content="https://sidneiweber.com.br">
+<meta itemprop=keywords content="iptables,segurança,linux,">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sidneiweber.com.br">
+<meta name=twitter:title content="Introdução Firewall Iptables - Começando">
+<meta name=twitter:description content="Conceito de Firewall: O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.
+Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o redirecinamento correto, servindo de filtro.
+O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.">
+<meta property="og:title" content="Introdução Firewall Iptables - Começando">
+<meta property="og:description" content="Conceito de Firewall: O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.
+Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o redirecinamento correto, servindo de filtro.
+O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sidneiweber.com.br/introducao-firewall-iptables-comecando/"><meta property="og:image" content="https://sidneiweber.com.br"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2017-02-15T10:44:41-03:00">
+<meta property="article:modified_time" content="2017-02-15T10:44:41-03:00">
+<meta property="article:published_time" content="2017-02-15 10:44:41 -0300 -0300">
+</head>
+<body>
+<div class=container>
+<header class=header>
+<span class=header__inner>
+<a href=https://sidneiweber.com.br/ style=text-decoration:none>
+<div class=logo>
+<span class=logo__mark>></span>
+<span class=logo__text>$ cd /home/sidnei</span>
+<span class=logo__cursor>
+</span>
+</div>
+</a>
+<span class=header__right>
+<nav class=menu>
+<ul class=menu__inner><li><a href=https://sidneiweber.com.br/about/>About</a></li><li><a href=https://sidneiweber.com.br/password-generator>Password Generator</a></li><li><a href=https://sidneiweber.com.br/posts/>Posts</a></li>
+</ul>
+</nav>
+<span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+</span>
+</span>
+</span>
+</header>
+<div class=content>
+<main class=post>
+<div class=post-info>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+6 minutes
+</p>
+</div>
+<article>
+<h1 class=post-title>
+<a href=https://sidneiweber.com.br/introducao-firewall-iptables-comecando/>Introdução Firewall Iptables - Começando</a>
+</h1>
+<figure class=post-cover>
+<img src=https://sidneiweber.com.br/img/uploads/2017/02/Selecao_001.png alt="Introdução Firewall Iptables - Começando">
+</figure>
+<div class=post-content>
+<h3 id=conceito-de-firewall>Conceito de Firewall:</h3>
+<p>O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.<br>
+Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o  redirecinamento correto, servindo de filtro.</p>
+<p><img src=https://sidneiweber.com.br/img/uploads/2017/02/firewall1.png alt=iptables></p>
+<p>O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.4 substituindo o ipchains.<br>
+Ele se baseia nas regras e parametros passados para fazer a filtragem dos pacotes, ou seja, compara as regras com os pacotes.</p>
+<p>Para termos uma segurança maior, incluindo um controle de navegação na rede interna, uma dupla muito usada e que combina muito bem, é a dupla Iptables + Squid. Squid é um proxy de navegação, mas essa solução falaremos em outra oportunidade</p>
+<h3 id=tabelas>Tabelas:</h3>
+<p>Tabelas são os locais usados para armazenar as chains e conjunto de regras com uma determinada característica em comum. As tabelas podem ser referenciadas com a opção -t tabela e existem basicamente 4 tabelas disponíveis no iptables:<br>
+<strong>Tabela FILTER</strong>: possui cadeias INPUT, OUTPUT, FORWARD<br>
+<strong>Tabela NAT</strong>: possui cadeias PREROUTING, OUTPUT, POSTROUTING<br>
+<strong>Tabela MANGLE</strong>: cadeias PREROUTING, OUTPUT, POSTROUTING, INPUT, FORWARD<br>
+<strong>Tabela RAW</strong>: cadeias PREROUTING, OUTPUT</p>
+<h3 id=o-que-são-chains>O que são chains?</h3>
+<p>As Chains são locais onde as regras do firewall definidas pelo usuário são armazenadas para operação do firewall.</p>
+<p><strong>INPUT</strong>: aplica regra aos pacotes que chegam ao servidor</p>
+<p><strong>OUTPUT</strong>: aplica regras aos pacotes de rede originados e que partem do servidor</p>
+<p><strong>FORWARD</strong>: aplica regras aos pacotes de rede roteados atraves do servidor (para outro servidor ou outra interface do mesmo servidor)</p>
+<p><strong>PREROUTING</strong>: altera pacotes de rede na hora que chegam e antes do roteamento</p>
+<p><strong>POSTROUTING</strong>: altera pacotes de rede após o roteamento. Usado para SNAT</p>
+<h3 id=politicas-ações-targets>Politicas, ações (targets):</h3>
+<p><strong>ACCEPT</strong>: pacote permitido<br>
+<strong>DROP</strong>: descartar pacote<br>
+<strong>QUEUE</strong>: enviar o pacote ao userspace (codigo fora do kernel)<br>
+<strong>RETURN</strong>: descontinuar o processamento do pacote e aplicar a regra padrao a ele<br>
+<strong>REJECT</strong>: Descarta o pacote e envia feedback ao remetente<br>
+<strong>DNAT</strong>: Reescreve endereço de destino (NAT)<br>
+<strong>SNAT</strong>: Reescreve endereço de origem (NAT)<br>
+<strong>LOG</strong>: coloca no log informações sobre o pacte</p>
+<h3 id=estrutura-do-comando>Estrutura do comando:</h3>
+<h4 id=comando-principal>Comando principal:</h4>
+<p>iptables subcomando chain parametro1 valor1 parametron valorn ação</p>
+<h4 id=subcomandos>Subcomandos:</h4>
+<p>-A cadeia – anexa a regra ao final da cadeia<br>
+-L [cadeia] lista as regras da cadeia, ou todas caso a cadeia nao seja especificada<br>
+-F [cadeia] apaga todas as regras na cadeia<br>
+-N cadeia – Lista todas as regras na cadeia<br>
+-P cadeia politica – configura a regra padrão da cadeia<br>
+-D cadeia linha – apaga uma regra em um posição na cadeia<br>
+-X [cadeia] excluiu uma cadeia vazia<br>
+-I cadeia linha – insere uma regra em uma posição na cadeia<br>
+-Z zera os contadores para todas as cadeias</p>
+<h4 id=parametros-alguns>Parametros, alguns:</h4>
+<p>-t tabela (filter é a padrao)<br>
+-j ação<br>
+-p protocolo (especifica o protocolo, icmp, tcp, udp, all)<br>
+-s IP (IP de origem do pacote)<br>
+-d IP (IP de destino do pacte)<br>
+-i interface (nome da interface de rede de entrada do pacote)<br>
+-o interface (nome da interface de rede de saida do pacote)<br>
+–sport portas (Portas de origem)<br>
+–dport portas (Portas de destino)<br>
+–syn (identifica nova requisição de conexao)<br>
+–icmp-type (tipo de mensagem icmp)</p>
+<h3 id=checagem-de-estado-dos-pacotes-state-match>Checagem de estado dos pacotes (state match):</h3>
+<p>-m state –state OPCAO<br>
+<strong>NEW</strong> cria uma nova conexao<br>
+<strong>ESTABLISHED</strong> pacote que pertence a uma conexao existente<br>
+<strong>RELATED</strong> pacote relacionado mas que nao faz parte de uma conexao existente<br>
+<strong>INVALID</strong> pacote nao pode ser identificado (ex. falta memoria, erro ICMP de conexao nao conhecida)</p>
+<h3 id=extensões>Extensões:</h3>
+<p>Extensao TCP<br>
+–tcp-flags (ALL, SYN, ACK, FIN, etc)<br>
+–source-port ou –sport<br>
+–destination-port ou –dport</p>
+<p>Extensao UDP<br>
+Mesmas opções do TCP</p>
+<p>Extensao ICMP<br>
+–icmp-type</p>
+<p>Outras extensoes<br>
+-m limit quando usado em LOG serve para limitar o numero de pacotes escritos durante um certo ponto<br>
+–limit valor</p>
+<h3 id=arquivos-de-logs-criados-pelo-iptables>Arquivos de logs criados pelo iptables:</h3>
+<p>Todo tráfego que for registrado pelo iptables é registrado por padrão no arquivo /var/log/kern.log.</p>
+<h3 id=exemplos>Exemplos:</h3>
+<p>Exibir todas as regras:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -L -n -v
+</code></pre></div><p>Verificar regras (padrão filter –line-numbers (Exibe linhas))</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -L
+iptables -S <span style=color:#f92672>(</span>lista comandos <span style=color:#66d9ef>do</span> iptables<span style=color:#f92672>)</span>
+</code></pre></div><p>Verificar regras tabela nat</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -t nat -L
+</code></pre></div><p>Criando uma regra, DROP em tudo que vai pra porta 123</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptabels -A INPUT -p tcp --dport <span style=color:#ae81ff>123</span> -j DROP
+</code></pre></div><p>Inserindo uma regra, -I por padrao insere a regra no final<br>
+# indicando a linha ja a regra para a posição referente</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -I INPUT <span style=color:#ae81ff>1</span> -p tcp --sport <span style=color:#ae81ff>321</span> --dport <span style=color:#ae81ff>123</span> -J ACCEPT
+</code></pre></div><p>Substituindo uma regra, parametro -R<br>
+# Substitui a regra 1 (no caso do nosso exemplo)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -R INPUT <span style=color:#ae81ff>1</span> -p tcp --sport <span style=color:#ae81ff>321</span> --dport <span style=color:#ae81ff>123</span> -J ACCEPT
+</code></pre></div><p>Deletar regra, parametro -D<br>
+# remove linha 1</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -D INPUT <span style=color:#ae81ff>1</span>
+</code></pre></div><p># apagar usando sintaxe, usar mesmo sintaxe com parametro -D</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -D INPUT -p tcp --dport <span style=color:#ae81ff>80</span> -j ACCEPT
+</code></pre></div><p>Bloquear porta específica<br>
+Sainte:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A OUTPUT -p tcp --dport xxx -j DROP
+</code></pre></div><p>Entrante:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -p tcp --dport xxx -j ACCEPT
+</code></pre></div><p>Ou múltiplas portas:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT  -p tcp -m multiport --dports 22,80,443 -j ACCEPT
+iptables -A OUTPUT -p tcp -m multiport --sports 22,80,443 -j ACCEPT
+</code></pre></div><p>Manter registros de Log’s de pacotes bloqueados:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -i eth0 -j LOG --log-prefix <span style=color:#e6db74>&#34;Quantidade pacotes bloqueados:&#34;</span>
+iptables -A INPUT -p tcp -dport <span style=color:#ae81ff>21</span> -j LOG -log-prefix “Serviço: ftp”
+</code></pre></div><p>Os log’s são salvos em /var/log/messages.</p>
+<p>Compartilhar internet, parametro ip_forward precisa ser 1, geralemte altera-se no arquivo “/proc/sys/net/ipv4/ip_forward”. Lembrando que a mudança não é permanente, a cada reinicialização deve-se alterar o parâmetro novamente ou quando criar um sript de firewall incluir o comando para alterar o arquivo com o cat.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -m state --state RELATED.ESTABLISHED -j ACCEPT
+iptables -A FORWARD -m state --state RELATED.ESTABLISHED -j ACCEPT
+</code></pre></div><p>Ip Masquarade</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+</code></pre></div><p>Encaminhamento de portas (Ip forwarding)<br>
+Tentando acessar pela interface wan</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A PREROUTING -t nat -i eth0 -p tcp --dport <span style=color:#ae81ff>80</span> -j DNAT --to 192.168.10.10:80
+iptables -A FORWARD -p tcp -d 192.168.10.10 --dport <span style=color:#ae81ff>80</span> -j ACCPET
+</code></pre></div><p>Reject<br>
+Descarta pacote e envia um retorno a quem enviou o pacote.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-net-unreachable
+iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-host-unreachable
+iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-proto-unreachable
+</code></pre></div><p>entre outras opções do –reject-with</p>
+<p>Criar chain</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -t filter -N <span style=color:#f92672>[</span>chain<span style=color:#f92672>]</span>
+</code></pre></div><p>Limpar regras</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -t filter -F <span style=color:#f92672>[</span>CHAIN<span style=color:#f92672>]</span>
+</code></pre></div><p>remover  Chain criada pelo usuario, parametro -X<br>
+zerar contador, parametro -Z</p>
+<p>Alterar regra padrão, o ideal INPUT ser drop por padrão</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -P INPUT DROP
+</code></pre></div><p>Liberar servidor web</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -m state --state new -p tcp --dport <span style=color:#ae81ff>80</span> -j ACCEPT
+iptables -A INPUT -m state --state new -p tcp --dport <span style=color:#ae81ff>443</span> -j ACCEPT
+</code></pre></div><p>Liberar host especifico</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptabels -A INPUT -s 192.168.1.20 -j ACCEPT
+</code></pre></div><p>Liberar ping (resposta liberada se output esta ACCEPT tbm)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+</code></pre></div><p>Liberar respostas de ping para outras maquinas</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT
+</code></pre></div><p>Proteção contra Syn-flood:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A FORWARD -p tcp --syn -m limit --limit 1/s -j ACCEPT
+</code></pre></div><p>Port scanner suspeito:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A FORWARD -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s -j ACCEPT
+</code></pre></div><p>Ping da morte:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables -A FORWARD -p icmp --icmp-type echo-request -m limit --limit 1/s -j ACCEPT
+</code></pre></div><p>Salvando e restaurando as regras:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>iptables-save &gt; arquivo
+iptables-restore &lt; arquivo
+</code></pre></div>
+</div>
+</article>
+<hr>
+<div class=post-info>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
+<span class=tag><a href=https://sidneiweber.com.br/tags/iptables/>iptables</a></span>
+<span class=tag><a href=https://sidneiweber.com.br/tags/seguran%C3%A7a/>segurança</a></span>
+<span class=tag><a href=https://sidneiweber.com.br/tags/linux/>linux</a></span>
+</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+1214 Words
+</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+2017-02-15 13:44
+</p>
+</div>
+<hr>
+<div class=sharing-buttons>
+<a class=resp-sharing-button__link href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_blank rel=noopener aria-label title="Share on facebook">
+<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_blank rel=noopener aria-label title="Share on twitter">
+<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://www.tumblr.com/widgets/share/tool?posttype=link&title=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando&caption=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando&canonicalUrl=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_blank rel=noopener aria-label title="Share on tumblr">
+<div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093.0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941.0 9.999.0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="mailto:?subject=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando&body=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_self rel=noopener aria-label title="Share via email">
+<div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f&media=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f;description=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando" target=_blank rel=noopener aria-label title="Share on pinterest">
+<div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M12.017.0C5.396.0.029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024.0 1.518.769 1.518 1.688.0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128.0 3.768-2.245 3.768-5.487.0-2.861-2.063-4.869-5.008-4.869-3.41.0-5.409 2.562-5.409 5.199.0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646.0-3.776 2.748-7.252 7.92-7.252 4.158.0 7.392 2.967 7.392 6.923.0 4.135-2.607 7.462-6.233 7.462-1.214.0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607.0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017.0z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f&title=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando&summary=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando&source=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_blank rel=noopener aria-label title="Share on linkedin">
+<div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://reddit.com/submit/?url=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f&resubmit=true&title=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando" target=_blank rel=noopener aria-label title="Share on reddit">
+<div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm5.01 4.744c.688.0 1.25.561 1.25 1.249a1.25 1.25.0 01-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968.0 1.754.786 1.754 1.754.0.716-.435 1.333-1.01 1.614a3.111 3.111.0 01.042.52c0 2.694-3.13 4.87-7.004 4.87s-7.004-2.176-7.004-4.87c0-.183.015-.366.043-.534A1.748 1.748.0 014.028 12c0-.968.786-1.754 1.754-1.754.463.0.898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342.0 01.14-.197.35.35.0 01.238-.042l2.906.617a1.214 1.214.0 011.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687.0 1.248-.561 1.248-1.249S9.937 12 9.249 12zm5.5.0c-.687.0-1.248.561-1.248 1.25.0.687.561 1.248 1.249 1.248S16 13.937 16 13.249c0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327.0 00-.231.094.33.33.0 000 .463c.842.842 2.484.913 2.961.913s2.105-.056 2.961-.913a.361.361.0 00.029-.463.33.33.0 00-.464.0c-.547.533-1.684.73-2.512.73-.828.0-1.979-.196-2.512-.73a.326.326.0 00-.232-.095z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f;title=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando" target=_blank rel=noopener aria-label title="Share on xing">
+<div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M18.188.0c-.517.0-.741.325-.927.66.0.0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211.0.375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016.0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894.0 21.686.0h-3.498zM3.648 4.74c-.211.0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016.0.021L1.86 16.051c-.099.188-.093.381.0.529.085.142.239.234.45.234h3.461c.518.0.766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="whatsapp://send?text=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando%20https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_blank rel=noopener aria-label title="Share on whatsapp">
+<div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198.0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479.0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87.0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86.0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64.0 5.122 1.03 6.988 2.898a9.825 9.825.0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815.0 0012.05.0C5.495.0.16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882.0 005.683 1.448h.005c6.554.0 11.89-5.335 11.893-11.893a11.821 11.821.0 00-3.48-8.413z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f&t=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando" target=_blank rel=noopener aria-label title="Share on hacker news">
+<div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
+</div>
+</div>
+</a>
+<a class=resp-sharing-button__link href="https://telegram.me/share/url?text=Introdu%c3%a7%c3%a3o%20Firewall%20Iptables%20-%20Come%c3%a7ando&url=https%3a%2f%2fsidneiweber.com.br%2fintroducao-firewall-iptables-comecando%2f" target=_blank rel=noopener aria-label title="Share on telegram">
+<div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+</div>
+</div>
+</a>
+</div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h></span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button previous">
+<a href=https://sidneiweber.com.br/instalando-servidor-dhcp/>
+<span class=button__icon>←</span>
+<span class=button__text>Instalando servidor DHCP</span>
+</a>
+</span>
+<span class="button next">
+<a href=https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/>
+<span class=button__text>Criar script inicialização Nagios no Debian</span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+<div id=comments>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//sidneiweber.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+</main>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=footer__content>
+<span>&copy; 2021</span>
+<span><a href=https://sidneiweber.com.br>Sidnei Weber</a></span>
+<span><a href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank rel=noopener>CC BY-NC 4.0</a></span><span><a href=https://sidneiweber.com.br/posts/index.xml target=_blank title=rss><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></span>
+</div>
+</div>
+<div class=footer__inner>
+<div class=footer__content>
+<span>Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>Made with &#10084; by <a href=https://github.com/rhazdon>Djordje Atlialp</a></span>
+</div>
+</div>
+</footer>
+</div>
+<script type=text/javascript src=https://sidneiweber.com.br/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js integrity="sha512-LOZOpupEpysT3YEvwutcyj7+h4zOJYpHwTfBft9G4GAqBeQithiluAtZOccxt6KTNRwvIiKiH27iflSoRI3SDg=="></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-921545-12','auto'),ga('send','pageview'))</script>
+</body>
+</html>
