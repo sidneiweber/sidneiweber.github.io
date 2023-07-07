@@ -35,3 +35,9 @@ Obs.: Infelizmente acabei não lembrando de cronometrar o processo. Mas após 30
 
 [Fonte](http://www.vivaolinux.com.br/dica/Rarcrack-Quebrando-senhas-de-arquivos-rar-7z-e-zip)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/rarcrack-quebrando-senhas-de-arquivos-rar-7z-e-zip/  
+

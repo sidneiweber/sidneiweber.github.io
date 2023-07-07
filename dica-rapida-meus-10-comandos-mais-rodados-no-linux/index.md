@@ -22,3 +22,9 @@ history|awk '{print $2}'|awk 'BEGIN {FS="|"} {print $1}'|sort|uniq -c|sort -rn|h
      26 du
 sidnei@black:~$
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/dica-rapida-meus-10-comandos-mais-rodados-no-linux/  
+

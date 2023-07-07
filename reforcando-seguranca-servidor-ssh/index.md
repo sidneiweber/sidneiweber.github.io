@@ -65,3 +65,9 @@ Verificar se o arquivo foi copiado para o destino em .ssh/authorized_keys e modi
 PasswordAuthentication no
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/reforcando-seguranca-servidor-ssh/  
+

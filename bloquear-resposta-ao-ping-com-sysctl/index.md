@@ -14,3 +14,9 @@ Para desbloquear:
 sysctl -w net.ipv4.icmp_echo_ignore_all=0
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/  
+

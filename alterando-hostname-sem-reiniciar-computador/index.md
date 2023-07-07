@@ -9,3 +9,9 @@ echo "novo-hostname" > /proc/sys/kernel/hostname
 Pronto, problema resolvido.
 
 [Fonte](https://www.vivaolinux.com.br/dica/Debian-Wheezy-Alterando-hostname-sem-reiniciar)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/alterando-hostname-sem-reiniciar-computador/  
+

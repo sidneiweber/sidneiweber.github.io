@@ -27,3 +27,9 @@ chage -d 0 perm
 ```
 
 Fonte: <http://www.vivaolinux.com.br/dica/Configurando-troca-de-senha-de-usuario-no-proximo-login>
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/configurando-troca-de-senha-de-usuario-no-proximo-login/  
+

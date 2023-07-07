@@ -144,3 +144,9 @@ killall nagios
 
 Pronto, primeiro serviço monitorado, e isso pode ser feito com qualquer site ou serviço de ping, uma monitoração simples, mas não deixa de ser um monitoramento.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/  
+

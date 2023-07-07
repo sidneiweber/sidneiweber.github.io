@@ -44,3 +44,9 @@ Para verificar se o SWAP está ativo podemos usar os comandos abaixos:
 sudo swapon --show
 sudo free -h
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/criando-araquivo-swap-linux/  
+

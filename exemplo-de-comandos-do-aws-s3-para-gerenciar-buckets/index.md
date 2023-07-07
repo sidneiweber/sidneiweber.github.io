@@ -72,3 +72,9 @@ aws s3 website s3://bucketname/ --index-document index.html --error-document err
 
 Caso tenham mais dúvidas, segue a documentação oficial: [https://docs.aws.amazon.com/cli/latest/reference/s3/](https://docs.aws.amazon.com/cli/latest/reference/s3/)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/  
+

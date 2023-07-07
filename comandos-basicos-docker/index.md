@@ -162,3 +162,9 @@ docker build -t teste .
 Por hoje era isso pessoal, em breve estaremos estudando mais sobre o assunto.
 
 Fonte: [Diego Garcia](http://www.diego-garcia.info/2015/02/15/docker-por-onde-comecar/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/comandos-basicos-docker/  
+

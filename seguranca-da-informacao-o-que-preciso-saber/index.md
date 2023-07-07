@@ -105,3 +105,9 @@ Negação de serviço (DDos)
 
 Pode-se também adotar uma política de segurança da informação, que vem a ser de muita valia para as organizações, mas isso já cabe outro post mais pra frente.&nbsp;
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/seguranca-da-informacao-o-que-preciso-saber/  
+

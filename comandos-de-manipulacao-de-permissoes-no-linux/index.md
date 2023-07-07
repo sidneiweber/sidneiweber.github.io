@@ -147,3 +147,9 @@ O comando umask define as permissões iniciais quando um arquivo ou diretório f
      ---------------------------------------------
 
 Caso seu umask seja 022, os arquivos de texto será criados por padrão com permissão 644, ou seja, rw- para o dono, r-- para o grupo e r-- para outros. Para que alterar o umask, geralmente deve-se alterar seu valor no arquivo **/etc/profile**.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/comandos-de-manipulacao-de-permissoes-no-linux/  
+

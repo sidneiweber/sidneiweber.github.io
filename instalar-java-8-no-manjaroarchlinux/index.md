@@ -37,3 +37,9 @@ ln  -s /opt/jre1.8.0_65/lib/amd64/libnpjp2.so  ~/.mozilla/plugins/libnpjp2.so
 ```
 
 [Fonte](http://www.unixmen.com/install-java-8-manjaroarchlinux/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/  
+

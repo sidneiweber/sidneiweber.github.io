@@ -22,3 +22,9 @@ netstat -putona | grep :1521
 
 [Fonte](http://ubuntulife.wordpress.com/2014/03/11/netstat-putona-un-comando-que-no-olvidaras-para-monitorizar-las-conexiones-en-linux/)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/  
+

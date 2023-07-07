@@ -54,3 +54,9 @@ update-rc.d rc.firewall defaults
 ```
 
 [Fonte](http://www.asteriskdocs.com.br/blog/instalando-e-configurando-squid-transparente-no-gnulinux-debian-e-derivados/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/proxy-transparente/  
+

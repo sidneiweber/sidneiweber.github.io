@@ -18,3 +18,9 @@ Sabendo os dados a alterar, substitua-os no comando abaixo e o execute:
 ```shell
 mysqldump base_origem --opt -h endereco_base_original -uusuario_base_original -psenha_base_original --routines --triggers | mysql base_destino -hendereco_base_destino -uusuario_base_destino -psenha_base_destino
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/migracao-banco-de-dados-mysql/  
+

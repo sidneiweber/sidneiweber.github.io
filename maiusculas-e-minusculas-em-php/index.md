@@ -34,3 +34,9 @@ ex: ucwords($texto);
 vai sair assim = Warquia Pereira Santos
 
 [Fonte](http://phpbrasil.com/artigo/bG73TMFSCr3H/maiusculas-e-minusculas-em-php)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/maiusculas-e-minusculas-em-php/  
+

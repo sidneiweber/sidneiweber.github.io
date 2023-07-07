@@ -366,3 +366,9 @@
 	</body>
 </html>
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/password-generator/  
+

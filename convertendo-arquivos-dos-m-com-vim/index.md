@@ -16,3 +16,9 @@ Simples e rápido, caso por algum motivo queira fazer o processo contrário, bas
 :set ff=dos
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/  
+

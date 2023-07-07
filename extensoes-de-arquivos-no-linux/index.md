@@ -47,3 +47,9 @@ Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tip
 **ebuild**: script usado pela Gentoo para compilar e instalar pacotes a partir do código fonte  
 **rpm**: arquivo usado pela Red Hat, Fedora, CentOS, SUSE, Mandriva e outros  
 **tgz**: arquivo Tar.gz já compilados para Slackware
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/extensoes-de-arquivos-no-linux/  
+

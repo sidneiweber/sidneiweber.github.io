@@ -7,3 +7,9 @@ _display_errors = Off_
 ```
 
 Para On
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/configurar-php-para-exibir-erros/  
+

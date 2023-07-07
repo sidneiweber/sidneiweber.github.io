@@ -62,3 +62,9 @@ Na comparação a compactação teve o mesmo tamanho final, porém com o uso de 
 
 É claro que dependendo a quantidade de arquivos e os tamanhos você não notará tanta diferença, mas com grandes quantidades de arquivos é notório o melhor desempenho. [Nesse site](https://vbtechsupport.com/1576/) temos um comparativo bem legal com várias ferramentas de compressão.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/pigz-compactador-eficiente-e-rapido/  
+

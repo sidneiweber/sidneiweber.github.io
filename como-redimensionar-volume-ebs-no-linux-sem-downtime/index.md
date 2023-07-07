@@ -74,3 +74,9 @@ ubuntu@ip-172-31-23-184:~$
 
 Pronto, volume estendido com 0 downtime. Bom proveito!
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/  
+

@@ -31,3 +31,9 @@ Na dúvida, verifique a _man page_:
 ```
 man pacman4console
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/  
+

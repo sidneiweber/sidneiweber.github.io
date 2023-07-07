@@ -7,3 +7,9 @@ Este plugin coloca WooCommerce em destaque na administração do WordPress, com 
 
 ![woocommerce](https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/woocommerce-domination-melhorando-a-usabilidade-do-woocommerce/  
+

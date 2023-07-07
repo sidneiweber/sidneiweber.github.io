@@ -66,3 +66,9 @@ Agora é só salvar o arquivo que editamos e reiniciar o serviço:
 Pronto teremos um servidor DHCP dando IP para a nossa rede. Ainda temos algumas opções criar duas redes distintas dentro do mesmo servidor, atrelar IP's ao Mac Address, negar máquinas que não estejam cadastradas no servidor DHCP, enfim, inúmeros recursos que estudaremos mais adiante.
 
 Obrigado e até a próxima.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalando-servidor-dhcp/  
+

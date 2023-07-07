@@ -48,3 +48,9 @@ Para remover todas as imagens antigas e não usadas podemos usar o comando abaix
 ╰─$ docker image prune
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/remover-imagens-docker-com-tag/  
+

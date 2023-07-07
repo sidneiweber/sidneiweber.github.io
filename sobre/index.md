@@ -41,3 +41,9 @@ Sou estudante de Segurança da Informação, apaixonado por software livre, semp
 
 ## Cursos
 > Tecnólogo em Segurança da Informação - UNIP (Concluído em 2022)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/sobre/  
+

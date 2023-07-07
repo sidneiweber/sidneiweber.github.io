@@ -17,3 +17,9 @@ sudo apt-get dselect-upgrade
 ```
 
 [Fonte](http://www.dicas-l.com.br/dicas-l/20161025.php)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/  
+

@@ -43,3 +43,9 @@ docker update --cpu-shares 512 [container id]
 
 Sempre lembrando que para pegar o id do container basta executar _**docker ps**_.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/  
+

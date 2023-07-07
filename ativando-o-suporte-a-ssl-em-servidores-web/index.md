@@ -31,3 +31,9 @@ O propósito de entidades certificadoras, como a Verisign, é confirmar a titula
 Vamos então começar com a configuração de um certificado self-signed, e em seguida entender o que muda ao utilizar um certificado reconhecido.
 
 [Fonte:](http://www.hardware.com.br/dicas/ssl-servidores-web.html)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/ativando-o-suporte-a-ssl-em-servidores-web/  
+

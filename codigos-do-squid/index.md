@@ -62,3 +62,9 @@ Erros no servidor:
 -  507  Espaço em disco insuficiente
 
 [Fonte](http://www.vivaolinux.com.br/dica/Codigos-do-Squid)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/codigos-do-squid/  
+

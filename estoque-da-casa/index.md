@@ -23,3 +23,9 @@ Em breve disponibilizarei no github para quem tiver interesse.
 ![](/img/estoque-casa/7.png)
 ![](/img/estoque-casa/8.png)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/estoque-da-casa/  
+

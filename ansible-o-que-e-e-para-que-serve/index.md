@@ -57,3 +57,9 @@ Sucesso, tivemos o retorno do ping do nosso localhost ;).
 
 Bom no próximo artigo irei explicar como realizar execuções em algumas máquinas remotas ao mesmo tempo e alguns outro macetes. Até a próxima!
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/ansible-o-que-e-e-para-que-serve/  
+

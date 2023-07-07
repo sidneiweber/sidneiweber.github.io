@@ -45,3 +45,9 @@ docker-compose up -d
 
 Caso queiram contribuir segue o github desse código: [https://github.com/sidneiweber/zabbix-docker](https://github.com/sidneiweber/zabbix-docker)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/  
+

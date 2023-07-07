@@ -12,3 +12,9 @@ yum -y install php php-common php-gd php-mbstring php-xml php-xmlrpc
 Agora acesse: http://endereco.ip.do.server/linux-dash
 
 [Fonte](http://www.ricardomartins.com.br/dashboard-lindao-para-seu-servidor-linux/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalando-um-dashboard-para-seu-servidor-linux/  
+

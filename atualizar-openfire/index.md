@@ -19,3 +19,9 @@ Segue então um pequeno howto (adaptado do orginal da Ignite Realtime):
 Voilà. Seu servidor está atualizado e no ar novamente.
 
 FONTE: http://mundoopensource.blogspot.com/2008/08/openfire-como-atualizar-o-servidor-para.html
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/atualizar-openfire/  
+

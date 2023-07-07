@@ -23,3 +23,9 @@ Ramal: Seu Ramal.</p>
 
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/acesso-negado-squid/  
+

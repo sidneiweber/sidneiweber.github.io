@@ -63,3 +63,9 @@ service smbd restart
 ```
 
 Pronto, servidor disponível. [Fonte](http://cristianojosef.blogspot.com.br/2013/02/configurando-um-servidor-samba-no.html)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/  
+

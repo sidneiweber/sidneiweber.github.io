@@ -23,3 +23,9 @@ E quando formos criarmos nosso link no php, aqui no caso estamos com o exemplo s
 Sem a extensão .php. O servidor irá fazer todo o resto do trabalho.
 
 [Fonte](http://www.codingcage.com/2015/11/how-to-remove-php-html-extensions-with.html)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/remover-extensao-php-com-htaccess-rapido-e-facil/  
+

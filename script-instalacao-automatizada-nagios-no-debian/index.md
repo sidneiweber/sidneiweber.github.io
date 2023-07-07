@@ -90,3 +90,9 @@ service apache2 reload
 # Iniciar instancia
 /usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/script-instalacao-automatizada-nagios-no-debian/  
+

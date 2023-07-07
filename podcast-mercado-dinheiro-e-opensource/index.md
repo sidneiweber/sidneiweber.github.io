@@ -5,3 +5,9 @@ Podcast gravado recentemente no Canal do [Slackjeff](https://www.youtube.com/cha
 
 [![Video ><](https://img.youtube.com/vi/pVB3MvNp51U/0.jpg)](https://www.youtube.com/watch?v=pVB3MvNp51U)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/podcast-mercado-dinheiro-e-opensource/  
+

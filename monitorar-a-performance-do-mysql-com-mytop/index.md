@@ -101,3 +101,9 @@ Agradeço a todos pela atenção.
 Viva o Linux, porque nós amamos a Liberdade!
 
 [Fonte](http://www.vivaolinux.com.br/dica/Monitorar-a-performance-do-MySQL-com-Mytop)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/monitorar-a-performance-do-mysql-com-mytop/  
+

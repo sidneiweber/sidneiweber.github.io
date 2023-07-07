@@ -59,3 +59,9 @@ bye
 
 Para o início está de bom tamanho, até a próxima.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/iniciando-com-mongodb/  
+

@@ -18,3 +18,9 @@ zabbix ALL=NOPASSWD: /usr/bin/nmap, /etc/init.d/apache2 restart
 
 E por hoje era isso pessoal, aquele abraço
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/configurar-sudo-sem-senha/  
+

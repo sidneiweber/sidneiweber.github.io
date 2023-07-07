@@ -18,3 +18,9 @@ Consegui fazer uma interface com electron que com um clique é possível ouvir f
 
 Github do projeto com várias versões criadas pela comunidade: [https://github.com/projeto-pri](https://github.com/projeto-pri)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/projeto-pri/  
+

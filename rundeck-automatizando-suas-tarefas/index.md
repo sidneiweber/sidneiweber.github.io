@@ -46,3 +46,9 @@ Bom de momento vamos ficar somente com a instalação, nos próximos artigos vam
 
 Site: [http://rundeck.org/](http://rundeck.org/)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/rundeck-automatizando-suas-tarefas/  
+

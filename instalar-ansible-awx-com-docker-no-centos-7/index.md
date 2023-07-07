@@ -80,3 +80,9 @@ O usuário para login é "admin" e a senha é "password".
 
 ![Login AWX](/img/awx.jpg)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalar-ansible-awx-com-docker-no-centos-7/  
+

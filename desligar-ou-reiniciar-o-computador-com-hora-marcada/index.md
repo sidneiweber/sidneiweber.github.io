@@ -35,3 +35,9 @@ shutdown -r +m
 ```
 
 [Fonte](http://www.vivaolinux.com.br/dica/Desligar-ou-reiniciar-o-computador-com-hora-marcada)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/  
+

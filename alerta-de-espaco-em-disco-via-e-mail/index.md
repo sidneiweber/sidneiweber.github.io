@@ -13,3 +13,9 @@ echo "Verifique o diretorio "$partition" com ($usep%) de uso no servidor $(hostn
 fi
 done
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/alerta-de-espaco-em-disco-via-e-mail/  
+

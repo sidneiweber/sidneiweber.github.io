@@ -46,3 +46,9 @@ Ao fazer isso você impede que qualquer um tenha acesso ao painel de administra�
 Este post, de maneira nenhuma tem o objetivo de ser um guia definitivo mas sim apenas um ponto de partida para aqueles que conhecem pouco de segurança no WordPress ou para complementar os conhecimentos daqueles que já aplicam técnicas para proteção de sites e blogs.
 
 [Fonte](http://www.pcredesecia.com.br/2013/11/32-dicas-de-seguranca-para-wordpress.html)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/dicas-seguranca-wordpress/  
+

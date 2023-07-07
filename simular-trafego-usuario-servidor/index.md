@@ -61,3 +61,9 @@ Percentage of the requests served within a certain time (ms)
  100%     34 (longest request)
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/simular-trafego-usuario-servidor/  
+

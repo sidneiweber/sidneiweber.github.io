@@ -257,3 +257,9 @@ Software Livre pode promover avanços tecnológicos em países periféricos
 
 ### Slide 11 = Bibliografia
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/gestao-corporativa-com-software-livre/  
+

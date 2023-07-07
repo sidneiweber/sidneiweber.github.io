@@ -162,3 +162,9 @@ squid -z
 E iniciar os serviços
 
 [Fonte](http://www.vivaolinux.com.br/artigo/Servidor-proxy-com-Squid-Instalacao-e-configuracao/?pagina=1)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/servidor-proxy-com-squid/  
+

@@ -13,3 +13,9 @@ Com isso, caso tenha inatividade na sessão por 30 segundos o usuário será des
 
 **ClientAliveCountMax**: Define o numero máximo de envio de pacotes para saber se o cliente está ou não ativo.  
 **ClientAliveInterval:** Define um intervalo de tempo em segundos após o qual, se o terminal estiver ocioso, será finalizada a sessão.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/deslogar-sessao-ssh-por-inatividade/  
+

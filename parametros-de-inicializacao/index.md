@@ -11,3 +11,9 @@ o correspondente por algum destes aqui: (apm=power-off ou noapm) (pci=noacpi) (a
 elas.  
 **PNPBIOS=OFF** &#8211; Desliga o recurso plug-and-play do barramento ISA. Isso resolve nos casos em que a placa-mãe acha que é uma boa idéia reservar um monte de interrupções para dispositivos não existentes ou interrupções que  
 deveriam ficar com dispositivos on-board no barramento PCI.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/parametros-de-inicializacao/  
+

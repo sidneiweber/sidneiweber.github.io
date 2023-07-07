@@ -17,3 +17,9 @@ mysql> UPDATE users SET passwd=md5(‘novasenha’) WHERE alias=’Admin’;
 Pronto, senha resetada.
 
 [Fonte:](https://jorgepretel.com.br/2016/04/reset-na-senha-admin-do-zabbix/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/resetar-senha-admin-zabbix/  
+

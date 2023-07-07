@@ -53,3 +53,9 @@ Basta acessar seu localhost, ou ip de sua máquina que o servidor estará UP. A 
 ![docker](/img/uploads/2017/05/Captura-de-tela_2017-05-31_13-34-26-1024x233.png) 
 
 [Fonte](http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/docker-php-em-5-minutos/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/iniciando-servidor-web-php-e-mysql-com-docker/  
+

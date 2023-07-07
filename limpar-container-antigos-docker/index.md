@@ -30,3 +30,9 @@ Pega o que foi filtrado até agora e joga como parâmetro para o _docker rm_
 
 Sempre use os comandos com muito cuidado caso não tenha certeza do que está fazendo, não me responsabilizo por qualquer erro humano ;).
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/limpar-container-antigos-docker/  
+

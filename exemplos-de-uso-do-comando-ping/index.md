@@ -131,3 +131,9 @@ rtt min/avg/max/mdev = 0.028/0.048/0.081/0.017 ms
 
 **Exemplo 11**: Estatísticas parciais sem sair. Ao invez de apertar Ctrl+C para terminar (SIGQUIT) o comando ping, podemos utilizar Ctrl+I para mostrar estatísticas parciais e continuar o envio de pacotes.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/  
+

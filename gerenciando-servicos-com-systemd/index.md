@@ -76,3 +76,9 @@ Colocar o sistema em modo de suspensão:
 systemctl hybrid-sleep
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/gerenciando-servicos-com-systemd/  
+

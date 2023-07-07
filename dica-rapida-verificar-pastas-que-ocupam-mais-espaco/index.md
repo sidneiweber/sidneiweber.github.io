@@ -25,3 +25,9 @@ E o comando **head** mostra os 5 primeiros, pode ser usado qualquer quantidade.
 
 Se alguém tiver dúvidas quanto as opções usadas, basta digitar o nome do comando &#8211;help, que terá todas as informações.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/  
+

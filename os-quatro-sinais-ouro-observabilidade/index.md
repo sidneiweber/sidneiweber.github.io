@@ -30,3 +30,9 @@ Na saturação podemos saber o quanto os recursos estão ocupados, como CPU, mem
 É claro que essas informações sozinhas podem não entregar valor mas bem aplicadas e organizadas podem gerar muita confiança nos sistemas observados. Temos ainda diversos outros pontos que podem complementar esses pontos vistos aqui, como logs, traces, a própria ferramenta de alertas, entre outros. Mas veremos esses pontos em outra oportunidade.
 
 Fonte: https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/  
+

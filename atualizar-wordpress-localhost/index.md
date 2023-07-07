@@ -13,3 +13,9 @@ A seguir, estão as constantes válidas para atualizações do WordPress:
 ```php
 define('FS_METHOD', direct);
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/atualizar-wordpress-localhost/  
+

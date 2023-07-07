@@ -27,3 +27,9 @@ A linha é dividida em 6 campos separados por tabs ou espaço:
 | Dia da semana | 0-6 (o “0″ é domingo), 1 é segunda, etc. |
       
 [Fonte](http://www.devin.com.br/crontab/)      
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/utilizando-o-crontab/  
+

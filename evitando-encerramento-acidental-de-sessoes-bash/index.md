@@ -13,3 +13,9 @@ Desta forma, para encerrar uma sessão bash, precisamos digitar a sequência `CT
 Esta variável de ambiente deve ser definida no arquivo `.bashrc`.
 
 Fonte: [Dicas-L](http://www.dicas-l.com.br/arquivo/encerramento_acidental_de_sessoes_bash.php#.VDVCZdRdW2w)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/  
+

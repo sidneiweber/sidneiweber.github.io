@@ -19,3 +19,9 @@ docker load < imagem.tar
 Fala a verdade é simples ou não é, mais fácil que isso não tem como.
 
 [Fonte](http://devopslab.com.br/docker-como-criar-uma-imagem-docker-a-partir-de-um-container-utilizando-o-docker-commit/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/exportar-e-importar-containers-no-docker/  
+

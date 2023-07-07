@@ -10,3 +10,9 @@ echo "- – -" > /sys/class/scsi_host/host0/scan
 
 Obrigado e até a próxima.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/  
+

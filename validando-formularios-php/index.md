@@ -145,3 +145,9 @@ echo "COLOQUE AQUI O CÓDIGO DA PÁGINA";
 
 <a href="http://www.webmaster.pt/como-validar-formulario-8269.html">Fonte</a></span>
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/validando-formularios-php/  
+

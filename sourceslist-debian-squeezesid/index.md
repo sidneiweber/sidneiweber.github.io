@@ -48,3 +48,9 @@ deb http://apt-get.if.uff.br lenny-ifuff compiz
 #deb-src http://ftp.de.debian.org/debian/ experimental main
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/sourceslist-debian-squeezesid/  
+

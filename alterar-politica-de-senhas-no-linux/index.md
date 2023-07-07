@@ -63,3 +63,9 @@ SENHA INCORRETA: é simples demais
 Fonte:  
 [http://blog.marcelocavalcante.net/blog/2011/09/27/politica-de-senhas-no-linux-senhas-com-data-para-expirar/](http://blog.marcelocavalcante.net/blog/2011/09/27/politica-de-senhas-no-linux-senhas-com-data-para-expirar/)
 [https://www.cyberciti.biz/faq/securing-passwords-libpam-cracklib-on-debian-ubuntu-linux/](https://www.cyberciti.biz/faq/securing-passwords-libpam-cracklib-on-debian-ubuntu-linux/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/alterar-politica-de-senhas-no-linux/  
+

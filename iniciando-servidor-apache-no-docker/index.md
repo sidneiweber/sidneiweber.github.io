@@ -33,3 +33,9 @@ docker run -it -p 8080:80 -v /home/sidnei/meusite/:/var/www/html/ -d eboraas/apa
 ```
 
 [Fonte](https://hub.docker.com/r/eboraas/apache/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/iniciando-servidor-apache-no-docker/  
+

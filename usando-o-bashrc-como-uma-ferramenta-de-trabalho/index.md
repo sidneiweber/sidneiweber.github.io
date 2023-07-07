@@ -67,3 +67,9 @@ history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 # alisa previsao tempo
 alias tempo='curl http://wttr.in/sapiranga'
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/  
+

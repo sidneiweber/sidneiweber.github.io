@@ -100,3 +100,9 @@ Basta acessar pelo endereço IP/nagios (ip da máquina na qual foi instalado ou 
 
 ![nagios ><](/img/uploads/2017/01/Selecao_005.png)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalando-nagios-instalacao-basica/  
+

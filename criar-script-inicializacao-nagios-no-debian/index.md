@@ -47,3 +47,9 @@ Usage: /etc/init.d/nagios {start|stop|status|restart|try-restart|force-reload}
 ```
 
 Forte abraço e até a próxima.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/  
+

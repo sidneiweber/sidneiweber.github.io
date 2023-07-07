@@ -98,3 +98,9 @@ Faremos o mesmo na função de Start
 
 E está pronto, nos horários programados as instâncias definidas irão ser desligadas e ligadas, reduzindo o custo nesse tempo que irá permanecer desligadas. Qualquer dúvida ou correção basta deixar nos comentários :).
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/  
+

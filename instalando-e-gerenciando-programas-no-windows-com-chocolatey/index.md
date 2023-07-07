@@ -41,3 +41,9 @@ Há também uma página onde pode se verificar uma lista com os pacotes pelo lin
 Sem contar ainda em um gerenciador gráfico chamado Chocolatey GUI, que pode sem instalado com o comando _choco install chocolateygui._
 
 ![chocolatey](https://chocolatey.org/content/images/ChocolateyGUI_main_screen.png)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalando-e-gerenciando-programas-no-windows-com-chocolatey/  
+

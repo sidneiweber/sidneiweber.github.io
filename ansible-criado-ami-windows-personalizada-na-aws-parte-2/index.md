@@ -313,3 +313,9 @@ E para rodar tudo e ser feliz basta executar: ***ansible-playbook -i hosts deplo
 
 Referencia: http://blog.rolpdog.com/2015/09/manage-stock-windows-amis-with-ansible_3.html
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/  
+

@@ -6,3 +6,9 @@ Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra co
 ![scp ><](/img/scp-facil.png)
 
 [SCP Fácil](https://github.com/emmilinux/scpfacil.git)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/scp-facil/  
+

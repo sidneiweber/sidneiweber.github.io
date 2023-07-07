@@ -41,3 +41,9 @@ Em outro texto vou mostrar como fazer uma configuração e instalação básica 
 Documentação: [https://kafka.apache.org/documentation/](https://kafka.apache.org/documentation/)
 
 [Understanding Kafka — A Distributed Streaming Platform](https://medium.com/swlh/understanding-kafka-a-distributed-streaming-platform-9a0360b99de8)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/kafka-tudo-que-precisamos-saber/  
+

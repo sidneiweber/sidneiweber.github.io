@@ -41,3 +41,9 @@ Order allow,deny
 Allow from all
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/apache-restrito-httpdconf/  
+

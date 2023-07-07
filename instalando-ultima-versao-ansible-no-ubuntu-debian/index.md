@@ -17,3 +17,9 @@ sudo aptitude install python-pip
 sudo pip install ansible
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalando-ultima-versao-ansible-no-ubuntu-debian/  
+

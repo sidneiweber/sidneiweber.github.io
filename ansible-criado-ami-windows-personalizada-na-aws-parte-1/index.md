@@ -38,3 +38,9 @@ Após alguns instantes estando a instância disponível para acesso. Podemos tes
 
 Bom essa é a primeira etapa, na parte 2 iremos ver como configurar o Windows e gerar uma nova AMI personalizada usando o Ansible
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/  
+

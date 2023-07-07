@@ -12,3 +12,9 @@ Backup de todas as bases
 ```shell
 mysqldump --all-databases -u USUARIO -p > meu_mysql.sql
 ```
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/backup-mysql-linha-comando/  
+

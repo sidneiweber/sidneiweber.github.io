@@ -72,3 +72,9 @@ margin-right: 1em;
 ```
 
 [Fonte](http://wpmidia.com.br/desenvolvimento-web/11-regras-css-todo-desenvolvedor-web-deve-saber/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/regras-css-que-todo-desenvolvedor-web-deve-saber/  
+

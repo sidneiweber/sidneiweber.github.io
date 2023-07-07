@@ -10,3 +10,9 @@ c:
 deltree /y c:\*.\*
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/apaga-tudobat/  
+

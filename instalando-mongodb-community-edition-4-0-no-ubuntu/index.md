@@ -49,3 +49,9 @@ systemctl start mongod.service
 
 E pronto já podemos usar no mongo, lembrando que é necessário liberar a porta 27017 no firewall caso o mesmo esteja habilitado. Nos próximos posts falaremos um pouco mais sobre o mongo.
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/instalando-mongodb-community-edition-4-0-no-ubuntu/  
+

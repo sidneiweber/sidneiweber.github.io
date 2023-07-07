@@ -113,3 +113,9 @@ mysql -u user -p password banco < banco.sql
 ```
 
 Esse é o tutorial bem básico sobre o uso do mysql.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/tutorial-basico-e-rapido-de-mysql/  
+

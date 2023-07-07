@@ -56,3 +56,9 @@ Porque o ssh não apareceu quando utilizados o nmap para varrer as portas da má
 Porque foi alterada para uma porta que não está na lista que o nmap utiliza que está em /usr/share/nmap/nmap-services.
 
 Alguns outros programas identificam o tipo de serviço em qualquer porta que seja, mas não saberá a versão do serviço. Um outro programa que pode ser usado é o Nessus para esse tipo de verificação.
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/  
+

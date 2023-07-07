@@ -30,3 +30,9 @@ Podemos incluise criar um alias no bashrc:
 alias dmesg="dmesg -T"
 ```
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/  
+

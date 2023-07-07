@@ -18,3 +18,9 @@ Podemos ver que nesse exemplo o TTL é 64 que corresponde ao Linux. É bom lembr
 **Linux = 64**  
 **Windows = 128**
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/identificar-sistema-operacional-com-ping/  
+

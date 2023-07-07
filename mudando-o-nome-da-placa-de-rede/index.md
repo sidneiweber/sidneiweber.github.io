@@ -19,3 +19,9 @@ Salva, saia e reinicie !
 Suas placas voltarão novamente `eth0` e `eth1`.
 
 [Fonte](http://ediomaico.wordpress.com/2011/03/21/mudando-o-nome-da-placa-de-rede/)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/mudando-o-nome-da-placa-de-rede/  
+

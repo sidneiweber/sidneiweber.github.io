@@ -19,3 +19,9 @@
 | Ctrl+_  | undo (incremental). |
 
 [Fonte](http://www.quora.com/Bash-shell/What-are-some-useful-Bash-tricks)
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/  
+

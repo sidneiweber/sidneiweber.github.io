@@ -27,3 +27,9 @@ Realmente o sistema está muito bonito e fluído, vale a pena testar. Em breve p
 
 Link para site: [Emmi Linux](http://emmios.com.br)
 
+
+---
+
+> Author: Sidnei Weber  
+> URL: https://sidneiweber.com.br/emmi-linux-uma-distribuicao-pequena-e-leve/  
+
