@@ -15,6 +15,6 @@ Agora acesse: http://endereco.ip.do.server/linux-dash
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalando-um-dashboard-para-seu-servidor-linux/  
 

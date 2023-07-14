@@ -44,6 +44,6 @@ Documentação: [https://kafka.apache.org/documentation/](https://kafka.apache.o
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/kafka-tudo-que-precisamos-saber/  
 

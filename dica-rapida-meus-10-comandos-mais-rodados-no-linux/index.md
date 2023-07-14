@@ -25,6 +25,6 @@ sidnei@black:~$
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/dica-rapida-meus-10-comandos-mais-rodados-no-linux/  
 

@@ -15,6 +15,6 @@ $result = mysql_query(" SELECT nome FROM funcionarios WHERE nome like '%pedro%' 
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/utilizando-o-comando-like-com-variavel-php-mysql/  
 

@@ -26,6 +26,6 @@ Sem a extensão .php. O servidor irá fazer todo o resto do trabalho.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/remover-extensao-php-com-htaccess-rapido-e-facil/  
 

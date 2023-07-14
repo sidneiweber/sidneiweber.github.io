@@ -79,6 +79,6 @@ systemctl hybrid-sleep
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/gerenciando-servicos-com-systemd/  
 

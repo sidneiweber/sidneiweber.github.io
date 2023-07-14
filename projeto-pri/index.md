@@ -21,6 +21,6 @@ Github do projeto com várias versões criadas pela comunidade: [https://github.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/projeto-pri/  
 

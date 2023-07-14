@@ -22,6 +22,6 @@ FONTE: http://mundoopensource.blogspot.com/2008/08/openfire-como-atualizar-o-ser
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/atualizar-openfire/  
 

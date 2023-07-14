@@ -41,6 +41,6 @@ Bom essa é a primeira etapa, na parte 2 iremos ver como configurar o Windows e 
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/  
 

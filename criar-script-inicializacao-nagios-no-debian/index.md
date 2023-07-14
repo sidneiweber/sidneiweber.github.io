@@ -50,6 +50,6 @@ Forte abraço e até a próxima.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/  
 

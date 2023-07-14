@@ -316,6 +316,6 @@ Referencia: http://blog.rolpdog.com/2015/09/manage-stock-windows-amis-with-ansib
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/  
 

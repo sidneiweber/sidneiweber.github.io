@@ -38,6 +38,6 @@ shutdown -r +m
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/  
 

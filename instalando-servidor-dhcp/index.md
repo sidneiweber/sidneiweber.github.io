@@ -69,6 +69,6 @@ Obrigado e até a próxima.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalando-servidor-dhcp/  
 

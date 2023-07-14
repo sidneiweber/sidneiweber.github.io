@@ -68,6 +68,6 @@ PasswordAuthentication no
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/reforcando-seguranca-servidor-ssh/  
 

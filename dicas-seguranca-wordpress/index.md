@@ -49,6 +49,6 @@ Este post, de maneira nenhuma tem o objetivo de ser um guia definitivo mas sim a
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/dicas-seguranca-wordpress/  
 

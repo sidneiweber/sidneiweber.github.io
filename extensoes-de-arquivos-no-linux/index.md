@@ -50,6 +50,6 @@ Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tip
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/extensoes-de-arquivos-no-linux/  
 

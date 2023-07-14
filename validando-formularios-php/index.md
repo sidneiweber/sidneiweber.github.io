@@ -148,6 +148,6 @@ echo "COLOQUE AQUI O CÓDIGO DA PÁGINA";
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/validando-formularios-php/  
 

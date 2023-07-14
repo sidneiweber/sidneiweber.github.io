@@ -48,6 +48,6 @@ Caso queiram contribuir segue o github desse código: [https://github.com/sidnei
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/  
 

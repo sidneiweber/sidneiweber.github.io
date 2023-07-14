@@ -13,6 +13,6 @@ Obrigado e até a próxima.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/  
 

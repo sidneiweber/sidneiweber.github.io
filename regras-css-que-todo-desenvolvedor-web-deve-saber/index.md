@@ -75,6 +75,6 @@ margin-right: 1em;
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/regras-css-que-todo-desenvolvedor-web-deve-saber/  
 

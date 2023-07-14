@@ -56,6 +56,6 @@ Basta acessar seu localhost, ou ip de sua máquina que o servidor estará UP. A 
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/iniciando-servidor-web-php-e-mysql-com-docker/  
 
