@@ -51,6 +51,6 @@ deb http://apt-get.if.uff.br lenny-ifuff compiz
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/sourceslist-debian-squeezesid/  
 

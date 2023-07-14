@@ -33,6 +33,6 @@ alias dmesg="dmesg -T"
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/  
 

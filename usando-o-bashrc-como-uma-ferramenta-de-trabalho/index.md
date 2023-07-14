@@ -70,6 +70,6 @@ alias tempo='curl http://wttr.in/sapiranga'
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/  
 

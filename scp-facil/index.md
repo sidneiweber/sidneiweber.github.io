@@ -9,6 +9,6 @@ Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra co
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/scp-facil/  
 

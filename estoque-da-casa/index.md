@@ -26,6 +26,6 @@ Em breve disponibilizarei no github para quem tiver interesse.
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/estoque-da-casa/  
 

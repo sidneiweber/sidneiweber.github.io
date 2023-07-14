@@ -64,6 +64,6 @@ Percentage of the requests served within a certain time (ms)
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/simular-trafego-usuario-servidor/  
 

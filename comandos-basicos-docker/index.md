@@ -165,6 +165,6 @@ Fonte: [Diego Garcia](http://www.diego-garcia.info/2015/02/15/docker-por-onde-co
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/comandos-basicos-docker/  
 

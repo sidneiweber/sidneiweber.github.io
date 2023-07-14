@@ -59,6 +59,6 @@ Alguns outros programas identificam o tipo de serviço em qualquer porta que sej
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/  
 

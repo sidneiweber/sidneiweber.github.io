@@ -16,6 +16,6 @@ Fonte: [Dicas-L](http://www.dicas-l.com.br/arquivo/encerramento_acidental_de_ses
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/  
 

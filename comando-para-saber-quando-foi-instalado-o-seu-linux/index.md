@@ -7,6 +7,6 @@ ls -lct /etc | tail -1 | awk '{print $6, $7, $8}'
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/comando-para-saber-quando-foi-instalado-o-seu-linux/  
 

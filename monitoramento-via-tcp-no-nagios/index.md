@@ -147,6 +147,6 @@ Pronto, primeiro serviço monitorado, e isso pode ser feito com qualquer site ou
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/  
 

@@ -18,6 +18,6 @@ Aqui consegui reduzir de 5 para 3,8GB o meu arquivo.
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/virtualbox-reduzindo-imagens-vdi/  
 

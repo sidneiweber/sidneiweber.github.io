@@ -9,6 +9,6 @@ PS1='┌─[u@h W][e[0;32m][${cwd}t][<wbr />033[0m] ${fill}n[\033[0m]└─■ '
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/colocando-uma-firula-no-terminal/  
 

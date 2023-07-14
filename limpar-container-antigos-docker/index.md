@@ -33,6 +33,6 @@ Sempre use os comandos com muito cuidado caso não tenha certeza do que está fa
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/limpar-container-antigos-docker/  
 

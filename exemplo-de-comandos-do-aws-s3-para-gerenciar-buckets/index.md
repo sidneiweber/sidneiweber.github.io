@@ -75,6 +75,6 @@ Caso tenham mais dúvidas, segue a documentação oficial: [https://docs.aws.ama
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/  
 

@@ -165,6 +165,6 @@ E iniciar os serviços
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/servidor-proxy-com-squid/  
 

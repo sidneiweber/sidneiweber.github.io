@@ -34,6 +34,6 @@ man pacman4console
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/  
 

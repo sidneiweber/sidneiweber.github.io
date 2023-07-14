@@ -21,6 +21,6 @@ mysqldump base_origem --opt -h endereco_base_original -uusuario_base_original -p
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/migracao-banco-de-dados-mysql/  
 

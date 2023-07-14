@@ -30,6 +30,6 @@ A linha é dividida em 6 campos separados por tabs ou espaço:
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/utilizando-o-crontab/  
 

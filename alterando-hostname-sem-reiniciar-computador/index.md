@@ -12,6 +12,6 @@ Pronto, problema resolvido.
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/alterando-hostname-sem-reiniciar-computador/  
 

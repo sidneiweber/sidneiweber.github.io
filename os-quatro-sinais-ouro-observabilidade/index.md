@@ -33,6 +33,6 @@ Fonte: https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitori
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/  
 

@@ -66,6 +66,6 @@ Fonte:
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/alterar-politica-de-senhas-no-linux/  
 

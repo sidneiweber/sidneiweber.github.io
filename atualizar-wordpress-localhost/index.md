@@ -16,6 +16,6 @@ define('FS_METHOD', direct);
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/atualizar-wordpress-localhost/  
 

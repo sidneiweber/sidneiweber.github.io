@@ -44,6 +44,6 @@ man fuser
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/  
 

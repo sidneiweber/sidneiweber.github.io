@@ -22,6 +22,6 @@
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/  
 

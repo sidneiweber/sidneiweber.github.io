@@ -13,6 +13,6 @@ SELECT SUM(valor) as total FROM contas_pagar WHERE valor BETWEEN ('2014-09-01') 
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/pesquisar-em-um-intervalo-de-datas-mysql/  
 

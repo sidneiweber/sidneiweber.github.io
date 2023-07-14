@@ -112,6 +112,6 @@ Um forte abraço
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/knock-ssh-adicionando-uma-camada-extra-de-seguranca-no-servidor/  
 

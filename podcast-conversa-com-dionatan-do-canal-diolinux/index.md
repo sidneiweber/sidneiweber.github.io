@@ -9,6 +9,6 @@ Canal [Diolinux](https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA)
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/podcast-conversa-com-dionatan-do-canal-diolinux/  
 

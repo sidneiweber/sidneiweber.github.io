@@ -30,6 +30,6 @@ Link para site: [Emmi Linux](http://emmios.com.br)
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/emmi-linux-uma-distribuicao-pequena-e-leve/  
 

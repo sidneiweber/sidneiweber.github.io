@@ -65,6 +65,6 @@ Na comparação a compactação teve o mesmo tamanho final, porém com o uso de 
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/pigz-compactador-eficiente-e-rapido/  
 

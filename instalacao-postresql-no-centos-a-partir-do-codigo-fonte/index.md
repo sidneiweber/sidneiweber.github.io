@@ -66,6 +66,6 @@ Instalação finalizada com sucesso 🙂
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalacao-postresql-no-centos-a-partir-do-codigo-fonte/  
 

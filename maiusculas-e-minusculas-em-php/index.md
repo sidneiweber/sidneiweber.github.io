@@ -37,6 +37,6 @@ vai sair assim = Warquia Pereira Santos
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/maiusculas-e-minusculas-em-php/  
 

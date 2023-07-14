@@ -46,6 +46,6 @@ Sempre lembrando que para pegar o id do container basta executar _**docker ps**_
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/  
 

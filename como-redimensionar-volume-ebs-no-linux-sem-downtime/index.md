@@ -77,6 +77,6 @@ Pronto, volume estendido com 0 downtime. Bom proveito!
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/  
 

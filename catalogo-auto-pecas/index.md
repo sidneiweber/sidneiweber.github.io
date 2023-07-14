@@ -43,6 +43,6 @@ Ou para quem quiser contribuir tem [Github](https://github.com/sidneiweber/catal
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/catalogo-auto-pecas/  
 

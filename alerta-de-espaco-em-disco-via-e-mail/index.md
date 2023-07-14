@@ -16,6 +16,6 @@ done
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/alerta-de-espaco-em-disco-via-e-mail/  
 

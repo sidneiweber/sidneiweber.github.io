@@ -7,6 +7,6 @@ find . | xargs grep 'texto a pesquisar'
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/shell-script-procurar-texto-em-varios-arquivos/  
 

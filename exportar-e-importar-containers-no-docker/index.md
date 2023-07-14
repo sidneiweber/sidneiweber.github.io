@@ -22,6 +22,6 @@ Fala a verdade é simples ou não é, mais fácil que isso não tem como.
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/exportar-e-importar-containers-no-docker/  
 

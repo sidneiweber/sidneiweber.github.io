@@ -108,6 +108,6 @@ Pode-se também adotar uma política de segurança da informação, que vem a se
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/seguranca-da-informacao-o-que-preciso-saber/  
 

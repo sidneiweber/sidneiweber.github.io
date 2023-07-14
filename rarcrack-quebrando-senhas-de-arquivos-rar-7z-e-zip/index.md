@@ -38,6 +38,6 @@ Obs.: Infelizmente acabei não lembrando de cronometrar o processo. Mas após 30
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/rarcrack-quebrando-senhas-de-arquivos-rar-7z-e-zip/  
 

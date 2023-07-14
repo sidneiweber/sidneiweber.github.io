@@ -101,6 +101,6 @@ E está pronto, nos horários programados as instâncias definidas irão ser des
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/  
 

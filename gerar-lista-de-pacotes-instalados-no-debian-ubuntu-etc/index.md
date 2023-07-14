@@ -20,6 +20,6 @@ sudo apt-get dselect-upgrade
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/  
 

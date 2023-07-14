@@ -66,6 +66,6 @@ Pronto, servidor disponível. [Fonte](http://cristianojosef.blogspot.com.br/2013
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/  
 

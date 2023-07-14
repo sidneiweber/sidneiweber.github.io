@@ -28,6 +28,6 @@ Se alguém tiver dúvidas quanto as opções usadas, basta digitar o nome do com
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/  
 

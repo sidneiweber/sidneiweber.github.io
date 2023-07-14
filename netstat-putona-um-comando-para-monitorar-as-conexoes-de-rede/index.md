@@ -25,6 +25,6 @@ netstat -putona | grep :1521
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/  
 

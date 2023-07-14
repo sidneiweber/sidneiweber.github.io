@@ -17,6 +17,6 @@ Fonte: Dicas-l
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/diminuindo-tentativas-de-invasao-via-ssh/  
 

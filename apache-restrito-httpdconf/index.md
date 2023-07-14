@@ -44,6 +44,6 @@ Allow from all
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/apache-restrito-httpdconf/  
 

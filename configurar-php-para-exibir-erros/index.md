@@ -10,6 +10,6 @@ Para On
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/configurar-php-para-exibir-erros/  
 

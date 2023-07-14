@@ -296,6 +296,6 @@ iptables-restore < arquivo
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/introducao-firewall-iptables-comecando/  
 

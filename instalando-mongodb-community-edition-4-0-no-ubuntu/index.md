@@ -52,6 +52,6 @@ E pronto já podemos usar no mongo, lembrando que é necessário liberar a porta
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalando-mongodb-community-edition-4-0-no-ubuntu/  
 

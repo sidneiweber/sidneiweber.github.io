@@ -44,6 +44,6 @@ Sou estudante de Segurança da Informação, apaixonado por software livre, semp
 
 ---
 
-> Autor: Sidnei Weber  
+> Author: Sidnei Weber  
 > URL: https://sidneiweber.com.br/sobre/  
 
