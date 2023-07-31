@@ -16,6 +16,6 @@ Com isso, caso tenha inatividade na sessão por 30 segundos o usuário será des
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/deslogar-sessao-ssh-por-inatividade/  
 

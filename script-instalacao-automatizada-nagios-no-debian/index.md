@@ -93,6 +93,6 @@ service apache2 reload
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/script-instalacao-automatizada-nagios-no-debian/  
 

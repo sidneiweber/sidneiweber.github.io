@@ -57,6 +57,6 @@ update-rc.d rc.firewall defaults
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/proxy-transparente/  
 

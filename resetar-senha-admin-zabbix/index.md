@@ -20,6 +20,6 @@ Pronto, senha resetada.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/resetar-senha-admin-zabbix/  
 

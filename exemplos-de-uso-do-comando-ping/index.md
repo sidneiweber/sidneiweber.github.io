@@ -134,6 +134,6 @@ rtt min/avg/max/mdev = 0.028/0.048/0.081/0.017 ms
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/  
 

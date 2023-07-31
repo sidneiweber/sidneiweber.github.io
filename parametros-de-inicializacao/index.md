@@ -14,6 +14,6 @@ deveriam ficar com dispositivos on-board no barramento PCI.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/parametros-de-inicializacao/  
 

@@ -20,6 +20,6 @@ sudo pip install ansible
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalando-ultima-versao-ansible-no-ubuntu-debian/  
 

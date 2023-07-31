@@ -34,6 +34,6 @@ Vamos então começar com a configuração de um certificado self-signed, e em s
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/ativando-o-suporte-a-ssl-em-servidores-web/  
 

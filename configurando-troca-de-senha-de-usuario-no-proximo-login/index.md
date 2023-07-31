@@ -30,6 +30,6 @@ Fonte: <http://www.vivaolinux.com.br/dica/Configurando-troca-de-senha-de-usuario
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/configurando-troca-de-senha-de-usuario-no-proximo-login/  
 

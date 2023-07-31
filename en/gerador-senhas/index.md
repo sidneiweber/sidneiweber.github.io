@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<!-- Copyright (c) 2019 Project Nayuki - https://www.nayuki.io/page/random-password-generator-javascript -->
-		<title>Random password generator (JavaScript)</title>
+		<title>Random password generator</title>
 		
 		<!--==== Style code ====-->
 		<style type="text/css">
@@ -91,7 +91,7 @@
 	<!--==== HTML body code ====-->
 	
 	<body>
-		<h1>Random password generator (JavaScript)</h1>
+		<h1>Random password generator</h1>
 		<form action="#" method="get" onsubmit="doGenerate(event);">
 			<div id="charset" class="section" style="margin:0.8em 0em">
 				<p style="margin:0.3em 0em">Character set:</p>
@@ -129,8 +129,6 @@
 				<span id="crypto-getrandomvalues-entropy"></span> <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues"><code>crypto.getRandomValues()</code></a> (high security)</p>
 		</form>
 		<hr>
-		<p class="lowlight" style="font-size:80%">Copyright © 2018 Project Nayuki – <a href="https://www.nayuki.io/page/random-password-generator-javascript">https://www.nayuki.io/page/random-password-generator-javascript</a></p>
-		
 		
 		<!--==== JavaScript code ====-->
 		
@@ -370,5 +368,5 @@
 ---
 
 > Author: Sidnei Weber  
-> URL: https://sidneiweber.com.br/password-generator/  
+> URL: https://sidneiweber.com.br/en/gerador-senhas/  
 

@@ -10,6 +10,6 @@ Este plugin coloca WooCommerce em destaque na administração do WordPress, com 
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/woocommerce-domination-melhorando-a-usabilidade-do-woocommerce/  
 

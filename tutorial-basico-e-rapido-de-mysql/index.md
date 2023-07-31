@@ -116,6 +116,6 @@ Esse é o tutorial bem básico sobre o uso do mysql.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/tutorial-basico-e-rapido-de-mysql/  
 

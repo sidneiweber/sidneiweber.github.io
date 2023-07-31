@@ -65,6 +65,6 @@ Erros no servidor:
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/codigos-do-squid/  
 

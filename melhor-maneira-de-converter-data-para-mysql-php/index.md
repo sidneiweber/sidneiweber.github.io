@@ -22,6 +22,6 @@ Fonte: <http://www.l9web.com.br/blog/?p=68>
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/melhor-maneira-de-converter-data-para-mysql-php/  
 

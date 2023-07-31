@@ -22,6 +22,6 @@ Suas placas voltarão novamente `eth0` e `eth1`.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/mudando-o-nome-da-placa-de-rede/  
 

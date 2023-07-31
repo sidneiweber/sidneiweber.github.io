@@ -47,6 +47,6 @@ sudo free -h
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/criando-araquivo-swap-linux/  
 

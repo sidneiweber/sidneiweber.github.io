@@ -8,6 +8,6 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'menu:minimize,maxi
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/  
 

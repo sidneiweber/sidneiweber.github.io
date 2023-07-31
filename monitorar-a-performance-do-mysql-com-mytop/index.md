@@ -104,6 +104,6 @@ Viva o Linux, porque nós amamos a Liberdade!
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/monitorar-a-performance-do-mysql-com-mytop/  
 

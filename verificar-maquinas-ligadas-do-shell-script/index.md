@@ -155,6 +155,6 @@ Fonte: http://www.vivaolinux.com.br/dica/Ipscan-com-shell-script+dialog+nmap
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/  
 

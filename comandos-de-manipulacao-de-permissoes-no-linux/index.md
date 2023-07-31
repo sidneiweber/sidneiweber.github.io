@@ -150,6 +150,6 @@ Caso seu umask seja 022, os arquivos de texto será criados por padrão com perm
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/comandos-de-manipulacao-de-permissoes-no-linux/  
 

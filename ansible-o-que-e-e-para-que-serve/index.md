@@ -60,6 +60,6 @@ Bom no próximo artigo irei explicar como realizar execuções em algumas máqui
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/ansible-o-que-e-e-para-que-serve/  
 

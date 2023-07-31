@@ -33,6 +33,6 @@ sudo apt-get install libdvdcss2 w32codecs non-free-codecs ffmpeg
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/codecs-ubuntu-904/  
 

@@ -49,6 +49,6 @@ Site: [http://rundeck.org/](http://rundeck.org/)
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/rundeck-automatizando-suas-tarefas/  
 

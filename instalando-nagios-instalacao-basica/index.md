@@ -103,6 +103,6 @@ Basta acessar pelo endereço IP/nagios (ip da máquina na qual foi instalado ou 
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalando-nagios-instalacao-basica/  
 

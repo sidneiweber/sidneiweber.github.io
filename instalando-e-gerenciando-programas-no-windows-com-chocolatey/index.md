@@ -44,6 +44,6 @@ Sem contar ainda em um gerenciador gráfico chamado Chocolatey GUI, que pode sem
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalando-e-gerenciando-programas-no-windows-com-chocolatey/  
 

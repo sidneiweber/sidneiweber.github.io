@@ -15,6 +15,6 @@ mysqldump --all-databases -u USUARIO -p > meu_mysql.sql
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/backup-mysql-linha-comando/  
 

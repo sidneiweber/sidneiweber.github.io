@@ -7,7 +7,7 @@
 
 Olá eu sou **Sidnei Weber** :wave:.
 
-Sou estudante de Segurança da Informação, apaixonado por software livre, sempre buscando me aperfeiçoar e aprender novas tecnologias e tendências do mercado. Em busca de conhecimento (como diria o ET Bilu).
+Formado em Segurança da Informação, apaixonado por software livre, sempre buscando me aperfeiçoar e aprender novas tecnologias e tendências do mercado. Em busca de conhecimento (como diria o ET Bilu).
 
 ## Conhecimentos Técnicos
 * Redes TCP/IP;
@@ -44,6 +44,6 @@ Sou estudante de Segurança da Informação, apaixonado por software livre, semp
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/sobre/  
 

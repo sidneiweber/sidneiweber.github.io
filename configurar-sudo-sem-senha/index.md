@@ -21,6 +21,6 @@ E por hoje era isso pessoal, aquele abraço
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/configurar-sudo-sem-senha/  
 

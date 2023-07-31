@@ -83,6 +83,6 @@ O usuário para login é "admin" e a senha é "password".
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/instalar-ansible-awx-com-docker-no-centos-7/  
 

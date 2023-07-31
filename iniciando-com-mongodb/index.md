@@ -62,6 +62,6 @@ Para o início está de bom tamanho, até a próxima.
 
 ---
 
-> Author: Sidnei Weber  
+> Autor: Sidnei Weber  
 > URL: https://sidneiweber.com.br/iniciando-com-mongodb/  
 
