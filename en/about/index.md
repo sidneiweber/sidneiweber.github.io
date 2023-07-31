@@ -45,5 +45,5 @@ Graduated in Information Security, free software passionate, always looking to i
 ---
 
 > Author: Sidnei Weber  
-> URL: https://sidneiweber.com.br/en/sobre/  
+> URL: https://sidneiweber.com.br/en/about/  
 

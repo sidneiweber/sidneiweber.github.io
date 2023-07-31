@@ -368,5 +368,5 @@
 ---
 
 > Author: Sidnei Weber  
-> URL: https://sidneiweber.com.br/en/gerador-senhas/  
+> URL: https://sidneiweber.com.br/en/password-generator/  
 
