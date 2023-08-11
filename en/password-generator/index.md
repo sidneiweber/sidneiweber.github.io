@@ -1,4 +1,4 @@
-# 
+# Password Generator
 
 <!DOCTYPE html>
 <html>

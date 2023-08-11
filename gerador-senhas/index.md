@@ -1,4 +1,4 @@
-# 
+# Gerador de senhas
 
 <!DOCTYPE html>
 <html>
