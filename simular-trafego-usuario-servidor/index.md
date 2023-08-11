@@ -1,5 +1,6 @@
 # Simular tráfego de usuário para um servidor
 
+<!--more-->
 
 Vamos simular o tráfego para um servidor utlizando a ferramenta `ab` que foi criado pelo Apache para testar seu próprio serviço.
 

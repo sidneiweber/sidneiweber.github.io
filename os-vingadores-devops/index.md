@@ -1,5 +1,6 @@
 # Os vingadores DevOps
 
+<!--more-->
 
 {{< admonition type=warning title="Aviso do autor" open=true >}}
 Essa história pode ter sido baseada em fatos reais (ou não) e pode contar ironia (ou não).
