@@ -51,6 +51,8 @@ O não cumprimento desse acordo (SLA), pode gerar consequências, dentre elas po
 
 Para mais informações sobre o assunto podemos conferir no material do Google https://sre.google/
 
+https://www.atlassian.com/br/incident-management/kpis/sla-vs-slo-vs-sli
+
 
 ---
 
