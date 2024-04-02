@@ -363,7 +363,7 @@ Sidnei Weber</span></span></div><div class=post-meta-line><span title="publicado
 </span></span></span><span class=line><span class=cl><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=c># Install JDK 8 and git</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=l>choco install jdk8</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=l>choco install git</span></span></span></code></pre></td></tr></table></div></div><p>Agora vamos gerar nossa AMI personalizada, lembrando que o nome deve ser sempre diferente ao gerar uma nova AMI, aqui é interessante incluir uma variável com o número do build do seu pipeline por exemplo:<br></p><div class=highlight id=id-6><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=l>choco install git</span></span></span></code></pre></td></tr></table></div></div><p>Agora vamos gerar nossa AMI personalizada, lembrando que o nome deve ser sempre diferente ao gerar uma nova AMI, aqui é interessante incluir uma variável com o número do build do seu pipeline por exemplo:<br></p><div class=highlight id=id-1><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -390,7 +390,7 @@ Sidnei Weber</span></span></div><div class=post-meta-line><span title="publicado
 </span></span></span><span class=line><span class=cl><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Set New AMI id variable</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>set_fact</span><span class=p>:</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>ami_result</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;{{ (ami.results | first).image_id  }}&#34;</span></span></span></code></pre></td></tr></table></div></div><p>Para não ficarmos com essa instância base rodando sem necessidade, vamos exclui-la:<br></p><div class=highlight id=id-7><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>ami_result</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;{{ (ami.results | first).image_id  }}&#34;</span></span></span></code></pre></td></tr></table></div></div><p>Para não ficarmos com essa instância base rodando sem necessidade, vamos exclui-la:<br></p><div class=highlight id=id-2><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -425,7 +425,7 @@ Sidnei Weber</span></span></div><div class=post-meta-line><span title="publicado
 </span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>Name</span><span class=p>:</span><span class=w> </span><span class=l>stock-win-ami-test</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>instance_tags</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>Name</span><span class=p>:</span><span class=w> </span><span class=l>stock-win-ami-test</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>register</span><span class=p>:</span><span class=w> </span><span class=l>ec2_result</span></span></span></code></pre></td></tr></table></div></div><p>Então nosso arquivo principal para realizarmos essa tarega ficará assim:<br></p><div class=highlight id=id-8><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>register</span><span class=p>:</span><span class=w> </span><span class=l>ec2_result</span></span></span></code></pre></td></tr></table></div></div><p>Então nosso arquivo principal para realizarmos essa tarega ficará assim:<br></p><div class=highlight id=id-3><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
