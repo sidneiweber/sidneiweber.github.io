@@ -44,6 +44,8 @@ Outra alternativa ao Redis que promete ter uma melhor performance e compatibilid
 
 [https://www.dragonflydb.io](https://www.dragonflydb.io/)
 
+Como podemos perceber existem diversos projetos opensource que seguem a mesma linha do Redis, entregando as mesmas features ou até mesmo mais features. A maioria possui compatibilidade direta com o Redis o que pode facilitar durante uma migração. Ainda assim é sempre importante testar o máximo possível para validar se uma nova ferramenta vai continuar atendendo ao seu propósito
+
 ---
 
 > Autor: Sidnei Weber  
