@@ -1,17 +1,68 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Rede - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/rede/</link><description>Rede - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Apr 2019 09:56:31 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/rede/" rel="self" type="application/rss+xml"/><item><title>Exemplos de uso do comando ping</title><link>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</link><pubDate>Fri, 26 Apr 2019 09:56:31 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</guid><description>Segundo o Wikipédia ping é …
-“Ping ou latência como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &amp;ldquo;pong&amp;rdquo;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante.</description></item><item><title>Identificar sistema operacional com ping</title><link>https://sidneiweber.com.br/identificar-sistema-operacional-com-ping/</link><pubDate>Thu, 17 Jan 2019 15:21:50 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/identificar-sistema-operacional-com-ping/</guid><description>O comando ping utiliza o protocolo icmp e é muito útil para alguns testes de rede. O que pouca gente sabe é que durante a resposta do comando ping, uma informação pode nos informar qual o sistema operacional está respondendo. Essa informação é TTL (Time to Live).
-Ex:
-1 2 3 4 5 ping 127.0.0.1 PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data. 64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.030 ms 64 bytes from 127.</description></item><item><title>Bloquear resposta ao ping com sysctl</title><link>https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/</link><pubDate>Fri, 20 Oct 2017 22:21:16 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/</guid><description>A dica de hoje é super rápida e prática, para bloquear as respostas de ping podemos usar o comando sysctl:
-Para bloquear:
-1 sysctl -w net.ipv4.icmp_echo_ignore_all=1 Para desbloquear:
-1 sysctl -w net.ipv4.icmp_echo_ignore_all=0 </description></item><item><title>Instalando servidor DHCP</title><link>https://sidneiweber.com.br/instalando-servidor-dhcp/</link><pubDate>Mon, 06 Mar 2017 14:55:51 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-servidor-dhcp/</guid><description>Definição: Resumidamente, o DHCP opera da seguinte forma:
-Um cliente envia um pacote UDP em broadcast (destinado a todas as máquinas) com uma requisição DHCP (para a porta 67); Os servidores DHCP que capturarem este pacote irão responder (se o cliente se enquadrar numa série de critérios — ver abaixo) para a porta 68 do Host solicitante com um pacote com configurações onde constará, pelo menos, um endereço IP, uma máscara de rede e outros dados opcionais, como o gateway, servidores de DNS, etc… Fonte: Wikipedia</description></item><item><title>Verificar máquinas ligadas com shell script</title><link>https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/</link><pubDate>Mon, 28 Jan 2013 22:58:55 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/</guid><description>Estava interessado em criar uma forma de scannear a rede para saber quantos micros estavam conectados a ela, saber nome, grupo, MAC ADDRESS.
-Para que o script funcione será preciso instalar alguns softwares:
-dialog:
-1 apt-get install dialog nmap:
-1 apt-get install nmap Copie o código e cole em um arquivo texto e salve com um nome de sua preferência, de permissão para executar (chmod +x nome_do_arquivo.sh) e em seguida execute-o (.</description></item><item><title>Esconder versão dos serviços de rede</title><link>https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/</link><pubDate>Tue, 29 Sep 2009 12:16:09 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/</guid><description><![CDATA[Escondendo a versão dos serviços que estão rodando em seu servidor para aumentar a segurança Pessoal.
-Importante para a segurança de um servidor é esconder a versão de seus serviços para que o invasor não fique procurando uma falha de segurança para aquela versão específica do daemon.
-Então vamos ocultar alguns serviços mais utilizados:
-Proftpd Basta adicionar a seguinte linha no proftpd.conf:
-ServerIdent on &quot;&quot;
-A linha acima informa a versão do serviço como sendo &ldquo;&rdquo;, isso quer dizer que será em branco.]]></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Rede - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/rede/</link><description>Rede - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Apr 2019 09:56:31 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/rede/" rel="self" type="application/rss+xml"/><item><title>Exemplos de uso do comando ping</title><link>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</link><pubDate>Fri, 26 Apr 2019 09:56:31 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</guid><description><![CDATA[<p>Segundo o Wikipédia ping é …</p>
+<p>“<strong>Ping</strong> ou <strong>latência</strong> como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &ldquo;pong&rdquo;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. ”</p>]]></description></item><item><title>Identificar sistema operacional com ping</title><link>https://sidneiweber.com.br/identificar-sistema-operacional-com-ping/</link><pubDate>Thu, 17 Jan 2019 15:21:50 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/identificar-sistema-operacional-com-ping/</guid><description><![CDATA[<p>O comando ping utiliza o protocolo icmp e é muito útil para alguns testes de rede. O que pouca gente sabe é que durante a resposta do comando ping, uma informação pode nos informar qual o sistema operacional está respondendo. Essa informação é TTL (Time to Live).</p>
+<p>Ex:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ping 127.0.0.1
+</span></span><span class="line"><span class="cl">PING 127.0.0.1 <span class="o">(</span>127.0.0.1<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from 127.0.0.1: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">1</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>0.030 ms
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from 127.0.0.1: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">2</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>0.035 ms
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from 127.0.0.1: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">3</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>0.041 ms</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Podemos ver que nesse exemplo o TTL é 64 que corresponde ao Linux. É bom lembrar que cada vez que um pacote passa por um roteador é reduzido um do valor TTL. Caso a resposta seja 64, significa que o pacote veio de um Linux e passou por 2 roteadores.</p>]]></description></item><item><title>Bloquear resposta ao ping com sysctl</title><link>https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/</link><pubDate>Fri, 20 Oct 2017 22:21:16 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/</guid><description><![CDATA[<p>A dica de hoje é super rápida e prática, para bloquear as respostas de ping podemos usar o comando sysctl:</p>
+<p>Para bloquear:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sysctl -w net.ipv4.icmp_echo_ignore_all<span class="o">=</span><span class="m">1</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Para desbloquear:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sysctl -w net.ipv4.icmp_echo_ignore_all<span class="o">=</span><span class="m">0</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Instalando servidor DHCP</title><link>https://sidneiweber.com.br/instalando-servidor-dhcp/</link><pubDate>Mon, 06 Mar 2017 14:55:51 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-servidor-dhcp/</guid><description><![CDATA[<h3 id="definição">Definição:</h3>
+<p>Resumidamente, o DHCP opera da seguinte forma:</p>
+<ul>
+<li>Um cliente envia um pacote UDP em <em>broadcast</em> (destinado a todas as máquinas) com uma requisição DHCP (para a porta 67);</li>
+<li>Os servidores DHCP que capturarem este pacote irão responder (se o cliente se enquadrar numa série de critérios — ver abaixo) para a porta 68 do <em>Host</em> solicitante com um pacote com configurações onde constará, pelo menos, um endereço IP, uma máscara de rede e outros dados opcionais, como o gateway, servidores de DNS, etc…</li>
+</ul>
+<p>Fonte: <a href="https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"target="_blank" rel="external nofollow noopener noreferrer">Wikipedia</a></p>]]></description></item><item><title>Verificar máquinas ligadas com shell script</title><link>https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/</link><pubDate>Mon, 28 Jan 2013 22:58:55 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/</guid><description><![CDATA[<p>Estava interessado em criar uma forma de scannear a rede para saber quantos micros estavam conectados a ela, saber nome, grupo, MAC ADDRESS.</p>
+<p>Para que o script funcione será preciso instalar alguns softwares:</p>
+<p>dialog:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt-get install dialog</span></span></code></pre></td></tr></table>
+</div>
+</div><p>nmap:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt-get install nmap</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Copie o código e cole em um arquivo texto e salve com um nome de sua preferência, de permissão para executar (chmod +x nome_do_arquivo.sh) e em seguida execute-o (./nome_do_arquivo.sh):</p>]]></description></item><item><title>Esconder versão dos serviços de rede</title><link>https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/</link><pubDate>Tue, 29 Sep 2009 12:16:09 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/</guid><description><![CDATA[<p>Escondendo a versão dos serviços que estão rodando em seu servidor para aumentar a segurança Pessoal.</p>
+<p>Importante para a segurança de um servidor é esconder a versão de seus serviços para que o invasor não fique procurando uma falha de segurança para aquela versão específica do daemon.</p>
+<p>Então vamos ocultar alguns serviços mais utilizados:</p>
+<h1 id="proftpd"><strong>Proftpd</strong></h1>
+<p>Basta adicionar a seguinte linha no proftpd.conf:</p>
+<blockquote>
+<p>ServerIdent on &quot;&quot;</p>
+</blockquote>
+<p>A linha acima informa a versão do serviço como sendo &ldquo;&rdquo;, isso quer dizer que será em branco.</p>]]></description></item></channel></rss>

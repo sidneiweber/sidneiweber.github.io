@@ -1,4 +1,77 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Samba - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/samba/</link><description>Samba - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2014 23:59:10 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/samba/" rel="self" type="application/rss+xml"/><item><title>Instalar servidor Samba [Dica rápida]</title><link>https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/</link><pubDate>Tue, 11 Feb 2014 23:59:10 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/</guid><description>Primeiramente instalaremos o pacote:
-1 apt-get install samba Depois alteramos a configuração do arquivo:
-1 vi /etc/samba/smb.conf E alteramos alguns parametros:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 [global] #nome do grupo de trabalho workgroup = casa #como a maquina irá aparecer na rede Windows netbios name = servidor de arquivos #autenticação #modo de acesso ao servidor security = user / share #lembrado que user é quando se criará um usuário no sistema, e share sem usuário #compartilhamentos [arquivos] #descrição do compartilhamento comment = meus arquivos #caminho da pasta no servidor path = /arquivos # ou o diretório desejado public = yes browseable = yes #se está visível ou oculto na rede writeable = yes #permite escrita read only = no #somente leitura valid users = VOCE # define a mascara em que os arquivos serão criados create mask = 0700 #(terão a permissão rwx somente para o root) # define a mascara em que os diretórios serão criados directory mask = 0700 Vamos criar o diretório compartilhado no servidor:</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Samba - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/samba/</link><description>Samba - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Feb 2014 23:59:10 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/samba/" rel="self" type="application/rss+xml"/><item><title>Instalar servidor Samba [Dica rápida]</title><link>https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/</link><pubDate>Tue, 11 Feb 2014 23:59:10 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/</guid><description><![CDATA[<p>Primeiramente instalaremos o pacote:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt-get install samba</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Depois alteramos a configuração do arquivo:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">vi /etc/samba/smb.conf</span></span></code></pre></td></tr></table>
+</div>
+</div><p>E alteramos alguns parametros:</p>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[global]
+</span></span><span class="line"><span class="cl">#nome do grupo de trabalho
+</span></span><span class="line"><span class="cl">workgroup = casa
+</span></span><span class="line"><span class="cl">#como a maquina irá aparecer na rede Windows
+</span></span><span class="line"><span class="cl">netbios name = servidor de arquivos
+</span></span><span class="line"><span class="cl">#autenticação
+</span></span><span class="line"><span class="cl">#modo de acesso ao servidor
+</span></span><span class="line"><span class="cl">security = user / share
+</span></span><span class="line"><span class="cl">#lembrado que user é quando se criará um usuário no sistema, e share sem usuário
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#compartilhamentos
+</span></span><span class="line"><span class="cl">[arquivos]
+</span></span><span class="line"><span class="cl">#descrição do compartilhamento
+</span></span><span class="line"><span class="cl">comment = meus arquivos
+</span></span><span class="line"><span class="cl">#caminho da pasta no servidor
+</span></span><span class="line"><span class="cl">path = /arquivos # ou o diretório desejado
+</span></span><span class="line"><span class="cl">public = yes
+</span></span><span class="line"><span class="cl">browseable = yes #se está visível ou oculto na rede
+</span></span><span class="line"><span class="cl">writeable = yes #permite escrita
+</span></span><span class="line"><span class="cl">read only = no #somente leitura
+</span></span><span class="line"><span class="cl">valid users = VOCE
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># define a mascara em que os arquivos serão criados
+</span></span><span class="line"><span class="cl">create mask = 0700 #(terão a permissão rwx somente para o root)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># define a mascara em que os diretórios serão criados
+</span></span><span class="line"><span class="cl">directory mask = 0700</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Vamos criar o diretório compartilhado no servidor:</p>]]></description></item></channel></rss>

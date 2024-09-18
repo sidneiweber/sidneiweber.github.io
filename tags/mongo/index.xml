@@ -1,5 +1,30 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Mongo - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/mongo/</link><description>Mongo - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Apr 2019 16:59:07 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/mongo/" rel="self" type="application/rss+xml"/><item><title>Iniciando com MongoDB</title><link>https://sidneiweber.com.br/iniciando-com-mongodb/</link><pubDate>Tue, 02 Apr 2019 16:59:07 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/iniciando-com-mongodb/</guid><description><![CDATA[Após termos realizado a instalação do MongoDB nesse post, hoje vamos iniciar com os primeiros passos com nosso banco de dados.
-Utilizando o Mongo Shell Quando estamos utilizando o mongo em localhost (127.0.0.1) não é necessário usuário e senha para realizar a conexão.
-1 2 3 4 5 $mongo MongoDB shell version v4.0.6 connecting to: mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb Implicit session: session { &#34;id&#34; : UUID(&#34;319f1942-5755-4448-a5a5-282acf77ed6d&#34;) } MongoDB server version: 4.0.6 Primeiro comando a ser usado é o use, utilizado para selecionar o banco usado.]]></description></item><item><title>Instalando MongoDB Community Edition 4.0 no Ubuntu</title><link>https://sidneiweber.com.br/instalando-mongodb-community-edition-4-0-no-ubuntu/</link><pubDate>Fri, 08 Mar 2019 16:12:05 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-mongodb-community-edition-4-0-no-ubuntu/</guid><description>O que é MongoDB O MongoDB é um banco de dados NoSQL orientado a documentos de alto desempenho (sistema noSQL significa que ele não fornece tabelas, linhas, etc.). Ele armazena dados em documentos semelhantes a JSON com esquemas dinâmicos para melhor desempenho.
-Adicionando repositórios Para instalar MongoDB Community Edition no Ubuntu, precisamos primeiro importar a chave pública usada pelo gerenciador de pacotes.
-1 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4 No Ubuntu 18.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Mongo - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/mongo/</link><description>Mongo - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Apr 2019 16:59:07 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/mongo/" rel="self" type="application/rss+xml"/><item><title>Iniciando com MongoDB</title><link>https://sidneiweber.com.br/iniciando-com-mongodb/</link><pubDate>Tue, 02 Apr 2019 16:59:07 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/iniciando-com-mongodb/</guid><description><![CDATA[<p>Após termos realizado a instalação do MongoDB <a href="https://sidneiweber.com.br/2019/03/08/instalando-mongodb-community-edition-4-0-no-ubuntu/"target="_blank" rel="external nofollow noopener noreferrer">nesse post</a>, hoje vamos iniciar com os primeiros passos com nosso banco de dados.</p>
+<h3 id="utilizando-o-mongo-shell">Utilizando o Mongo Shell</h3>
+<p>Quando estamos utilizando o mongo em localhost (127.0.0.1) não é necessário usuário e senha para realizar a conexão.</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">$mongo</span>
+</span></span><span class="line"><span class="cl">MongoDB shell version v4.0.6
+</span></span><span class="line"><span class="cl">connecting to: mongodb://127.0.0.1:27017/?gssapiServiceName<span class="o">=</span>mongodb
+</span></span><span class="line"><span class="cl">Implicit session: session <span class="o">{</span> <span class="s2">&#34;id&#34;</span> : UUID<span class="o">(</span><span class="s2">&#34;319f1942-5755-4448-a5a5-282acf77ed6d&#34;</span><span class="o">)</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">MongoDB server version: 4.0.6</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Primeiro comando a ser usado é o <strong>use,</strong> utilizado para selecionar o banco usado.</p>]]></description></item><item><title>Instalando MongoDB Community Edition 4.0 no Ubuntu</title><link>https://sidneiweber.com.br/instalando-mongodb-community-edition-4-0-no-ubuntu/</link><pubDate>Fri, 08 Mar 2019 16:12:05 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-mongodb-community-edition-4-0-no-ubuntu/</guid><description><![CDATA[<h3 id="span-ido_que_e_mongodbo-que-é-mongodbspan"><span id="O_que_e_MongoDB">O que é MongoDB</span></h3>
+<p>O MongoDB é um banco de dados NoSQL orientado a documentos de alto desempenho (sistema noSQL significa que ele não fornece tabelas, linhas, etc.). Ele armazena dados em documentos semelhantes a JSON com esquemas dinâmicos para melhor desempenho.</p>
+<h3 id="span-idadicionando_repositoriosadicionando-repositóriosspan"><span id="Adicionando_repositorios">Adicionando repositórios</span></h3>
+<p>Para instalar <strong>MongoDB Community Edition</strong> no Ubuntu, precisamos primeiro importar a chave pública usada pelo gerenciador de pacotes.</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4</span></span></code></pre></td></tr></table>
+</div>
+</div><p>No Ubuntu 18.04</p>]]></description></item></channel></rss>

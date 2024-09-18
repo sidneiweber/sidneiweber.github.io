@@ -1,12 +1,119 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Docker - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/docker/</link><description>Docker - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 06 Jul 2020 15:50:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/docker/" rel="self" type="application/rss+xml"/><item><title>Remover imagens Docker com TAG "none"</title><link>https://sidneiweber.com.br/remover-imagens-docker-com-tag/</link><pubDate>Mon, 06 Jul 2020 15:50:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/remover-imagens-docker-com-tag/</guid><description><![CDATA[Primeiro vamos fazer uma pesquisa sobre nossas imagens usando: docker images -a
-1 2 3 4 5 6 7 8 9 $ docker images -a sonarqube 0.8 34e889c54fe4 3 weeks ago 536MB &lt;none&gt; &lt;none&gt; 2e0435619f04 3 weeks ago 536MB &lt;none&gt; &lt;none&gt; e08451c98fcb 3 weeks ago 536MB &lt;none&gt; &lt;none&gt; 3cbb4fa1d367 3 weeks ago 510MB &lt;none&gt; &lt;none&gt; 9954766c4404 3 weeks ago 317MB &lt;none&gt; &lt;none&gt; 5471aca149e2 3 weeks ago 317MB &lt;none&gt; &lt;none&gt; de67c74cda48 3 weeks ago 536MB sonarqube 0.]]></description></item><item><title>Limpar container antigos Docker</title><link>https://sidneiweber.com.br/limpar-container-antigos-docker/</link><pubDate>Wed, 26 Dec 2018 11:48:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/limpar-container-antigos-docker/</guid><description><![CDATA[Caso sua lista de container esteja muito grande e queira remover alguns containers do seu host, podemos usar o comando abaixo para remover container parados a mais tempo:
-1 docker ps --filter &#34;status=exited&#34; | grep &#39;weeks ago&#39; | awk &#39;{print $1}&#39; | xargs --no-run-if-empty docker rm Explicando:
-1 docker ps --filter &#34;status=exited&#34; Lista somente os containers parados, que não estão em execução
-1 grep &#39;weeks ago&#39; Filtra por containers criados a semanas atrás]]></description></item><item><title>Limitando e atualizando limites de memória e CPU no docker</title><link>https://sidneiweber.com.br/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/</link><pubDate>Tue, 13 Jun 2017 13:55:20 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/</guid><description>Bom hoje vamos seguir com nosso aprendizado em docker, já vimos sobre comandos básicos, iniciar servidor apache, exportar e importar containers e agora a dica é bem simples porém muito útil. Toda vez que subimos um container sem colocar limites nos recursos, o container pode usar todo o recurso da máquina fisica, isso nem sempre é bom, seja por onerar o host ou mesmo para testes da sua aplicação. Então vamos as dicas.</description></item><item><title>Exportar e importar containers no docker</title><link>https://sidneiweber.com.br/exportar-e-importar-containers-no-docker/</link><pubDate>Fri, 18 Nov 2016 14:56:26 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exportar-e-importar-containers-no-docker/</guid><description>Exportando imagem Temos aqui novamente um processo bem simples no docker, para exportar uma imagem uitlizamos o comando
-1 2 3 docker save debian-apache &amp;gt; /tmp/imagem.tar ls -lh /tmp/ -rw-r--r-- 1 root root 225M nov 18 14:50 imagem.tar Importando imagem 1 docker load &amp;lt; imagem.tar Fala a verdade é simples ou não é, mais fácil que isso não tem como.
-Fonte</description></item><item><title>Iniciando servidor apache no docker</title><link>https://sidneiweber.com.br/iniciando-servidor-apache-no-docker/</link><pubDate>Thu, 17 Nov 2016 10:59:38 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/iniciando-servidor-apache-no-docker/</guid><description>Para iniciar um servidor apache no docker é muito simples, caso tenha uma imagem que já tenha apache é mais simples ainda. Mas vamos partir do principio que não tenha essa imagem, usaremos uma imagem do repositório do docker.
-Caso queira só baixar a imagem, começaremos com o comando:
-1 docker pull eboraas/apache Para iniciar o container com nosso servidor rodaremos o comando:
-1 docker run -it -p 80:80 -d eboraas/apache Caso queira iniciar também expondo as portas para ter suporte SSL:</description></item><item><title>Comandos básicos Docker</title><link>https://sidneiweber.com.br/comandos-basicos-docker/</link><pubDate>Thu, 17 Nov 2016 10:33:43 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/comandos-basicos-docker/</guid><description>Docker é um ferramenta que venha aprendendo a pouco tempo, não explicarei o que é o docker, apenas alguns detalhes no uso. Caso queira uma explicação melhor sobre o que é docker, recomendo esse artigo do Mundo Docker.
-Segue abaixo alista dos comandos mais básicos e explicações básicas sobre o docker:
-1 2 3 4 5 6 7 8 docker search ubuntu # Procura versões do sistema ubuntu docker pull [nome da imagem] # baixar imagem docker images # listar imagens docker run [nome da imagem ou id] # iniciar container com a imagem baixada docker ps # listar containers docker ps -a # Verifica todos os containers, inclusive os que estão parados docker exec [id do container] [comando] # executa comandos no container docker rm [id do container] Iniciar container com alguns detalhes a mais:</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Docker - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/docker/</link><description>Docker - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 06 Jul 2020 15:50:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/docker/" rel="self" type="application/rss+xml"/><item><title>Remover imagens Docker com TAG "none"</title><link>https://sidneiweber.com.br/remover-imagens-docker-com-tag/</link><pubDate>Mon, 06 Jul 2020 15:50:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/remover-imagens-docker-com-tag/</guid><description><![CDATA[<p>Primeiro vamos fazer uma pesquisa sobre nossas imagens usando: <strong>docker images -a</strong></p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ docker images -a
+</span></span><span class="line"><span class="cl">sonarqube                                                   0.8                 34e889c54fe4        <span class="m">3</span> weeks ago         536MB
+</span></span><span class="line"><span class="cl">&lt;none&gt;                                                      &lt;none&gt;               2e0435619f04        <span class="m">3</span> weeks ago         536MB
+</span></span><span class="line"><span class="cl">&lt;none&gt;                                                      &lt;none&gt;               e08451c98fcb        <span class="m">3</span> weeks ago         536MB
+</span></span><span class="line"><span class="cl">&lt;none&gt;                                                      &lt;none&gt;               3cbb4fa1d367        <span class="m">3</span> weeks ago         510MB
+</span></span><span class="line"><span class="cl">&lt;none&gt;                                                      &lt;none&gt;               9954766c4404        <span class="m">3</span> weeks ago         317MB
+</span></span><span class="line"><span class="cl">&lt;none&gt;                                                      &lt;none&gt;               5471aca149e2        <span class="m">3</span> weeks ago         317MB
+</span></span><span class="line"><span class="cl">&lt;none&gt;                                                      &lt;none&gt;               de67c74cda48        <span class="m">3</span> weeks ago         536MB
+</span></span><span class="line"><span class="cl">sonarqube                                                   0.7                 952b5e68f4df        <span class="m">3</span> weeks ago         536MB</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Podemos notar que aparecem diversas imagens com a TAG <none> e podendo ocupar espaços consideráveis. Porém alguma dessas imagens sem TAG são imagens usadas por outras imagens e removê-las pode nos fazer perder um certo tempo, mesmo assim é possível removê-las também, mas veremos mais adiante.</p>]]></description></item><item><title>Limpar container antigos Docker</title><link>https://sidneiweber.com.br/limpar-container-antigos-docker/</link><pubDate>Wed, 26 Dec 2018 11:48:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/limpar-container-antigos-docker/</guid><description><![CDATA[<p>Caso sua lista de container esteja muito grande e queira remover alguns containers do seu host, podemos usar o comando abaixo para remover container parados a mais tempo:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker ps --filter <span class="s2">&#34;status=exited&#34;</span> <span class="p">|</span> grep <span class="s1">&#39;weeks ago&#39;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $1}&#39;</span> <span class="p">|</span> xargs --no-run-if-empty docker rm</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Explicando:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker ps --filter <span class="s2">&#34;status=exited&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Lista somente os containers parados, que não estão em execução</p>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep <span class="s1">&#39;weeks ago&#39;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Filtra por containers criados a semanas atrás</p>
+<div class="highlight" id="id-4"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">awk <span class="s1">&#39;{print $1}&#39;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Exibe a primeira coluna, que refere ao CONTAINER ID</p>]]></description></item><item><title>Limitando e atualizando limites de memória e CPU no docker</title><link>https://sidneiweber.com.br/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/</link><pubDate>Tue, 13 Jun 2017 13:55:20 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/</guid><description><![CDATA[<p>Bom hoje vamos seguir com nosso aprendizado em docker, já vimos sobre <a href="http://sidneiweber.com.br/comandos-basicos-docker/"target="_blank" rel="external nofollow noopener noreferrer">comandos básicos</a>, <a href="http://sidneiweber.com.br/iniciando-servidor-apache-no-docker/"target="_blank" rel="external nofollow noopener noreferrer">iniciar servidor apache</a>, <a href="http://sidneiweber.com.br/exportar-e-importar-containers-no-docker/"target="_blank" rel="external nofollow noopener noreferrer">exportar e importar containers</a> e agora a dica é bem simples porém muito útil. Toda vez que subimos um container sem colocar limites nos recursos, o container pode usar todo o recurso da máquina fisica, isso nem sempre é bom, seja por onerar o host ou mesmo para testes da sua aplicação. Então vamos as dicas.</p>]]></description></item><item><title>Exportar e importar containers no docker</title><link>https://sidneiweber.com.br/exportar-e-importar-containers-no-docker/</link><pubDate>Fri, 18 Nov 2016 14:56:26 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exportar-e-importar-containers-no-docker/</guid><description><![CDATA[<h3 id="exportando-imagem">Exportando imagem</h3>
+<p>Temos aqui novamente um processo bem simples no docker, para exportar uma imagem uitlizamos o comando</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker save debian-apache &gt; /tmp/imagem.tar
+</span></span><span class="line"><span class="cl">ls -lh /tmp/
+</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> root   root  225M nov <span class="m">18</span> 14:50 imagem.tar</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="importando-imagem">Importando imagem</h3>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker load &lt; imagem.tar</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Fala a verdade é simples ou não é, mais fácil que isso não tem como.</p>
+<p><a href="http://devopslab.com.br/docker-como-criar-uma-imagem-docker-a-partir-de-um-container-utilizando-o-docker-commit/"target="_blank" rel="external nofollow noopener noreferrer">Fonte</a></p>]]></description></item><item><title>Iniciando servidor apache no docker</title><link>https://sidneiweber.com.br/iniciando-servidor-apache-no-docker/</link><pubDate>Thu, 17 Nov 2016 10:59:38 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/iniciando-servidor-apache-no-docker/</guid><description><![CDATA[<p>Para iniciar um servidor apache no docker é muito simples, caso tenha uma imagem que já tenha apache é mais simples ainda. Mas vamos partir do principio que não tenha essa imagem, usaremos uma imagem do repositório do docker.</p>
+<p>Caso queira só baixar a imagem, começaremos com o comando:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker pull eboraas/apache</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Para iniciar o container com nosso servidor rodaremos o comando:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -it -p 80:80 -d eboraas/apache</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Caso queira iniciar também expondo as portas para ter suporte SSL:</p>]]></description></item><item><title>Comandos básicos Docker</title><link>https://sidneiweber.com.br/comandos-basicos-docker/</link><pubDate>Thu, 17 Nov 2016 10:33:43 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/comandos-basicos-docker/</guid><description><![CDATA[<p>Docker é um ferramenta que venha aprendendo a pouco tempo, não explicarei o que é o docker, apenas alguns detalhes no uso. Caso queira uma explicação melhor sobre o que é docker, recomendo esse <a href="http://www.mundodocker.com.br/o-que-e-docker/"target="_blank" rel="external nofollow noopener noreferrer">artigo do Mundo Docker</a>.</p>
+<p>Segue abaixo alista dos comandos mais básicos e explicações básicas sobre o docker:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker search ubuntu <span class="c1"># Procura versões do sistema ubuntu</span>
+</span></span><span class="line"><span class="cl">docker pull <span class="o">[</span>nome da imagem<span class="o">]</span> <span class="c1"># baixar imagem</span>
+</span></span><span class="line"><span class="cl">docker images <span class="c1"># listar imagens</span>
+</span></span><span class="line"><span class="cl">docker run <span class="o">[</span>nome da imagem ou id<span class="o">]</span> <span class="c1"># iniciar container com a imagem baixada</span>
+</span></span><span class="line"><span class="cl">docker ps <span class="c1"># listar containers</span>
+</span></span><span class="line"><span class="cl">docker ps -a <span class="c1"># Verifica todos os containers, inclusive os que estão parados</span>
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> <span class="o">[</span>id <span class="k">do</span> container<span class="o">]</span> <span class="o">[</span>comando<span class="o">]</span> <span class="c1"># executa comandos no container</span>
+</span></span><span class="line"><span class="cl">docker rm <span class="o">[</span>id <span class="k">do</span> container<span class="o">]</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Iniciar container com alguns detalhes a mais:</p>]]></description></item></channel></rss>

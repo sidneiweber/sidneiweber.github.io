@@ -1,2 +1,22 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Dpkg - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/dpkg/</link><description>Dpkg - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 22 Jun 2017 13:22:53 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/dpkg/" rel="self" type="application/rss+xml"/><item><title>Gerar lista de pacotes instalados no Debian, Ubuntu, etc</title><link>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</link><pubDate>Thu, 22 Jun 2017 13:22:53 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</guid><description>Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o dpkg para isso. Pode ser muito útil na hora de criar sistemas com a mesma base
-Gerando lista de pacotes 1 sudo dpkg --get-selections &amp;gt; install.list Instalando pacotes a partir da lista 1 2 3 sudo dpkg --set-selections &amp;lt; install.list sudo apt-get -y update sudo apt-get dselect-upgrade Fonte</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Dpkg - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/dpkg/</link><description>Dpkg - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 22 Jun 2017 13:22:53 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/dpkg/" rel="self" type="application/rss+xml"/><item><title>Gerar lista de pacotes instalados no Debian, Ubuntu, etc</title><link>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</link><pubDate>Thu, 22 Jun 2017 13:22:53 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</guid><description><![CDATA[<p>Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o <strong>dpkg</strong> para isso. Pode ser muito útil na hora de criar sistemas com a mesma base</p>
+<h4 id="gerando-lista-de-pacotes">Gerando lista de pacotes</h4>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo dpkg --get-selections &gt; install.list</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="instalando-pacotes-a-partir-da-lista">Instalando pacotes a partir da lista</h4>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo dpkg --set-selections &lt; install.list
+</span></span><span class="line"><span class="cl">sudo apt-get -y update
+</span></span><span class="line"><span class="cl">sudo apt-get dselect-upgrade</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="http://www.dicas-l.com.br/dicas-l/20161025.php"target="_blank" rel="external nofollow noopener noreferrer">Fonte</a></p>]]></description></item></channel></rss>

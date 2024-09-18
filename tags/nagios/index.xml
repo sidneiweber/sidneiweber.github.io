@@ -1,10 +1,199 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nagios - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/nagios/</link><description>Nagios - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 Apr 2017 11:06:44 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/nagios/" rel="self" type="application/rss+xml"/><item><title>Monitoramento via TCP no Nagios</title><link>https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/</link><pubDate>Fri, 28 Apr 2017 11:06:44 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/</guid><description>Hoje vamos dar seguinte a configuração do Nagios que instalamos um tempo atrás.
-Iniciaremos por um dos monitramentos mais simples que é o monitoramento via TCP, caso tennha alguns sites e queira monitorar caso algum deles caia, será muito útil.
-Bom a estrutura do Nagios é bem simples mas não mostrarei hoje, para melhorar nos organizarmos vamos criar um arquivo de template próprio, dentro da pasta /usr/local/nagios/etc. Aqui no meu caso crei o arquivo templatesNagios.</description></item><item><title>Script instalação automatizada Nagios no Debian</title><link>https://sidneiweber.com.br/script-instalacao-automatizada-nagios-no-debian/</link><pubDate>Wed, 26 Apr 2017 13:27:40 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/script-instalacao-automatizada-nagios-no-debian/</guid><description>Script para instalação do Nagios e Nagios plugins no Debian baixando o código fonte. Script está funcional, porém pode vir a melhorar.
-Retirado de https://github.com/sidneiweber/meu-canivete-suico/blob/master/nagios/instalar-nagios-debian.sh
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 #!</description></item><item><title>Criar script inicialização Nagios no Debian</title><link>https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/</link><pubDate>Wed, 08 Feb 2017 14:17:09 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/</guid><description>Após a instalação e inicialização do Nagios no nosso servidor Debian, temos que configurar um script de inicialização, para que cada vez que a gente precisa reiniciar o serviço ou a própria máquina não precisaremos subir tudo na mão.
-A primeira coisa é deletar o script já existente, lembrando que esse tutorial é válido para o Debian.
-1 rm -rf /etc/init.d/nagios Copiar um esqueleto do sistema:
-1 cp /etc/init.d/skeleton /etc/init.d/nagios Vamos editar o arquivo /etc/init.</description></item><item><title>Instalando Nagios - Instalação básica</title><link>https://sidneiweber.com.br/instalando-nagios-instalacao-basica/</link><pubDate>Tue, 31 Jan 2017 13:11:40 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-nagios-instalacao-basica/</guid><description>Vamos fazer a instalação básica do Nagios. Pra quem não conhece o Nagios, segue um link para conhecer melhor.
-Nagios é uma popular aplicação de monitoramento de rede de código aberto distribuída sob a licença GPL. Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.
-Faremos a instalação no Debian, que é uma distribuição de minha preferência. O Nagios pode ser instalado em qualquer sistema Linux, a única diferença que pode ocorrer é a instalação de dependências e/ou alguma localização de pastas</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nagios - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/nagios/</link><description>Nagios - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 Apr 2017 11:06:44 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/nagios/" rel="self" type="application/rss+xml"/><item><title>Monitoramento via TCP no Nagios</title><link>https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/</link><pubDate>Fri, 28 Apr 2017 11:06:44 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/monitoramento-via-tcp-no-nagios/</guid><description><![CDATA[<p>Hoje vamos dar seguinte a configuração do Nagios <a href="http://sidneiweber.com.br/instalando-nagios-instalacao-basica/"target="_blank" rel="external nofollow noopener noreferrer">que instalamos um tempo atrás</a>.</p>
+<p>Iniciaremos por um dos monitramentos mais simples que é o monitoramento via TCP, caso tennha alguns sites e queira monitorar caso algum deles caia, será muito útil.</p>
+<p>Bom a estrutura do Nagios é bem simples mas não mostrarei hoje, para melhorar nos organizarmos vamos criar um arquivo de template próprio, dentro da pasta /usr/local/nagios/etc. Aqui no meu caso crei o arquivo templatesNagios.cfg. Já com o template do servico de monitoramento e templates para monitorar linux, windows e hosts de rede.</p>]]></description></item><item><title>Script instalação automatizada Nagios no Debian</title><link>https://sidneiweber.com.br/script-instalacao-automatizada-nagios-no-debian/</link><pubDate>Wed, 26 Apr 2017 13:27:40 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/script-instalacao-automatizada-nagios-no-debian/</guid><description><![CDATA[<p>Script para instalação do Nagios e Nagios plugins no Debian baixando o código fonte. Script está funcional, porém pode vir a melhorar.</p>
+<p>Retirado de <a href="https://github.com/sidneiweber/meu-canivete-suico/blob/master/nagios/instalar-nagios-debian.sh"target="_blank" rel="external nofollow noopener noreferrer">https://github.com/sidneiweber/meu-canivete-suico/blob/master/nagios/instalar-nagios-debian.sh</a></p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># instalar-nagios-debian.sh</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Criado por Sidnei Weber</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Variaveis</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VERSAO_NAGIOS</span><span class="o">=</span>4.2.4
+</span></span><span class="line"><span class="cl"><span class="nv">VERSAO_PLUGINS</span><span class="o">=</span>2.1.4
+</span></span><span class="line"><span class="cl"><span class="nv">USUARIO</span><span class="o">=</span><span class="sb">`</span>whoami<span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Verificar se é root</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$USUARIO</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;root&#34;</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;O poder está em suas mãos!&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;Você precisa ter poderes de Super Vaca!&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">exit</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Verificar internet</span>
+</span></span><span class="line"><span class="cl">clear
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Verificando conexão com internet&#34;</span>
+</span></span><span class="line"><span class="cl">curl www.google.com <span class="o">&amp;&amp;</span>gt<span class="p">;</span> /dev/null
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;0&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;Sem conexao. Saindo do instalador&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">exit</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"> <span class="k">else</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;Conexao ok. Continuando!&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Instalação das dependencias</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Instalando dependencias&#34;</span>
+</span></span><span class="line"><span class="cl">apt-get install wget build-essential apache2 php-gd libgdchart-gd2-xpm libgdchart-gd2-xpm-dev libapache2-mod-php
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Baixando Nagios</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Nagios core</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Baixando pacotes do Nagios&#34;</span>
+</span></span><span class="line"><span class="cl">wget -c https://assets.nagios.com/downloads/nagioscore/releases/nagios-<span class="nv">$VERSAO_NAGIOS</span>.tar.gz
+</span></span><span class="line"><span class="cl"><span class="c1"># Nagios plugins</span>
+</span></span><span class="line"><span class="cl">wget -c https://nagios-plugins.org/download/nagios-plugins-<span class="nv">$VERSAO_PLUGINS</span>.tar.gz
+</span></span><span class="line"><span class="cl"><span class="c1"># Extrair pacotes</span>
+</span></span><span class="line"><span class="cl">tar -xzvf https://assets.nagios.com/downloads/nagioscore/releases/nagios-<span class="nv">$VERSAO_NAGIOS</span>.tar.gz
+</span></span><span class="line"><span class="cl"><span class="c1"># Nagios plugins</span>
+</span></span><span class="line"><span class="cl">tar -xzvf https://nagios-plugins.org/download/nagios-plugins-<span class="nv">$VERSAO_PLUGINS</span>.tar.gz
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Adicionar usuario e grupo</span>
+</span></span><span class="line"><span class="cl">useradd nagios
+</span></span><span class="line"><span class="cl">groupadd nagios
+</span></span><span class="line"><span class="cl">usermod -a -G nagios nagios
+</span></span><span class="line"><span class="cl">usermod -a -G nagios www-data
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compilar Nagios</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> nagios-<span class="nv">$VERSAO_NAGIOS</span>
+</span></span><span class="line"><span class="cl">./configure --with-command-group<span class="o">=</span>nagios
+</span></span><span class="line"><span class="cl">make all
+</span></span><span class="line"><span class="cl">make install
+</span></span><span class="line"><span class="cl">make install-init
+</span></span><span class="line"><span class="cl">make install-config
+</span></span><span class="line"><span class="cl">make install-commandmode
+</span></span><span class="line"><span class="cl">make install-webconf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Reiniciar apache</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Reiniciando Apache&#34;</span>
+</span></span><span class="line"><span class="cl">service apache2 restart
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Criar usuario e senha para acessar NAGIOS</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Escolha uma senha para o usuário nagiosadmin.&#34;</span>
+</span></span><span class="line"><span class="cl">htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compilar plugins</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ..
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> nagios-plugins-<span class="nv">$VERSAO_PLUGINS</span>
+</span></span><span class="line"><span class="cl">./configure --with-nagios-user<span class="o">=</span>nagios --with-nagios-group<span class="o">=</span>nagios
+</span></span><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl">make install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Habilitar CGI no apache</span>
+</span></span><span class="line"><span class="cl">cp -r /etc/apache2/mods-available/cgi.load /etc/apache2/mods-enable/
+</span></span><span class="line"><span class="cl">service apache2 reload
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Verificar configuracao</span>
+</span></span><span class="line"><span class="cl">/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Iniciar instancia</span>
+</span></span><span class="line"><span class="cl">/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Criar script inicialização Nagios no Debian</title><link>https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/</link><pubDate>Wed, 08 Feb 2017 14:17:09 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/criar-script-inicializacao-nagios-no-debian/</guid><description><![CDATA[<p>Após a instalação e inicialização do Nagios no nosso servidor Debian, temos que configurar um script de inicialização, para que cada vez que a gente precisa reiniciar o serviço ou a própria máquina não precisaremos subir tudo na mão.</p>
+<p>A primeira coisa é deletar o script já existente, lembrando que esse tutorial é válido para o Debian.</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">rm -rf /etc/init.d/nagios</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Copiar um esqueleto do sistema:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp /etc/init.d/skeleton /etc/init.d/nagios</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Vamos editar o arquivo /etc/init.d/nagios e colocar o seguinte conteúdo. Lembrando de remover ou comentar as duas linhas existentes no final do arquivo.</p>]]></description></item><item><title>Instalando Nagios - Instalação básica</title><link>https://sidneiweber.com.br/instalando-nagios-instalacao-basica/</link><pubDate>Tue, 31 Jan 2017 13:11:40 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-nagios-instalacao-basica/</guid><description><![CDATA[<p>Vamos fazer a instalação básica do Nagios. Pra quem não conhece o Nagios, segue um <a href="https://pt.wikipedia.org/wiki/Nagios"target="_blank" rel="external nofollow noopener noreferrer">link para conhecer melhor</a>.</p>
+<blockquote>
+<p><strong>Nagios</strong> é uma popular aplicação de monitoramento de rede de <a href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto" title="Código aberto"target="_blank" rel="external nofollow noopener noreferrer">código aberto</a> distribuída sob a licença <a href="https://pt.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License"target="_blank" rel="external nofollow noopener noreferrer">GPL</a>. Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.</p>
+</blockquote>
+<p>Faremos a instalação no Debian, que é uma distribuição de minha preferência. O Nagios pode ser instalado em qualquer sistema Linux, a única diferença que pode ocorrer é a instalação de dependências e/ou alguma localização de pastas</p>]]></description></item></channel></rss>

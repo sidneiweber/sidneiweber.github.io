@@ -1,13 +1,106 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Linux - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/linux/</link><description>Linux - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Jun 2021 11:00:00 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/linux/" rel="self" type="application/rss+xml"/><item><title>Simular tráfego de usuário para um servidor</title><link>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</link><pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</guid><description> Quando queremos testar algumas coisas servidor, como teste de carga ou teste de desempenho podemos utilizar essa ferramenta que simula conexões dos usuários. </description></item><item><title>Criando arquivo de SWAP no Linux</title><link>https://sidneiweber.com.br/criando-araquivo-swap-linux/</link><pubDate>Fri, 29 Jan 2021 22:00:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/criando-araquivo-swap-linux/</guid><description>O que é o SWAP SWAP é um espaço no disco que é utilizado quando a quantidade de memória RAM física está cheia. Quando um sistema Linux fica sem RAM, os blocos de memória inativos são movidos da RAM para a área de SWAP.
-Instalação Criando arquivo de SWAP
-1 sudo dd if=/dev/zero of=/swapfile bs=1024 count=1048576 Com o comando acima iremos criar um arquivo de SWAP com 1 GB de tamanho</description></item><item><title>Como redimensionar volume EBS no Linux sem downtime</title><link>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</link><pubDate>Fri, 13 Mar 2020 21:54:28 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</guid><description><![CDATA[Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.
-Alterações em produção? Nesse caso sim :)
-Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços Clicamos em &ldquo;Volumes&rdquo; no menu &ldquo;ELASTIC BLOCK STORE&rdquo; Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em &ldquo;Modify Volume&rdquo; Verá uma janela como essa: Defina o novo tamanho para o volume, como no exemplo da imagem estamos estendendo o volume para 20GB Confirme no botão &ldquo;Modify&rdquo; Agora precisaremos extender a partição no sistema.]]></description></item><item><title>Exemplos de uso do comando ping</title><link>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</link><pubDate>Fri, 26 Apr 2019 09:56:31 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</guid><description>Segundo o Wikipédia ping é …
-“Ping ou latência como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &amp;ldquo;pong&amp;rdquo;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante.</description></item><item><title>Convertendo arquivos DOS ^M com Vim</title><link>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</link><pubDate>Tue, 06 Nov 2018 10:03:27 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</guid><description>Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.
-Existem algumas formas de corrigir esse problema, a mais conhecida é usando o aplicativo dos2unix
-Mas o quero apresentar hoje é usando o poderoso Vim.</description></item><item><title>Comando fuser - Quem mexeu no meu arquivo</title><link>https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/</link><pubDate>Tue, 06 Nov 2018 09:28:53 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/</guid><description><![CDATA[O fuser é um programa que permite que saibamos qual processo está utilizando determinado arquivo, socket (portas) e sistema de arquivos especificado. Aprender sua manipulação é essencial para poder administrar um servidor para saber o que está acontecendo principalmente nas conexões. É um comando extremamente flexível, vamos ver suas opções e seu uso.
-Diretiva Descrição Exemplo -a, &ndash;all Mostra todos os arquivos, inclusive os que estão sem uso fuser -a * -k, &ndash;kill Desativa/Mata os processos que estão utilizando determinado arquivo fuser -k /home/zonebin -i, &ndash;interactive Pede confirmação sempre que for matar um processo utilizando um arquivo fuser -ik /home/zonebin -m, &ndash;mount Especifica um sistema de arquivos para descobrir qual processo está sendo utilizado fuser -m /dev/sda1 -s, &ndash;silent Realiza as operações indicadas silenciosamente, não use a opção -a, -u, -v fuser -ks /home -u, &ndash;user Mostra o nome de usuário que iniciou o processo que está utilizando o arquivo fuser -u /var/log/messages -4, &ndash;ipv4 Mostra processos de IPV4 somente fuser -4 ssh/tcp -6 -ipv6 Mostra somente processos de sockets IPV6 fuser -6 25/tcp Tipos de acesso:]]></description></item><item><title>Review Emmi Linux por O Cara do TI [Vídeo]</title><link>https://sidneiweber.com.br/review-emmi-linux-por-o-cara-do-ti/</link><pubDate>Mon, 02 Jul 2018 19:52:42 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/review-emmi-linux-por-o-cara-do-ti/</guid><description> </description></item><item><title>Review Emmi Linux por Prof. Juliano Ramos [Vídeo]</title><link>https://sidneiweber.com.br/review-emmi-linux-por-prof-juliano-ramos/</link><pubDate>Mon, 02 Jul 2018 19:51:27 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/review-emmi-linux-por-prof-juliano-ramos/</guid><description> </description></item><item><title>Reconhecer HD novo Linux sem reiniciar</title><link>https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/</link><pubDate>Tue, 30 Jan 2018 20:53:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/</guid><description><![CDATA[Hoje vamos a mais uma dica rápida. Pra que usa seus servidores virtualizados e precisa adicionar um novo HD seja por falta de espaço ou pelo motivo que for, não precisa reiniciar o servidor para ter o HD reconhecido. Basta apenas executar um simples comando que ordena um &ldquo;scan&rdquo; no barramento.
-Vale lembrar também que essa dica é para virtualizações com Hot plug habilitado.
-1 echo &#34;- – -&#34; &gt; /sys/class/scsi_host/host0/scan Obrigado e até a próxima.]]></description></item><item><title>Configurar sudo sem senha</title><link>https://sidneiweber.com.br/configurar-sudo-sem-senha/</link><pubDate>Fri, 01 Dec 2017 21:29:13 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/configurar-sudo-sem-senha/</guid><description>Para configurar o uso do uso sem senha, o que não é recomendado, somente em casos de algum programa precise de permissão para executar determinado comando. Podemos usar como exemplo o Zabbix que quer rodar algum programa com privilégio de root sem comprometer a segurança. O arquivo a ser editado será o /etc/sudoers:
-Configurar sudo sem senha para tudo:
-1 zabbix ALL=NOPASSWD: ALL Ou podemos configurar para executar somente algo em específico:</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Linux - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/linux/</link><description>Linux - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Jun 2021 11:00:00 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/linux/" rel="self" type="application/rss+xml"/><item><title>Simular tráfego de usuário para um servidor</title><link>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</link><pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</guid><description> Quando queremos testar algumas coisas servidor, como teste de carga ou teste de desempenho podemos utilizar essa ferramenta que simula conexões dos usuários. </description></item><item><title>Criando arquivo de SWAP no Linux</title><link>https://sidneiweber.com.br/criando-araquivo-swap-linux/</link><pubDate>Fri, 29 Jan 2021 22:00:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/criando-araquivo-swap-linux/</guid><description><![CDATA[<h2 id="o-que-é-o-swap">O que é o SWAP</h2>
+<p>SWAP é um espaço no disco que é utilizado quando a quantidade de memória RAM física está cheia. Quando um sistema Linux fica sem RAM, os blocos de memória inativos são movidos da RAM para a área de SWAP.</p>
+<h2 id="instalação">Instalação</h2>
+<p>Criando arquivo de SWAP</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/swapfile <span class="nv">bs</span><span class="o">=</span><span class="m">1024</span> <span class="nv">count</span><span class="o">=</span><span class="m">1048576</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Com o comando acima iremos criar um arquivo de SWAP com 1 GB de tamanho</p>
+<p>Iremos ajustar as permissões para o correto funcionamento</p>]]></description></item><item><title>Como redimensionar volume EBS no Linux sem downtime</title><link>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</link><pubDate>Fri, 13 Mar 2020 21:54:28 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</guid><description><![CDATA[<p>Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.</p>
+<p>Alterações em produção? Nesse caso sim :)</p>
+<ul>
+<li>Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços</li>
+<li>Clicamos em &ldquo;Volumes&rdquo; no menu <strong>&ldquo;ELASTIC BLOCK STORE&rdquo;</strong></li>
+<li>Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em <strong>&ldquo;Modify Volume&rdquo;</strong></li>
+</ul>
+<p>Verá uma janela como essa:
+<img loading="lazy" src="/img/ebs/modify-volume.png" srcset="/img/ebs/modify-volume.png?size=small, /img/ebs/modify-volume.png?size=medium 1.5x, /img/ebs/modify-volume.png?size=large 2x" sizes="auto" data-title="Modify Volume &gt;&lt;" data-alt="Modify Volume &gt;&lt;" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>]]></description></item><item><title>Exemplos de uso do comando ping</title><link>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</link><pubDate>Fri, 26 Apr 2019 09:56:31 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</guid><description><![CDATA[<p>Segundo o Wikipédia ping é …</p>
+<p>“<strong>Ping</strong> ou <strong>latência</strong> como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &ldquo;pong&rdquo;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. ”</p>]]></description></item><item><title>Convertendo arquivos DOS ^M com Vim</title><link>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</link><pubDate>Tue, 06 Nov 2018 10:03:27 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</guid><description><![CDATA[<p>Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.</p>
+<p>Existem algumas formas de corrigir esse problema, a mais conhecida é usando o aplicativo <a href="https://sourceforge.net/projects/dos2unix"target="_blank" rel="external nofollow noopener noreferrer">dos2unix</a></p>
+<p>Mas o quero apresentar hoje é usando o poderoso <strong>Vim.</strong> Basta estando dentro do arquivo digitar o comando abaixo:</p>]]></description></item><item><title>Comando fuser - Quem mexeu no meu arquivo</title><link>https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/</link><pubDate>Tue, 06 Nov 2018 09:28:53 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/</guid><description><![CDATA[<p>O <strong>fuser</strong> é um programa que permite que saibamos qual processo está utilizando determinado arquivo, socket (portas) e sistema de arquivos especificado. Aprender sua manipulação é essencial para poder administrar um servidor para saber o que está acontecendo principalmente nas conexões. É um comando extremamente flexível, vamos ver suas opções e seu uso.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Diretiva</th>
+          <th style="text-align: center">Descrição</th>
+          <th style="text-align: center">Exemplo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">-a, &ndash;all</td>
+          <td style="text-align: center">Mostra todos os arquivos, inclusive os que estão sem uso</td>
+          <td style="text-align: center">fuser -a *</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-k, &ndash;kill</td>
+          <td style="text-align: center">Desativa/Mata os processos que estão utilizando determinado arquivo</td>
+          <td style="text-align: center">fuser -k /home/zonebin</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-i, &ndash;interactive</td>
+          <td style="text-align: center">Pede confirmação sempre que for matar um processo utilizando um arquivo</td>
+          <td style="text-align: center">fuser -ik /home/zonebin</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-m, &ndash;mount</td>
+          <td style="text-align: center">Especifica um sistema de arquivos para descobrir qual processo está sendo utilizado</td>
+          <td style="text-align: center">fuser -m /dev/sda1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-s, &ndash;silent</td>
+          <td style="text-align: center">Realiza as operações indicadas silenciosamente, não use a opção -a, -u, -v</td>
+          <td style="text-align: center">fuser -ks /home</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-u, &ndash;user</td>
+          <td style="text-align: center">Mostra o nome de usuário que iniciou o processo que está utilizando o arquivo</td>
+          <td style="text-align: center">fuser -u /var/log/messages</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-4, &ndash;ipv4</td>
+          <td style="text-align: center">Mostra processos de IPV4 somente</td>
+          <td style="text-align: center">fuser -4 ssh/tcp -6</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-ipv6</td>
+          <td style="text-align: center">Mostra somente processos de sockets IPV6</td>
+          <td style="text-align: center">fuser -6 25/tcp</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Tipos de acesso:</strong><br>
+c  Diretório atual<br>
+e  Arquivo executável rodando<br>
+f  Arquivo aberto (omitido no modo de display padrão)<br>
+F  arquivo aberto para escrita (omitido no modo de display padrão)<br>
+r  Diretório root<br>
+m  Arquivo mapeado ou biblioteca compartilhada</p>]]></description></item><item><title>Review Emmi Linux por O Cara do TI [Vídeo]</title><link>https://sidneiweber.com.br/review-emmi-linux-por-o-cara-do-ti/</link><pubDate>Mon, 02 Jul 2018 19:52:42 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/review-emmi-linux-por-o-cara-do-ti/</guid><description><![CDATA[<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/dNl5cblJNhs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>]]></description></item><item><title>Review Emmi Linux por Prof. Juliano Ramos [Vídeo]</title><link>https://sidneiweber.com.br/review-emmi-linux-por-prof-juliano-ramos/</link><pubDate>Mon, 02 Jul 2018 19:51:27 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/review-emmi-linux-por-prof-juliano-ramos/</guid><description><![CDATA[<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/rUNrFIn9gT8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>]]></description></item><item><title>Reconhecer HD novo Linux sem reiniciar</title><link>https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/</link><pubDate>Tue, 30 Jan 2018 20:53:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/</guid><description><![CDATA[<p>Hoje vamos a mais uma dica rápida. Pra que usa seus servidores virtualizados e precisa adicionar um novo HD seja por falta de espaço ou pelo motivo que for, não precisa reiniciar o servidor para ter o HD reconhecido. Basta apenas executar um simples comando que ordena um &ldquo;scan&rdquo; no barramento.</p>
+<p>Vale lembrar também que essa dica é para virtualizações com Hot plug habilitado.</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;- – -&#34;</span> &gt; /sys/class/scsi_host/host0/scan</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Obrigado e até a próxima.</p>]]></description></item><item><title>Configurar sudo sem senha</title><link>https://sidneiweber.com.br/configurar-sudo-sem-senha/</link><pubDate>Fri, 01 Dec 2017 21:29:13 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/configurar-sudo-sem-senha/</guid><description><![CDATA[<p>Para configurar o uso do uso sem senha, o que não é recomendado, somente em casos de algum programa precise de permissão para executar determinado comando. Podemos usar como exemplo o Zabbix que quer rodar algum programa com privilégio de root sem comprometer a segurança. O arquivo a ser editado será o /etc/sudoers:</p>
+<p>Configurar sudo sem senha para tudo:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">zabbix    <span class="nv">ALL</span><span class="o">=</span>NOPASSWD: ALL</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ou podemos configurar para executar somente algo em específico:</p>]]></description></item></channel></rss>

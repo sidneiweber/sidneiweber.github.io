@@ -1,2 +1,72 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Ldap - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ldap/</link><description>Ldap - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Sep 2009 18:51:29 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ldap/" rel="self" type="application/rss+xml"/><item><title>Apache restrito httpd.conf</title><link>https://sidneiweber.com.br/apache-restrito-httpdconf/</link><pubDate>Mon, 28 Sep 2009 18:51:29 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/apache-restrito-httpdconf/</guid><description><![CDATA[Exemplo de como restringir o acesso com apache realizando autenticação no LDAP.
-Diretório Restrito 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 Options Indexes FollowSymLinks Includes AllowOverride AuthConfig #Autenticao AuthName &#34;Acesso ao SARG&#34; AuthType Basic AuthBasicProvider &#34;ldap&#34; AuthLDAPURL &#34;ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub&#34; authzldapauthoritative Off #AuthUserfile /etc/apache2/apache_passwd require user sweber #AuthUserfile /etc/apache2/apache_passwd #require valid-user Order allow,deny Allow from all Diretorio Install 1 2 3 4 5 6 7 8 9 10 11 12 13 Options Indexes FollowSymLinks Includes AllowOverride AuthConfig AuthName &#34;Acesso ao INSTALL&#34; AuthType Basic AuthBasicProvider &#34;ldap&#34; AuthLDAPURL &#34;ldap://201.]]></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Ldap - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ldap/</link><description>Ldap - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Sep 2009 18:51:29 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ldap/" rel="self" type="application/rss+xml"/><item><title>Apache restrito httpd.conf</title><link>https://sidneiweber.com.br/apache-restrito-httpdconf/</link><pubDate>Mon, 28 Sep 2009 18:51:29 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/apache-restrito-httpdconf/</guid><description><![CDATA[<p>Exemplo de como restringir o acesso com apache realizando autenticação no LDAP.</p>
+<h1 id="diretório-restrito">Diretório Restrito</h1>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Options Indexes FollowSymLinks Includes  
+</span></span><span class="line"><span class="cl">AllowOverride AuthConfig
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Autenticao  </span>
+</span></span><span class="line"><span class="cl">AuthName <span class="s2">&#34;Acesso ao SARG&#34;</span>
+</span></span><span class="line"><span class="cl">AuthType Basic  
+</span></span><span class="line"><span class="cl">AuthBasicProvider <span class="s2">&#34;ldap&#34;</span>
+</span></span><span class="line"><span class="cl">AuthLDAPURL <span class="s2">&#34;ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub&#34;</span>
+</span></span><span class="line"><span class="cl">authzldapauthoritative Off  
+</span></span><span class="line"><span class="cl"><span class="c1">#AuthUserfile /etc/apache2/apache_passwd  </span>
+</span></span><span class="line"><span class="cl">require user sweber  
+</span></span><span class="line"><span class="cl"><span class="c1">#AuthUserfile /etc/apache2/apache_passwd  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#require valid-user</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Order allow,deny  
+</span></span><span class="line"><span class="cl">Allow from all</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="diretorio-install">Diretorio Install</h1>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Options Indexes FollowSymLinks Includes  
+</span></span><span class="line"><span class="cl">AllowOverride AuthConfig
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">AuthName <span class="s2">&#34;Acesso ao INSTALL&#34;</span>
+</span></span><span class="line"><span class="cl">AuthType Basic  
+</span></span><span class="line"><span class="cl">AuthBasicProvider <span class="s2">&#34;ldap&#34;</span>
+</span></span><span class="line"><span class="cl">AuthLDAPURL <span class="s2">&#34;ldap://201.7.197.39:389/dc=topazio,dc=com?uid?sub&#34;</span>
+</span></span><span class="line"><span class="cl">authzldapauthoritative Off  
+</span></span><span class="line"><span class="cl"><span class="c1">#AuthUserfile /etc/apache2/apache_passwd  </span>
+</span></span><span class="line"><span class="cl">require user sweber
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Order allow,deny  
+</span></span><span class="line"><span class="cl">Allow from all</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item></channel></rss>

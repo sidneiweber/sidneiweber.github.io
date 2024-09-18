@@ -1,18 +1,55 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Ansible - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ansible/</link><description>Ansible - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Dec 2019 17:04:43 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ansible/" rel="self" type="application/rss+xml"/><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 2)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</link><pubDate>Fri, 27 Dec 2019 17:04:43 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</guid><description>Na parte 1 aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos. Vamos estruturar nosso projeto e manter as coisas organizadas.
-Recursos utilizados, caso não tenha algo instalado, não funcionará :
-Python 3.8.0
-Módulos pip:
-boto
-boto3
-pywinrm Ansible 2.9.2
-Já podemos supor que você tenha o Ansible configurado corretamente para sua conta da AWS (por exemplo, boto instalado, credenciais do IAM configuradas).</description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 1)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</link><pubDate>Wed, 27 Nov 2019 09:13:21 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</guid><description>Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. Conectando em uma instância Windows.
-Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data.</description></item><item><title>Instalar Ansible AWX com Docker no Centos 7</title><link>https://sidneiweber.com.br/instalar-ansible-awx-com-docker-no-centos-7/</link><pubDate>Mon, 09 Sep 2019 16:55:50 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalar-ansible-awx-com-docker-no-centos-7/</guid><description>Ansible AWX é a versão OpenSource do ansible Tower, produto comercial desenvolvido pela Red Hat. O AWX fornece uma interface de usuário baseada na Web, API REST e um mecanismo de tarefas construído sobre o Ansible.
-Neste tutorial, mostrarei como instalar e configurar o AWX usando o Docker.
-Desabilitar SELinux:
-1 2 3 4 systemctl stop firewalld systemctl disable firewalld Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service. Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service. Habilitar repositório epel:
-1 yum install -y epel-release Instalar pacotes necessários:</description></item><item><title>Instalando última versão do Ansible no Ubuntu/Debian</title><link>https://sidneiweber.com.br/instalando-ultima-versao-ansible-no-ubuntu-debian/</link><pubDate>Tue, 22 Jan 2019 22:20:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-ultima-versao-ansible-no-ubuntu-debian/</guid><description>Caso não saiba o que é Ansible, pode dar uma lida nesse post.
-A forma mais simples para instalar o Ansible é com o comando abaixo, porém é instalado uma versão mais antiga.
-1 2 sudo apt-get update sudo apt-get install ansible Agora para baixar uma versão mais atualizada basta seguir os passos abaixo:
-1 2 3 sudo aptitude update sudo aptitude install python-pip sudo pip install ansible </description></item><item><title>Ansible - O que é e para que serve</title><link>https://sidneiweber.com.br/ansible-o-que-e-e-para-que-serve/</link><pubDate>Tue, 19 Jun 2018 20:34:23 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-o-que-e-e-para-que-serve/</guid><description>ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE
-Com essa frase começa a apresentação da ferramenta Ansible em seu próprio site. Bom, resumidamente o Ansible é um software que automatiza o provisionamento de software, gerenciamento de configuração e implantação de aplicativos. Ou seja, tudo aquilo que era feito repetidas vezes para configurar, atualizar um servidor ou serviço, pode ser automatizado com Ansible.
-Bem vindo ao mundo da automação 🙂</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Ansible - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ansible/</link><description>Ansible - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Dec 2019 17:04:43 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ansible/" rel="self" type="application/rss+xml"/><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 2)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</link><pubDate>Fri, 27 Dec 2019 17:04:43 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</guid><description><![CDATA[<p>Na <a href="https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/"target="_blank" rel="external nofollow noopener noreferrer">parte 1</a> aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos.  Vamos estruturar nosso projeto e manter as coisas organizadas.</p>
+<p>Recursos utilizados, caso não tenha algo instalado, não funcionará :</p>
+<p><strong>Python 3.8.0</strong><br />
+<strong>Módulos pip</strong>:<br /></p>
+<ul>
+<li>boto<br /></li>
+<li>boto3<br /></li>
+<li>pywinrm</li>
+</ul>
+<p><strong>Ansible 2.9.2</strong></p>]]></description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 1)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</link><pubDate>Wed, 27 Nov 2019 09:13:21 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</guid><description><![CDATA[<p>Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html"target="_blank" rel="external nofollow noopener noreferrer">Conectando em uma instância Windows</a>.</p>
+<p>Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data. Atenção para o campo onde está definido a senha, o script também irá baixar e executar o script para configurar o WinRM.</p>]]></description></item><item><title>Instalar Ansible AWX com Docker no Centos 7</title><link>https://sidneiweber.com.br/instalar-ansible-awx-com-docker-no-centos-7/</link><pubDate>Mon, 09 Sep 2019 16:55:50 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalar-ansible-awx-com-docker-no-centos-7/</guid><description><![CDATA[<p>Ansible AWX é a versão OpenSource do <a href="https://www.ansible.com/products/tower"target="_blank" rel="external nofollow noopener noreferrer">ansible Tower</a>, produto  comercial desenvolvido pela Red Hat. O AWX fornece uma interface de usuário baseada na Web, API REST e um mecanismo de tarefas construído sobre o Ansible.</p>
+<p>Neste tutorial, mostrarei como instalar e configurar o AWX usando o Docker.</p>
+<p>Desabilitar SELinux:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl stop firewalld
+</span></span><span class="line"><span class="cl">systemctl disable firewalld
+</span></span><span class="line"><span class="cl">Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
+</span></span><span class="line"><span class="cl">Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Habilitar repositório epel:</p>]]></description></item><item><title>Instalando última versão do Ansible no Ubuntu/Debian</title><link>https://sidneiweber.com.br/instalando-ultima-versao-ansible-no-ubuntu-debian/</link><pubDate>Tue, 22 Jan 2019 22:20:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalando-ultima-versao-ansible-no-ubuntu-debian/</guid><description><![CDATA[<p>Caso não saiba o que é Ansible, pode dar uma lida <a href="https://sidneiweber.com.br/2018/06/19/ansible-o-que-e-e-para-que-serve/"target="_blank" rel="external nofollow noopener noreferrer">nesse post.</a></p>
+<p>A forma mais simples para instalar o Ansible é com o comando abaixo, porém é instalado uma versão mais antiga.</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt-get update
+</span></span><span class="line"><span class="cl">sudo apt-get install ansible</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Agora para baixar uma versão mais atualizada basta seguir os passos abaixo:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo aptitude update
+</span></span><span class="line"><span class="cl">sudo aptitude install python-pip
+</span></span><span class="line"><span class="cl">sudo pip install ansible</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Ansible - O que é e para que serve</title><link>https://sidneiweber.com.br/ansible-o-que-e-e-para-que-serve/</link><pubDate>Tue, 19 Jun 2018 20:34:23 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-o-que-e-e-para-que-serve/</guid><description><![CDATA[<blockquote>
+<p>ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE</p>
+</blockquote>
+<p>Com essa frase começa a apresentação da ferramenta Ansible em seu próprio site. Bom, resumidamente o Ansible é um software que automatiza o provisionamento de software, gerenciamento de configuração e implantação de aplicativos. Ou seja, tudo aquilo que era feito repetidas vezes para configurar, atualizar um servidor ou serviço, pode ser automatizado com Ansible.</p>
+<p>Bem vindo ao mundo da automação 🙂</p>
+<p>Obviamente o Ansible não é a única ferramenta que pode fazer esse trabalho, temos outras ferramentas como Chef, Puppet, Saltstack. Todas elas tem suas características, qualidades e defeitos em particular, não realizar comparação entre essas ferramentas, vou somente dar a minha posição de o por que escolhi o Ansible.</p>]]></description></item></channel></rss>

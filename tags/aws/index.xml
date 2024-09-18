@@ -1,13 +1,123 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Aws - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/aws/</link><description>Aws - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Feb 2024 12:20:00 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/aws/" rel="self" type="application/rss+xml"/><item><title>Como criar um cluster kubernetes EKS na AWS com eksctl</title><link>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</link><pubDate>Wed, 07 Feb 2024 12:20:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</guid><description>&lt;div class="featured-image">&lt;img loading="eager" src="https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/featured-image.gif" title="Continuando nossa série sobre Kubernetes, hoje iremos criar um cluster na AWS (EKS) utilizando uma ferramenta chamada eksctl." alt="Como criar um cluster kubernetes EKS na AWS com eksctl" referrerpolicy="no-referrer"/>&lt;/div>Continuando nossa série sobre Kubernetes, hoje iremos criar um cluster na AWS (EKS) utilizando uma ferramenta chamada eksctl.</description></item><item><title>Reduzindo custos na AWS (EC2) - Parte 1</title><link>https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/</link><pubDate>Tue, 16 Feb 2021 09:27:08 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/</guid><description>A redução de custos no ambiente de nuvem é um assunto constante, a utlização é simples porém o desperdício de recursos pode ocorrer com bastante facilidade. Para te ajudar vou dividir as dicas em três partes, dividindo em EC2, ECS e RDS, três serviços distintos da AWS.
-Na primeira parte começaremos com o EC2, que permite a criação de instâncias (&amp;ldquo;máquinas virtuais&amp;rdquo;) com facilidade, podendo ser usado tanto com Windows, quanto com Linux.</description></item><item><title>Como redimensionar volume EBS no Linux sem downtime</title><link>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</link><pubDate>Fri, 13 Mar 2020 21:54:28 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</guid><description><![CDATA[Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.
-Alterações em produção? Nesse caso sim :)
-Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços Clicamos em &ldquo;Volumes&rdquo; no menu &ldquo;ELASTIC BLOCK STORE&rdquo; Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em &ldquo;Modify Volume&rdquo; Verá uma janela como essa: Defina o novo tamanho para o volume, como no exemplo da imagem estamos estendendo o volume para 20GB Confirme no botão &ldquo;Modify&rdquo; Agora precisaremos extender a partição no sistema.]]></description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 2)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</link><pubDate>Fri, 27 Dec 2019 17:04:43 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</guid><description>Na parte 1 aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos. Vamos estruturar nosso projeto e manter as coisas organizadas.
-Recursos utilizados, caso não tenha algo instalado, não funcionará :
-Python 3.8.0
-Módulos pip:
-boto
-boto3
-pywinrm Ansible 2.9.2
-Já podemos supor que você tenha o Ansible configurado corretamente para sua conta da AWS (por exemplo, boto instalado, credenciais do IAM configuradas).</description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 1)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</link><pubDate>Wed, 27 Nov 2019 09:13:21 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</guid><description>Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. Conectando em uma instância Windows.
-Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data.</description></item><item><title>Exemplo de comandos da AWS S3 para gerenciar buckets</title><link>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</link><pubDate>Fri, 25 Oct 2019 16:55:50 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</guid><description>Este tutorial explica os conceitos básicos de como gerenciar buckets do S3 e seus objetos usando o aws s3 cli usando os seguintes exemplos:
-Criar bucket 1 2 3 4 aws s3 mb s3://bucketname # região diferente aws s3 mb s3://bucketname --region us-east-2 Remover Bucket 1 2 aws s3 rb s3://bucketname aws s3 rb s3://bucketname --force Opção ls 1 2 3 4 aws s3 ls aws s3 ls s3://bucketname aws s3 ls s3://bucketname --recursive aws s3 ls s3://bucketname --recursive --human-readable --summarize Opção cp 1 2 3 4 5 6 aws s3 cp getdata.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Aws - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/aws/</link><description>Aws - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Feb 2024 12:20:00 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/aws/" rel="self" type="application/rss+xml"/><item><title>Como criar um cluster kubernetes EKS na AWS com eksctl</title><link>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</link><pubDate>Wed, 07 Feb 2024 12:20:00 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</guid><description>&lt;div class="featured-image">&lt;img loading="eager" src="https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/featured-image.gif" title="Continuando nossa série sobre Kubernetes, hoje iremos criar um cluster na AWS (EKS) utilizando uma ferramenta chamada eksctl." alt="Como criar um cluster kubernetes EKS na AWS com eksctl" referrerpolicy="no-referrer"/>&lt;/div>Continuando nossa série sobre Kubernetes, hoje iremos criar um cluster na AWS (EKS) utilizando uma ferramenta chamada eksctl.</description></item><item><title>Reduzindo custos na AWS (EC2) - Parte 1</title><link>https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/</link><pubDate>Tue, 16 Feb 2021 09:27:08 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/</guid><description><![CDATA[<p>A redução de custos no ambiente de nuvem é um assunto constante, a utlização é simples porém o desperdício de recursos pode ocorrer com bastante facilidade. Para te ajudar vou dividir as dicas em três partes, dividindo em EC2, ECS e RDS, três serviços distintos da <a href="https://aws.amazon.com/pt/"target="_blank" rel="external nofollow noopener noreferrer">AWS</a>.</p>
+<p>Na primeira parte começaremos com o EC2, que permite a criação de instâncias (&ldquo;máquinas virtuais&rdquo;) com facilidade, podendo ser usado tanto com Windows, quanto com Linux. Bom pra quem ainda não sabe, os recursos da AWS são cobrados por uso, então quando criamos uma instância no EC2, ela será cobrada pelo tempo que estiver ligada e veria de valor dependendo da <a href="https://aws.amazon.com/pt/ec2/instance-types/"target="_blank" rel="external nofollow noopener noreferrer">tipo de instância escolhida</a>.</p>]]></description></item><item><title>Como redimensionar volume EBS no Linux sem downtime</title><link>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</link><pubDate>Fri, 13 Mar 2020 21:54:28 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</guid><description><![CDATA[<p>Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.</p>
+<p>Alterações em produção? Nesse caso sim :)</p>
+<ul>
+<li>Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços</li>
+<li>Clicamos em &ldquo;Volumes&rdquo; no menu <strong>&ldquo;ELASTIC BLOCK STORE&rdquo;</strong></li>
+<li>Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em <strong>&ldquo;Modify Volume&rdquo;</strong></li>
+</ul>
+<p>Verá uma janela como essa:
+<img loading="lazy" src="/img/ebs/modify-volume.png" srcset="/img/ebs/modify-volume.png?size=small, /img/ebs/modify-volume.png?size=medium 1.5x, /img/ebs/modify-volume.png?size=large 2x" sizes="auto" data-title="Modify Volume &gt;&lt;" data-alt="Modify Volume &gt;&lt;" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>]]></description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 2)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</link><pubDate>Fri, 27 Dec 2019 17:04:43 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</guid><description><![CDATA[<p>Na <a href="https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/"target="_blank" rel="external nofollow noopener noreferrer">parte 1</a> aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos.  Vamos estruturar nosso projeto e manter as coisas organizadas.</p>
+<p>Recursos utilizados, caso não tenha algo instalado, não funcionará :</p>
+<p><strong>Python 3.8.0</strong><br />
+<strong>Módulos pip</strong>:<br /></p>
+<ul>
+<li>boto<br /></li>
+<li>boto3<br /></li>
+<li>pywinrm</li>
+</ul>
+<p><strong>Ansible 2.9.2</strong></p>]]></description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 1)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</link><pubDate>Wed, 27 Nov 2019 09:13:21 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</guid><description><![CDATA[<p>Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html"target="_blank" rel="external nofollow noopener noreferrer">Conectando em uma instância Windows</a>.</p>
+<p>Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data. Atenção para o campo onde está definido a senha, o script também irá baixar e executar o script para configurar o WinRM.</p>]]></description></item><item><title>Exemplo de comandos da AWS S3 para gerenciar buckets</title><link>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</link><pubDate>Fri, 25 Oct 2019 16:55:50 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</guid><description><![CDATA[<p>Este tutorial explica os conceitos básicos de como gerenciar buckets do S3 e seus objetos usando o aws s3 cli usando os seguintes exemplos:</p>
+<h2 id="criar-bucket">Criar bucket</h2>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 mb s3://bucketname
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># região diferente</span>
+</span></span><span class="line"><span class="cl">aws s3 mb s3://bucketname --region us-east-2</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="remover-bucket">Remover Bucket</h2>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 rb s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 rb s3://bucketname --force</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-ls">Opção ls</h2>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 ls
+</span></span><span class="line"><span class="cl">aws s3 ls s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 ls s3://bucketname --recursive
+</span></span><span class="line"><span class="cl">aws s3 ls s3://bucketname --recursive  --human-readable --summarize</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-cp">Opção cp</h2>
+<div class="highlight" id="id-4"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 cp getdata.php s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 cp /local/dir/data s3://bucketname --recursive
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname/getdata.php /local/dir/data
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname/ /local/dir/data --recursive
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname/init.xml s3://backup-bucket
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname s3://backup-bucket --recursive</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-mv">Opção mv</h2>
+<div class="highlight" id="id-5"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 mv source.json s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 mv s3://bucketname/getdata.php /home/project
+</span></span><span class="line"><span class="cl">aws s3 mv s3://bucketname/source.json s3://backup-bucket
+</span></span><span class="line"><span class="cl">aws s3 mv /local/dir/data s3://bucketname/data --recursive
+</span></span><span class="line"><span class="cl">aws s3 mv s3://bucketname s3://backup-bucket --recursive</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-rm">Opção rm</h2>
+<div class="highlight" id="id-6"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 rm s3://bucketname/queries.txt
+</span></span><span class="line"><span class="cl">aws s3 rm s3://bucketname --recursive</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-sync">Opção sync</h2>
+<div class="highlight" id="id-7"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 sync backup s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 sync s3://bucketname/backup /tmp/backup
+</span></span><span class="line"><span class="cl">aws s3 sync s3://bucketname s3://backup-bucket</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="criar-website-bucket">Criar website bucket</h2>
+<div class="highlight" id="id-8"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 website s3://bucketname/ --index-document index.html --error-document error.html</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Caso tenham mais dúvidas, segue a documentação oficial: <a href="https://docs.aws.amazon.com/cli/latest/reference/s3/"target="_blank" rel="external nofollow noopener noreferrer">https://docs.aws.amazon.com/cli/latest/reference/s3/</a></p>]]></description></item></channel></rss>

@@ -1,2 +1,104 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>S3 - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/s3/</link><description>S3 - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Oct 2019 16:55:50 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/s3/" rel="self" type="application/rss+xml"/><item><title>Exemplo de comandos da AWS S3 para gerenciar buckets</title><link>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</link><pubDate>Fri, 25 Oct 2019 16:55:50 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</guid><description>Este tutorial explica os conceitos básicos de como gerenciar buckets do S3 e seus objetos usando o aws s3 cli usando os seguintes exemplos:
-Criar bucket 1 2 3 4 aws s3 mb s3://bucketname # região diferente aws s3 mb s3://bucketname --region us-east-2 Remover Bucket 1 2 aws s3 rb s3://bucketname aws s3 rb s3://bucketname --force Opção ls 1 2 3 4 aws s3 ls aws s3 ls s3://bucketname aws s3 ls s3://bucketname --recursive aws s3 ls s3://bucketname --recursive --human-readable --summarize Opção cp 1 2 3 4 5 6 aws s3 cp getdata.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>S3 - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/s3/</link><description>S3 - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Oct 2019 16:55:50 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/s3/" rel="self" type="application/rss+xml"/><item><title>Exemplo de comandos da AWS S3 para gerenciar buckets</title><link>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</link><pubDate>Fri, 25 Oct 2019 16:55:50 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/exemplo-de-comandos-do-aws-s3-para-gerenciar-buckets/</guid><description><![CDATA[<p>Este tutorial explica os conceitos básicos de como gerenciar buckets do S3 e seus objetos usando o aws s3 cli usando os seguintes exemplos:</p>
+<h2 id="criar-bucket">Criar bucket</h2>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 mb s3://bucketname
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># região diferente</span>
+</span></span><span class="line"><span class="cl">aws s3 mb s3://bucketname --region us-east-2</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="remover-bucket">Remover Bucket</h2>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 rb s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 rb s3://bucketname --force</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-ls">Opção ls</h2>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 ls
+</span></span><span class="line"><span class="cl">aws s3 ls s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 ls s3://bucketname --recursive
+</span></span><span class="line"><span class="cl">aws s3 ls s3://bucketname --recursive  --human-readable --summarize</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-cp">Opção cp</h2>
+<div class="highlight" id="id-4"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 cp getdata.php s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 cp /local/dir/data s3://bucketname --recursive
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname/getdata.php /local/dir/data
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname/ /local/dir/data --recursive
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname/init.xml s3://backup-bucket
+</span></span><span class="line"><span class="cl">aws s3 cp s3://bucketname s3://backup-bucket --recursive</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-mv">Opção mv</h2>
+<div class="highlight" id="id-5"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 mv source.json s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 mv s3://bucketname/getdata.php /home/project
+</span></span><span class="line"><span class="cl">aws s3 mv s3://bucketname/source.json s3://backup-bucket
+</span></span><span class="line"><span class="cl">aws s3 mv /local/dir/data s3://bucketname/data --recursive
+</span></span><span class="line"><span class="cl">aws s3 mv s3://bucketname s3://backup-bucket --recursive</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-rm">Opção rm</h2>
+<div class="highlight" id="id-6"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 rm s3://bucketname/queries.txt
+</span></span><span class="line"><span class="cl">aws s3 rm s3://bucketname --recursive</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="opção-sync">Opção sync</h2>
+<div class="highlight" id="id-7"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 sync backup s3://bucketname
+</span></span><span class="line"><span class="cl">aws s3 sync s3://bucketname/backup /tmp/backup
+</span></span><span class="line"><span class="cl">aws s3 sync s3://bucketname s3://backup-bucket</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="criar-website-bucket">Criar website bucket</h2>
+<div class="highlight" id="id-8"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws s3 website s3://bucketname/ --index-document index.html --error-document error.html</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Caso tenham mais dúvidas, segue a documentação oficial: <a href="https://docs.aws.amazon.com/cli/latest/reference/s3/"target="_blank" rel="external nofollow noopener noreferrer">https://docs.aws.amazon.com/cli/latest/reference/s3/</a></p>]]></description></item></channel></rss>

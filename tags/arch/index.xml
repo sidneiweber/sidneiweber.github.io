@@ -1,7 +1,49 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Arch - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/arch/</link><description>Arch - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 12 Nov 2015 00:10:33 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/arch/" rel="self" type="application/rss+xml"/><item><title>Instalar Java 8 no Manjaro/Archlinux</title><link>https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/</link><pubDate>Thu, 12 Nov 2015 00:10:33 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/</guid><description>Primeiro atualize o sistema
-1 pacman -Sy Após isso baixamos a última versão (Na data da postagem essa era última versão)
-1 wget http://javadl.sun.com/webapps/download/AutoDL?BundleId=111679 -O Java-latest Descompactamos
-1 tar -zxvf Java-latest Copiamos para a pasta correta
-1 cp -pr jre1.8.0_60 /opt Criamos o link para o programa
-1 ln -s /opt/jre1.8.0_60/bin/java /usr/bin/java E o link para os plugins:
-1 ln -s /opt/jre1.8.0_65/lib/amd64/libnpjp2.so ~/.mozilla/plugins/libnpjp2.so Fonte</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Arch - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/arch/</link><description>Arch - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 12 Nov 2015 00:10:33 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/arch/" rel="self" type="application/rss+xml"/><item><title>Instalar Java 8 no Manjaro/Archlinux</title><link>https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/</link><pubDate>Thu, 12 Nov 2015 00:10:33 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/</guid><description><![CDATA[<p>Primeiro atualize o sistema</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pacman -Sy</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Após isso baixamos a última versão (Na data da postagem essa era última versão)</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget http://javadl.sun.com/webapps/download/AutoDL?BundleId<span class="o">=</span><span class="m">111679</span> -O Java-latest</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Descompactamos</p>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">tar -zxvf Java-latest</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Copiamos para a pasta correta</p>
+<div class="highlight" id="id-4"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp -pr jre1.8.0_60 /opt</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Criamos o link para o programa</p>
+<div class="highlight" id="id-5"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ln -s /opt/jre1.8.0_60/bin/java /usr/bin/java</span></span></code></pre></td></tr></table>
+</div>
+</div><p>E o link para os plugins:</p>
+<div class="highlight" id="id-6"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ln  -s /opt/jre1.8.0_65/lib/amd64/libnpjp2.so  ~/.mozilla/plugins/libnpjp2.so</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="http://www.unixmen.com/install-java-8-manjaroarchlinux/"target="_blank" rel="external nofollow noopener noreferrer">Fonte</a></p>]]></description></item></channel></rss>

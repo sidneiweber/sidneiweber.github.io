@@ -1,18 +1,107 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Mysql - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/mysql/</link><description>Mysql - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Jul 2016 13:10:54 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/mysql/" rel="self" type="application/rss+xml"/><item><title>Tutorial básico e rápido de Mysql</title><link>https://sidneiweber.com.br/tutorial-basico-e-rapido-de-mysql/</link><pubDate>Tue, 12 Jul 2016 13:10:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/tutorial-basico-e-rapido-de-mysql/</guid><description>Instalação Começamos pela instalação, que nas distribuições Debian like seria:
-1 sudo apt-get install mysql-server phpmyadmin Esse comando instalará a última versão do Mysql e do administrador visual que mais gosto o PHPmyadmin. A instalação irá pedir uma senha para o usuário padrão (root):
-A confirmação da senha:
-Em qual servidor web o Phpmyadmin irá rodar, no meu caso apache:
-E diga não a próxima opção:
-Administrando via linha de comando 1 mysql -h host -u root -p (o super usuário default é root) Assim terá acesso ao terminal do mysql.</description></item><item><title>Utilizando o comando like com variável [PHP-MySQL]</title><link>https://sidneiweber.com.br/utilizando-o-comando-like-com-variavel-php-mysql/</link><pubDate>Fri, 10 Jul 2015 16:48:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/utilizando-o-comando-like-com-variavel-php-mysql/</guid><description><![CDATA[ 1 2 3 4 5 6 7 8 9 include(&#34;conexao.php&#34;); $busca = $_POST[&#39;busca&#39;]; // comando like com variavel // retorna todos os produtos que tenham o valor da variável busca em qualquer posição $result = mysql_query(&#34;SELECT descricao FROM produtos WHERE descricao like &#39;%&#34;.$busca.&#34;%&#39; &#34;); // comando like normal //retorna todos os nomes que tenham a palavra &#34;pedro&#34; em qualquer posição $result = mysql_query(&#34; SELECT nome FROM funcionarios WHERE nome like &#39;%pedro%&#39; &#34;);&lt;/pre&gt; ]]></description></item><item><title>Pesquisar em um intervalo de datas Mysql</title><link>https://sidneiweber.com.br/pesquisar-em-um-intervalo-de-datas-mysql/</link><pubDate>Mon, 06 Jul 2015 15:50:07 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/pesquisar-em-um-intervalo-de-datas-mysql/</guid><description><![CDATA[ 1 SELECT * FROM `contas_pagar` WHERE data BETWEEN (&#39;2014-09-01&#39;) AND (&#39;2014-09-31&#39;); E para fazer uma soma em um intervalo de datas:
-1 SELECT SUM(valor) as total FROM contas_pagar WHERE valor BETWEEN (&#39;2014-09-01&#39;) AND (&#39;2014-09-31&#39;); ]]></description></item><item><title>Backup Mysql - Linha comando</title><link>https://sidneiweber.com.br/backup-mysql-linha-comando/</link><pubDate>Mon, 06 Jul 2015 15:48:02 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/backup-mysql-linha-comando/</guid><description>Backup de uma base específica
-1 mysqldump --database -d NOME DA BASE DE DADOS -u USUARIO -p &amp;gt; c:meu_db.sql Backup de todas as bases
-1 mysqldump --all-databases -u USUARIO -p &amp;gt; meu_mysql.sql </description></item><item><title>Migração banco de dados Mysql</title><link>https://sidneiweber.com.br/migracao-banco-de-dados-mysql/</link><pubDate>Mon, 06 Jul 2015 15:42:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/migracao-banco-de-dados-mysql/</guid><description>Para fazer um backup de uma base de dados mysql e copiar para outra base basta fazer os seguintes passos
-Os dados que deverão ser alterados são os seguintes:
-base_origem endereco_base_original usuario_base_original senha_base_original base_destino endereco_base_destino usuario_base_destino senha_base_destino Sabendo os dados a alterar, substitua-os no comando abaixo e o execute:
-1 mysqldump base_origem --opt -h endereco_base_original -uusuario_base_original -psenha_base_original --routines --triggers | mysql base_destino -hendereco_base_destino -uusuario_base_destino -psenha_base_destino </description></item><item><title>Melhor maneira de converter data para mysql [PHP]</title><link>https://sidneiweber.com.br/melhor-maneira-de-converter-data-para-mysql-php/</link><pubDate>Tue, 19 Nov 2013 14:08:08 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/melhor-maneira-de-converter-data-para-mysql-php/</guid><description><![CDATA[Se você quer converter uma data vinda do MYSQL para o formato PT-BR use o seguinte comando:
-1 $data = implode(&#34;/&#34;,array_reverse(explode(&#34;-&#34;,$data))); Assim vai converter a data do mysql para o formato brasileiro.
-Ex: 2010-31-04 para 31/04/2010
-Se você quer converter uma data em formato brasileiro para inserir no mysql use:
-1 $data = implode(&#34;-&#34;,array_reverse(explode(&#34;/&#34;,$data))); O resultado será: 31/04/2010 para 2010-31-04
-Fonte: http://www.l9web.com.br/blog/?p=68]]></description></item><item><title>Monitorar a performance do MySQL com Mytop</title><link>https://sidneiweber.com.br/monitorar-a-performance-do-mysql-com-mytop/</link><pubDate>Tue, 23 Apr 2013 12:17:04 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/monitorar-a-performance-do-mysql-com-mytop/</guid><description>Desenvolvido por Jeremy D. Zawodny, o Mytop é uma ferramenta para monitorar o MySQL baseada em console (sem interface gráfica). É utilizada para verificar o desempenho geral e threads do MySQL.
-Roda na maioria dos sistemas Linux/Unix (incluindo Mac OS X), que tenham o Perl, DBI e Term:: ReadKey instalados. E com o Term:: ANSIColor instalado, você ainda terá cores. Se você instalar o Time::HiRes, você terá consultas de status em tempo real/segundos.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Mysql - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/mysql/</link><description>Mysql - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Jul 2016 13:10:54 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/mysql/" rel="self" type="application/rss+xml"/><item><title>Tutorial básico e rápido de Mysql</title><link>https://sidneiweber.com.br/tutorial-basico-e-rapido-de-mysql/</link><pubDate>Tue, 12 Jul 2016 13:10:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/tutorial-basico-e-rapido-de-mysql/</guid><description><![CDATA[<h2 id="instalação">Instalação</h2>
+<p>Começamos pela instalação, que nas distribuições Debian like seria:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt-get install mysql-server phpmyadmin</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Esse comando instalará a última versão do Mysql e do administrador visual que mais gosto o PHPmyadmin. A instalação irá pedir uma senha para o usuário padrão (root):</p>
+<p><img loading="lazy" src="/img/uploads/2016/07/Sele%c3%a7%c3%a3o_003.png" srcset="/img/uploads/2016/07/Sele%c3%a7%c3%a3o_003.png?size=small, /img/uploads/2016/07/Sele%c3%a7%c3%a3o_003.png?size=medium 1.5x, /img/uploads/2016/07/Sele%c3%a7%c3%a3o_003.png?size=large 2x" sizes="auto" data-title="mysql &gt;&lt;" data-alt="mysql &gt;&lt;" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p>A confirmação da senha:</p>
+<p><img loading="lazy" src="/img/uploads/2016/07/Sele%c3%a7%c3%a3o_004.png" srcset="/img/uploads/2016/07/Sele%c3%a7%c3%a3o_004.png?size=small, /img/uploads/2016/07/Sele%c3%a7%c3%a3o_004.png?size=medium 1.5x, /img/uploads/2016/07/Sele%c3%a7%c3%a3o_004.png?size=large 2x" sizes="auto" data-title="mysql &gt;&lt;" data-alt="mysql &gt;&lt;" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>]]></description></item><item><title>Utilizando o comando like com variável [PHP-MySQL]</title><link>https://sidneiweber.com.br/utilizando-o-comando-like-com-variavel-php-mysql/</link><pubDate>Fri, 10 Jul 2015 16:48:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/utilizando-o-comando-like-com-variavel-php-mysql/</guid><description><![CDATA[<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">include</span><span class="p">(</span><span class="s2">&#34;conexao.php&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$busca</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;busca&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// comando like com variavel
+</span></span></span><span class="line"><span class="cl"><span class="c1">// retorna todos os produtos que tenham o valor da variável busca em qualquer posição
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysql_query</span><span class="p">(</span><span class="s2">&#34;SELECT descricao FROM produtos WHERE descricao like &#39;%&#34;</span><span class="o">.</span><span class="nv">$busca</span><span class="o">.</span><span class="s2">&#34;%&#39; &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// comando like normal
+</span></span></span><span class="line"><span class="cl"><span class="c1">//retorna todos os nomes que tenham a palavra &#34;pedro&#34; em qualquer posição
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysql_query</span><span class="p">(</span><span class="s2">&#34; SELECT nome FROM funcionarios WHERE nome like &#39;%pedro%&#39; &#34;</span><span class="p">);</span><span class="o">&lt;/</span><span class="nx">pre</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Pesquisar em um intervalo de datas Mysql</title><link>https://sidneiweber.com.br/pesquisar-em-um-intervalo-de-datas-mysql/</link><pubDate>Mon, 06 Jul 2015 15:50:07 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/pesquisar-em-um-intervalo-de-datas-mysql/</guid><description><![CDATA[<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">`</span><span class="n">contas_pagar</span><span class="o">`</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;2014-09-01&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;2014-09-31&#39;</span><span class="p">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>E para fazer uma soma em um intervalo de datas:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">contas_pagar</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;2014-09-01&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;2014-09-31&#39;</span><span class="p">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Backup Mysql - Linha comando</title><link>https://sidneiweber.com.br/backup-mysql-linha-comando/</link><pubDate>Mon, 06 Jul 2015 15:48:02 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/backup-mysql-linha-comando/</guid><description><![CDATA[<p>Backup de uma base específica</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mysqldump --database -d NOME DA BASE DE DADOS -u USUARIO -p &gt; c:meu_db.sql</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Backup de todas as bases</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mysqldump --all-databases -u USUARIO -p &gt; meu_mysql.sql</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Migração banco de dados Mysql</title><link>https://sidneiweber.com.br/migracao-banco-de-dados-mysql/</link><pubDate>Mon, 06 Jul 2015 15:42:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/migracao-banco-de-dados-mysql/</guid><description><![CDATA[<p>Para fazer um backup de uma base de dados mysql e copiar para outra base basta fazer os seguintes passos</p>
+<p>Os dados que deverão ser alterados são os seguintes:</p>
+<ul>
+<li>base_origem</li>
+<li>endereco_base_original</li>
+<li>usuario_base_original</li>
+<li>senha_base_original</li>
+<li>base_destino</li>
+<li>endereco_base_destino</li>
+<li>usuario_base_destino</li>
+<li>senha_base_destino</li>
+</ul>
+<p>Sabendo os dados a alterar, substitua-os no comando abaixo e o execute:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mysqldump base_origem --opt -h endereco_base_original -uusuario_base_original -psenha_base_original --routines --triggers <span class="p">|</span> mysql base_destino -hendereco_base_destino -uusuario_base_destino -psenha_base_destino</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Melhor maneira de converter data para mysql [PHP]</title><link>https://sidneiweber.com.br/melhor-maneira-de-converter-data-para-mysql-php/</link><pubDate>Tue, 19 Nov 2013 14:08:08 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/melhor-maneira-de-converter-data-para-mysql-php/</guid><description><![CDATA[<p>Se você quer converter uma data vinda do MYSQL para o formato PT-BR use o seguinte comando:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$data</span> <span class="o">=</span> <span class="nx">implode</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">,</span><span class="nx">array_reverse</span><span class="p">(</span><span class="nx">explode</span><span class="p">(</span><span class="s2">&#34;-&#34;</span><span class="p">,</span><span class="nv">$data</span><span class="p">)));</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Assim vai converter a data do mysql para o formato brasileiro.</p>
+<p>Ex: 2010-31-04 para 31/04/2010</p>
+<p>Se você quer converter uma data em formato brasileiro para inserir no mysql use:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$data</span> <span class="o">=</span> <span class="nx">implode</span><span class="p">(</span><span class="s2">&#34;-&#34;</span><span class="p">,</span><span class="nx">array_reverse</span><span class="p">(</span><span class="nx">explode</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">,</span><span class="nv">$data</span><span class="p">)));</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>O resultado será: 31/04/2010 para 2010-31-04</p>
+<p>Fonte: <a href="http://www.l9web.com.br/blog/?p=68"target="_blank" rel="external nofollow noopener noreferrer">http://www.l9web.com.br/blog/?p=68</a></p>]]></description></item><item><title>Monitorar a performance do MySQL com Mytop</title><link>https://sidneiweber.com.br/monitorar-a-performance-do-mysql-com-mytop/</link><pubDate>Tue, 23 Apr 2013 12:17:04 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/monitorar-a-performance-do-mysql-com-mytop/</guid><description><![CDATA[<p>Desenvolvido por <em>Jeremy D. Zawodny</em>, o <em>Mytop</em> é uma ferramenta para monitorar o MySQL baseada em console (sem interface gráfica). É utilizada para verificar o desempenho geral e threads do MySQL.</p>
+<p>Roda na maioria dos sistemas <a href="http://www.vivaolinux.com.br/linux/"target="_blank" rel="external nofollow noopener noreferrer">Linux</a>/Unix (incluindo Mac OS X), que tenham o Perl, DBI e Term:: ReadKey instalados. E com o Term:: ANSIColor instalado, você ainda terá cores. Se você instalar o Time::HiRes, você terá consultas de status em tempo real/segundos.</p>]]></description></item></channel></rss>

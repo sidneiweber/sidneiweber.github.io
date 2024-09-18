@@ -1,3 +1,81 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Zabbix - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/zabbix/</link><description>Zabbix - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Sep 2018 23:16:18 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/zabbix/" rel="self" type="application/rss+xml"/><item><title>Iniciando Zabbix com Docker Compose</title><link>https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/</link><pubDate>Thu, 06 Sep 2018 23:16:18 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/</guid><description><![CDATA[Obviamente precisaremos ter instalado o docker e docker-compose, caso não saiba como instalar pode acessar o link e esse outro link. Precisaremos criar um arquivo docker-compose.yml com o seguinte conteúdo:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 persistentDB: img &#34;busybox:latest&#34; volumes: - /var/lib/mysql zabbixDB: img &#34;monitoringartist/zabbix-db-mariadb&#34; environment: MARIADB_USER: zabbix MARIADB_PASS: senha PHP_date_timezone: America/Sao_Paulo ZS_StartDiscoverers: &#34;5&#34; ZS_StartPingers: &#34;5&#34; volumes_from: - persistentDB volumes: - &#34;/etc/localtime:/etc/localtime:ro&#34; - &#34;/srv/zabbix/backups:/backups&#34; hostname: zabbix-db zabbix: img &#34;monitoringartist/zabbix-3.]]></description></item><item><title>Resetar senha Admin Zabbix</title><link>https://sidneiweber.com.br/resetar-senha-admin-zabbix/</link><pubDate>Tue, 17 Oct 2017 09:44:49 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/resetar-senha-admin-zabbix/</guid><description>Hoje vamos a uma dica rápida para quem esqueceu ou não sabe a senha de Admin do painel de administração do Zabbix. Eu estava testando a ferramenta e depois de um tempo se mexer havia esquecido a senha, tive que resetá-la. Para isso a única coisa que precisamos é ter a senha de root do mysql, tendo ela podemos logar no terminal:
-1 2 mysql -u root -p Enter password: Dentro do terminal a gente vai fazer o seguinte:</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Zabbix - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/zabbix/</link><description>Zabbix - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Sep 2018 23:16:18 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/zabbix/" rel="self" type="application/rss+xml"/><item><title>Iniciando Zabbix com Docker Compose</title><link>https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/</link><pubDate>Thu, 06 Sep 2018 23:16:18 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/iniciando-zabbix-com-docker-compose/</guid><description><![CDATA[<p>Obviamente precisaremos ter instalado o docker e docker-compose, caso não saiba como instalar pode acessar o <a href="https://docs.docker.com/install/"target="_blank" rel="external nofollow noopener noreferrer">link</a> e esse outro <a href="https://docs.docker.com/compose/install/"target="_blank" rel="external nofollow noopener noreferrer">link</a>. Precisaremos criar um arquivo <strong>docker-compose.yml</strong> com o seguinte conteúdo:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">persistentDB</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">img &#34;busybox:latest&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/var/lib/mysql</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">zabbixDB</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">img &#34;monitoringartist/zabbix-db-mariadb&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">MARIADB_USER</span><span class="p">:</span><span class="w"> </span><span class="l">zabbix</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">MARIADB_PASS</span><span class="p">:</span><span class="w"> </span><span class="l">senha</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">PHP_date_timezone</span><span class="p">:</span><span class="w"> </span><span class="l">America/Sao_Paulo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ZS_StartDiscoverers</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;5&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ZS_StartPingers</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;5&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumes_from</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">persistentDB</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;/etc/localtime:/etc/localtime:ro&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;/srv/zabbix/backups:/backups&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l">zabbix-db</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">zabbix</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">img &#34;monitoringartist/zabbix-3.0-xxl:latest&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;80:80&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;10051:10051&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;/etc/localtime:/etc/localtime:ro&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">links</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;zabbixDB:zabbix.db&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ZS_DBHost</span><span class="p">:</span><span class="w"> </span><span class="l">zabbix.db</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ZS_DBUser</span><span class="p">:</span><span class="w"> </span><span class="l">zabbix</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ZS_DBPassword</span><span class="p">:</span><span class="w"> </span><span class="l">senha</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">TERM</span><span class="p">:</span><span class="w"> </span><span class="l">xterm</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>E iremos executar o seguinte comando:</p>]]></description></item><item><title>Resetar senha Admin Zabbix</title><link>https://sidneiweber.com.br/resetar-senha-admin-zabbix/</link><pubDate>Tue, 17 Oct 2017 09:44:49 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/resetar-senha-admin-zabbix/</guid><description><![CDATA[<p>Hoje vamos a uma dica rápida para quem esqueceu ou não sabe a senha de Admin do painel de administração do Zabbix. Eu estava testando a ferramenta e depois de um tempo se mexer havia esquecido a senha, tive que resetá-la. Para isso a única coisa que precisamos é ter a senha de root do mysql, tendo ela podemos logar no terminal:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mysql -u root -p
+</span></span><span class="line"><span class="cl">Enter password:</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Dentro do terminal a gente vai fazer o seguinte:</p>]]></description></item></channel></rss>

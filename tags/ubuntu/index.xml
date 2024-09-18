@@ -1,17 +1,67 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Ubuntu - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ubuntu/</link><description>Ubuntu - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Apr 2013 16:58:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ubuntu/" rel="self" type="application/rss+xml"/><item><title>Pac-Man no terminal Ubuntu</title><link>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</link><pubDate>Fri, 19 Apr 2013 16:58:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</guid><description>Mais uma dica rápida sobre o jogo Pac-Man para o Ubuntu.
-Instalação:
-1 sudo apt-get install pacman4console E depois, com o terminal aberto, digite:
-1 pacman4console Aparecerá esta mensagem:
-Sorry.
-To play Pacman for Console, your console window must be at least 32×29
-Please resize your window/resolution and re-run the game.
-Resumindo, o terminal tem que estar maximizado.
-E pronto. Já poderá jogar:
-Na dúvida, verifique a man page:
-1 man pacman4console </description></item><item><title>Mudando a posição dos botões do menu ubuntu 12.10</title><link>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</link><pubDate>Mon, 31 Dec 2012 13:24:56 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</guid><description>Abra o terminal e digite o comando:
-1 gsettings set org.gnome.desktop.wm.preferences button-layout &amp;#39;menu:minimize,maximize,close&amp;#39; </description></item><item><title>Codecs ubuntu 9.04</title><link>https://sidneiweber.com.br/codecs-ubuntu-904/</link><pubDate>Wed, 23 Sep 2009 19:27:02 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/codecs-ubuntu-904/</guid><description><![CDATA[Paso #1: Agregar el Repositorio de Medibuntu
-Abre el terminal ubicado en Aplicaciones/Accesorios/Terminal, y ejecuta el siguiente comando:
-1 sudo wget http://www.medibuntu.org/sources.list.d/jaunty.list –output-document=/etc/apt/sources.list.d/medibuntu.list Paso #2: Agregar la llave GPG Ahora ejecuta este otro comando:
-1 sudo apt-get update &amp;&amp; sudo apt-get install medibuntu-keyring &amp;&amp; sudo apt-get update Paso #3: Instalar Codec’s
-Ahora podemos instalar los codec’s que necesitemos. Ejecuta cada linea en el Terminal para instalar el codec nombrado:
-1 2 3 4 sudo apt-get install libdvdcss2 sudo apt-get install w32codecs sudo apt-get install non-free-codecs sudo apt-get install ffmpeg Si deseas instalar todo de una sola vez solo ejecuta esto:]]></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Ubuntu - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ubuntu/</link><description>Ubuntu - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Apr 2013 16:58:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ubuntu/" rel="self" type="application/rss+xml"/><item><title>Pac-Man no terminal Ubuntu</title><link>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</link><pubDate>Fri, 19 Apr 2013 16:58:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</guid><description><![CDATA[<p>Mais uma dica rápida sobre o jogo <em>Pac-Man</em> para o <em>Ubuntu</em>.</p>
+<p>Instalação:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt-get install pacman4console</span></span></code></pre></td></tr></table>
+</div>
+</div><p>E depois, com o terminal aberto, digite:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pacman4console</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Aparecerá esta mensagem:</p>
+<blockquote>
+<p>Sorry.<br>
+To play Pacman for Console, your console window must be at least 32×29<br>
+Please resize your window/resolution and re-run the game.</p>
+</blockquote>
+<p>Resumindo, o terminal tem que estar maximizado.</p>
+<p>E pronto. Já poderá jogar:</p>
+<p><img loading="lazy" src="http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png" srcset="http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=small, http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=medium 1.5x, http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=large 2x" sizes="auto" data-title="pacman &gt;&lt;" data-alt="pacman &gt;&lt;" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>]]></description></item><item><title>Mudando a posição dos botões do menu ubuntu 12.10</title><link>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</link><pubDate>Mon, 31 Dec 2012 13:24:56 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</guid><description><![CDATA[<p>Abra o terminal e digite o comando:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gsettings set org.gnome.desktop.wm.preferences button-layout &#39;menu:minimize,maximize,close&#39;</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>Codecs ubuntu 9.04</title><link>https://sidneiweber.com.br/codecs-ubuntu-904/</link><pubDate>Wed, 23 Sep 2009 19:27:02 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/codecs-ubuntu-904/</guid><description><![CDATA[<p>Paso #1: Agregar el Repositorio de Medibuntu<br>
+Abre el terminal ubicado en Aplicaciones/Accesorios/Terminal, y ejecuta el siguiente comando:</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo wget http://www.medibuntu.org/sources.list.d/jaunty.list –output-document<span class="o">=</span>/etc/apt/sources.list.d/medibuntu.list</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Paso #2: Agregar la llave GPG
+Ahora ejecuta este otro comando:</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get install medibuntu-keyring <span class="o">&amp;&amp;</span> sudo apt-get update</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Paso #3: Instalar Codec’s<br>
+Ahora podemos instalar los codec’s que necesitemos. Ejecuta cada linea en el Terminal para instalar el codec nombrado:</p>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install libdvdcss2  
+</span></span><span class="line"><span class="cl">sudo apt-get install w32codecs  
+</span></span><span class="line"><span class="cl">sudo apt-get install non-free-codecs  
+</span></span><span class="line"><span class="cl">sudo apt-get install ffmpeg</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Si deseas instalar todo de una sola vez solo ejecuta esto:</p>]]></description></item></channel></rss>

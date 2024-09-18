@@ -1,2 +1,93 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Debian - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/debian/</link><description>Debian - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Jul 2009 13:02:45 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/debian/" rel="self" type="application/rss+xml"/><item><title>sources.list | Debian Squeeze/Sid</title><link>https://sidneiweber.com.br/sourceslist-debian-squeezesid/</link><pubDate>Mon, 20 Jul 2009 13:02:45 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/sourceslist-debian-squeezesid/</guid><description>Descomente os que você quiser
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 # deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &amp;amp;#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main #deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &amp;amp;#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main #deb-src http://ftp.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Debian - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/debian/</link><description>Debian - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 20 Jul 2009 13:02:45 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/debian/" rel="self" type="application/rss+xml"/><item><title>sources.list | Debian Squeeze/Sid</title><link>https://sidneiweber.com.br/sourceslist-debian-squeezesid/</link><pubDate>Mon, 20 Jul 2009 13:02:45 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/sourceslist-debian-squeezesid/</guid><description><![CDATA[<p>Descomente os que você quiser</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &amp;#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &amp;#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb-src http://ftp.br.debian.org/debian/ squeeze main  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb-src http://security.debian.org/ squeeze/updates main  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb http://ftp.br.debian.org/debian/ squeeze main</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mains contribs non-frees  </span>
+</span></span><span class="line"><span class="cl">deb http://ftp.br.debian.org/debian/ squeeze main contrib non-free  
+</span></span><span class="line"><span class="cl">deb http://security.debian.org/ squeeze/updates main contrib non-free
+</span></span><span class="line"><span class="cl"><span class="c1">#media  </span>
+</span></span><span class="line"><span class="cl">deb http://www.debian-multimedia.org squeeze main  
+</span></span><span class="line"><span class="cl"><span class="c1"># Experimental Staging  </span>
+</span></span><span class="line"><span class="cl">deb http://www.debian-multimedia.org experimental main
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#virtualbox  </span>
+</span></span><span class="line"><span class="cl">deb http://download.virtualbox.org/virtualbox/debian lenny non-free
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#debian experimental kernels  </span>
+</span></span><span class="line"><span class="cl">deb http://kernel-archive.buildserver.net/debian-kernel/ trunk main
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Debian Volatile http://www.debian.org/volatile/  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb http://volatile.debian.org/debian-volatile squeeze/volatile main  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb-src http://volatile.debian.org/debian-volatile squeeze/volatile main  </span>
+</span></span><span class="line"><span class="cl">deb http://volatile.debian.org/debian-volatile lenny/volatile main contrib non-free
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Google testing repository  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb http://dl.google.com/linux/deb/ testing non-free  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#(wget -q -O – https://dl-ssl.google.com/linux/linux\_signing\_key.pub | sudo apt-key add – )</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># swiftfox http://www.getswiftfox.com/index.htm  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb http://getswiftfox.com/builds/debian unstable non-free</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#compiz-fusion  </span>
+</span></span><span class="line"><span class="cl">deb http://apt-get.if.uff.br lenny-ifuff compiz
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### KDE 4.2  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#SID(Precisa porquê várias dependências estão aqui)  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb http://ftp.de.debian.org/debian/ sid main contrib non-free  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb-src http://ftp.de.debian.org/debian/ sid main contrib non-free</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Experimental(Repositório onde se encontra o KDE4)  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb http://ftp.de.debian.org/debian/ experimental main  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#deb-src http://ftp.de.debian.org/debian/ experimental main</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item></channel></rss>

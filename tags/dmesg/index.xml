@@ -1,2 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Dmesg - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/dmesg/</link><description>Dmesg - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Oct 2017 22:34:17 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/dmesg/" rel="self" type="application/rss+xml"/><item><title>Hora mais legível no dmesg</title><link>https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/</link><pubDate>Fri, 20 Oct 2017 22:34:17 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/</guid><description>Saída padrão do dmesg:
-1 2 3 4 5 6 7 [ 7515.054630] CPU7: Core temperature above threshold, cpu clock throttled (total events = 29938) [ 7515.055666] CPU3: Core temperature/speed normal [ 7515.055668] CPU7: Core temperature/speed normal [ 9253.929870] CPU4: Core temperature above threshold, cpu clock throttled (total events = 5697) [ 9253.929873] CPU0: Core temperature above threshold, cpu clock throttled (total events = 5697) [ 9253.930911] CPU4: Core temperature/speed normal [ 9253.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Dmesg - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/dmesg/</link><description>Dmesg - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Oct 2017 22:34:17 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/dmesg/" rel="self" type="application/rss+xml"/><item><title>Hora mais legível no dmesg</title><link>https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/</link><pubDate>Fri, 20 Oct 2017 22:34:17 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/</guid><description><![CDATA[<p>Saída padrão do <strong>dmesg:</strong></p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span> 7515.054630<span class="o">]</span> CPU7: Core temperature above threshold, cpu clock throttled <span class="o">(</span>total <span class="nv">events</span> <span class="o">=</span> 29938<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span> 7515.055666<span class="o">]</span> CPU3: Core temperature/speed normal
+</span></span><span class="line"><span class="cl"><span class="o">[</span> 7515.055668<span class="o">]</span> CPU7: Core temperature/speed normal
+</span></span><span class="line"><span class="cl"><span class="o">[</span> 9253.929870<span class="o">]</span> CPU4: Core temperature above threshold, cpu clock throttled <span class="o">(</span>total <span class="nv">events</span> <span class="o">=</span> 5697<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span> 9253.929873<span class="o">]</span> CPU0: Core temperature above threshold, cpu clock throttled <span class="o">(</span>total <span class="nv">events</span> <span class="o">=</span> 5697<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span> 9253.930911<span class="o">]</span> CPU4: Core temperature/speed normal
+</span></span><span class="line"><span class="cl"><span class="o">[</span> 9253.930913<span class="o">]</span> CPU0: Core temperature/speed normal</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Saída do comando <strong>dmesg -T:</strong></p>]]></description></item></channel></rss>

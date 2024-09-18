@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projetos on Sidnei Weber</title><link>https://sidneiweber.com.br/projetos/</link><description>Recent content in Projetos on Sidnei Weber</description><generator>Hugo</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidneiweber.com.br/projetos/index.xml" rel="self" type="application/rss+xml"/><item><title>Catálogo para Auto Peças</title><link>https://sidneiweber.com.br/projetos/catalogo-auto-pecas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sidnei.weber@gmail.com (Sidnei Weber)</author><guid>https://sidneiweber.com.br/projetos/catalogo-auto-pecas/</guid><description>&lt;p>Sistema desenvolvido para uma loja na qual trabalhava. O catálogo facilitava muito o trabalho pois era possível cadastrar e pesquisar produtos por código de diversas marcas, ter uma visão rápido do preço do produto, a aplicação dos modelos de carro, além de visualizar a foto do produto.&lt;/p>
+&lt;p>Presente no sistema:&lt;/p>
+&lt;p>Menu principal&lt;/p>
+&lt;ul>
+&lt;li>Cadastro de produtos&lt;/li>
+&lt;li>Clientes&lt;/li>
+&lt;li>Cadastro de clientes&lt;/li>
+&lt;li>Gerenciamento de clientes (Edição)&lt;/li>
+&lt;li>Financeiro&lt;/li>
+&lt;li>Cadastro de contas a pagar&lt;/li>
+&lt;li>Gerenciamento de contas a pagar (Edição e alteração de status)&lt;/li>
+&lt;li>Orçamentos (Orçamentos cadastrados)&lt;/li>
+&lt;li>Carrinho (Produtos inseridos no carrinho para realizar pedido venda/orçamento)&lt;/li>
+&lt;li>Gerenciamento de contas a pagar&lt;/li>
+&lt;li>Pesquisa de produtos&lt;/li>
+&lt;/ul>
+&lt;p>Coisas que não foram feitas:&lt;/p></description></item><item><title>Estoque da casa</title><link>https://sidneiweber.com.br/projetos/estoque-da-casa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sidnei.weber@gmail.com (Sidnei Weber)</author><guid>https://sidneiweber.com.br/projetos/estoque-da-casa/</guid><description>&lt;h1 id="estoque-da-casa">Estoque da casa&lt;/h1>
+&lt;p>Sempre tive problema com listas de compras, as vezes esquecia de anotar alguma coisa que precisava, as vezes esquecia a própria lista que tinha feito. Por isso resolvi fazer algo simples e que não pudesse esquecer (tá na &amp;#x2601;&amp;#xfe0f;). Posso acessar de qualquer lugar desde que tenha internet.&lt;/p>
+&lt;p>Com simples clique posso zerar o estoque do produto fazendo ele ir para a lista de compras. Estando na lista de coisas para comprar no mercado, após &amp;ldquo;jogar&amp;rdquo; o que quero no carrinho, basta poucos cliques para adicionar ao estoque novamente e o produto já não está mais na lista :magic:. Levar papel e caneta pra ficar riscando no mercado e empurrando o carrinho, isso quando não é um cesto, é pouco prático.&lt;/p></description></item><item><title>Projeto PRI</title><link>https://sidneiweber.com.br/projetos/projeto-pri/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sidnei.weber@gmail.com (Sidnei Weber)</author><guid>https://sidneiweber.com.br/projetos/projeto-pri/</guid><description>&lt;p>O Projeto PRI teve uma história bem diferente! Uma menina + Um sonho + Uma pessoa necessitando!
+Veja o video que explica todo a história!&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/SLZFqMDMtJQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h3 id="o-que-eu-tentei-fazer">O que eu tentei fazer&lt;/h3>
+&lt;p>Gravar frases usando python:&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/4oCHtqKj35s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h3 id="o-que-achei-mais-interessante">O que achei mais interessante&lt;/h3>
+&lt;p>Consegui fazer uma interface com electron que com um clique é possível ouvir frases pré programadas&lt;/p></description></item><item><title>SCP Fácil</title><link>https://sidneiweber.com.br/projetos/scp-facil/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sidnei.weber@gmail.com (Sidnei Weber)</author><guid>https://sidneiweber.com.br/projetos/scp-facil/</guid><description>&lt;p>Projeto que fiz para facilitar o envio de arquivos de uma máquina para outra com o SCP, usando YAD.&lt;/p>
+&lt;figure>&lt;img src="https://sidneiweber.com.br/img/scp-facil.png">&lt;figcaption>
+ &lt;h4>SCP Fácil&lt;/h4>
+ &lt;/figcaption>
+&lt;/figure>
+
+&lt;p>Link para repositório: &lt;a href="https://github.com/emmilinux/scpfacil.git"target="_blank" rel="external nofollow noopener noreferrer">SCP Fácil&lt;/a>&lt;/p></description></item></channel></rss>
