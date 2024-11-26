@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ubuntu/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.15</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Apr 2013 16:58:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Pac-Man no terminal Ubuntu</title><link>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</link><pubDate>Fri, 19 Apr 2013 16:58:35 -0300</pubDate><guid>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</guid><description>&lt;p>Mais uma dica rápida sobre o jogo &lt;em>Pac-Man&lt;/em> para o &lt;em>Ubuntu&lt;/em>.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ubuntu/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Apr 2013 16:58:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Pac-Man no terminal Ubuntu</title><link>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</link><pubDate>Fri, 19 Apr 2013 16:58:35 -0300</pubDate><guid>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</guid><description>&lt;p>Mais uma dica rápida sobre o jogo &lt;em>Pac-Man&lt;/em> para o &lt;em>Ubuntu&lt;/em>.&lt;/p>
 &lt;p>Instalação:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -16,12 +16,10 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pacman4console&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Aparecerá esta mensagem:&lt;/p>
-&lt;blockquote>
-&lt;p>Sorry.&lt;br>
+&lt;blockquote>&lt;p>Sorry.&lt;br>
 To play Pacman for Console, your console window must be at least 32×29&lt;br>
 Please resize your window/resolution and re-run the game.&lt;/p>
-&lt;/blockquote>
-&lt;p>Resumindo, o terminal tem que estar maximizado.&lt;/p>
+&lt;/blockquote>&lt;p>Resumindo, o terminal tem que estar maximizado.&lt;/p>
 &lt;p>E pronto. Já poderá jogar:&lt;/p>
 &lt;p>&lt;img loading="lazy" src="http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png" alt="pacman &amp;gt;&amp;lt;" srcset="http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=small, http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=medium 1.5x, http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=large 2x" data-title="pacman &amp;gt;&amp;lt;" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p></description></item><item><title>Mudando a posição dos botões do menu ubuntu 12.10</title><link>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</link><pubDate>Mon, 31 Dec 2012 13:24:56 -0300</pubDate><guid>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</guid><description>&lt;p>Abra o terminal e digite o comando:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">

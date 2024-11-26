@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ldap - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ldap/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.15</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Sep 2009 18:51:29 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ldap/index.xml" rel="self" type="application/rss+xml"/><item><title>Apache restrito httpd.conf</title><link>https://sidneiweber.com.br/apache-restrito-httpdconf/</link><pubDate>Mon, 28 Sep 2009 18:51:29 -0300</pubDate><guid>https://sidneiweber.com.br/apache-restrito-httpdconf/</guid><description>&lt;p>Exemplo de como restringir o acesso com apache realizando autenticação no LDAP.&lt;/p>
-&lt;h2 id="diretório-restrito" class="heading-element">&lt;span>Diretório Restrito&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ldap - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ldap/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Sep 2009 18:51:29 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ldap/index.xml" rel="self" type="application/rss+xml"/><item><title>Apache restrito httpd.conf</title><link>https://sidneiweber.com.br/apache-restrito-httpdconf/</link><pubDate>Mon, 28 Sep 2009 18:51:29 -0300</pubDate><guid>https://sidneiweber.com.br/apache-restrito-httpdconf/</guid><description>&lt;p>Exemplo de como restringir o acesso com apache realizando autenticação no LDAP.&lt;/p>
+&lt;h1 id="diretório-restrito" class="heading-element">&lt;span>Diretório Restrito&lt;/span>
  &lt;a href="#diret%c3%b3rio-restrito" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;/h1>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -40,11 +40,11 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Order allow,deny 
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Allow from all&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="diretorio-install" class="heading-element">&lt;span>Diretorio Install&lt;/span>
+&lt;/div>&lt;h1 id="diretorio-install" class="heading-element">&lt;span>Diretorio Install&lt;/span>
  &lt;a href="#diretorio-install" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;/h1>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
