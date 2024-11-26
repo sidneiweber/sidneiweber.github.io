@@ -1,10 +1,10 @@
-# Instalação servidor Kafka no Ubuntu Server
+# Instalação Servidor Kafka No Ubuntu Server
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## O que é o Kafka
 
-Resumidamente o Kafka é usado para trabalhar com fila de mensagens e como uma plataforma de streaming de eventos, usando um modelo de "publicar/assinar". Foi criado e disponibilizado pelo [Linkedin](https://github.com/linkedin/kafka) em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidas por um ou mais consumidores. Esses registros não podem ser modificados após serem enviados para o Kafka.
+Resumidamente o Kafka é usado para trabalhar com fila de mensagens e como uma plataforma de streaming de eventos, usando um modelo de &#34;publicar/assinar&#34;. Foi criado e disponibilizado pelo [Linkedin](https://github.com/linkedin/kafka) em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidas por um ou mais consumidores. Esses registros não podem ser modificados após serem enviados para o Kafka.
 Ele é executado como um cluster de um ou mais servidores, ou seja, mesmo que só tenhamos um servidor ele mesmo assim é considerado um cluster. Cada nó desse cluster é também chamado de broker.
 
 [Para saber mais detalhes sobre Kafka acesse meu outro post.](https://sidneiweber.com.br/kafka-tudo-que-precisamos-saber/)
@@ -16,12 +16,12 @@ Antes de começar, vamos nos certificar que o Java está instalado no servidor. 
 
 ```shell
 java -version
-Command 'java' not found, but can be installed with:
-sudo apt install openjdk-11-jre-headless  # version 11.0.20.1+1-0ubuntu1~22.04, or
+Command &#39;java&#39; not found, but can be installed with:
+sudo apt install openjdk-11-jre-headless  # version 11.0.20.1&#43;1-0ubuntu1~22.04, or
 sudo apt install default-jre              # version 2:1.11-72build2
-sudo apt install openjdk-17-jre-headless  # version 17.0.8.1+1~us1-0ubuntu1~22.04
-sudo apt install openjdk-18-jre-headless  # version 18.0.2+9-2~22.04
-sudo apt install openjdk-19-jre-headless  # version 19.0.2+7-0ubuntu3~22.04
+sudo apt install openjdk-17-jre-headless  # version 17.0.8.1&#43;1~us1-0ubuntu1~22.04
+sudo apt install openjdk-18-jre-headless  # version 18.0.2&#43;9-2~22.04
+sudo apt install openjdk-19-jre-headless  # version 19.0.2&#43;7-0ubuntu3~22.04
 sudo apt install openjdk-8-jre-headless   # version 8u382-ga-1~22.04.1
 
 ```
@@ -29,7 +29,7 @@ sudo apt install openjdk-8-jre-headless   # version 8u382-ga-1~22.04.1
 Se o Java não estiver instalado, como no exemplo acima, você poderá instalá-lo executando o seguinte comando:
 
 ```shell
-sudo apt-get update && sudo apt-get install default-jre
+sudo apt-get update &amp;&amp; sudo apt-get install default-jre
 ```
 
 ## Instalação do Kafka
@@ -46,7 +46,7 @@ Após baixar o arquivo, vamos extrai-lo:
 tar -xzf kafka_2.13-3.6.1.tgz
 ```
 
-Isto criará um novo diretório chamado "kafka_2.13-3.6.1". Entre para este diretório:
+Isto criará um novo diretório chamado &#34;kafka_2.13-3.6.1&#34;. Entre para este diretório:
 
 ```shell
 cd kafka_2.13-3.6.1
@@ -60,11 +60,11 @@ cat config/server.properties
 
 ## Iniciar o servidor Kafka
 
-{{< admonition type=warning title="Aviso do autor" open=true >}}
+{{&lt; admonition type=warning title=&#34;Aviso do autor&#34; open=true &gt;}}
 Gostaria de deixar claro que as instruções a seguir não se aplicam a um ambiente de produção, eu considero esse cenário ideal para ambientes de testes ou cenários específicos como testar alguma configuração ou algo do gênero.
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
-Aqui teremos duas opções para iniciar o servidor Kafka, o modo tradicional, iniciando o servidor Kafka com o Zookeeper e o modo "Kraft" que é uma maneira recente de iniciar o Kafka sem utilizar o Zookeeper, saiba mais sobre [aqui](https://developer.confluent.io/learn/kraft/). Escolha uma das opções para iniciar o servidor e então poderemos avançar para os testes.
+Aqui teremos duas opções para iniciar o servidor Kafka, o modo tradicional, iniciando o servidor Kafka com o Zookeeper e o modo &#34;Kraft&#34; que é uma maneira recente de iniciar o Kafka sem utilizar o Zookeeper, saiba mais sobre [aqui](https://developer.confluent.io/learn/kraft/). Escolha uma das opções para iniciar o servidor e então poderemos avançar para os testes.
 
 ### Iniciando servidor com Zookeeper
 
@@ -85,7 +85,7 @@ bin/kafka-server-start.sh config/server.properties
 Para iniciar o Kafka sem Zookeeper executaremos os comandos abaixo, primeiro geraremos um valor de Cluster UUID:
 
 ```shell
-KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+KAFKA_CLUSTER_ID=&#34;$(bin/kafka-storage.sh random-uuid)&#34;
 ```
 
 Com o valor de Cluster UUID iremos formatar o diretório de logs:
@@ -135,11 +135,11 @@ Podemos produzir mensagens pela linha de comando, para isso podemos utilizar o p
 
 ```shell
 bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic teste
->Primeira mensagem
->Segunda mensagem
+&gt;Primeira mensagem
+&gt;Segunda mensagem
 ```
 
-Para encerrar o envio de mensagens aperte as teclas `CTRL+C`
+Para encerrar o envio de mensagens aperte as teclas `CTRL&#43;C`
 
 ### Consumindo mensagens
 
@@ -153,7 +153,7 @@ Segunda mensagem
 
 Se você ver as mensagens digitadas anteriormente é sinal que tudo deu certo. Um teste bem legal de ser feito é deixar o terminal aberta conectado com o consumidor e em outro terminal utilizar o comando para produzir mensagens. Você poderá ver as mensagens entrando imediatamente no terminal onde o consumidor está ativo.
 
-![Consumer Kafka recebendo mensagens](consumer.gif "Consumer trabalhando")
+![Consumer Kafka recebendo mensagens](consumer.gif &#34;Consumer trabalhando&#34;)
 
 Bom agora já conseguimos fazer o básico no nosso servidor Kafka, em breve estarei escrevendo algumas outras dicas sobre Kafka. Até lá.
 

@@ -1,6 +1,6 @@
-# Um pouco sobre SLA, SLI e SLO
+# Um Pouco Sobre SLA, SLI E SLO
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## Introdução
 

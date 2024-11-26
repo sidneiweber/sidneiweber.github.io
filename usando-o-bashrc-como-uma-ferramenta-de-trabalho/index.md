@@ -1,12 +1,12 @@
-# Usando o bashrc como uma ferramenta de trabalho
+# Usando O Bashrc Como Uma Ferramenta De Trabalho
 
 Segue o meu .bashrc com vários atalhos e alterações.
 
 ```shell
 # Cor Verde (Usuario comum)
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1=&#39;${debian_chroot:&#43;($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &#39;
 # Cor Vermelha (root)
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\$ '
+#PS1=&#39;${debian_chroot:&#43;($debian_chroot)}\[\033[1;31m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\$ &#39;
 
 # Completion
 if [ -f /etc/bash_completion ]; then
@@ -14,24 +14,24 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Configurações Historico
-export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd*"
+export HISTIGNORE=&#34;&amp;:ls:[bf]g:exit:reset:clear:cd*&#34;
 export HISTSIZE=4096
-export HISTCONTROL="ignoreboth:erasedups"
+export HISTCONTROL=&#34;ignoreboth:erasedups&#34;
 shopt -s histreedit;
 
 # Mans coloridas
-export MANPAGER="/usr/bin/most -s"
+export MANPAGER=&#34;/usr/bin/most -s&#34;
 
 # Alias
-alias update='pacman -Syu'
+alias update=&#39;pacman -Syu&#39;
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias ls=&#39;ls --color=auto&#39;
+alias grep=&#39;grep --color=auto&#39;
+alias fgrep=&#39;fgrep --color=auto&#39;
+alias egrep=&#39;egrep --color=auto&#39;
 
 # Extração de arquivos
-# Uso: extrair < arquivo > 
+# Uso: extrair &lt; arquivo &gt; 
 extrair() { 
 if [ -f $1 ] ; then
 case $1 in
@@ -49,23 +49,23 @@ case $1 in
 *.7z) 7z x $1 ;; 
 *.xz) unxz $1 ;; 
 *.exe) cabextract $1 ;; 
-*) echo "\`$1': unrecognized file compression" ;; 
+*) echo &#34;\`$1&#39;: unrecognized file compression&#34; ;; 
 esac 
 else
-echo "\`$1' is not a valid file"
+echo &#34;\`$1&#39; is not a valid file&#34;
 fi
 }
 
 # Misc
-alias musica='mocp -m /media/Documentos/Musica/'
+alias musica=&#39;mocp -m /media/Documentos/Musica/&#39;
 
 # Top 10 ( mostra os 10 comandos mais utilizados ). copyright 2007 - 2010 Christopher Bratusek 
 function top10() { 
-history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
+history | awk &#39;{a[$2]&#43;&#43; } END{for(i in a){print a[i] &#34; &#34; i}}&#39; | sort -rn | head
 } 
 
 # alisa previsao tempo
-alias tempo='curl http://wttr.in/sapiranga'
+alias tempo=&#39;curl http://wttr.in/sapiranga&#39;
 ```
 
 ---

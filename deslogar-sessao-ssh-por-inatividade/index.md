@@ -1,4 +1,4 @@
-# Deslogar sessão ssh por inatividade
+# Deslogar Sessão Ssh Por Inatividade
 
 Para deixar a configuração do servidor ssh um pouco mais segura, podemos configurar uma opção para um usuario que ficar inativo por um determinado tempo seja deslogado automaticamente. É uma opção muito útil caso seja esquecido uma sessão aberta, o que é bastante perigoso por sinal.
 

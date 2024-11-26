@@ -1,4 +1,4 @@
-# Iniciando servidor web PHP e Mysql com Docker
+# Iniciando Servidor Web PHP E Mysql Com Docker
 
 De uma maneira muito rápida podemos iniciar um servidor web para testarmos aplicações, páginas, sistemas, etc. Para isso precisaremos de duas ferramentas:
 
@@ -15,7 +15,7 @@ Para iniciar criaremos um Dockerfile, para quem não está muito familiarizado p
 
 ```docker
 FROM tutum/lamp
-MAINTAINER PAAS EMAIL <email@site.com>
+MAINTAINER PAAS EMAIL &lt;email@site.com&gt;
 ```
 
 #### Docker Compose
@@ -34,10 +34,10 @@ dev:
  
   build: .
   expose:
-    - "80"
+    - &#34;80&#34;
  
   ports:
-    - "80:80"
+    - &#34;80:80&#34;
 ```
 
 #### Subindo a aplicação

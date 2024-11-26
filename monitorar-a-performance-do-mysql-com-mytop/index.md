@@ -1,4 +1,4 @@
-# Monitorar a performance do MySQL com Mytop
+# Monitorar a Performance Do MySQL Com Mytop
 
 Desenvolvido por _Jeremy D. Zawodny_, o _Mytop_ é uma ferramenta para monitorar o MySQL baseada em console (sem interface gráfica). É utilizada para verificar o desempenho geral e threads do MySQL.
 
@@ -29,13 +29,13 @@ yum -y install mytop
 
 Se preferir, você pode fazer o download do arquivo em:
 
-  * <http://jeremy.zawodny.com/mysql/mytop/>
+  * &lt;http://jeremy.zawodny.com/mysql/mytop/&gt;
 
 Execute estes comandos para descompactar e instalar o Mytop:
 
 ```shell
-tar -zxvf mytop-<version>.tar.gz
-$ cd mytop-<version>
+tar -zxvf mytop-&lt;version&gt;.tar.gz
+$ cd mytop-&lt;version&gt;
 $ perl Makefile.PL
 $ make
 $ make test
@@ -48,7 +48,7 @@ Pronto, a ferramenta está instalada!
 
 A maneira mais simples de executar Mytop é executar o comando diretamente na linha de comando. No terminal digite:
 
-mytop -u <usuário> -p <senha> -h <host>_
+mytop -u &lt;usuário&gt; -p &lt;senha&gt; -h &lt;host&gt;_
 
 Por exemplo:
 
@@ -58,21 +58,21 @@ mytop -u tsarmento -p vol2011 -h 172.16.99.253
 
 Alguns outros argumentos:
 
-  * &#8221; ? &#8221; &#8211; Exibe ajuda;
-  * &#8221; d &#8221; &#8211; Mostra as conexões a uma determinada base de dados &#8211; Nome da base de dado;
-  * &#8221; f &#8221; &#8211; Mostra a consulta completa de uma dado ID de processo (deve ser um processo ativo);
-  * &#8221; F &#8220;- Desabilita todos os filtros (host, user, and db);
-  * &#8221; h &#8221; &#8211; Mostra apenas as consultas de um determinado host, conectar a um computador remoto;
-  * &#8221; I &#8221; &#8211; Mostra o status do InnoDB;
-  * &#8221; k &#8221; &#8211; Mata um processo;
-  * &#8221; m &#8221; &#8211; Muda o modo de exibição de top para qps (Queries Per Second Mode). Ele exibirá na tela a quantidade de querys por segundo;
-  * &#8221; o &#8221; &#8211; Inverte a ordem padrão de ordenação;
-  * &#8221; p &#8221; &#8211; Pausa a exibição;
-  * &#8221; q &#8221; &#8211; Sair do mytop;
-  * &#8221; r &#8221; &#8211; Reset os contadores de status do servidor via comando FLUSH STATUS;
-  * &#8221; s &#8221; &#8211; Muda o tempo de atualização do refresh (em segundos);
-  * &#8221; u &#8221; &#8211; Mostra os processos de um determinado usuário;
-  * &#8221; P &#8221; &#8211; Especifica uma porta não-padrão do MySQL para conectar;
+  * &amp;#8221; ? &amp;#8221; &amp;#8211; Exibe ajuda;
+  * &amp;#8221; d &amp;#8221; &amp;#8211; Mostra as conexões a uma determinada base de dados &amp;#8211; Nome da base de dado;
+  * &amp;#8221; f &amp;#8221; &amp;#8211; Mostra a consulta completa de uma dado ID de processo (deve ser um processo ativo);
+  * &amp;#8221; F &amp;#8220;- Desabilita todos os filtros (host, user, and db);
+  * &amp;#8221; h &amp;#8221; &amp;#8211; Mostra apenas as consultas de um determinado host, conectar a um computador remoto;
+  * &amp;#8221; I &amp;#8221; &amp;#8211; Mostra o status do InnoDB;
+  * &amp;#8221; k &amp;#8221; &amp;#8211; Mata um processo;
+  * &amp;#8221; m &amp;#8221; &amp;#8211; Muda o modo de exibição de top para qps (Queries Per Second Mode). Ele exibirá na tela a quantidade de querys por segundo;
+  * &amp;#8221; o &amp;#8221; &amp;#8211; Inverte a ordem padrão de ordenação;
+  * &amp;#8221; p &amp;#8221; &amp;#8211; Pausa a exibição;
+  * &amp;#8221; q &amp;#8221; &amp;#8211; Sair do mytop;
+  * &amp;#8221; r &amp;#8221; &amp;#8211; Reset os contadores de status do servidor via comando FLUSH STATUS;
+  * &amp;#8221; s &amp;#8221; &amp;#8211; Muda o tempo de atualização do refresh (em segundos);
+  * &amp;#8221; u &amp;#8221; &amp;#8211; Mostra os processos de um determinado usuário;
+  * &amp;#8221; P &amp;#8221; &amp;#8211; Especifica uma porta não-padrão do MySQL para conectar;
 
 Se você não quer ter que lembrar suas opções, pode criar um arquivo _~/.mytop_ para armazenar os argumentos neste formato:
 
@@ -94,7 +94,7 @@ Usando um arquivo de configuração irá ajudar a assegurar que a sua senha do b
 
 Você pode ter algum espaço em branco nas linhas do arquivo de configuração, depois do =. Para mais informações acesse:
 
-  * <http://jeremy.zawodny.com/mysql/mytop>
+  * &lt;http://jeremy.zawodny.com/mysql/mytop&gt;
 
 Agradeço a todos pela atenção.
 

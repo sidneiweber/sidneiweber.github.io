@@ -1,4 +1,4 @@
-# Knock SSH - Adicionando uma camada extra de segurança no servidor
+# Knock SSH - Adicionando Uma Camada Extra De Segurança No Servidor
 
 
 Hoje vamos falar do **Knock,** uma ferramenta muito interessante para quem precisar acessar seus servidores remotamente. Bom o que o Knock faz, ele adiciona essa camada a mais da seguinte forma, por exemplo se acessamos nosso servidor pela porta 22 do ssh ela deveria estar liberada. Porém com Knock ela pode estar bloqueada, você acertando uma sequência específica de portas ele irá liberar a porta 22, e somente se acertar a sequencia definida.
@@ -13,7 +13,7 @@ apt-get install knockd
 
 O arquivo de configuração fica no **_/etc/knockd.conf._** Eis a configuração padrão que veio no Debian.
 
-![ssh ><](/img/uploads/2017/03/Selecao_007.png) 
+![ssh &gt;&lt;](/img/uploads/2017/03/Selecao_007.png) 
 
 Eu alterei para a configuração ficar como no exemplo abaixo, sempre colocando a regra de ACCEPT na primeira linha, pois caso tenha sido bloqueada e seja adiciona no final do arquivo a regra não funcionará.
 
@@ -38,7 +38,7 @@ Após editaremos o arquivo **_/etc/default/knockd_** para especificar nossa plac
 
 ```shell
 START_KNOCKD=1
-KNOCKD_OPTS="-i enp0s3"
+KNOCKD_OPTS=&#34;-i enp0s3&#34;
 ```
 
 Feito a configuração reiniciaremos o serviço:
@@ -82,7 +82,7 @@ E assim podemos conectar normalmente sem bloqueio nenhum.
 
 ```shell
 ssh sidnei@10.0.0.106
-sidnei@10.0.0.106's password:
+sidnei@10.0.0.106&#39;s password:
 ```
 
 ### Fechando a porta
@@ -105,7 +105,7 @@ Mar 21 15:58:27 server knockd: closeSSH: running command: /sbin/iptables -D INPU
 
 E era isso, acredito que seja uma camada bem interessante para nossos servidores e o mais importante, não colocando portas padrões na configuração, será muito mais dificil acertar a sequência para poder liberar o ssh.
 
-[Fonte](https://www.vivaolinux.com.br/artigo/KNOCK-+-SSH?pagina=1)
+[Fonte](https://www.vivaolinux.com.br/artigo/KNOCK-&#43;-SSH?pagina=1)
 
 Um forte abraço
 

@@ -1,4 +1,4 @@
-# 11 regras CSS que todo desenvolvedor web deve saber
+# 11 Regras CSS Que Todo Desenvolvedor Web Deve Saber
 
 
 ### @media
@@ -29,7 +29,7 @@ background-size: 100%;
 ```css
 @font-face {
 font-family: Blackout;
-src: url("assests/blackout.ttf") format("truetype");
+src: url(&#34;assests/blackout.ttf&#34;) format(&#34;truetype&#34;);
 }
 ```
 
@@ -43,7 +43,7 @@ overflow: hidden;
 
 Existe uma série de soluções e hacks para ajudar a resolver o problema com os elementos flutuantes. Este problema ocorre quando temos, dentro de um elemento de bloco (um DIV por exemplo), um outro elemento com float. Esse elemento que “flutua” não força automaticamente a altura do elemento container, ou seja, a altura do elemento container não acompanha a altura do elemento com float. Isto ocorre porque o elemento que está flutuando deixa de considerar o elemento container como pai.
 
-Um jeito hiper simples de “limpar” os elementos flutuantes é simplesmente declarar `overflow: hidden;` no elemento container. Isto é muito interessante, porque não precisamos mais adicionar “lixo”  no nosso código html, como o tão famoso `<br style="clear:both" />`.
+Um jeito hiper simples de “limpar” os elementos flutuantes é simplesmente declarar `overflow: hidden;` no elemento container. Isto é muito interessante, porque não precisamos mais adicionar “lixo”  no nosso código html, como o tão famoso `&lt;br style=&#34;clear:both&#34; /&gt;`.
 
 ### margin: 0 auto;
 
@@ -55,18 +55,18 @@ Um jeito hiper simples de “limpar” os elementos flutuantes é simplesmente d
 
 É surpreendente que até então não exista nenhuma propriedade especifica para centralizar elementos. Mas enquanto isso não acontece, nós podemos utilizar o recurso de margem automática. Ao adicionarmos `margin: 0 auto;` em um elemento de bloco, este será centralizado.
 
-### input[type="text"]
+### input[type=&#34;text&#34;]
 
-O seletor `input[type="text"]`, bem como outros seletores avançados no geral, irão elevar suas habilidades com CSS do nível intermediário para o avançado. Seletores de atributos, em particular, são extremamente úteis para estilizar elementos sem que precisemos criar classes adicionais.
+O seletor `input[type=&#34;text&#34;]`, bem como outros seletores avançados no geral, irão elevar suas habilidades com CSS do nível intermediário para o avançado. Seletores de atributos, em particular, são extremamente úteis para estilizar elementos sem que precisemos criar classes adicionais.
 
 Você poderá manipular não só campos do tipo texto, mas também radio, checkbox, submit, password, file, etc.
 
 ```css
-input[type="text"] {
+input[type=&#34;text&#34;] {
 width: 200px;
 }
 
-input[type="checkbox"]{
+input[type=&#34;checkbox&#34;]{
 margin-right: 1em;
 }
 ```

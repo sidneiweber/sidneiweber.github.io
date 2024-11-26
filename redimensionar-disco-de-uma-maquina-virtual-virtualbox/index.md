@@ -1,4 +1,4 @@
-# Redimensionar disco de uma máquina virtual - VirtualBox
+# Redimensionar Disco De Uma Máquina Virtual - VirtualBox
 
 
 ```shell

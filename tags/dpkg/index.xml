@@ -1,22 +1,28 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Dpkg - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/dpkg/</link><description>Dpkg - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 22 Jun 2017 13:22:53 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/dpkg/" rel="self" type="application/rss+xml"/><item><title>Gerar lista de pacotes instalados no Debian, Ubuntu, etc</title><link>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</link><pubDate>Thu, 22 Jun 2017 13:22:53 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</guid><description><![CDATA[<p>Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o <strong>dpkg</strong> para isso. Pode ser muito útil na hora de criar sistemas com a mesma base</p>
-<h4 id="gerando-lista-de-pacotes">Gerando lista de pacotes</h4>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo dpkg --get-selections &gt; install.list</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="instalando-pacotes-a-partir-da-lista">Instalando pacotes a partir da lista</h4>
-<div class="highlight" id="id-2"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo dpkg --set-selections &lt; install.list
-</span></span><span class="line"><span class="cl">sudo apt-get -y update
-</span></span><span class="line"><span class="cl">sudo apt-get dselect-upgrade</span></span></code></pre></td></tr></table>
-</div>
-</div><p><a href="http://www.dicas-l.com.br/dicas-l/20161025.php"target="_blank" rel="external nofollow noopener noreferrer">Fonte</a></p>]]></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dpkg - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/dpkg/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.15</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 22 Jun 2017 13:22:53 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/dpkg/index.xml" rel="self" type="application/rss+xml"/><item><title>Gerar lista de pacotes instalados no Debian, Ubuntu, etc</title><link>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</link><pubDate>Thu, 22 Jun 2017 13:22:53 -0300</pubDate><guid>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</guid><description>&lt;p>Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o &lt;strong>dpkg&lt;/strong> para isso. Pode ser muito útil na hora de criar sistemas com a mesma base&lt;/p>
+&lt;h4 id="gerando-lista-de-pacotes" class="heading-element">&lt;span>Gerando lista de pacotes&lt;/span>
+ &lt;a href="#gerando-lista-de-pacotes" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo dpkg --get-selections &amp;gt; install.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="instalando-pacotes-a-partir-da-lista" class="heading-element">&lt;span>Instalando pacotes a partir da lista&lt;/span>
+ &lt;a href="#instalando-pacotes-a-partir-da-lista" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo dpkg --set-selections &amp;lt; install.list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get -y update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get dselect-upgrade&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;a href="http://www.dicas-l.com.br/dicas-l/20161025.php"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item></channel></rss>

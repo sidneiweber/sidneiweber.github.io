@@ -1,12 +1,12 @@
-# Criando uma API REST em Python com Flask
+# Criando Uma API REST Em Python Com Flask
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## O que é uma API REST
 
 Uma API REST (Representational State Transfer ou Transferência de Estado Representacional) é um tipo de arquitetura para a construção serviços. Essa abordagem permite a comunicação entre os sistemas usando os protocolos padrão da web, como HTTP.
 
-![REST API](img.png "REST API")
+![REST API](img.png &#34;REST API&#34;)
 
 Principais características de uma API REST:
 
@@ -84,17 +84,17 @@ Agora precisamos criar nossa rota que será acessada e a lógica que ela vai exe
 
 ```python
 # Criação da rota
-@app.route('/') 
+@app.route(&#39;/&#39;) 
 def home():   
-     data = "hello world"
-     return jsonify({'data': data}) 
+     data = &#34;hello world&#34;
+     return jsonify({&#39;data&#39;: data}) 
 ```
 
 Aqui a lógica é simples, quando a rota for acessada uma variável chamada `data` receberá uma string e será retornada em um JSON. Agora só nos resta inicializar tudo que foi codificado anteriormente.
 
 ```python
 # Inicializando
-if __name__ == '__main__': 
+if __name__ == &#39;__main__&#39;: 
     app.run(debug = True)
 ```
 
@@ -108,13 +108,13 @@ from flask import Flask, jsonify, request
 app = Flask(__name__) 
   
 # Criação de rotas 
-@app.route('/') 
+@app.route(&#39;/&#39;) 
 def home():   
-     data = "hello world"
-     return jsonify({'data': data}) 
+     data = &#34;hello world&#34;
+     return jsonify({&#39;data&#39;: data}) 
   
 # Inicializando
-if __name__ == '__main__': 
+if __name__ == &#39;__main__&#39;: 
     app.run(debug = True)
 ```
 
@@ -127,14 +127,14 @@ python app.py
 ```
 Se a saída no terminal for parecida com a imagem abaixo é por que deu tudo certo:
 
-![Flask rodando](flask-running.png "Flask rodando")
+![Flask rodando](flask-running.png &#34;Flask rodando&#34;)
 
 E para testar é muito simples, podemos executar um curl no endereço localhost e na porta 5000 (porta padrão do flask).
 
 ```shell
 ➜ curl 127.0.0.1:5000      
 {
-  "data": "hello world"
+  &#34;data&#34;: &#34;hello world&#34;
 }
 ```
 
@@ -151,19 +151,19 @@ from datetime import datetime
 # Criar flask app
 app = Flask(__name__)
 
-@app.route('/')
+@app.route(&#39;/&#39;)
 def home():
-    pessoas = request.args.get('pessoas', default=10, type=int)
-    sorteados = request.args.get('sorteados', default=1, type=int)
+    pessoas = request.args.get(&#39;pessoas&#39;, default=10, type=int)
+    sorteados = request.args.get(&#39;sorteados&#39;, default=1, type=int)
     data = datetime.now()
     numbers = set()
-    while len(numbers) < sorteados:  # enough is defined somewhere...
+    while len(numbers) &lt; sorteados:  # enough is defined somewhere...
         numbers.add(randint(0, pessoas))
     s = list(numbers)
 
-    return jsonify({'numeros_sorteados': s, 'data': data.strftime('%d/%m/%Y %H:%M')})
+    return jsonify({&#39;numeros_sorteados&#39;: s, &#39;data&#39;: data.strftime(&#39;%d/%m/%Y %H:%M&#39;)})
 
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     app.run(debug=True)
 ```
 
@@ -172,24 +172,24 @@ Vamos testar novamente, por padrão será sorteado somente um número de 1 a 10,
 ```shell
 ➜ curl 127.0.0.1:5000
 {
-  "data": "07/03/2024 15:27",
-  "numeros_sorteados": [
+  &#34;data&#34;: &#34;07/03/2024 15:27&#34;,
+  &#34;numeros_sorteados&#34;: [
     10
   ]
 }
-➜ curl '127.0.0.1:5000/?pessoas=100&sorteados=3'
+➜ curl &#39;127.0.0.1:5000/?pessoas=100&amp;sorteados=3&#39;
 {
-  "data": "07/03/2024 15:29",
-  "numeros_sorteados": [
+  &#34;data&#34;: &#34;07/03/2024 15:29&#34;,
+  &#34;numeros_sorteados&#34;: [
     33,
     6,
     71
   ]
 }
-➜ curl '127.0.0.1:5000/?pessoas=100&sorteados=1'
+➜ curl &#39;127.0.0.1:5000/?pessoas=100&amp;sorteados=1&#39;
 {
-  "data": "07/03/2024 15:29",
-  "numeros_sorteados": [
+  &#34;data&#34;: &#34;07/03/2024 15:29&#34;,
+  &#34;numeros_sorteados&#34;: [
     30
   ]
 }

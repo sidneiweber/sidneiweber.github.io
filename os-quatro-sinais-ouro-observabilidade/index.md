@@ -1,4 +1,4 @@
-# Os quatro sinais de ouro da observabilidade
+# Os Quatro Sinais De Ouro Da Observabilidade
 
 
 Muito além das métricas de CPU e memória podemos ter métricas efetivas e que nos ajudam a entender a saúde do nosso ambiente e resolver problemas de forma mais rápida caso eles ocorram.

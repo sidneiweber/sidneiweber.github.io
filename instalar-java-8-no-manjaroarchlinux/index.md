@@ -1,4 +1,4 @@
-# Instalar Java 8 no Manjaro/Archlinux
+# Instalar Java 8 No Manjaro/Archlinux
 
 Primeiro atualize o sistema
 

@@ -1,4 +1,4 @@
-# Bloquear resposta ao ping com sysctl
+# Bloquear Resposta Ao Ping Com Sysctl
 
 A dica de hoje é super rápida e prática, para bloquear as respostas de ping podemos usar o comando sysctl:
 

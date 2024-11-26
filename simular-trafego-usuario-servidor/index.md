@@ -1,6 +1,6 @@
-# Simular tráfego de usuário para um servidor
+# Simular Tráfego De Usuário Para Um Servidor
 
-<!--more-->
+&lt;!--more--&gt;
 
 Vamos simular o tráfego para um servidor utlizando a ferramenta `ab` que foi criado pelo Apache para testar seu próprio serviço.
 
@@ -9,16 +9,16 @@ ab -c 20 -n 100 -m GET http://127.0.0.1/
 ```
 
 ### Onde:
-**-c** Número de solicitações enviadas ao mesmo tempo<br>
-**-n** Número total de solicitações enviadas para o servidor<br>
-**-m** Método HTTP utilizado<br>
+**-c** Número de solicitações enviadas ao mesmo tempo&lt;br&gt;
+**-n** Número total de solicitações enviadas para o servidor&lt;br&gt;
+**-m** Método HTTP utilizado&lt;br&gt;
 
 Existem diversas outras opções que podem ser encontradas [aqui](https://httpd.apache.org/docs/2.4/programs/ab.html).
 
 Como resposta teremos diversas informações que podem nos ajudar a entender se o servidor está preparado para receber bastante tráfego, se o desempenho seria satisfatório e assim por diante.
 
 ```
-This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+This is ApacheBench, Version 2.3 &lt;$Revision: 1879490 $&gt;
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
@@ -44,7 +44,7 @@ Time per request:       0.472 [ms] (mean, across all concurrent requests)
 Transfer rate:          6217.06 [Kbytes/sec] received
 
 Connection Times (ms)
-              min  mean[+/-sd] median   max
+              min  mean[&#43;/-sd] median   max
 Connect:        0    0   0.1      0       0
 Processing:     1    9  11.8      3      34
 Waiting:        1    9  11.8      3      34

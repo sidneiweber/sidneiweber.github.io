@@ -1,4 +1,4 @@
-# Instalação Postresql no Centos a partir do código fonte
+# Instalação Postresql No Centos a Partir Do Código Fonte
 
 Estou realizando a instalação na última versão do Centos no momento, que seria a 7. Porém o procedimento para outras versões deve seguir o mesmo padrão.
 
@@ -31,7 +31,7 @@ Iniciaremos o serviço:
 ```shell
 su - postgres
 /usr/local/pgsql/bin/initdb -D /usr/local/postgres/data
-/usr/local/pgsql/bin/postgres -D /usr/local/postgres/data >logfile 2>&1 &
+/usr/local/pgsql/bin/postgres -D /usr/local/postgres/data &gt;logfile 2&gt;&amp;1 &amp;
 ```
 
 ```shell
@@ -54,7 +54,7 @@ Agora com tudo instalado e serviço iniciado realizar alguns testes:
 /usr/local/pgsql/bin/createdb teste
 /usr/local/pgsql/bin/psql teste
 psql (10.3)
-Type "help" for help.
+Type &#34;help&#34; for help.
 
 teste=#
 ```

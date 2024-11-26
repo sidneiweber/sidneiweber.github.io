@@ -1,12 +1,12 @@
-# Como criar um cluster kubernetes EKS na AWS com eksctl
+# Como Criar Um Cluster Kubernetes EKS Na AWS Com Eksctl
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## Introdução
 
 Após o último post sobre Kubernetes criando um cluster localmente, continuaremos a saga, mas agora criando um cluster Kubernetes na AWS, em um cenário um pouco mais próxima da realidade. Para criar um cluster kubernetes na AWS utilizaremos uma ferramenta chamada eksctl.
 
-> eksctl é uma ferramenta CLI simples para criar e gerenciar clusters no EKS – serviço Kubernetes gerenciado da Amazon para EC2. Está escrito em Go, usa CloudFormation, foi criado pela Weaveworks e aceita contribuições da comunidade.
+&gt; eksctl é uma ferramenta CLI simples para criar e gerenciar clusters no EKS – serviço Kubernetes gerenciado da Amazon para EC2. Está escrito em Go, usa CloudFormation, foi criado pela Weaveworks e aceita contribuições da comunidade.
 
 ## Instalando o eksctl
 
@@ -16,12 +16,12 @@ Após o último post sobre Kubernetes criando um cluster localmente, continuarem
 ARCH=amd64
 PLATFORM=$(uname -s)_$ARCH
 
-curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+curl -sLO &#34;https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz&#34;
 
 # (Optional) Verify checksum
-curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+curl -sL &#34;https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt&#34; | grep $PLATFORM | sha256sum --check
 
-tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp &amp;&amp; rm eksctl_$PLATFORM.tar.gz
 
 sudo mv /tmp/eksctl /usr/local/bin
 ```
@@ -66,28 +66,28 @@ Como podemos ver ainda não temos nenhum cluster criado. Vamos então criar um c
 [ℹ]  subnets for us-west-2a - public:192.168.0.0/19 private:192.168.96.0/19
 [ℹ]  subnets for us-west-2c - public:192.168.32.0/19 private:192.168.128.0/19
 [ℹ]  subnets for us-west-2b - public:192.168.64.0/19 private:192.168.160.0/19
-[ℹ]  nodegroup "ng-98b3b83a" will use "ami-05ecac759c81e0b0c" [AmazonLinux2/1.11]
-[ℹ]  creating EKS cluster "floral-unicorn-1540567338" in "us-west-2" region
+[ℹ]  nodegroup &#34;ng-98b3b83a&#34; will use &#34;ami-05ecac759c81e0b0c&#34; [AmazonLinux2/1.11]
+[ℹ]  creating EKS cluster &#34;floral-unicorn-1540567338&#34; in &#34;us-west-2&#34; region
 [ℹ]  will create 2 separate CloudFormation stacks for cluster itself and the initial nodegroup
-[ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=us-west-2 --cluster=floral-unicorn-1540567338'
-[ℹ]  2 sequential tasks: { create cluster control plane "floral-unicorn-1540567338", create nodegroup "ng-98b3b83a" }
-[ℹ]  building cluster stack "eksctl-floral-unicorn-1540567338-cluster"
-[ℹ]  deploying stack "eksctl-floral-unicorn-1540567338-cluster"
-[ℹ]  building nodegroup stack "eksctl-floral-unicorn-1540567338-nodegroup-ng-98b3b83a"
+[ℹ]  if you encounter any issues, check CloudFormation console or try &#39;eksctl utils describe-stacks --region=us-west-2 --cluster=floral-unicorn-1540567338&#39;
+[ℹ]  2 sequential tasks: { create cluster control plane &#34;floral-unicorn-1540567338&#34;, create nodegroup &#34;ng-98b3b83a&#34; }
+[ℹ]  building cluster stack &#34;eksctl-floral-unicorn-1540567338-cluster&#34;
+[ℹ]  deploying stack &#34;eksctl-floral-unicorn-1540567338-cluster&#34;
+[ℹ]  building nodegroup stack &#34;eksctl-floral-unicorn-1540567338-nodegroup-ng-98b3b83a&#34;
 [ℹ]  --nodes-min=2 was set automatically for nodegroup ng-98b3b83a
 [ℹ]  --nodes-max=2 was set automatically for nodegroup ng-98b3b83a
-[ℹ]  deploying stack "eksctl-floral-unicorn-1540567338-nodegroup-ng-98b3b83a"
-[✔]  all EKS cluster resource for "floral-unicorn-1540567338" had been created
-[✔]  saved kubeconfig as "~/.kube/config"
-[ℹ]  adding role "arn:aws:iam::376248598259:role/eksctl-ridiculous-sculpture-15547-NodeInstanceRole-1F3IHNVD03Z74" to auth ConfigMap
-[ℹ]  nodegroup "ng-98b3b83a" has 1 node(s)
-[ℹ]  node "ip-192-168-64-220.us-west-2.compute.internal" is not ready
-[ℹ]  waiting for at least 2 node(s) to become ready in "ng-98b3b83a"
-[ℹ]  nodegroup "ng-98b3b83a" has 2 node(s)
-[ℹ]  node "ip-192-168-64-220.us-west-2.compute.internal" is ready
-[ℹ]  node "ip-192-168-8-135.us-west-2.compute.internal" is ready
-[ℹ]  kubectl command should work with "~/.kube/config", try 'kubectl get nodes'
-[✔]  EKS cluster "floral-unicorn-1540567338" in "us-west-2" region is ready
+[ℹ]  deploying stack &#34;eksctl-floral-unicorn-1540567338-nodegroup-ng-98b3b83a&#34;
+[✔]  all EKS cluster resource for &#34;floral-unicorn-1540567338&#34; had been created
+[✔]  saved kubeconfig as &#34;~/.kube/config&#34;
+[ℹ]  adding role &#34;arn:aws:iam::376248598259:role/eksctl-ridiculous-sculpture-15547-NodeInstanceRole-1F3IHNVD03Z74&#34; to auth ConfigMap
+[ℹ]  nodegroup &#34;ng-98b3b83a&#34; has 1 node(s)
+[ℹ]  node &#34;ip-192-168-64-220.us-west-2.compute.internal&#34; is not ready
+[ℹ]  waiting for at least 2 node(s) to become ready in &#34;ng-98b3b83a&#34;
+[ℹ]  nodegroup &#34;ng-98b3b83a&#34; has 2 node(s)
+[ℹ]  node &#34;ip-192-168-64-220.us-west-2.compute.internal&#34; is ready
+[ℹ]  node &#34;ip-192-168-8-135.us-west-2.compute.internal&#34; is ready
+[ℹ]  kubectl command should work with &#34;~/.kube/config&#34;, try &#39;kubectl get nodes&#39;
+[✔]  EKS cluster &#34;floral-unicorn-1540567338&#34; in &#34;us-west-2&#34; region is ready
 ```
 
 Como não passamos nenhum parâmetro o cluster será criado com os valores padrões:
@@ -146,13 +146,13 @@ cluster-dev	us-east-1	True
 ```
 
 No console da AWS:
-![Console AWS](console-aws.png "AWS")
+![Console AWS](console-aws.png &#34;AWS&#34;)
 
 Realizando algumas validações com alguns comandos no kubectl:
 ```shell
 ➜ kubectl get nodes
 NAME                             STATUS   ROLES    AGE    VERSION
-ip-192-168-42-117.ec2.internal   Ready    <none>   106s   v1.28.5-eks-5e0fdde
+ip-192-168-42-117.ec2.internal   Ready    &lt;none&gt;   106s   v1.28.5-eks-5e0fdde
 ➜ kubectl get pods -A
 NAMESPACE     NAME                       READY   STATUS    RESTARTS   AGE
 kube-system   aws-node-626mv             2/2     Running   0          2m13s
@@ -167,28 +167,28 @@ Caso seu cluster seja somente para testes e não queira gastar deixando ele liga
 
 ```shell
 ➜ eksctl delete cluster cluster-dev                    
-2024-02-07 08:54:36 [ℹ]  deleting EKS cluster "cluster-dev"
-2024-02-07 08:54:38 [ℹ]  will drain 0 unmanaged nodegroup(s) in cluster "cluster-dev"
+2024-02-07 08:54:36 [ℹ]  deleting EKS cluster &#34;cluster-dev&#34;
+2024-02-07 08:54:38 [ℹ]  will drain 0 unmanaged nodegroup(s) in cluster &#34;cluster-dev&#34;
 2024-02-07 08:54:38 [ℹ]  starting parallel draining, max in-flight of 1
 2024-02-07 08:54:39 [ℹ]  deleted 0 Fargate profile(s)
 2024-02-07 08:54:40 [✔]  kubeconfig has been updated
 2024-02-07 08:54:40 [ℹ]  cleaning up AWS load balancers created by Kubernetes objects of Kind Service or Ingress
 2024-02-07 08:54:43 [ℹ]  
-2 sequential tasks: { delete nodegroup "ng-3bc9974c", delete cluster control plane "cluster-dev" [async] 
+2 sequential tasks: { delete nodegroup &#34;ng-3bc9974c&#34;, delete cluster control plane &#34;cluster-dev&#34; [async] 
 }
-2024-02-07 08:54:43 [ℹ]  will delete stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 08:54:43 [ℹ]  waiting for stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c" to get deleted
-2024-02-07 08:54:44 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 08:55:14 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 08:55:56 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 08:57:36 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 08:59:09 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 08:59:48 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 09:01:29 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 09:02:01 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 09:03:24 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 09:04:44 [ℹ]  waiting for CloudFormation stack "eksctl-cluster-dev-nodegroup-ng-3bc9974c"
-2024-02-07 09:04:44 [ℹ]  will delete stack "eksctl-cluster-dev-cluster"
+2024-02-07 08:54:43 [ℹ]  will delete stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 08:54:43 [ℹ]  waiting for stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34; to get deleted
+2024-02-07 08:54:44 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 08:55:14 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 08:55:56 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 08:57:36 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 08:59:09 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 08:59:48 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 09:01:29 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 09:02:01 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 09:03:24 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 09:04:44 [ℹ]  waiting for CloudFormation stack &#34;eksctl-cluster-dev-nodegroup-ng-3bc9974c&#34;
+2024-02-07 09:04:44 [ℹ]  will delete stack &#34;eksctl-cluster-dev-cluster&#34;
 2024-02-07 09:04:45 [✔]  all cluster resources were deleted
 ```
 

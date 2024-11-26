@@ -1,4 +1,4 @@
-# Como redimensionar volume EBS no Linux sem downtime
+# Como Redimensionar Volume EBS No Linux Sem Downtime
 
 
 Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.
@@ -6,14 +6,14 @@ Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar 
 Alterações em produção? Nesse caso sim :)
 
 - Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços
-- Clicamos em "Volumes" no menu **"ELASTIC BLOCK STORE"**
-- Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em **"Modify Volume"**
+- Clicamos em &#34;Volumes&#34; no menu **&#34;ELASTIC BLOCK STORE&#34;**
+- Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em **&#34;Modify Volume&#34;**
 
 Verá uma janela como essa:
-![Modify Volume ><](/img/ebs/modify-volume.png)
+![Modify Volume &gt;&lt;](/img/ebs/modify-volume.png)
 
 - Defina o novo tamanho para o volume, como no exemplo da imagem estamos estendendo o volume para 20GB
-- Confirme no botão "Modify"
+- Confirme no botão &#34;Modify&#34;
 
 Agora precisaremos extender a partição no sistema. Acesse a instância via SSH e rode o comando abaixo para listar o dispositivos.
 

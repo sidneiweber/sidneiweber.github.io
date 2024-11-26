@@ -10,14 +10,14 @@
 | `docker version`                | Verifica versão do Docker                                      |
 | `docker container run`          | Executa container                                              |
 | `docker container ls`           | Lista containers em execução                                   |
-| `docker container inspect <ID>` |                                                                |
+| `docker container inspect &lt;ID&gt;` |                                                                |
 | `docker container ls -a`        | Lista containers, inclusive os que já encerraram               |
-| `docker container stop <ID>`    | Para um container que está em execução                         |
-| `docker container start <ID>`   | Inicia um container que está parado                            |
-| `docker container restart <ID>` | Reinicia container                                             |
-| `docker container rm <ID>`      |                                                                |
-| `docker container rm -f <ID>`   |                                                                |
-| `docker container top <ID>`     |                                                                |
+| `docker container stop &lt;ID&gt;`    | Para um container que está em execução                         |
+| `docker container start &lt;ID&gt;`   | Inicia um container que está parado                            |
+| `docker container restart &lt;ID&gt;` | Reinicia container                                             |
+| `docker container rm &lt;ID&gt;`      |                                                                |
+| `docker container rm -f &lt;ID&gt;`   |                                                                |
+| `docker container top &lt;ID&gt;`     |                                                                |
 | `docker container stats`        | Exibe informações sobre containers em execução (CPU, Mem, etc) |
 | `docker container exec`         |                                                                |
 | `docker container attach`       |                                                                |
@@ -44,6 +44,6 @@
 
 ---
 
-> Autor: Sidnei Weber  
+> Autor:   
 > URL: https://sidneiweber.com.br/guia-rapido-docker/  
 

@@ -1,6 +1,6 @@
-# 3 maneiras de iniciar um cluster Kubernetes localmente
+# 3 Maneiras De Iniciar Um Cluster Kubernetes Localmente
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## :anchor: Introdução
 
@@ -19,18 +19,18 @@ Para usar o kind precisamos já ter o docker instalado. Caso ainda não tenho, p
 
 #### Linux
 ```shell
-[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64
-chmod +x ./kind
+[ $(uname -m) = x86_64 ] &amp;&amp; curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64
+chmod &#43;x ./kind
 sudo mv ./kind /usr/local/bin/kind
 ```
 
 #### Mac
 ```shell
 # For Intel Macs
-[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-darwin-amd64
+[ $(uname -m) = x86_64 ] &amp;&amp; curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-darwin-amd64
 # For M1 / ARM Macs
-[ $(uname -m) = arm64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-darwin-arm64
-chmod +x ./kind
+[ $(uname -m) = arm64 ] &amp;&amp; curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-darwin-arm64
+chmod &#43;x ./kind
 mv ./kind /some-dir-in-your-PATH/kind
 ```
 

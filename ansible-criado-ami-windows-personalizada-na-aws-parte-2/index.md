@@ -1,14 +1,14 @@
-# Ansible: Criado AMI Windows personalizada na AWS (Parte 2)
+# Ansible: Criado AMI Windows Personalizada Na AWS (Parte 2)
 
 
 Na [parte 1](https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/) aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos.  Vamos estruturar nosso projeto e manter as coisas organizadas.
 
 Recursos utilizados, caso não tenha algo instalado, não funcionará :
 
-**Python 3.8.0**<br />
-**Módulos pip**:<br />
-* boto<br />
-* boto3<br />
+**Python 3.8.0**&lt;br /&gt;
+**Módulos pip**:&lt;br /&gt;
+* boto&lt;br /&gt;
+* boto3&lt;br /&gt;
 * pywinrm
  
  **Ansible 2.9.2**
@@ -34,7 +34,7 @@ volumes:
     delete_on_termination: true
 ```
 
-Nosso arquivo hosts ficará assim. O grupo win é onde será adicionada a instância após a criação: <br />
+Nosso arquivo hosts ficará assim. O grupo win é onde será adicionada a instância após a criação: &lt;br /&gt;
 
 ```yml
 localhost ansible_connection=local
@@ -45,11 +45,11 @@ localhost ansible_connection=local
 ansible_connection=winrm
 ansible_ssh_port=5986
 ansible_ssh_user=Administrator
-ansible_ssh_pass="{{ win_initial_password }}"
+ansible_ssh_pass=&#34;{{ win_initial_password }}&#34;
 ansible_winrm_server_cert_validation=ignore
 ```
 
-Com essas váriaveis em mãos, vamos iniciar nossa instância base já usando o userdata assim como fizemos no painel da AWS, só que dessa vez diretamente pelo ansible: <br />
+Com essas váriaveis em mãos, vamos iniciar nossa instância base já usando o userdata assim como fizemos no painel da AWS, só que dessa vez diretamente pelo ansible: &lt;br /&gt;
 
 ```yml
 # cat roles/launch/tasks/main.yml
@@ -62,14 +62,14 @@ Com essas váriaveis em mãos, vamos iniciar nossa instância base já usando o 
 
 - name: Get AMI Windows
   set_fact:
-    win_ami_id: "{{ (found_amis.images | first).image_id  }}"
+    win_ami_id: &#34;{{ (found_amis.images | first).image_id  }}&#34;
 
 - name: Ensure security group is present
   ec2_group:
     name: WinRM RDP
     description: Inbound WinRM and RDP
-    region: "{{ target_aws_region }}"
-    vpc_id: "{{ vpc_id }}"
+    region: &#34;{{ target_aws_region }}&#34;
+    vpc_id: &#34;{{ vpc_id }}&#34;
     rules:
     - proto: tcp
       from_port: 80
@@ -90,44 +90,44 @@ Com essas váriaveis em mãos, vamos iniciar nossa instância base já usando o 
 
 - name: Ensure instances are running
   ec2:
-    region: "{{ target_aws_region }}"
-    image: "{{ win_ami_id }}"
-    instance_type: "{{ instance_type }}"
-    group_id: "{{ sg_out.group_id }}"
-    key_name: "{{ keypair }}"
+    region: &#34;{{ target_aws_region }}&#34;
+    image: &#34;{{ win_ami_id }}&#34;
+    instance_type: &#34;{{ instance_type }}&#34;
+    group_id: &#34;{{ sg_out.group_id }}&#34;
+    key_name: &#34;{{ keypair }}&#34;
     wait: yes
     wait_timeout: 500
     exact_count: 1
     assign_public_ip: yes
-    vpc_subnet_id: "{{ subnet }}"
+    vpc_subnet_id: &#34;{{ subnet }}&#34;
     count_tag:
       Name: stock-win-ami-test
     instance_tags:
       Name: stock-win-ami-test
-    user_data: "{{ lookup('template', 'userdata.txt.j2') }}"
+    user_data: &#34;{{ lookup(&#39;template&#39;, &#39;userdata.txt.j2&#39;) }}&#34;
   register: ec2_result
 
 - name: wait for WinRM to answer on all hosts
   wait_for:
     port: 5986
-    host: "{{ item.public_ip }}"
+    host: &#34;{{ item.public_ip }}&#34;
     delay: 30
     timeout: 300
     state: started
-  with_items: "{{ ec2_result.tagged_instances }}"
+  with_items: &#34;{{ ec2_result.tagged_instances }}&#34;
 
 - name: add hosts to groups
   add_host:
-    name: "win-temp-{{ item.id }}"
-    ansible_ssh_host: "{{ item.public_ip }}"
-    ec2_id: "{{ item.id }}"
+    name: &#34;win-temp-{{ item.id }}&#34;
+    ansible_ssh_host: &#34;{{ item.public_ip }}&#34;
+    ec2_id: &#34;{{ item.id }}&#34;
     groups: win
   changed_when: false
-  with_items: "{{ ec2_result.tagged_instances }}"
+  with_items: &#34;{{ ec2_result.tagged_instances }}&#34;
 ```
 
-Agora vamos conectar na instância e fazer a instalação do que precisamos, vamos contar com auxilio de um script para instalar o Chocolatey e algumas ferramentas (JDK e git) somente para exemplo. <br />
-Vamos também instalar algumas features do Windows como IIS, Powershell e .NET Framework, também somente para aprendizado. Também usaremos o módulo do Chocolatey para instalar o 7zip. <br />
+Agora vamos conectar na instância e fazer a instalação do que precisamos, vamos contar com auxilio de um script para instalar o Chocolatey e algumas ferramentas (JDK e git) somente para exemplo. &lt;br /&gt;
+Vamos também instalar algumas features do Windows como IIS, Powershell e .NET Framework, também somente para aprendizado. Também usaremos o módulo do Chocolatey para instalar o 7zip. &lt;br /&gt;
 
 ```yml
 # cat roles/deploy/tasks/main.yml
@@ -211,7 +211,7 @@ Vamos também instalar algumas features do Windows como IIS, Powershell e .NET F
 ```yml
 # cat roles/deploy/files/script.ps1
 # Install Chocolatey
-iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
 # Globally Auto confirm every action
 choco feature enable -n allowGalobalConfirmation
 
@@ -220,41 +220,41 @@ choco install jdk8
 choco install git
 ```
 
-Agora vamos gerar nossa AMI personalizada, lembrando que o nome deve ser sempre diferente ao gerar uma nova AMI, aqui é interessante incluir uma variável com o número do build do seu pipeline por exemplo: <br />
+Agora vamos gerar nossa AMI personalizada, lembrando que o nome deve ser sempre diferente ao gerar uma nova AMI, aqui é interessante incluir uma variável com o número do build do seu pipeline por exemplo: &lt;br /&gt;
 
 ```yml
 # cat roles/build-ami/tasks/main.yml
 - name: Create AMI
   ec2_ami:
-    region: "{{ target_aws_region }}"
-    instance_id: "{{ item.id }}"
-    name: "windows-personalizado"
+    region: &#34;{{ target_aws_region }}&#34;
+    instance_id: &#34;{{ item.id }}&#34;
+    name: &#34;windows-personalizado&#34;
     wait: yes
     state: present
-  with_items: "{{ ec2_result.tagged_instances }}"
+  with_items: &#34;{{ ec2_result.tagged_instances }}&#34;
   register: ami
 
 - name: Set New AMI id variable
   set_fact:
-    ami_result: "{{ (ami.results | first).image_id  }}"
+    ami_result: &#34;{{ (ami.results | first).image_id  }}&#34;
 ```
 
-Para não ficarmos com essa instância base rodando sem necessidade, vamos exclui-la: <br />
+Para não ficarmos com essa instância base rodando sem necessidade, vamos exclui-la: &lt;br /&gt;
 
 ```yml
 # cat roles/terminate/tasks/main.yml
 - name: ensure instances are not running
   ec2:
-    region: "{{ target_aws_region }}"
-    image: "{{ win_ami_id }}"
-    instance_type: "{{ instance_type }}"
-    group_id: "{{ sg_out.group_id }}"
-    key_name: "{{ keypair }}"
+    region: &#34;{{ target_aws_region }}&#34;
+    image: &#34;{{ win_ami_id }}&#34;
+    instance_type: &#34;{{ instance_type }}&#34;
+    group_id: &#34;{{ sg_out.group_id }}&#34;
+    key_name: &#34;{{ keypair }}&#34;
     wait: yes
     wait_timeout: 500
     exact_count: 0
     assign_public_ip: yes
-    vpc_subnet_id: "{{ subnet }}"
+    vpc_subnet_id: &#34;{{ subnet }}&#34;
     count_tag:
       Name: stock-win-ami-test
     instance_tags:
@@ -262,7 +262,7 @@ Para não ficarmos com essa instância base rodando sem necessidade, vamos exclu
   register: ec2_result
 ```
 
-Então nosso arquivo principal para realizarmos essa tarega ficará assim: <br />
+Então nosso arquivo principal para realizarmos essa tarega ficará assim: &lt;br /&gt;
 
 ```yml
 # cat deploy.yml

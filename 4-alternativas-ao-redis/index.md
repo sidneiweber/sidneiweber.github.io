@@ -1,6 +1,6 @@
-# 4 Alternativas ao Redis
+# 4 Alternativas Ao Redis
 
-<!--more-->
+&lt;!--more--&gt;
 
 # Mas o que é esse tal de Redis? 
 
@@ -8,7 +8,7 @@ O Redis é um banco de dados em memória de código aberto, conhecido por seu al
 
 Porém, uma polêmica foi lançada recentemente, a empresa por trás do Redis decidiu mudar a [licença de distribuição](https://github.com/redis/redis/pull/13157), e com essa nova licença o projeto passará a não ter mais uma licença que se enquadre como software livre. Caso queira mais detalhes sobre o caso, recomendo assistir o vídeo abaixo que contém bastante informação:
 
-{{< youtube S3LtOQDxCJk >}}
+{{&lt; youtube S3LtOQDxCJk &gt;}}
 
 # As principais alternativas
 
@@ -40,7 +40,7 @@ Outro projeto opensource que pode ser utilizado como alternativa ao Redis. Foi p
 
 Outra alternativa ao Redis que promete ter uma melhor performance e compatibilidade com as APIs do Redis. Segundo o próprio site:
 
->O Dragonfly foi projetado para oferecer a escalabilidade exigida pelas cargas de trabalho de dados modernas. Diga adeus aos ambientes complexos de vários nós com infinitas opções de configuração e infinitos pontos de falha. O Dragonfly pode ser facilmente ampliado para lidar com mais de 1 TB de dados e 4 milhões de QPS em um único nó, com um simples nó primário.
+&gt;O Dragonfly foi projetado para oferecer a escalabilidade exigida pelas cargas de trabalho de dados modernas. Diga adeus aos ambientes complexos de vários nós com infinitas opções de configuração e infinitos pontos de falha. O Dragonfly pode ser facilmente ampliado para lidar com mais de 1 TB de dados e 4 milhões de QPS em um único nó, com um simples nó primário.
 
 [https://www.dragonflydb.io](https://www.dragonflydb.io/)
 

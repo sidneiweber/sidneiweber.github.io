@@ -1,4 +1,4 @@
-# Rundeck - Automatizando suas tarefas
+# Rundeck - Automatizando Suas Tarefas
 
 
 O que é esse tal de Rundeck
@@ -10,7 +10,7 @@ Escrito em java e tem sua administração por uma interface web bem simples de s
 Tem uma grande vantagem pois não precisa de agentes rodando nas máquinas clientes e se consegue fazer uma verdadeira orquestração de jobs, podendo escolher se os jobs vão rodar em paralelo ou sequência e assim por diante. Se consegue criar chaves de acesso, ou chaves com senhas dentro do próprio dashboard.  
 Existe uma integração com diversos serviços:
 
-![rundeck ><](/img/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-300x142.png)
+![rundeck &gt;&lt;](/img/uploads/2018/04/Captura-de-tela-de-2018-04-09-21-09-32-300x142.png)
 
 Uma das poucas desvantagens que achei até o momento, que algumas configurações como de usuários, nodes, terem que ser feitas pela linha de comando editando diretamente os arquivos.
 
@@ -19,7 +19,7 @@ Para usar o Rundeck, precisamos ter instalado o java (1.8) em nosso servidor. Re
 ```shell
 java -version
 
-java version "1.8.0_131"
+java version &#34;1.8.0_131&#34;
 Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 ```
@@ -34,13 +34,13 @@ yum install rundeck
 Após instalação ocorrer tudo bem, podemos conferir verificando a porta onde o serviço roda. Lembrando que caso tenha algum firewall ou bloqueio de portas o mesmo deve ser liberado.
 
 ```shell
-netstat -an | egrep '4440|4443'
+netstat -an | egrep &#39;4440|4443&#39;
 tcp46      0      0  *.4440                 *.*                    LISTEN
 ```
 
 Agora basta acessarmos o IP do nosso servidor seguido da porta. Ex: http://localhost:4440 e usar a famosa senha de admin/admin
 
-![rundeck ><](/img/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-300x300.png)
+![rundeck &gt;&lt;](/img/uploads/2018/04/1DavE3K2jDhlyPljVdaeAeQ-300x300.png)
 
 Bom de momento vamos ficar somente com a instalação, nos próximos artigos vamos aprender a cadastrar nodes, executar comandos, scripts e demais coisas que essa baita ferramenta disponibiliza.
 

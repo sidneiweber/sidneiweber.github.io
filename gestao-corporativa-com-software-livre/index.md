@@ -1,8 +1,8 @@
-# Gestão corporativa com Software Livre
+# Gestão Corporativa Com Software Livre
 
 Segue um trabalho que fiz na faculdade sobre gestão corporativa com software livre.
 
-[![Video](/img/gestao_corporativa.png)](https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/embed?start=false&loop=false&delayms=3000)
+[![Video](/img/gestao_corporativa.png)](https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/embed?start=false&amp;loop=false&amp;delayms=3000)
 
 Também listarei aqui meu rascunho para apresentação do slide, caso alguem tenha interesse.
 
@@ -19,7 +19,7 @@ O corporate governance visa a diminuir os eventuais problemas que podem surgir n
 
 A Governança Corporativa visa a aumentar a probabilidade dos fornecedores de recursos garantirem para si o retorno sobre seu investimento, por meio de um conjunto de mecanismos no qual se inclui o Conselho de Administração.
 
-Dito de outra forma, "corporate governance é uma área […] que investiga a forma de garantir/motivar a gestão eficiente das empresas, utilizando mecanismos de incentivo como sejam os contratos, os padrões organizacionais e a legislação. O que frequentemente se limita à questão da melhoria do desempenho financeiro, como, por exemplo, a forma como os proprietários das empresas podem garantir/motivar os gestores das empresas a apresentarem uma taxa de retorno competitiva"
+Dito de outra forma, &#34;corporate governance é uma área […] que investiga a forma de garantir/motivar a gestão eficiente das empresas, utilizando mecanismos de incentivo como sejam os contratos, os padrões organizacionais e a legislação. O que frequentemente se limita à questão da melhoria do desempenho financeiro, como, por exemplo, a forma como os proprietários das empresas podem garantir/motivar os gestores das empresas a apresentarem uma taxa de retorno competitiva&#34;
 
 ### Slide 3 = Sistemas de gestão corporativa
 **Breve introdução [editar]**  
@@ -225,7 +225,7 @@ Um grande exemplo de CMS é o Wordpress, um sistema em PHP, Open Source e 
 O Wordpress é um CMS totalmente customizável por themes (ou templates).
 
 Tem-se observado que ferramentas como Gestores de Conteúdo podem se tornar excelentes ambientes para o processo de ensino e aprendizagem e para a organização da informação produzida em ambientes com fins educacionais. Sejam eles em ambientes acadêmicos, sejam em ambientes empresariais.  
-A própria Wikipédia pode ser considerada um "gerenciador de conteúdo", assim fomentando a busca, localização e criação de conhecimento em um ambiente distribuído e colaborativo.
+A própria Wikipédia pode ser considerada um &#34;gerenciador de conteúdo&#34;, assim fomentando a busca, localização e criação de conhecimento em um ambiente distribuído e colaborativo.
 
 **WordPress**  
 WordPress é um sistema de gerenciamento de conteúdos na web, escrito em PHP e executado em MySQL, especialmente para a criação de blogs  

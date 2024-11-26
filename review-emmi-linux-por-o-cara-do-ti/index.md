@@ -1,7 +1,7 @@
-# Review Emmi Linux por O Cara do TI [Vídeo]
+# Review Emmi Linux Por O Cara Do TI [Vídeo]
 
 
-{{< youtube dNl5cblJNhs >}}
+{{&lt; youtube dNl5cblJNhs &gt;}}
 
 ---
 

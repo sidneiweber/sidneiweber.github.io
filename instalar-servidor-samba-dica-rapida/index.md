@@ -1,4 +1,4 @@
-# Instalar servidor Samba [Dica rápida]
+# Instalar Servidor Samba [Dica Rápida]
 
 Primeiramente instalaremos o pacote:
 

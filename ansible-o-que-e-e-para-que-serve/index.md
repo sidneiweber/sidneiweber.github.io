@@ -1,7 +1,7 @@
-# Ansible - O que é e para que serve
+# Ansible - O Que É E Para Que Serve
 
 
-> ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE
+&gt; ANSIBLE LOVES THE REPETITIVE WORK YOUR PEOPLE HATE
 
 Com essa frase começa a apresentação da ferramenta Ansible em seu próprio site. Bom, resumidamente o Ansible é um software que automatiza o provisionamento de software, gerenciamento de configuração e implantação de aplicativos. Ou seja, tudo aquilo que era feito repetidas vezes para configurar, atualizar um servidor ou serviço, pode ser automatizado com Ansible.
 
@@ -13,7 +13,7 @@ Obviamente o Ansible não é a única ferramenta que pode fazer esse trabalho, t
 
 Ansible foi desenvolvido em Python, então praticamente todas as versões de Linux terão suporte a mesma.  
 Mais de 1000 módulos para tudo quanto é tipo de áreas: banco de dados, monitoramento, nuvem e até para Windows.  
-Comandos "ad-hoc" diretamente para diversos recursos. Podemos criar playbooks usando o padrão YAML de fácil entendimento.  
+Comandos &#34;ad-hoc&#34; diretamente para diversos recursos. Podemos criar playbooks usando o padrão YAML de fácil entendimento.  
 Possui módulos para Docker, Vmware, Proxmox, AWS, Openstack, Azure, gerenciamento de pacotes, enfim, são muitos módulos mesmo. Caso queira ver a lista completa, [acesse este endereço](https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html).
 
 #### Sem agentes:
@@ -29,27 +29,27 @@ A instalação segue o mesmo nível de simplicidade de seu uso, basta utilizar o
 ```shell
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update -y && sudo apt-get install -y ansible
+sudo apt-get update -y &amp;&amp; sudo apt-get install -y ansible
 ```
 
 **Centos, Fedora:**
 
 ```shell
-yum install -y epel-release && yum install -y ansible
+yum install -y epel-release &amp;&amp; yum install -y ansible
 ```
 
 ### Execução: AD HOC vs Playbook
 
 Essa são as duas maneiras que temos de executar nossos comandos no Ansible como dito anteriormente. Um arquivo muito importante para é o */etc/ansible/hosts* onde a gente pode organizar as máquinas onde poderemos realizar as execuções, em breve escrevei um artigo com alguns macetes desse arquivo.
 
-Vamos por a mão na massa executando nosso primeiro comando em localhost, somente para teste usaremos o módulo "ping":
+Vamos por a mão na massa executando nosso primeiro comando em localhost, somente para teste usaremos o módulo &#34;ping&#34;:
 
 ```shell
 root@localhost:~# ansible 127.0.0.1 -m ping
 
 127.0.0.1 | SUCCESS {
-    "changed": false,
-    "ping": "pong"
+    &#34;changed&#34;: false,
+    &#34;ping&#34;: &#34;pong&#34;
 }
 ```
 

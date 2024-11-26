@@ -1,4 +1,4 @@
-# Configurando troca de senha de usuário no próximo login
+# Configurando Troca De Senha De Usuário No Próximo Login
 
 Para isso, utilizaremos o comando chage. Antes, listamos as propriedades de login deste usuário: 
 
@@ -20,13 +20,13 @@ chage -l perm
   Número de dias de avisos antes da expiração da senha : 7
 ```
 
-Como podemos visualizar, a senha deste usuário &#8220;nunca expira&#8221;. Então, forçaremos a expiração de senha para o próximo login que este usuário venha fazer, executando o comando a seguir: 
+Como podemos visualizar, a senha deste usuário &amp;#8220;nunca expira&amp;#8221;. Então, forçaremos a expiração de senha para o próximo login que este usuário venha fazer, executando o comando a seguir: 
 
 ```
 chage -d 0 perm
 ```
 
-Fonte: <http://www.vivaolinux.com.br/dica/Configurando-troca-de-senha-de-usuario-no-proximo-login>
+Fonte: &lt;http://www.vivaolinux.com.br/dica/Configurando-troca-de-senha-de-usuario-no-proximo-login&gt;
 
 ---
 

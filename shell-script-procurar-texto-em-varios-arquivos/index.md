@@ -1,8 +1,8 @@
-# [Shell Script] Procurar texto em vários arquivos
+# [Shell Script] Procurar Texto Em Vários Arquivos
 
 
 ```shell
-find . | xargs grep 'texto a pesquisar'
+find . | xargs grep &#39;texto a pesquisar&#39;
 ```
 
 ---

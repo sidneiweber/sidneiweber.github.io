@@ -1,4 +1,4 @@
-# netstat -putona - Um comando para monitorar as conexões de rede
+# Netstat -Putona - Um Comando Para Monitorar as Conexões De Rede
 
 
 ```shell

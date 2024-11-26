@@ -1,301 +1,307 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Shell Script - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/shell-script/</link><description>Shell Script - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Nov 2018 10:03:27 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/shell-script/" rel="self" type="application/rss+xml"/><item><title>Convertendo arquivos DOS ^M com Vim</title><link>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</link><pubDate>Tue, 06 Nov 2018 10:03:27 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</guid><description><![CDATA[<p>Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.</p>
-<p>Existem algumas formas de corrigir esse problema, a mais conhecida é usando o aplicativo <a href="https://sourceforge.net/projects/dos2unix"target="_blank" rel="external nofollow noopener noreferrer">dos2unix</a></p>
-<p>Mas o quero apresentar hoje é usando o poderoso <strong>Vim.</strong> Basta estando dentro do arquivo digitar o comando abaixo:</p>]]></description></item><item><title>Dica rápida - Verificar pastas que ocupam mais espaço</title><link>https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</link><pubDate>Thu, 17 Aug 2017 13:15:51 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</guid><description><![CDATA[<p>Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">du -Sh <span class="p">|</span> sort -rh <span class="p">|</span> head -5</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="saida">Saida:</h4>
-<div class="highlight" id="id-2"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">2,1G	./log/journal/457f9ec73a36473ab3a70f2a1ebce863
-</span></span><span class="line"><span class="cl">196M	./lib/mysql
-</span></span><span class="line"><span class="cl">189M	./lib/docker/aufs/diff/105ad3b8329fb9264b17543f7d70746b1c330f18523f27cdee5ad3fdff966697/usr/bin
-</span></span><span class="line"><span class="cl">116M	./lib/nvidia
-</span></span><span class="line"><span class="cl">111M	./lib/docker/aufs/diff/105ad3b8329fb9264b17543f7d70746b1c330f18523f27cdee5ad3fdff966697/usr/share/cattle/0e44936b6b56ae4372799b0f48e6e934/WEB-INF/lib</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="explicando">Explicando:</h4>
-<p>O comando <strong>du</strong> faz a verificação do uso das pastas em si;<br>
-O comando <strong>sort</strong> faz a ordenação do maior pro menor;<br>
-E o comando <strong>head</strong> mostra os 5 primeiros, pode ser usado qualquer quantidade.</p>]]></description></item><item><title>Usando o bashrc como uma ferramenta de trabalho</title><link>https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</link><pubDate>Fri, 16 Dec 2016 15:45:29 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</guid><description><![CDATA[<p>Segue o meu .bashrc com vários atalhos e alterações.</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
-</span><span class="lnt">58
-</span><span class="lnt">59
-</span><span class="lnt">60
-</span><span class="lnt">61
-</span><span class="lnt">62
-</span><span class="lnt">63
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Cor Verde (Usuario comum)</span>
-</span></span><span class="line"><span class="cl"><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &#39;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># Cor Vermelha (root)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#PS1=&#39;${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\$ &#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Completion</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /etc/bash_completion <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    . /etc/bash_completion
-</span></span><span class="line"><span class="cl"><span class="k">fi</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Configurações Historico</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">HISTIGNORE</span><span class="o">=</span><span class="s2">&#34;&amp;:ls:[bf]g:exit:reset:clear:cd*&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">4096</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">HISTCONTROL</span><span class="o">=</span><span class="s2">&#34;ignoreboth:erasedups&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">shopt</span> -s histreedit<span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Mans coloridas</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MANPAGER</span><span class="o">=</span><span class="s2">&#34;/usr/bin/most -s&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Alias</span>
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">update</span><span class="o">=</span><span class="s1">&#39;pacman -Syu&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;ls --color=auto&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">grep</span><span class="o">=</span><span class="s1">&#39;grep --color=auto&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">fgrep</span><span class="o">=</span><span class="s1">&#39;fgrep --color=auto&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">egrep</span><span class="o">=</span><span class="s1">&#39;egrep --color=auto&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Extração de arquivos</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># Uso: extrair &lt; arquivo &gt; </span>
-</span></span><span class="line"><span class="cl">extrair<span class="o">()</span> <span class="o">{</span> 
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f <span class="nv">$1</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nv">$1</span> in
-</span></span><span class="line"><span class="cl">*.tar.bz2<span class="o">)</span> tar xvjf <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.tar.gz<span class="o">)</span> tar xvzf <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.tar.xz<span class="o">)</span> tar xvJf <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.bz2<span class="o">)</span> bunzip2 <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.rar<span class="o">)</span> unrar x <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.gz<span class="o">)</span> gunzip <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.tar<span class="o">)</span> tar xvf <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.tbz2<span class="o">)</span> tar xvjf <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.tgz<span class="o">)</span> tar xvzf <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.zip<span class="o">)</span> unzip <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.Z<span class="o">)</span> uncompress <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.7z<span class="o">)</span> 7z x <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.xz<span class="o">)</span> unxz <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*.exe<span class="o">)</span> cabextract <span class="nv">$1</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl">*<span class="o">)</span> <span class="nb">echo</span> <span class="s2">&#34;\`</span><span class="nv">$1</span><span class="s2">&#39;: unrecognized file compression&#34;</span> <span class="p">;;</span> 
-</span></span><span class="line"><span class="cl"><span class="k">esac</span> 
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;\`</span><span class="nv">$1</span><span class="s2">&#39; is not a valid file&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="k">fi</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Misc</span>
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">musica</span><span class="o">=</span><span class="s1">&#39;mocp -m /media/Documentos/Musica/&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Top 10 ( mostra os 10 comandos mais utilizados ). copyright 2007 - 2010 Christopher Bratusek </span>
-</span></span><span class="line"><span class="cl"><span class="k">function</span> top10<span class="o">()</span> <span class="o">{</span> 
-</span></span><span class="line"><span class="cl"><span class="nb">history</span> <span class="p">|</span> awk <span class="s1">&#39;{a[$2]++ } END{for(i in a){print a[i] &#34; &#34; i}}&#39;</span> <span class="p">|</span> sort -rn <span class="p">|</span> head
-</span></span><span class="line"><span class="cl"><span class="o">}</span> 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># alisa previsao tempo</span>
-</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">tempo</span><span class="o">=</span><span class="s1">&#39;curl http://wttr.in/sapiranga&#39;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description></item><item><title>[Shell Script] Procurar texto em vários arquivos</title><link>https://sidneiweber.com.br/shell-script-procurar-texto-em-varios-arquivos/</link><pubDate>Mon, 06 Jul 2015 15:51:01 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/shell-script-procurar-texto-em-varios-arquivos/</guid><description><![CDATA[<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find . <span class="p">|</span> xargs grep <span class="s1">&#39;texto a pesquisar&#39;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description></item><item><title>Evitando encerramento acidental de sessões bash</title><link>https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/</link><pubDate>Mon, 06 Jul 2015 15:50:35 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/</guid><description><![CDATA[<p>A sequência de teclas &ldquo;<code>CTRL+D</code>&rdquo; encerra uma sessão bash. Às vezes digitamos estas teclas por acidente e encerramos uma sessão acidentalmente.</p>
-<p>Para evitar que isto ocorra, definimos a variável de ambiente <code>IGNOREEOF</code>:</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">IGNOREEOF</span><span class="o">=</span><span class="m">1</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>Desta forma, para encerrar uma sessão bash, precisamos digitar a sequência <code>CTRL+D</code> duas vezes ou então digitar <code>exit</code>.</p>
-<p>Esta variável de ambiente deve ser definida no arquivo <code>.bashrc</code>.</p>
-<p>Fonte: <a href="http://www.dicas-l.com.br/arquivo/encerramento_acidental_de_sessoes_bash.php#.VDVCZdRdW2w"target="_blank" rel="external nofollow noopener noreferrer">Dicas-L</a></p>]]></description></item><item><title>Colocando uma firula no terminal</title><link>https://sidneiweber.com.br/colocando-uma-firula-no-terminal/</link><pubDate>Mon, 06 Jul 2015 15:48:53 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/colocando-uma-firula-no-terminal/</guid><description><![CDATA[<p>Editar o arquivo .bashrc e adicionar a linha a seguir</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#PS1=&#39;[u@h W]$ &#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;┌─[u@h W][e[0;32m][${cwd}t][&lt;wbr /&gt;033[0m] ${fill}n[\033[0m]└─■ &#39;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description></item><item><title>Alerta de espaço em disco via e-mail</title><link>https://sidneiweber.com.br/alerta-de-espaco-em-disco-via-e-mail/</link><pubDate>Mon, 06 Jul 2015 15:39:40 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/alerta-de-espaco-em-disco-via-e-mail/</guid><description><![CDATA[<p>Script para enviar e-mail quando o uso de disco chegar a 90% de uso</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">df -k <span class="p">|</span> grep -e <span class="s1">&#39;lv&#39;</span> <span class="p">|</span> awk <span class="s1">&#39;{ print $4 &#34; &#34; $7 }&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> output<span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">do</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$output</span>
-</span></span><span class="line"><span class="cl"><span class="nv">usep</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$output</span> <span class="p">|</span> awk <span class="s1">&#39;{ print $1}&#39;</span> <span class="p">|</span> cut -d<span class="s1">&#39;%&#39;</span> -f1 <span class="k">)</span>
-</span></span><span class="line"><span class="cl"><span class="nv">partition</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$output</span> <span class="p">|</span> awk <span class="s1">&#39;{ print $2 }&#39;</span> <span class="k">)</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$usep</span> -ge <span class="m">90</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Verifique o diretorio &#34;</span><span class="nv">$partition</span><span class="s2">&#34; com (</span><span class="nv">$usep</span><span class="s2">%) de uso no servidor </span><span class="k">$(</span>hostname<span class="k">)</span><span class="s2">&#34;</span> <span class="p">|</span> mail -s <span class="s2">&#34;Alerta! Disco excedido em </span><span class="nv">$usep</span><span class="s2">%&#34;</span> seu_email@provedor.com
-</span></span><span class="line"><span class="cl"><span class="k">fi</span>
-</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description></item><item><title>Atalhos úteis para a linha de comando</title><link>https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/</link><pubDate>Mon, 06 Jul 2015 15:38:45 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/</guid><description><![CDATA[<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Atalho</th>
-          <th style="text-align: left">Ação</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Ctrl+A</td>
-          <td style="text-align: left">move o cursor para o começo da linha</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+E</td>
-          <td style="text-align: left">move o cursor para o fim da linha</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Alt+F</td>
-          <td style="text-align: left">move o cursor para o fim da próxima palavra</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Alt+B</td>
-          <td style="text-align: left">move o cursor para o começo da palavra anterior</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+T</td>
-          <td style="text-align: left">troca os dois últimos caracteres de posição, por exemplos “sl” se torna “ls”</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Alt+T</td>
-          <td style="text-align: left">troca as duas últimas palavras de posição, por exemplo “list cat” se torna “cat list”</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+U</td>
-          <td style="text-align: left">corta o texto do começo da linha até o começo da palavra antes do cursor</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+W</td>
-          <td style="text-align: left">corta apenas a palavra antes do cursor</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+K</td>
-          <td style="text-align: left">cut the text of the current command after the cursor.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+Y</td>
-          <td style="text-align: left">cola o texto cortado anteriormente após o cursor. Este recurso é útil quando você acabou de digitar um comando longo e concluiu que esqueceu de fazer algo antes</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Alt+U</td>
-          <td style="text-align: left">converte para maiúsculas próxima palavra</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Alt+L</td>
-          <td style="text-align: left">converte para minúsculas a próxima palavra</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Alt+C</td>
-          <td style="text-align: left">converte para maiúsculas a primeira letra da próxima palavra</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+L</td>
-          <td style="text-align: left">limpa a tela, deixando a linha corrente no topo</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Ctrl+_</td>
-          <td style="text-align: left">undo (incremental).</td>
-      </tr>
-  </tbody>
-</table>
-<p><a href="http://www.quora.com/Bash-shell/What-are-some-useful-Bash-tricks"target="_blank" rel="external nofollow noopener noreferrer">Fonte</a></p>]]></description></item><item><title>Desligar ou reiniciar o computador com hora marcada</title><link>https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/</link><pubDate>Tue, 23 Apr 2013 12:02:44 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/</guid><description><![CDATA[<p>Para programar o computador para desligar em um certo horário, basta como root usar o seguinte comando:</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">shutdown -h hh:mm</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Sendo que hh são as horas no formato de 24 horas e mm são os minutos.</p>
-<p>Outra maneira para programar o desligamento do seu pc é usar o seguinte comando:</p>
-<div class="highlight" id="id-2"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">shutdown -h +m</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Sendo que m é o número de minutos que você deseja até o computador desligar.</p>]]></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shell Script - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/shell-script/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.15</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Nov 2018 10:03:27 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/shell-script/index.xml" rel="self" type="application/rss+xml"/><item><title>Convertendo arquivos DOS ^M com Vim</title><link>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</link><pubDate>Tue, 06 Nov 2018 10:03:27 -0300</pubDate><guid>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</guid><description>&lt;p>Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.&lt;/p>
+&lt;p>Existem algumas formas de corrigir esse problema, a mais conhecida é usando o aplicativo &lt;a href="https://sourceforge.net/projects/dos2unix"target="_blank" rel="external nofollow noopener noreferrer">dos2unix&lt;/a>&lt;/p>
+&lt;p>Mas o quero apresentar hoje é usando o poderoso &lt;strong>Vim.&lt;/strong> Basta estando dentro do arquivo digitar o comando abaixo:&lt;/p></description></item><item><title>Dica rápida - Verificar pastas que ocupam mais espaço</title><link>https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</link><pubDate>Thu, 17 Aug 2017 13:15:51 -0300</pubDate><guid>https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</guid><description>&lt;p>Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">du -Sh &lt;span class="p">|&lt;/span> sort -rh &lt;span class="p">|&lt;/span> head -5&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="saida" class="heading-element">&lt;span>Saida:&lt;/span>
+ &lt;a href="#saida" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">2,1G	./log/journal/457f9ec73a36473ab3a70f2a1ebce863
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">196M	./lib/mysql
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">189M	./lib/docker/aufs/diff/105ad3b8329fb9264b17543f7d70746b1c330f18523f27cdee5ad3fdff966697/usr/bin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">116M	./lib/nvidia
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">111M	./lib/docker/aufs/diff/105ad3b8329fb9264b17543f7d70746b1c330f18523f27cdee5ad3fdff966697/usr/share/cattle/0e44936b6b56ae4372799b0f48e6e934/WEB-INF/lib&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="explicando" class="heading-element">&lt;span>Explicando:&lt;/span>
+ &lt;a href="#explicando" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>O comando &lt;strong>du&lt;/strong> faz a verificação do uso das pastas em si;&lt;br>
+O comando &lt;strong>sort&lt;/strong> faz a ordenação do maior pro menor;&lt;br>
+E o comando &lt;strong>head&lt;/strong> mostra os 5 primeiros, pode ser usado qualquer quantidade.&lt;/p></description></item><item><title>Usando o bashrc como uma ferramenta de trabalho</title><link>https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</link><pubDate>Fri, 16 Dec 2016 15:45:29 -0300</pubDate><guid>https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</guid><description>&lt;p>Segue o meu .bashrc com vários atalhos e alterações.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;span class="lnt">63
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Cor Verde (Usuario comum)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PS1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Cor Vermelha (root)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\$ &amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Completion&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f /etc/bash_completion &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> . /etc/bash_completion
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Configurações Historico&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">HISTIGNORE&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&amp;amp;:ls:[bf]g:exit:reset:clear:cd*&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">HISTSIZE&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">4096&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">HISTCONTROL&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;ignoreboth:erasedups&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">shopt&lt;/span> -s histreedit&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Mans coloridas&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">MANPAGER&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;/usr/bin/most -s&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Alias&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">update&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;pacman -Syu&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">ls&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;ls --color=auto&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">grep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;grep --color=auto&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">fgrep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;fgrep --color=auto&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">egrep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;egrep --color=auto&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Extração de arquivos&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Uso: extrair &amp;lt; arquivo &amp;gt; &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">extrair&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f &lt;span class="nv">$1&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">case&lt;/span> &lt;span class="nv">$1&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar.bz2&lt;span class="o">)&lt;/span> tar xvjf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar.gz&lt;span class="o">)&lt;/span> tar xvzf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar.xz&lt;span class="o">)&lt;/span> tar xvJf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.bz2&lt;span class="o">)&lt;/span> bunzip2 &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.rar&lt;span class="o">)&lt;/span> unrar x &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.gz&lt;span class="o">)&lt;/span> gunzip &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar&lt;span class="o">)&lt;/span> tar xvf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tbz2&lt;span class="o">)&lt;/span> tar xvjf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tgz&lt;span class="o">)&lt;/span> tar xvzf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.zip&lt;span class="o">)&lt;/span> unzip &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.Z&lt;span class="o">)&lt;/span> uncompress &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.7z&lt;span class="o">)&lt;/span> 7z x &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.xz&lt;span class="o">)&lt;/span> unxz &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.exe&lt;span class="o">)&lt;/span> cabextract &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*&lt;span class="o">)&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;\`&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#39;: unrecognized file compression&amp;#34;&lt;/span> &lt;span class="p">;;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">esac&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;\`&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#39; is not a valid file&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Misc&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">musica&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;mocp -m /media/Documentos/Musica/&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Top 10 ( mostra os 10 comandos mais utilizados ). copyright 2007 - 2010 Christopher Bratusek &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">function&lt;/span> top10&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">history&lt;/span> &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{a[$2]++ } END{for(i in a){print a[i] &amp;#34; &amp;#34; i}}&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> sort -rn &lt;span class="p">|&lt;/span> head
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># alisa previsao tempo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">tempo&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;curl http://wttr.in/sapiranga&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>[Shell Script] Procurar texto em vários arquivos</title><link>https://sidneiweber.com.br/shell-script-procurar-texto-em-varios-arquivos/</link><pubDate>Mon, 06 Jul 2015 15:51:01 -0300</pubDate><guid>https://sidneiweber.com.br/shell-script-procurar-texto-em-varios-arquivos/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">find . &lt;span class="p">|&lt;/span> xargs grep &lt;span class="s1">&amp;#39;texto a pesquisar&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Evitando encerramento acidental de sessões bash</title><link>https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/</link><pubDate>Mon, 06 Jul 2015 15:50:35 -0300</pubDate><guid>https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/</guid><description>&lt;p>A sequência de teclas &amp;ldquo;&lt;code>CTRL+D&lt;/code>&amp;rdquo; encerra uma sessão bash. Às vezes digitamos estas teclas por acidente e encerramos uma sessão acidentalmente.&lt;/p>
+&lt;p>Para evitar que isto ocorra, definimos a variável de ambiente &lt;code>IGNOREEOF&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">IGNOREEOF&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Desta forma, para encerrar uma sessão bash, precisamos digitar a sequência &lt;code>CTRL+D&lt;/code> duas vezes ou então digitar &lt;code>exit&lt;/code>.&lt;/p>
+&lt;p>Esta variável de ambiente deve ser definida no arquivo &lt;code>.bashrc&lt;/code>.&lt;/p>
+&lt;p>Fonte: &lt;a href="http://www.dicas-l.com.br/arquivo/encerramento_acidental_de_sessoes_bash.php#.VDVCZdRdW2w"target="_blank" rel="external nofollow noopener noreferrer">Dicas-L&lt;/a>&lt;/p></description></item><item><title>Colocando uma firula no terminal</title><link>https://sidneiweber.com.br/colocando-uma-firula-no-terminal/</link><pubDate>Mon, 06 Jul 2015 15:48:53 -0300</pubDate><guid>https://sidneiweber.com.br/colocando-uma-firula-no-terminal/</guid><description>&lt;p>Editar o arquivo .bashrc e adicionar a linha a seguir&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#PS1=&amp;#39;[u@h W]$ &amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PS1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;┌─[u@h W][e[0;32m][${cwd}t][&amp;lt;wbr /&amp;gt;033[0m] ${fill}n[\033[0m]└─■ &amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Alerta de espaço em disco via e-mail</title><link>https://sidneiweber.com.br/alerta-de-espaco-em-disco-via-e-mail/</link><pubDate>Mon, 06 Jul 2015 15:39:40 -0300</pubDate><guid>https://sidneiweber.com.br/alerta-de-espaco-em-disco-via-e-mail/</guid><description>&lt;p>Script para enviar e-mail quando o uso de disco chegar a 90% de uso&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">df -k &lt;span class="p">|&lt;/span> grep -e &lt;span class="s1">&amp;#39;lv&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{ print $4 &amp;#34; &amp;#34; $7 }&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="k">while&lt;/span> &lt;span class="nb">read&lt;/span> output&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$output&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">usep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$output&lt;/span> &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{ print $1}&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> cut -d&lt;span class="s1">&amp;#39;%&amp;#39;&lt;/span> -f1 &lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">partition&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$output&lt;/span> &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{ print $2 }&amp;#39;&lt;/span> &lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> &lt;span class="nv">$usep&lt;/span> -ge &lt;span class="m">90&lt;/span> &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Verifique o diretorio &amp;#34;&lt;/span>&lt;span class="nv">$partition&lt;/span>&lt;span class="s2">&amp;#34; com (&lt;/span>&lt;span class="nv">$usep&lt;/span>&lt;span class="s2">%) de uso no servidor &lt;/span>&lt;span class="k">$(&lt;/span>hostname&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> mail -s &lt;span class="s2">&amp;#34;Alerta! Disco excedido em &lt;/span>&lt;span class="nv">$usep&lt;/span>&lt;span class="s2">%&amp;#34;&lt;/span> seu_email@provedor.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Atalhos úteis para a linha de comando</title><link>https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/</link><pubDate>Mon, 06 Jul 2015 15:38:45 -0300</pubDate><guid>https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Atalho&lt;/th>
+ &lt;th>Ação&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Ctrl+A&lt;/td>
+ &lt;td>move o cursor para o começo da linha&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+E&lt;/td>
+ &lt;td>move o cursor para o fim da linha&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alt+F&lt;/td>
+ &lt;td>move o cursor para o fim da próxima palavra&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alt+B&lt;/td>
+ &lt;td>move o cursor para o começo da palavra anterior&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+T&lt;/td>
+ &lt;td>troca os dois últimos caracteres de posição, por exemplos “sl” se torna “ls”&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alt+T&lt;/td>
+ &lt;td>troca as duas últimas palavras de posição, por exemplo “list cat” se torna “cat list”&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+U&lt;/td>
+ &lt;td>corta o texto do começo da linha até o começo da palavra antes do cursor&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+W&lt;/td>
+ &lt;td>corta apenas a palavra antes do cursor&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+K&lt;/td>
+ &lt;td>cut the text of the current command after the cursor.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+Y&lt;/td>
+ &lt;td>cola o texto cortado anteriormente após o cursor. Este recurso é útil quando você acabou de digitar um comando longo e concluiu que esqueceu de fazer algo antes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alt+U&lt;/td>
+ &lt;td>converte para maiúsculas próxima palavra&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alt+L&lt;/td>
+ &lt;td>converte para minúsculas a próxima palavra&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alt+C&lt;/td>
+ &lt;td>converte para maiúsculas a primeira letra da próxima palavra&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+L&lt;/td>
+ &lt;td>limpa a tela, deixando a linha corrente no topo&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ctrl+_&lt;/td>
+ &lt;td>undo (incremental).&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;a href="http://www.quora.com/Bash-shell/What-are-some-useful-Bash-tricks"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Desligar ou reiniciar o computador com hora marcada</title><link>https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/</link><pubDate>Tue, 23 Apr 2013 12:02:44 -0300</pubDate><guid>https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/</guid><description>&lt;p>Para programar o computador para desligar em um certo horário, basta como root usar o seguinte comando:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">shutdown -h hh:mm&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Sendo que hh são as horas no formato de 24 horas e mm são os minutos.&lt;/p>
+&lt;p>Outra maneira para programar o desligamento do seu pc é usar o seguinte comando:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">shutdown -h +m&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Sendo que m é o número de minutos que você deseja até o computador desligar.&lt;/p></description></item></channel></rss>

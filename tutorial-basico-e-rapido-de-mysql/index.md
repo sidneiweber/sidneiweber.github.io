@@ -1,4 +1,4 @@
-# Tutorial básico e rápido de Mysql
+# Tutorial Básico E Rápido De Mysql
 
 
 ## Instalação
@@ -11,19 +11,19 @@ sudo apt-get install mysql-server phpmyadmin
 
 Esse comando instalará a última versão do Mysql e do administrador visual que mais gosto o PHPmyadmin. A instalação irá pedir uma senha para o usuário padrão (root):
 
-![mysql ><](/img/uploads/2016/07/Seleção_003.png)
+![mysql &gt;&lt;](/img/uploads/2016/07/Seleção_003.png)
 
 A confirmação da senha:
 
-![mysql ><](/img/uploads/2016/07/Seleção_004.png)
+![mysql &gt;&lt;](/img/uploads/2016/07/Seleção_004.png)
 
 Em qual servidor web o Phpmyadmin irá rodar, no meu caso apache:
 
-![mysql ><](/img/uploads/2016/07/Seleção_005.png)
+![mysql &gt;&lt;](/img/uploads/2016/07/Seleção_005.png)
 
 E diga não a próxima opção:
 
-![mysql ><](/img/uploads/2016/07/Seleção_006.png)
+![mysql &gt;&lt;](/img/uploads/2016/07/Seleção_006.png)
 
 ## Administrando via linha de comando
 
@@ -96,20 +96,20 @@ Exibir informações das tabelas, a formação das informações:
 describe nometabela;
 ```
 
-![mysql ><](/img/uploads/2016/07/Seleção_007.png) 
+![mysql &gt;&lt;](/img/uploads/2016/07/Seleção_007.png) 
 
 ## Exportar e importar via linha de comando
 
 Exportar
 
 ```shell
-mysqldump -u user -p passwd banco > banco.sql
+mysqldump -u user -p passwd banco &gt; banco.sql
 ```
 
 Importando:
 
 ```shell
-mysql -u user -p password banco < banco.sql
+mysql -u user -p password banco &lt; banco.sql
 ```
 
 Esse é o tutorial bem básico sobre o uso do mysql.

@@ -1,4 +1,4 @@
-# Hora mais legível no dmesg
+# Hora Mais Legível No Dmesg
 
 Saída padrão do **dmesg:**
 
@@ -27,7 +27,7 @@ Saída do comando **dmesg -T:**
 Podemos incluise criar um alias no bashrc:
 
 ```shell
-alias dmesg="dmesg -T"
+alias dmesg=&#34;dmesg -T&#34;
 ```
 
 

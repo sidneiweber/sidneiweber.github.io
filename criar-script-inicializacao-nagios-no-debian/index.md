@@ -1,4 +1,4 @@
-# Criar script inicialização Nagios no Debian
+# Criar Script Inicialização Nagios No Debian
 
 Após a instalação e inicialização do Nagios no nosso servidor Debian, temos que configurar um script de inicialização, para que cada vez que a gente precisa reiniciar o serviço ou a própria máquina não precisaremos subir tudo na mão.
 
@@ -17,13 +17,13 @@ cp /etc/init.d/skeleton /etc/init.d/nagios
 Vamos editar o arquivo /etc/init.d/nagios e colocar o seguinte conteúdo. Lembrando de remover ou comentar as duas linhas existentes no final do arquivo.
 
 ```shell
-# DESC="Description of the service"
+# DESC=&#34;Description of the service&#34;
 # DAEMON=/usr/sbin/daemonexecutablename
 
-DESC="Nagios"
+DESC=&#34;Nagios&#34;
 NAME=nagios
 DAEMON=/usr/local/nagios/bin/$NAME
-DAEMON_ARGS="-d /usr/local/nagios/etc/nagios.cfg"
+DAEMON_ARGS=&#34;-d /usr/local/nagios/etc/nagios.cfg&#34;
 PROFILE=/usr/local/nagios/var/$NAME.lock
 ```
 

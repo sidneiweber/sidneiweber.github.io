@@ -1,4 +1,4 @@
-# Desligar ou reiniciar o computador com hora marcada
+# Desligar Ou Reiniciar O Computador Com Hora Marcada
 
 Para programar o computador para desligar em um certo horário, basta como root usar o seguinte comando:
 
@@ -11,7 +11,7 @@ Sendo que hh são as horas no formato de 24 horas e mm são os minutos.
 Outra maneira para programar o desligamento do seu pc é usar o seguinte comando:
 
 ```shell
-shutdown -h +m
+shutdown -h &#43;m
 ```
 
 Sendo que m é o número de minutos que você deseja até o computador desligar.
@@ -19,7 +19,7 @@ Sendo que m é o número de minutos que você deseja até o computador desligar.
 Ex:
 
 ```shell
-shutdown -h +300
+shutdown -h &#43;300
 ```
 
 Significa que o computador desligará daqui a 300 minutos.
@@ -31,7 +31,7 @@ shutdown -r hh:mm
 ```
 ou
 ```shell
-shutdown -r +m
+shutdown -r &#43;m
 ```
 
 [Fonte](http://www.vivaolinux.com.br/dica/Desligar-ou-reiniciar-o-computador-com-hora-marcada)

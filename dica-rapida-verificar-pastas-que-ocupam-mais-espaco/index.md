@@ -1,4 +1,4 @@
-# Dica rápida - Verificar pastas que ocupam mais espaço
+# Dica Rápida - Verificar Pastas Que Ocupam Mais Espaço
 
 
 Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:
@@ -23,7 +23,7 @@ O comando **du** faz a verificação do uso das pastas em si;
 O comando **sort** faz a ordenação do maior pro menor;  
 E o comando **head** mostra os 5 primeiros, pode ser usado qualquer quantidade.
 
-Se alguém tiver dúvidas quanto as opções usadas, basta digitar o nome do comando &#8211;help, que terá todas as informações.
+Se alguém tiver dúvidas quanto as opções usadas, basta digitar o nome do comando &amp;#8211;help, que terá todas as informações.
 
 
 ---

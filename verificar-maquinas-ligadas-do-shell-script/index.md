@@ -1,4 +1,4 @@
-# Verificar máquinas ligadas com shell script
+# Verificar Máquinas Ligadas Com Shell Script
 
 Estava interessado em criar uma forma de scannear a rede para saber quantos micros estavam conectados a ela, saber nome, grupo, MAC ADDRESS.
 
@@ -16,7 +16,7 @@ nmap:
 apt-get install nmap
 ```
 
-Copie o código e cole em um arquivo texto e salve com um nome de sua preferência, de permissão para executar (chmod +x nome\_do\_arquivo.sh) e em seguida execute-o (./nome\_do\_arquivo.sh):
+Copie o código e cole em um arquivo texto e salve com um nome de sua preferência, de permissão para executar (chmod &#43;x nome\_do\_arquivo.sh) e em seguida execute-o (./nome\_do\_arquivo.sh):
 
 ```bash
 #!/bin/bash
@@ -27,13 +27,13 @@ clear
 while : ; do # Mostra o menu na tela, com as ações disponíveis
 opcao=$(
 dialog --stdout
---title 'Menu principal'
---menu 'Escolha as opções:'
+--title &#39;Menu principal&#39;
+--menu &#39;Escolha as opções:&#39;
 0 0 0
-1 'Scannear IPs da Rede'
-0 'Sair')
+1 &#39;Scannear IPs da Rede&#39;
+0 &#39;Sair&#39;)
 
-[ $? -ne 0 ] && Sair # Se apertado CANCELAR ou ESC, então vamos Sair...
+[ $? -ne 0 ] &amp;&amp; Sair # Se apertado CANCELAR ou ESC, então vamos Sair...
 
 case $opcao in ## ## Inicio case
 1)ipscan ;;
@@ -44,25 +44,25 @@ done
 }
 ## FIM MENU PRINCIPAL
 
-## ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ##
+## &#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43;&#43; ##
 
 ipscan ( ) {
 clear
-inicio=$(dialog --stdout --title 'Firerock ipscan' --inputbox 'Inicio (Ex.192.168.0.1)' 0 0 )
+inicio=$(dialog --stdout --title &#39;Firerock ipscan&#39; --inputbox &#39;Inicio (Ex.192.168.0.1)&#39; 0 0 )
 
-[ $? -ne 0 ] && Principal # Se apertado CANCELAR ou ESC, então vamos Sair...
-final=$(dialog --stdout --title 'Firerock ipscan' --inputbox 'Final (Ex.192.168.0.254)' 0 0 )
+[ $? -ne 0 ] &amp;&amp; Principal # Se apertado CANCELAR ou ESC, então vamos Sair...
+final=$(dialog --stdout --title &#39;Firerock ipscan&#39; --inputbox &#39;Final (Ex.192.168.0.254)&#39; 0 0 )
 
-[ $? -ne 0 ] && ipscan # Se apertado CANCELAR ou ESC, então vamos Sair...
+[ $? -ne 0 ] &amp;&amp; ipscan # Se apertado CANCELAR ou ESC, então vamos Sair...
 
-#faixa_rede=`echo "$inicio" | cut -d '.' -f 1-3`
-inicio_host=`echo "$inicio" | cut -d '.' -f 4`
-final_host=`echo "$final" | cut -d '.' -f 4`
+#faixa_rede=`echo &#34;$inicio&#34; | cut -d &#39;.&#39; -f 1-3`
+inicio_host=`echo &#34;$inicio&#34; | cut -d &#39;.&#39; -f 4`
+final_host=`echo &#34;$final&#34; | cut -d &#39;.&#39; -f 4`
 
 inicio_host=$(expr $inicio_host - 1)
 hosts_verificados=$(expr $final_host - $inicio_host)
 
-dialog --yesno 'O processo pode levar alguns minutos! Deseja Continuar?' 6 45
+dialog --yesno &#39;O processo pode levar alguns minutos! Deseja Continuar?&#39; 6 45
 
 if [ $? = 0 ]; then
 continua
@@ -73,70 +73,70 @@ ipscan
 fi
 }
 continua ( ) {
-echo " "
-echo "STATUS ENDEREÇO IPv4 MAC ADDRESS NOME GRUPO " &gt; /tmp/hosts.txt
-echo "------------------------------------------------------------------------------------------" &gt;&gt; /tmp/hosts.txt
+echo &#34; &#34;
+echo &#34;STATUS ENDEREÇO IPv4 MAC ADDRESS NOME GRUPO &#34; &amp;gt; /tmp/hosts.txt
+echo &#34;------------------------------------------------------------------------------------------&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
 
-ips_on=$(nmap -sP "$inicio-$final_host" | awk '/^Host/ {print $2}')
-online="0"
-offline="0"
+ips_on=$(nmap -sP &#34;$inicio-$final_host&#34; | awk &#39;/^Host/ {print $2}&#39;)
+online=&#34;0&#34;
+offline=&#34;0&#34;
 
 for ip in $ips_on; do
-$(nmblookup -A $ip &gt; /tmp/nm_hosts.txt) ## Saída do comando é # entre clientes Windows e Unix (Linux)
-mac_address_win2003=$(cat /tmp/nm_hosts.txt | awk 'NR==9 {print $4}')
-mac_address_xp=$(cat /tmp/nm_hosts.txt | awk 'NR==7 {print $4}')
-nm_pc=$(cat /tmp/nm_hosts.txt | awk 'NR==2 {print $1}')
-nm_grupo=$(cat /tmp/nm_hosts.txt | awk 'NR==3 {print $1}')
+$(nmblookup -A $ip &amp;gt; /tmp/nm_hosts.txt) ## Saída do comando é # entre clientes Windows e Unix (Linux)
+mac_address_win2003=$(cat /tmp/nm_hosts.txt | awk &#39;NR==9 {print $4}&#39;)
+mac_address_xp=$(cat /tmp/nm_hosts.txt | awk &#39;NR==7 {print $4}&#39;)
+nm_pc=$(cat /tmp/nm_hosts.txt | awk &#39;NR==2 {print $1}&#39;)
+nm_grupo=$(cat /tmp/nm_hosts.txt | awk &#39;NR==3 {print $1}&#39;)
 
-mac_address_unix=$(cat /tmp/nm_hosts.txt | awk 'NR==10 {print $4}') ##inicio de verificação p/ ver se é cliente Unix
+mac_address_unix=$(cat /tmp/nm_hosts.txt | awk &#39;NR==10 {print $4}&#39;) ##inicio de verificação p/ ver se é cliente Unix
 
-if [ "$mac_address_unix" == "00-00-00-00-00-00" ]; then ## Se $mac_address_unix for igual a 00-00-00-00-00-00 é um cliente unix
-#mac_address=$(cat /tmp/nm_hosts.txt | awk 'NR==10 {print $4}')
-nm_pc=$(cat /tmp/nm_hosts.txt | awk 'NR==2 {print $1}')
-nm_grupo=$(cat /tmp/nm_hosts.txt | awk 'NR==6 {print $1}')
-echo "On $ip $mac_address_unix $nm_pc $nm_grupo" &gt;&gt; /tmp/hosts.txt
-online=$(expr $online + 1)
-
-else
-if [ "$mac_address_xp" == "" ]; then
-echo "On $ip $mac_address_win2003 $nm_pc $nm_grupo" &gt;&gt; /tmp/hosts.txt
-online=$(expr $online + 1)
+if [ &#34;$mac_address_unix&#34; == &#34;00-00-00-00-00-00&#34; ]; then ## Se $mac_address_unix for igual a 00-00-00-00-00-00 é um cliente unix
+#mac_address=$(cat /tmp/nm_hosts.txt | awk &#39;NR==10 {print $4}&#39;)
+nm_pc=$(cat /tmp/nm_hosts.txt | awk &#39;NR==2 {print $1}&#39;)
+nm_grupo=$(cat /tmp/nm_hosts.txt | awk &#39;NR==6 {print $1}&#39;)
+echo &#34;On $ip $mac_address_unix $nm_pc $nm_grupo&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+online=$(expr $online &#43; 1)
 
 else
-if [ ! $nm_pc == 'No' ]; then
-echo "On $ip $mac_address_xp $nm_pc $nm_grupo" &gt;&gt; /tmp/hosts.txt
-online=$(expr $online + 1)
+if [ &#34;$mac_address_xp&#34; == &#34;&#34; ]; then
+echo &#34;On $ip $mac_address_win2003 $nm_pc $nm_grupo&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+online=$(expr $online &#43; 1)
+
+else
+if [ ! $nm_pc == &#39;No&#39; ]; then
+echo &#34;On $ip $mac_address_xp $nm_pc $nm_grupo&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+online=$(expr $online &#43; 1)
 
 else
 mac_address=
 nm_pc=
 nm_grupo=
-echo "On $ip $mac_address $nm_pc $nm_grupo" &gt;&gt; /tmp/hosts.txt
-online=$(expr $online + 1)
+echo &#34;On $ip $mac_address $nm_pc $nm_grupo&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+online=$(expr $online &#43; 1)
 fi
 fi
 fi
 done
 offline=$(expr $hosts_verificados - $online)
-echo "------------------------------------------------------------------------------------------" &gt;&gt; /tmp/hosts.txt
-echo " " &gt;&gt; /tmp/hosts.txt
+echo &#34;------------------------------------------------------------------------------------------&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34; &#34; &amp;gt;&amp;gt; /tmp/hosts.txt
 
-echo "Informações:" &gt;&gt; /tmp/hosts.txt
-echo "Faixa de IPs verificados:" &gt;&gt; /tmp/hosts.txt
-echo "Inicio: $inicio" &gt;&gt; /tmp/hosts.txt
-echo "Final : $final" &gt;&gt; /tmp/hosts.txt
-echo " " &gt;&gt; /tmp/hosts.txt
-echo "Hosts Verificado: $hosts_verificados" &gt;&gt; /tmp/hosts.txt
-echo "Hosts Online: $online" &gt;&gt; /tmp/hosts.txt
-echo "Hosts Offline: $offline" &gt;&gt; /tmp/hosts.txt
-echo " " &gt;&gt; /tmp/hosts.txt
-echo "OBS:" &gt;&gt; /tmp/hosts.txt
-echo "Endereços com status On que não possuem (ou é invalido) MAC ADDRESS, NOME, GRUPO ou qualquer um, geralmente são clientes UNIX." &gt;&gt; /tmp/hosts.txt
-echo "Exemplos:" &gt;&gt; /tmp/hosts.txt
-echo "On 192.168.0.1 " &gt;&gt; /tmp/hosts.txt
-echo "On 192.168.0.254 00-00-00-00-00-00 Meupc MEUGRUPO" &gt;&gt; /tmp/hosts.txt
+echo &#34;Informações:&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Faixa de IPs verificados:&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Inicio: $inicio&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Final : $final&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34; &#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Hosts Verificado: $hosts_verificados&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Hosts Online: $online&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Hosts Offline: $offline&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34; &#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;OBS:&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Endereços com status On que não possuem (ou é invalido) MAC ADDRESS, NOME, GRUPO ou qualquer um, geralmente são clientes UNIX.&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;Exemplos:&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;On 192.168.0.1 &#34; &amp;gt;&amp;gt; /tmp/hosts.txt
+echo &#34;On 192.168.0.254 00-00-00-00-00-00 Meupc MEUGRUPO&#34; &amp;gt;&amp;gt; /tmp/hosts.txt
 dialog
---title 'Lista de Hosts Online'
+--title &#39;Lista de Hosts Online&#39;
 --textbox /tmp/hosts.txt
 0 0
 
@@ -148,10 +148,10 @@ Sair ( ) {
 clear
 exit
 }
-Principal</pre>
+Principal&lt;/pre&gt;
 ```
 
-Fonte: http://www.vivaolinux.com.br/dica/Ipscan-com-shell-script+dialog+nmap
+Fonte: http://www.vivaolinux.com.br/dica/Ipscan-com-shell-script&#43;dialog&#43;nmap
 
 ---
 

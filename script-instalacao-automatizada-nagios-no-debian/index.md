@@ -1,4 +1,4 @@
-# Script instalação automatizada Nagios no Debian
+# Script Instalação Automatizada Nagios No Debian
 
 Script para instalação do Nagios e Nagios plugins no Debian baixando o código fonte. Script está funcional, porém pode vir a melhorar.
 
@@ -15,32 +15,32 @@ VERSAO_PLUGINS=2.1.4
 USUARIO=`whoami`
 
 # Verificar se é root
-if [ "$USUARIO" == "root" ]
+if [ &#34;$USUARIO&#34; == &#34;root&#34; ]
 then
-	echo "O poder está em suas mãos!"
+	echo &#34;O poder está em suas mãos!&#34;
 else
-	echo "Você precisa ter poderes de Super Vaca!"
+	echo &#34;Você precisa ter poderes de Super Vaca!&#34;
 	exit 0
 fi
 
 # Verificar internet
 clear
-echo "Verificando conexão com internet"
-curl www.google.com &&gt; /dev/null
-if [ "$?" != "0" ]; then
-  echo "Sem conexao. Saindo do instalador"
+echo &#34;Verificando conexão com internet&#34;
+curl www.google.com &amp;&amp;gt; /dev/null
+if [ &#34;$?&#34; != &#34;0&#34; ]; then
+  echo &#34;Sem conexao. Saindo do instalador&#34;
   exit 0
  else
-  echo "Conexao ok. Continuando!"
+  echo &#34;Conexao ok. Continuando!&#34;
 fi
 
 # Instalação das dependencias
-echo "Instalando dependencias"
+echo &#34;Instalando dependencias&#34;
 apt-get install wget build-essential apache2 php-gd libgdchart-gd2-xpm libgdchart-gd2-xpm-dev libapache2-mod-php
 
 # Baixando Nagios
 # Nagios core
-echo "Baixando pacotes do Nagios"
+echo &#34;Baixando pacotes do Nagios&#34;
 wget -c https://assets.nagios.com/downloads/nagioscore/releases/nagios-$VERSAO_NAGIOS.tar.gz
 # Nagios plugins
 wget -c https://nagios-plugins.org/download/nagios-plugins-$VERSAO_PLUGINS.tar.gz
@@ -66,11 +66,11 @@ make install-commandmode
 make install-webconf
 
 # Reiniciar apache
-echo "Reiniciando Apache"
+echo &#34;Reiniciando Apache&#34;
 service apache2 restart
 
 # Criar usuario e senha para acessar NAGIOS
-echo "Escolha uma senha para o usuário nagiosadmin."
+echo &#34;Escolha uma senha para o usuário nagiosadmin.&#34;
 htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 
 # Compilar plugins

@@ -1,4 +1,4 @@
-# Convertendo arquivos DOS ^M com Vim
+# Convertendo Arquivos DOS ^M Com Vim
 
 Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.
 

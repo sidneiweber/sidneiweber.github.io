@@ -1,9 +1,9 @@
-# Sobre mim
+# Sobre Mim
 
 
-<p align="center">
-  <img src="/img/sidnei.png" />
-</p>
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;/img/sidnei.png&#34; /&gt;
+&lt;/p&gt;
 
 Olá eu sou **Sidnei Weber** :wave:.
 
@@ -26,13 +26,13 @@ Formado em Segurança da Informação, apaixonado por software livre, sempre bus
 * Virtualização (VirtualBox, Vmware, Proxmox);
 * Cloud (AWS, GCloud)
 
-### Skills + usadas
+### Skills &#43; usadas
 * AWS
 * Terraform
 * Ansible
 * Docker
 
-### Linguagens + usadas
+### Linguagens &#43; usadas
 * Python
 * Shell Script
 
@@ -40,10 +40,10 @@ Formado em Segurança da Informação, apaixonado por software livre, sempre bus
 ![](/img/certificacoes.png)
 
 ## Cursos
-> Tecnólogo em Segurança da Informação - UNIP (Concluído em 2022)
+&gt; Tecnólogo em Segurança da Informação - UNIP (Concluído em 2022)
 
 ---
 
-> Autor: Sidnei Weber  
+> Autor:   
 > URL: https://sidneiweber.com.br/sobre/  
 

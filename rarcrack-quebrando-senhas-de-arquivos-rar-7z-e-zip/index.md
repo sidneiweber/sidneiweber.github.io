@@ -1,11 +1,11 @@
-# Rarcrack - Quebrando senhas de arquivos rar, 7z e zip
+# Rarcrack - Quebrando Senhas De Arquivos Rar, 7z E Zip
 
 
 Ontem fiz download de um arquivo RAR e para minha surpresa o mesmo estava com senha. Antes de procurar outros links resolvi tentar quebrar a senha deste arquivo mesmo, e buscando uma solução no Google eis que acho o _rarcrack_, um brute force para arquivos .rar, .zip e 7-zip.
 
 Faça download do arquivo em:
 
-  * <http://sourceforge.net/projects/rarcrack/files/rarcrack-0.2/%5BUnnamed%20release%5D/>
+  * &lt;http://sourceforge.net/projects/rarcrack/files/rarcrack-0.2/%5BUnnamed%20release%5D/&gt;
 
 Feito o download, como root, navegue até a pasta onde salvou o arquivo e faça:
 

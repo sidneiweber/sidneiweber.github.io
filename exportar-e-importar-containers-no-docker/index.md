@@ -1,11 +1,11 @@
-# Exportar e importar containers no docker
+# Exportar E Importar Containers No Docker
 
 ### Exportando imagem
 
 Temos aqui novamente um processo bem simples no docker, para exportar uma imagem uitlizamos o comando
 
 ```shell
-docker save debian-apache > /tmp/imagem.tar
+docker save debian-apache &gt; /tmp/imagem.tar
 ls -lh /tmp/
 -rw-r--r-- 1 root   root  225M nov 18 14:50 imagem.tar
 ```
@@ -13,7 +13,7 @@ ls -lh /tmp/
 ### Importando imagem
 
 ```shell
-docker load < imagem.tar
+docker load &lt; imagem.tar
 ```
 
 Fala a verdade é simples ou não é, mais fácil que isso não tem como.

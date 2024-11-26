@@ -1,7 +1,7 @@
-# Review Emmi Linux por Prof. Juliano Ramos [Vídeo]
+# Review Emmi Linux Por Prof. Juliano Ramos [Vídeo]
 
 
-{{< youtube rUNrFIn9gT8 >}}
+{{&lt; youtube rUNrFIn9gT8 &gt;}}
 
 ---
 

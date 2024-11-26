@@ -1,9 +1,9 @@
-# Instalando Nagios - Instalação básica
+# Instalando Nagios - Instalação Básica
 
 
 Vamos fazer a instalação básica do Nagios. Pra quem não conhece o Nagios, segue um [link para conhecer melhor](https://pt.wikipedia.org/wiki/Nagios).
 
-> **Nagios** é uma popular aplicação de monitoramento de rede de [código aberto](https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto "Código aberto") distribuída sob a licença [GPL](https://pt.wikipedia.org/wiki/GNU_General_Public_License "GNU General Public License"). Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.
+&gt; **Nagios** é uma popular aplicação de monitoramento de rede de [código aberto](https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto &#34;Código aberto&#34;) distribuída sob a licença [GPL](https://pt.wikipedia.org/wiki/GNU_General_Public_License &#34;GNU General Public License&#34;). Ele pode monitorar tanto hosts quanto serviços, alertando quando ocorrerem problemas e também quando os problemas são resolvidos.
 
 Faremos a instalação no Debian, que é uma distribuição de minha preferência. O Nagios pode ser instalado em qualquer sistema Linux, a única diferença que pode ocorrer é a instalação de dependências e/ou alguma localização de pastas
 
@@ -88,7 +88,7 @@ Antes de fazer qualquer alteração nas configurações, teste se está tudo ok 
 /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 ```
 
-![nagios ><](/img/uploads/2017/01/Selecao_006.png) 
+![nagios &gt;&lt;](/img/uploads/2017/01/Selecao_006.png) 
 
 Caso não ocorra nenhum erro, podemos iniciar o serviço:
 
@@ -98,7 +98,7 @@ Caso não ocorra nenhum erro, podemos iniciar o serviço:
 
 Basta acessar pelo endereço IP/nagios (ip da máquina na qual foi instalado ou localhost se for local), com usuário nagiosadmin e a senha criada anteriormente. Segue um print do meu nagios com alguns hosts sendo monitorados e com uma interface diferente. Falaremos desses detalhes em outros posts.
 
-![nagios ><](/img/uploads/2017/01/Selecao_005.png)
+![nagios &gt;&lt;](/img/uploads/2017/01/Selecao_005.png)
 
 
 ---

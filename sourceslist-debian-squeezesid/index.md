@@ -1,10 +1,10 @@
-# sources.list | Debian Squeeze/Sid
+# Sources.list | Debian Squeeze/Sid
 
 Descomente os que você quiser
 
 ```bash
-# deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main  
-#deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main  
+# deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &amp;#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main  
+#deb cdrom:[Debian GNU/Linux testing \_squeeze\_ &amp;#8211; Official Snapshot i386 CD Binary-1 20081201-10:57]/ squeeze main  
 #deb-src http://ftp.br.debian.org/debian/ squeeze main  
 #deb-src http://security.debian.org/ squeeze/updates main  
 #deb http://ftp.br.debian.org/debian/ squeeze main

@@ -1,4 +1,4 @@
-# Ansible: Criado AMI Windows personalizada na AWS (Parte 1)
+# Ansible: Criado AMI Windows Personalizada Na AWS (Parte 1)
 
 
 Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. [Conectando em uma instância Windows](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html).
@@ -6,11 +6,11 @@ Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens 
 Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data. Atenção para o campo onde está definido a senha, o script também irá baixar e executar o script para configurar o WinRM.
 
 ```
-<powershell>
-$admin = [adsi]("WinNT://./administrator, user")
-$admin.PSBase.Invoke("SetPassword", "myTempPassword123!")
-Invoke-Expression ((New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1'))
-</powershell>
+&lt;powershell&gt;
+$admin = [adsi](&#34;WinNT://./administrator, user&#34;)
+$admin.PSBase.Invoke(&#34;SetPassword&#34;, &#34;myTempPassword123!&#34;)
+Invoke-Expression ((New-Object System.Net.Webclient).DownloadString(&#39;https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1&#39;))
+&lt;/powershell&gt;
 ```
 
 ![UserData](/img/aws-ami/user-data.png)

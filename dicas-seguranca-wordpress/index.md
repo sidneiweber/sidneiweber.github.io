@@ -1,4 +1,4 @@
-# Dicas segurança WordPress
+# Dicas Segurança WordPress
 
 
 ### Não divulgue a versão do seu WordPress
@@ -6,13 +6,13 @@
 Esta informação fica localizadas no arquivo header.php de seu tema. Para desabilitar, remova a linha a seguir:
 
 ```php
-<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+&lt;meta name=&#34;generator&#34; content=&#34;WordPress &lt;?php bloginfo(&#39;version&#39;); ?&gt;&#34; /&gt;
 ```
 
 Outra maneira de remover esta informação é adicionar o código abaixo ao seu arquivos functions.php:
 
 ```php
-<pre><?php remove_action(‘wp_head’, ‘wp_generator’); ?></pre>
+&lt;pre&gt;&lt;?php remove_action(‘wp_head’, ‘wp_generator’); ?&gt;&lt;/pre&gt;
 ```
 
 ### Remoção dos arquivos readme.html e install.php

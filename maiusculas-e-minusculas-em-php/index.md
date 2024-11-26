@@ -1,10 +1,10 @@
-# Maiúsculas e Minúsculas em PHP
+# Maiúsculas E Minúsculas Em PHP
 
-$texto ="warquia pereira santos"
+$texto =&#34;warquia pereira santos&#34;
 
 vamos transformar a variavel $texto
 
-**=> Converte a string para letras minúsculas**
+**=&gt; Converte a string para letras minúsculas**
 
 strtolower();  
 ```php
@@ -12,21 +12,21 @@ srttolower($texto);
 ```
 vai sair assim = warquia pereira santos
 
-**=> Converte a string para letras maiúsculas**  
+**=&gt; Converte a string para letras maiúsculas**  
 strtoupper();
 ```php
 srttoupper($texto);
 ```
 vai sair assim = WARQUIA PEREIRA SANTOS
 
-**=> Converte o primeiro caractere de uma string em maiúsculo**  
+**=&gt; Converte o primeiro caractere de uma string em maiúsculo**  
 ucfirst();  
 ```php
 ucfirst($texto);
 ```
 vai sair assim = Warquia pereira santos
 
-**=> Converte em maiúsculo o primeiro caractere de cada palavra contida em uma string**  
+**=&gt; Converte em maiúsculo o primeiro caractere de cada palavra contida em uma string**  
 ucwords();  
 ```php
 ex: ucwords($texto);  

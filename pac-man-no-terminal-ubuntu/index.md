@@ -1,4 +1,4 @@
-# Pac-Man no terminal Ubuntu
+# Pac-Man No Terminal Ubuntu
 
 Mais uma dica rápida sobre o jogo _Pac-Man_ para o _Ubuntu_.
 
@@ -16,15 +16,15 @@ pacman4console
 
 Aparecerá esta mensagem:
 
-> Sorry.  
-> To play Pacman for Console, your console window must be at least 32&#215;29  
-> Please resize your window/resolution and re-run the game.
+&gt; Sorry.  
+&gt; To play Pacman for Console, your console window must be at least 32&amp;#215;29  
+&gt; Please resize your window/resolution and re-run the game.
 
 Resumindo, o terminal tem que estar maximizado.
 
 E pronto. Já poderá jogar:
 
-![pacman ><](http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png)
+![pacman &gt;&lt;](http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png)
 
 Na dúvida, verifique a _man page_:
 

@@ -1,44 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Wordpress - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/wordpress/</link><description>Wordpress - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 06 Jul 2015 15:41:19 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/wordpress/" rel="self" type="application/rss+xml"/><item><title>Atualizar WordPress localhost</title><link>https://sidneiweber.com.br/atualizar-wordpress-localhost/</link><pubDate>Mon, 06 Jul 2015 15:41:19 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/atualizar-wordpress-localhost/</guid><description><![CDATA[<p>Para atualizar o WordPress instalado localmente, basta trocar o método do sistema de arquivos com o parâmetro:  <strong>FS_METHOD</strong></p>
-<p>A seguir, estão as constantes válidas para atualizações do WordPress:</p>
-<ul>
-<li><strong>FS_METHOD</strong> obriga o método do sistema de arquivos. Deve ser &ldquo;direct&rdquo;, &ldquo;ssh&rdquo;, &ldquo;ftpext&rdquo;, ou &ldquo;ftpsockets&rdquo;. Geralmente, você deve apenas mudar isso se estiver enfrentando problemas de atualização, se mudar, e não adiantar <strong>mude de volta/remova</strong>, Na maioria das circunstâncias, definir <strong>ftpsockets</strong> vai funcionar se o método escolhido automaticamente não funcionar.
-<ul>
-<li><strong>(Primary Preference) “Direct”</strong> obriga a usar solicitações Direct File I/O de dentro do PHP, o que possui muitas questões de segurança em servidores mal configurados, pode ser escolhido automaticamente quando necessário.</li>
-<li><strong>(Secondary Preference) “ssh”</strong> obriga a usar a extensão SSH PHP.</li>
-<li><strong>(3rd Preference) “ftpext”</strong> obriga a usar a extensão FTP PHP para acesso FTP e finalmente:</li>
-<li><strong>(4th Preference) “ftpsockets”</strong> usa classe de Sockets PHP para acesso FTP.</li>
-</ul>
-</li>
-</ul>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;FS_METHOD&#39;</span><span class="p">,</span> <span class="nx">direct</span><span class="p">);</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description></item><item><title>WooCommerce Domination - Melhorando a usabilidade do WooCommerce</title><link>https://sidneiweber.com.br/woocommerce-domination-melhorando-a-usabilidade-do-woocommerce/</link><pubDate>Mon, 06 Jul 2015 15:40:54 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/woocommerce-domination-melhorando-a-usabilidade-do-woocommerce/</guid><description><![CDATA[<p>Este plugin coloca WooCommerce em destaque na administração do WordPress, com destaque para as encomendas, relatórios, clientes, produtos e menus cupons, além de adicionar novos botões na barra de administração. Uma verdadeira mão na roda.</p>
-<p><a href="http://wordpress.org/plugins/woocommerce-domination/"target="_blank" rel="external nofollow noopener noreferrer">Link para o plugin.</a></p>
-<p><img loading="lazy" src="https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png" srcset="https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png?size=small, https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png?size=medium 1.5x, https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png?size=large 2x" sizes="auto" data-title="woocommerce" data-alt="woocommerce" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>]]></description></item><item><title>Dicas segurança WordPress</title><link>https://sidneiweber.com.br/dicas-seguranca-wordpress/</link><pubDate>Mon, 20 Jan 2014 22:38:07 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/dicas-seguranca-wordpress/</guid><description><![CDATA[<h3 id="não-divulgue-a-versão-do-seu-wordpress">Não divulgue a versão do seu WordPress</h3>
-<p>Esta informação fica localizadas no arquivo header.php de seu tema. Para desabilitar, remova a linha a seguir:</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;generator&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;WordPress &lt;?php bloginfo(&#39;version&#39;); ?&gt;&#34;</span> <span class="o">/&gt;</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>Outra maneira de remover esta informação é adicionar o código abaixo ao seu arquivos functions.php:</p>
-<div class="highlight" id="id-2"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;?</span><span class="nx">php</span> <span class="nx">remove_action</span><span class="p">(</span><span class="nx">‘wp_head’</span><span class="p">,</span> <span class="nx">‘wp_generator’</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="err">&lt;/pre&gt;
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="remoção-dos-arquivos-readmehtml-e-installphp">Remoção dos arquivos readme.html e install.php</h3>
-<h3 id="remova-os-plugins-e-temas-que-não-estão-sendo-utilizados">Remova os plugins e temas que não estão sendo utilizados</h3>
-<h3 id="não-use-o-login-padrão-do-admin-do-wordpress">Não use o login padrão do Admin do WordPress</h3>
-<h3 id="bloqueie-a-listagem-de-arquivos-em-suas-pastas">Bloqueie a listagem de arquivos em suas pastas</h3>
-<p>Para impedir que os arquivos de suas pastas sejam listados, crie ou modifique o arquivo .htaccess (se seu site rodar em Linux) e inclua a seguinte linha:</p>]]></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wordpress - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/wordpress/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.15</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 06 Jul 2015 15:41:19 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/wordpress/index.xml" rel="self" type="application/rss+xml"/><item><title>Atualizar WordPress localhost</title><link>https://sidneiweber.com.br/atualizar-wordpress-localhost/</link><pubDate>Mon, 06 Jul 2015 15:41:19 -0300</pubDate><guid>https://sidneiweber.com.br/atualizar-wordpress-localhost/</guid><description>&lt;p>Para atualizar o WordPress instalado localmente, basta trocar o método do sistema de arquivos com o parâmetro:  &lt;strong>FS_METHOD&lt;/strong>&lt;/p>
+&lt;p>A seguir, estão as constantes válidas para atualizações do WordPress:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>FS_METHOD&lt;/strong> obriga o método do sistema de arquivos. Deve ser &amp;ldquo;direct&amp;rdquo;, &amp;ldquo;ssh&amp;rdquo;, &amp;ldquo;ftpext&amp;rdquo;, ou &amp;ldquo;ftpsockets&amp;rdquo;. Geralmente, você deve apenas mudar isso se estiver enfrentando problemas de atualização, se mudar, e não adiantar &lt;strong>mude de volta/remova&lt;/strong>, Na maioria das circunstâncias, definir &lt;strong>ftpsockets&lt;/strong> vai funcionar se o método escolhido automaticamente não funcionar.
+&lt;ul>
+&lt;li>&lt;strong>(Primary Preference) “Direct”&lt;/strong> obriga a usar solicitações Direct File I/O de dentro do PHP, o que possui muitas questões de segurança em servidores mal configurados, pode ser escolhido automaticamente quando necessário.&lt;/li>
+&lt;li>&lt;strong>(Secondary Preference) “ssh”&lt;/strong> obriga a usar a extensão SSH PHP.&lt;/li>
+&lt;li>&lt;strong>(3rd Preference) “ftpext”&lt;/strong> obriga a usar a extensão FTP PHP para acesso FTP e finalmente:&lt;/li>
+&lt;li>&lt;strong>(4th Preference) “ftpsockets”&lt;/strong> usa classe de Sockets PHP para acesso FTP.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">define&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;FS_METHOD&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">direct&lt;/span>&lt;span class="p">);&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>WooCommerce Domination - Melhorando a usabilidade do WooCommerce</title><link>https://sidneiweber.com.br/woocommerce-domination-melhorando-a-usabilidade-do-woocommerce/</link><pubDate>Mon, 06 Jul 2015 15:40:54 -0300</pubDate><guid>https://sidneiweber.com.br/woocommerce-domination-melhorando-a-usabilidade-do-woocommerce/</guid><description>&lt;p>Este plugin coloca WooCommerce em destaque na administração do WordPress, com destaque para as encomendas, relatórios, clientes, produtos e menus cupons, além de adicionar novos botões na barra de administração. Uma verdadeira mão na roda.&lt;/p>
+&lt;p>&lt;a href="http://wordpress.org/plugins/woocommerce-domination/"target="_blank" rel="external nofollow noopener noreferrer">Link para o plugin.&lt;/a>&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png" alt="woocommerce" srcset="https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png?size=small, https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png?size=medium 1.5x, https://altyra.com/wp-content/uploads/2018/11/woocommerce-logo-e1429552613105.png?size=large 2x" data-title="woocommerce" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p></description></item><item><title>Dicas segurança WordPress</title><link>https://sidneiweber.com.br/dicas-seguranca-wordpress/</link><pubDate>Mon, 20 Jan 2014 22:38:07 -0300</pubDate><guid>https://sidneiweber.com.br/dicas-seguranca-wordpress/</guid><description>&lt;h3 id="não-divulgue-a-versão-do-seu-wordpress" class="heading-element">&lt;span>Não divulgue a versão do seu WordPress&lt;/span>
+ &lt;a href="#n%c3%a3o-divulgue-a-vers%c3%a3o-do-seu-wordpress" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Esta informação fica localizadas no arquivo header.php de seu tema. Para desabilitar, remova a linha a seguir:&lt;/p></description></item></channel></rss>

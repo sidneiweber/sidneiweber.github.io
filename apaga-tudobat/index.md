@@ -1,4 +1,4 @@
-# Apaga tudo.bat
+# Apaga Tudo.bat
 
 Fork bomb para Windows
 

@@ -1,4 +1,4 @@
-# WooCommerce Domination - Melhorando a usabilidade do WooCommerce
+# WooCommerce Domination - Melhorando a Usabilidade Do WooCommerce
 
 
 Este plugin coloca WooCommerce em destaque na administração do WordPress, com destaque para as encomendas, relatórios, clientes, produtos e menus cupons, além de adicionar novos botões na barra de administração. Uma verdadeira mão na roda.

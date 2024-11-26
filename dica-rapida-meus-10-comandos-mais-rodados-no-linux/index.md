@@ -1,15 +1,15 @@
-# [Dica rápida] Meus 10 comandos mais rodados no linux
+# [Dica Rápida] Meus 10 Comandos Mais Rodados No Linux
 
 Com este comando podemos conferir quais os 10 comandos mais rodados em nossa máquina:
 
 ```shell
-history|awk '{print $2}'|awk 'BEGIN {FS="|"} {print $1}'|sort|uniq -c|sort -rn|head -10
+history|awk &#39;{print $2}&#39;|awk &#39;BEGIN {FS=&#34;|&#34;} {print $1}&#39;|sort|uniq -c|sort -rn|head -10
 ```
 
 Meu resultado foi:
 
 ```shell
-history|awk '{print $2}'|awk 'BEGIN {FS="|"} {print $1}'|sort|uniq -c|sort -rn|head -10
+history|awk &#39;{print $2}&#39;|awk &#39;BEGIN {FS=&#34;|&#34;} {print $1}&#39;|sort|uniq -c|sort -rn|head -10
     248 sudo
     148 vi
     101 sh

@@ -1,6 +1,6 @@
-# Evitando encerramento acidental de sessões bash
+# Evitando Encerramento Acidental De Sessões Bash
 
-A sequência de teclas "`CTRL+D`" encerra uma sessão bash. Às vezes digitamos estas teclas por acidente e encerramos uma sessão acidentalmente.
+A sequência de teclas &#34;`CTRL&#43;D`&#34; encerra uma sessão bash. Às vezes digitamos estas teclas por acidente e encerramos uma sessão acidentalmente.
 
 Para evitar que isto ocorra, definimos a variável de ambiente `IGNOREEOF`:
 
@@ -8,7 +8,7 @@ Para evitar que isto ocorra, definimos a variável de ambiente `IGNOREEOF`:
 export IGNOREEOF=1
 ```
 
-Desta forma, para encerrar uma sessão bash, precisamos digitar a sequência `CTRL+D` duas vezes ou então digitar `exit`.
+Desta forma, para encerrar uma sessão bash, precisamos digitar a sequência `CTRL&#43;D` duas vezes ou então digitar `exit`.
 
 Esta variável de ambiente deve ser definida no arquivo `.bashrc`.
 

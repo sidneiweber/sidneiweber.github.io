@@ -1,8 +1,8 @@
-# Exemplos de uso do comando ping
+# Exemplos De Uso Do Comando Ping
 
 Segundo o Wikipédia ping é …
 
-“**Ping** ou **latência** como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta "pong", uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. ”
+“**Ping** ou **latência** como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &#34;pong&#34;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. ”
 
 Sabendo dessa teoria agora vamos a alguns exemplos:
 
@@ -40,7 +40,7 @@ From 192.168.3.18 icmp_seq=3 Destination Host Unreachable
 From 192.168.3.18 icmp_seq=4 Destination Host Unreachable
 ```
 
-**Exemplo 3**: Envie N pacotes e pare. No Linux e outras espécies Unix, o comando ping não termina até que você pressione Ctrl + C, para enviar um certo número de pacotes usamos o argumento -c. Vamos testar enviando 2 pacotes:
+**Exemplo 3**: Envie N pacotes e pare. No Linux e outras espécies Unix, o comando ping não termina até que você pressione Ctrl &#43; C, para enviar um certo número de pacotes usamos o argumento -c. Vamos testar enviando 2 pacotes:
 
 ```shell
 ping -c 2 192.168.3.1
@@ -129,7 +129,7 @@ rtt min/avg/max/mdev = 0.028/0.048/0.081/0.017 ms
 
 **Exemplo 10**: Ping online. Existem páginas como [Ping.eu](https://ping.eu/) que nos permitem realizar um ping de diferentes localizações para nosso servidor.
 
-**Exemplo 11**: Estatísticas parciais sem sair. Ao invez de apertar Ctrl+C para terminar (SIGQUIT) o comando ping, podemos utilizar Ctrl+I para mostrar estatísticas parciais e continuar o envio de pacotes.
+**Exemplo 11**: Estatísticas parciais sem sair. Ao invez de apertar Ctrl&#43;C para terminar (SIGQUIT) o comando ping, podemos utilizar Ctrl&#43;I para mostrar estatísticas parciais e continuar o envio de pacotes.
 
 
 ---

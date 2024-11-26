@@ -1,4 +1,4 @@
-# Limitando e atualizando limites de memória e CPU no docker
+# Limitando E Atualizando Limites De Memória E CPU No Docker
 
 
 Bom hoje vamos seguir com nosso aprendizado em docker, já vimos sobre [comandos básicos](http://sidneiweber.com.br/comandos-basicos-docker/), [iniciar servidor apache](http://sidneiweber.com.br/iniciando-servidor-apache-no-docker/), [exportar e importar containers](http://sidneiweber.com.br/exportar-e-importar-containers-no-docker/) e agora a dica é bem simples porém muito útil. Toda vez que subimos um container sem colocar limites nos recursos, o container pode usar todo o recurso da máquina fisica, isso nem sempre é bom, seja por onerar o host ou mesmo para testes da sua aplicação. Então vamos as dicas.

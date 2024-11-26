@@ -1,4 +1,4 @@
-# Podcast - Conversa com Dionatan do Canal Diolinux
+# Podcast - Conversa Com Dionatan Do Canal Diolinux
 
 
 Mais um podcast gravado para o canal do [Slackjeff](https://www.youtube.com/channel/UClz3DneoYlccluy4hBlx86Q).

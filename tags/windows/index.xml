@@ -1,27 +1,27 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Windows - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/windows/</link><description>Windows - Tag - Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><managingEditor>sidnei.weber@gmail.com (Sidnei Weber)</managingEditor><webMaster>sidnei.weber@gmail.com (Sidnei Weber)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Dec 2019 17:04:43 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/windows/" rel="self" type="application/rss+xml"/><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 2)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</link><pubDate>Fri, 27 Dec 2019 17:04:43 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</guid><description><![CDATA[<p>Na <a href="https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/"target="_blank" rel="external nofollow noopener noreferrer">parte 1</a> aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos.  Vamos estruturar nosso projeto e manter as coisas organizadas.</p>
-<p>Recursos utilizados, caso não tenha algo instalado, não funcionará :</p>
-<p><strong>Python 3.8.0</strong><br />
-<strong>Módulos pip</strong>:<br /></p>
-<ul>
-<li>boto<br /></li>
-<li>boto3<br /></li>
-<li>pywinrm</li>
-</ul>
-<p><strong>Ansible 2.9.2</strong></p>]]></description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 1)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</link><pubDate>Wed, 27 Nov 2019 09:13:21 +0000</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</guid><description><![CDATA[<p>Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html"target="_blank" rel="external nofollow noopener noreferrer">Conectando em uma instância Windows</a>.</p>
-<p>Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data. Atenção para o campo onde está definido a senha, o script também irá baixar e executar o script para configurar o WinRM.</p>]]></description></item><item><title>Apaga tudo.bat</title><link>https://sidneiweber.com.br/apaga-tudobat/</link><pubDate>Mon, 28 Sep 2009 18:54:02 -0300</pubDate><author>Sidnei Weber</author><guid>https://sidneiweber.com.br/apaga-tudobat/</guid><description><![CDATA[<p>Fork bomb para Windows</p>
-<div class="highlight" id="id-1"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@echo off
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">c:
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">deltree /y c:\*.\*</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/windows/</link><description>Sidnei Weber</description><generator>Hugo 0.139.2 &amp; FixIt v0.3.15</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Dec 2019 17:04:43 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 2)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</link><pubDate>Fri, 27 Dec 2019 17:04:43 +0000</pubDate><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-2/</guid><description>&lt;p>Na &lt;a href="https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/"target="_blank" rel="external nofollow noopener noreferrer">parte 1&lt;/a> aprendemos como usar um script AWS User Data para configurar uma senha de Administrador e configurar o WinRM no Windows. Agora que sabemos como criar uma instância setando um senha especifica, vamos ao restante dos procedimentos. Vamos estruturar nosso projeto e manter as coisas organizadas.&lt;/p>
+&lt;p>Recursos utilizados, caso não tenha algo instalado, não funcionará :&lt;/p>
+&lt;p>&lt;strong>Python 3.8.0&lt;/strong>&lt;br />
+&lt;strong>Módulos pip&lt;/strong>:&lt;br />&lt;/p>
+&lt;ul>
+&lt;li>boto&lt;br />&lt;/li>
+&lt;li>boto3&lt;br />&lt;/li>
+&lt;li>pywinrm&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ansible 2.9.2&lt;/strong>&lt;/p></description></item><item><title>Ansible: Criado AMI Windows personalizada na AWS (Parte 1)</title><link>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</link><pubDate>Wed, 27 Nov 2019 09:13:21 +0000</pubDate><guid>https://sidneiweber.com.br/ansible-criado-ami-windows-personalizada-na-aws-parte-1/</guid><description>&lt;p>Quando vamos trabalhar com Ansbile usando Windows na AWS notamos que as imagens padrões do Windows não estão com o WinRM configurado e as senhas são geradas aleatoriamente usando a chave selecionada, sendo somente acessíveis alguns minutos após a instância iniciar. &lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html"target="_blank" rel="external nofollow noopener noreferrer">Conectando em uma instância Windows&lt;/a>.&lt;/p>
+&lt;p>Uma alternativa é criar uma AMI personalizada com WinRM configurado e uma senha pré-definida, estando assim disponível imediatamente para uso. O primeiro passo é iniciar uma instância Windows colocando o script abaixo em User Data. Atenção para o campo onde está definido a senha, o script também irá baixar e executar o script para configurar o WinRM.&lt;/p></description></item><item><title>Apaga tudo.bat</title><link>https://sidneiweber.com.br/apaga-tudobat/</link><pubDate>Mon, 28 Sep 2009 18:54:02 -0300</pubDate><guid>https://sidneiweber.com.br/apaga-tudobat/</guid><description>&lt;p>Fork bomb para Windows&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@echo off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">c:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">deltree /y c:\*.\*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

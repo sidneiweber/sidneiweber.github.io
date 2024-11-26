@@ -1,4 +1,4 @@
-# Mudando o nome da placa de rede
+# Mudando O Nome Da Placa De Rede
 
 Semana passada me deparei com a seguinte situação, tinha um servidor com  duas placas de rede , eth0 e eth1 , só que a placa de rede eth0 deu pau e foi trocada, porem, quando foi instalada a nova placa o servidor reconheceu como eth2s.
 

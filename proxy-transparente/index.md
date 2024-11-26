@@ -1,4 +1,4 @@
-# Proxy transparente
+# Proxy Transparente
 
 Fazer com que todas as conexões passem pelo proxy
 
@@ -22,9 +22,9 @@ iptables -t mangle -F
 rede_interna=”192.168.0.0/16”
 
 # Habilitando encaminhamento de pacotes e outras opções
-echo “1″ > /proc/sys/net/ipv4/ip_forward
-echo “1″ > /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
-echo “1″ > /proc/sys/net/ipv4/icmp_echo_ignore_all
+echo “1″ &gt; /proc/sys/net/ipv4/ip_forward
+echo “1″ &gt; /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
+echo “1″ &gt; /proc/sys/net/ipv4/icmp_echo_ignore_all
 
 # Carregando modulos necessários para o iptables
 /sbin/modprobe iptable_nat
@@ -44,7 +44,7 @@ iptables -A FORWARD -s $rede_interna -d loginnet.passport.com -j REJECT
 Permissao de execução
 
 ```shell
-chmod +x rc.firewall
+chmod &#43;x rc.firewall
 ```
 
 Cuide para que o firewall inicie automaticamente na próxima inicialialização:

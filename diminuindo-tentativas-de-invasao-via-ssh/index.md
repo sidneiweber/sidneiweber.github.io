@@ -1,4 +1,4 @@
-# Diminuindo tentativas de invasão via SSH
+# Diminuindo Tentativas De Invasão via SSH
 
 Dentro do arquivo `/etc/ssh/sshd_config` altere as seguintes linhas:
 

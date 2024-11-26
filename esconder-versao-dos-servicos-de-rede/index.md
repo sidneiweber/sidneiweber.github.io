@@ -1,4 +1,4 @@
-# Esconder versão dos serviços de rede
+# Esconder Versão Dos Serviços De Rede
 
 Escondendo a versão dos serviços que estão rodando em seu servidor para aumentar a segurança Pessoal.
 
@@ -10,9 +10,9 @@ Então vamos ocultar alguns serviços mais utilizados:
 =======  
 Basta adicionar a seguinte linha no proftpd.conf:
 
-> ServerIdent on ""
+&gt; ServerIdent on &#34;&#34;
 
-A linha acima informa a versão do serviço como sendo "", isso quer dizer que será em branco.
+A linha acima informa a versão do serviço como sendo &#34;&#34;, isso quer dizer que será em branco.
 
 Para validar é necessário reiniciar o Proftpd.
 
@@ -22,7 +22,7 @@ Já esse é necessário baixar o fonte do site oficial www.openssh.com/ e compil
 
 Após descompactar, terá um arquivo chamado version.h. Altere o conteúdo da seguinte linha:
 
-> #define SSH_VERSION ""
+&gt; #define SSH_VERSION &#34;&#34;
 
 Depois é só compilar normalmente com ./configure, make e make install.
 

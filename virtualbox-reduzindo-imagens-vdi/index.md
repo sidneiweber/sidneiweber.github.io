@@ -1,6 +1,6 @@
-# VirtualBox: Reduzindo imagens VDI
+# VirtualBox: Reduzindo Imagens VDI
 
-As imagens VDI são dinamicamente expansíveis. Isto é legal, porque é possível criar um arquivo pequeno que vai crescendo a medida que o disco da máquina virtual precisa armazenar mais arquivos. Mas se depois de um tempo você liberar espaço no &#8220;disco virtual&#8221;, o arquivo VDI não é reduzido.
+As imagens VDI são dinamicamente expansíveis. Isto é legal, porque é possível criar um arquivo pequeno que vai crescendo a medida que o disco da máquina virtual precisa armazenar mais arquivos. Mas se depois de um tempo você liberar espaço no &amp;#8220;disco virtual&amp;#8221;, o arquivo VDI não é reduzido.
 
 Para resolver isto, é preciso seguir as seguintes etapas:
 
@@ -14,7 +14,7 @@ vboxmanage modifyvdi nome_do_seu_arquivo.vdi compact
 
 Aqui consegui reduzir de 5 para 3,8GB o meu arquivo.
 
-**Fonte**: <http://www.vivaolinux.com.br/dica/VirtualBox-Reduzindo-imagens-VDI>
+**Fonte**: &lt;http://www.vivaolinux.com.br/dica/VirtualBox-Reduzindo-imagens-VDI&gt;
 
 ---
 

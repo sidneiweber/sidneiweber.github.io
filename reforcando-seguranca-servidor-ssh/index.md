@@ -1,4 +1,4 @@
-# Reforçando segurança servidor ssh
+# Reforçando Segurança Servidor Ssh
 
 ### Introdução
 
@@ -47,7 +47,7 @@ Gerar a chave
 ssh-keygen -b 1024 -t dsa
 ```
 
-![ssh ><](/img/uploads/2016/09/Seleção_009.png)
+![ssh &gt;&lt;](/img/uploads/2016/09/Seleção_009.png)
 
 Copiar para a outra máquina a chave pública
 
@@ -55,7 +55,7 @@ Copiar para a outra máquina a chave pública
 ssh-copy-id -i ~/.ssh/id_dsa.pub 192.168.1.100
 ```
 
-![ssh ><](/img/uploads/2016/09/Seleção_010.png)
+![ssh &gt;&lt;](/img/uploads/2016/09/Seleção_010.png)
 
 Verificar se o arquivo foi copiado para o destino em .ssh/authorized_keys e modificar a permissão para 600, por questões de segurança
 

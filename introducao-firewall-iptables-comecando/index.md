@@ -11,7 +11,7 @@ Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida do
 O iptables é a ferramenta de firewall a nivel de pacotes do linux desde o kernel 2.4 substituindo o ipchains.  
 Ele se baseia nas regras e parametros passados para fazer a filtragem dos pacotes, ou seja, compara as regras com os pacotes.
 
-Para termos uma segurança maior, incluindo um controle de navegação na rede interna, uma dupla muito usada e que combina muito bem, é a dupla Iptables + Squid. Squid é um proxy de navegação, mas essa solução falaremos em outra oportunidade
+Para termos uma segurança maior, incluindo um controle de navegação na rede interna, uma dupla muito usada e que combina muito bem, é a dupla Iptables &#43; Squid. Squid é um proxy de navegação, mas essa solução falaremos em outra oportunidade
 
 ### Tabelas:
 
@@ -54,14 +54,14 @@ iptables subcomando chain parametro1 valor1 parametron valorn ação
 
 #### Subcomandos:
 
--A cadeia &#8211; anexa a regra ao final da cadeia  
+-A cadeia &amp;#8211; anexa a regra ao final da cadeia  
 -L [cadeia] lista as regras da cadeia, ou todas caso a cadeia nao seja especificada  
 -F [cadeia] apaga todas as regras na cadeia  
--N cadeia &#8211; Lista todas as regras na cadeia  
--P cadeia politica &#8211; configura a regra padrão da cadeia  
--D cadeia linha &#8211; apaga uma regra em um posição na cadeia  
+-N cadeia &amp;#8211; Lista todas as regras na cadeia  
+-P cadeia politica &amp;#8211; configura a regra padrão da cadeia  
+-D cadeia linha &amp;#8211; apaga uma regra em um posição na cadeia  
 -X [cadeia] excluiu uma cadeia vazia  
--I cadeia linha &#8211; insere uma regra em uma posição na cadeia  
+-I cadeia linha &amp;#8211; insere uma regra em uma posição na cadeia  
 -Z zera os contadores para todas as cadeias
 
 #### Parametros, alguns:
@@ -73,14 +73,14 @@ iptables subcomando chain parametro1 valor1 parametron valorn ação
 -d IP (IP de destino do pacte)  
 -i interface (nome da interface de rede de entrada do pacote)  
 -o interface (nome da interface de rede de saida do pacote)  
-&#8211;sport portas (Portas de origem)  
-&#8211;dport portas (Portas de destino)  
-&#8211;syn (identifica nova requisição de conexao)  
-&#8211;icmp-type (tipo de mensagem icmp)
+&amp;#8211;sport portas (Portas de origem)  
+&amp;#8211;dport portas (Portas de destino)  
+&amp;#8211;syn (identifica nova requisição de conexao)  
+&amp;#8211;icmp-type (tipo de mensagem icmp)
 
 ### Checagem de estado dos pacotes (state match):
 
--m state &#8211;state OPCAO  
+-m state &amp;#8211;state OPCAO  
 **NEW** cria uma nova conexao  
 **ESTABLISHED** pacote que pertence a uma conexao existente  
 **RELATED** pacote relacionado mas que nao faz parte de uma conexao existente  
@@ -89,19 +89,19 @@ iptables subcomando chain parametro1 valor1 parametron valorn ação
 ### Extensões:
 
 Extensao TCP  
-&#8211;tcp-flags (ALL, SYN, ACK, FIN, etc)  
-&#8211;source-port ou &#8211;sport  
-&#8211;destination-port ou &#8211;dport
+&amp;#8211;tcp-flags (ALL, SYN, ACK, FIN, etc)  
+&amp;#8211;source-port ou &amp;#8211;sport  
+&amp;#8211;destination-port ou &amp;#8211;dport
 
 Extensao UDP  
 Mesmas opções do TCP
 
 Extensao ICMP  
-&#8211;icmp-type
+&amp;#8211;icmp-type
 
 Outras extensoes  
 -m limit quando usado em LOG serve para limitar o numero de pacotes escritos durante um certo ponto  
-&#8211;limit valor
+&amp;#8211;limit valor
 
 ### Arquivos de logs criados pelo iptables:
 
@@ -115,7 +115,7 @@ Exibir todas as regras:
 iptables -L -n -v
 ```
 
-Verificar regras (padrão filter &#8211;line-numbers (Exibe linhas))
+Verificar regras (padrão filter &amp;#8211;line-numbers (Exibe linhas))
 
 ```shell
 iptables -L
@@ -184,13 +184,13 @@ iptables -A OUTPUT -p tcp -m multiport --sports 22,80,443 -j ACCEPT
 Manter registros de Log’s de pacotes bloqueados:
 
 ```shell
-iptables -A INPUT -i eth0 -j LOG --log-prefix "Quantidade pacotes bloqueados:"
+iptables -A INPUT -i eth0 -j LOG --log-prefix &#34;Quantidade pacotes bloqueados:&#34;
 iptables -A INPUT -p tcp -dport 21 -j LOG -log-prefix “Serviço: ftp”
 ```
 
 Os log’s são salvos em /var/log/messages.
 
-Compartilhar internet, parametro ip\_forward precisa ser 1, geralemte altera-se no arquivo &#8220;/proc/sys/net/ipv4/ip\_forward&#8221;. Lembrando que a mudança não é permanente, a cada reinicialização deve-se alterar o parâmetro novamente ou quando criar um sript de firewall incluir o comando para alterar o arquivo com o cat.
+Compartilhar internet, parametro ip\_forward precisa ser 1, geralemte altera-se no arquivo &amp;#8220;/proc/sys/net/ipv4/ip\_forward&amp;#8221;. Lembrando que a mudança não é permanente, a cada reinicialização deve-se alterar o parâmetro novamente ou quando criar um sript de firewall incluir o comando para alterar o arquivo com o cat.
 
 ```shell
 iptables -A INPUT -m state --state RELATED.ESTABLISHED -j ACCEPT
@@ -220,7 +220,7 @@ iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-host-unreachable
 iptables -A INPUT -s 192.168.10.2 -j REJECT --reject-with icmp-proto-unreachable
 ```
 
-entre outras opções do &#8211;reject-with
+entre outras opções do &amp;#8211;reject-with
 
 Criar chain
 
@@ -289,8 +289,8 @@ iptables -A FORWARD -p icmp --icmp-type echo-request -m limit --limit 1/s -j ACC
 Salvando e restaurando as regras:
 
 ```shell
-iptables-save > arquivo
-iptables-restore < arquivo
+iptables-save &gt; arquivo
+iptables-restore &lt; arquivo
 ```
 
 

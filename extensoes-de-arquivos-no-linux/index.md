@@ -1,25 +1,25 @@
-# Extensões de arquivos no Linux
+# Extensões De Arquivos No Linux
 
 Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tipo de arquivo é reconhecido pelo seu conteúdo e não pela sua extensão. Mas para facilitar a vida é bom conhecer algumas extensões no Linux.
 
-#### <span id="Arquivos_Executaveis">Arquivos Executáveis</span>
+#### &lt;span id=&#34;Arquivos_Executaveis&#34;&gt;Arquivos Executáveis&lt;/span&gt;
 
 **out**: formato binário usado nas primeiras versões do GNU/Linux  
 **pl**: script em linguagem Perl  
 **py**: script em linguagem Python  
 **sh**: script de shell, usado para criar pequenos programas
 
-#### <span id="Codigos_fontes_e_bibliotecas">Códigos fontes e bibliotecas</span>
+#### &lt;span id=&#34;Codigos_fontes_e_bibliotecas&#34;&gt;Códigos fontes e bibliotecas&lt;/span&gt;
 
 **c**: código em linguagem C  
-**cpp**: código em linguagem C++  
+**cpp**: código em linguagem C&#43;&#43;  
 **diff**: conjunto de instruções que definem as trocas a aplicar um patch  
 **h:** cabeçalho de arquivos programados em C  
 **lo**: arquivo temporário criado pela compilação de uma library  
 **o**: arquivo temporário criado pela compilação de um programa  
-**so**: bibliotecas compartilhadas equivalentes aos &#8220;dll&#8221; em windows
+**so**: bibliotecas compartilhadas equivalentes aos &amp;#8220;dll&amp;#8221; em windows
 
-#### <span id="Arquivos_compactados">Arquivos compactados</span>
+#### &lt;span id=&#34;Arquivos_compactados&#34;&gt;Arquivos compactados&lt;/span&gt;
 
 **bz2**: arquivo comprimido pelo Bzip2  
 **gz**: arquivo gerado pelo programa Gzip que substituiu o obsoleto Compress  
@@ -30,7 +30,7 @@ Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tip
 **z**: arquivo comprimido com o programa Compress  
 **zip**: formato de compressão mais usado na internet. Tem menos compressão que o Bzip2.
 
-#### <span id="Arquivos_do_Sistema">Arquivos do Sistema</span>
+#### &lt;span id=&#34;Arquivos_do_Sistema&#34;&gt;Arquivos do Sistema&lt;/span&gt;
 
 **conf**: arquivo de configuração de um programa  
 **ko**: módulos do núcleo do kernel 2.6  
@@ -40,7 +40,7 @@ Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tip
 **socket**: meio de comunicação entre dois programas situados em equipamentos diferentes  
 **tmp**: ficheiro temporário criado por um programa para armazenar informação
 
-#### <span id="Arquivos_de_pacotes">Arquivos de pacotes</span>
+#### &lt;span id=&#34;Arquivos_de_pacotes&#34;&gt;Arquivos de pacotes&lt;/span&gt;
 
 **deb**: usado pela Debian e distribuições derivadas da Debian  
 **dsc**: arquivo de informação do código fonte de um pacote Debian  

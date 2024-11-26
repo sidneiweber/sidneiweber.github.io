@@ -1,4 +1,4 @@
-# Alterar politica de senhas no Linux com PAM
+# Alterar Politica De Senhas No Linux Com PAM
 
 Para podermos ter um controle maior sobre a segurança dos nossos sistemas e rede de computadores, podemos definir uma política de senhas onde as mesmas devem ter um grau alto de dificuldade. Podendo definir quantidade de caracteres especiais, números, tamanho da senha, tempo que ela vai expirar, não repetir a mesma senha digitada anteriormente, etc.
 
@@ -24,7 +24,7 @@ E agora vamos editá-lo, deixando com apenas a linha abaixo:
 vi /etc/pam.d/common-password
 ```
 
-password requisite pam_cracklib.so minlen=8 difok=3 ucredit=-1 ocredit=-1 retry=3</pre>
+password requisite pam_cracklib.so minlen=8 difok=3 ucredit=-1 ocredit=-1 retry=3&lt;/pre&gt;
 
 Onde:
 

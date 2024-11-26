@@ -1,4 +1,4 @@
-# Codecs ubuntu 9.04
+# Codecs Ubuntu 9.04
 
 Paso #1: Agregar el Repositorio de Medibuntu  
 Abre el terminal ubicado en Aplicaciones/Accesorios/Terminal, y ejecuta el siguiente comando:
@@ -11,7 +11,7 @@ Paso #2: Agregar la llave GPG
 Ahora ejecuta este otro comando:
 
 ```bash
-sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update
+sudo apt-get update &amp;&amp; sudo apt-get install medibuntu-keyring &amp;&amp; sudo apt-get update
 ```
 
 Paso #3: Instalar Codec’s  

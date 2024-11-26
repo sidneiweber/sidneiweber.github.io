@@ -1,6 +1,6 @@
-# Instalando um dashboard para seu servidor linux
+# Instalando Um Dashboard Para Seu Servidor Linux
 
-![dash ><](/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png)
+![dash &gt;&lt;](/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png)
 
 ```shell
 cd /var/www/

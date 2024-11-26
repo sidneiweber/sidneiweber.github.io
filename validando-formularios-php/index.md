@@ -1,117 +1,117 @@
 # Validando Formulários PHP
 
 
-## <span id="Validando_CEP">Validando CEP</span>
+## &lt;span id=&#34;Validando_CEP&#34;&gt;Validando CEP&lt;/span&gt;
 
 O código abaixo valida o CEP informado através do método POST (conforme script abaixo).
 
 ```php    
-<?php
-<span style="font-family:Consolas, Monaco, monospace;">
-// Validando CEP</span>
-if($_POST['cep']){
+&lt;?php
+&lt;span style=&#34;font-family:Consolas, Monaco, monospace;&#34;&gt;
+// Validando CEP&lt;/span&gt;
+if($_POST[&#39;cep&#39;]){
 
-if (!eregi("^[0-9]{5}-[0-9]{3}$", $_POST['cep'])) {
-echo "<script language="JavaScript">alert('CEP inválido !!!');</script>";
+if (!eregi(&#34;^[0-9]{5}-[0-9]{3}$&#34;, $_POST[&#39;cep&#39;])) {
+echo &#34;&lt;script language=&#34;JavaScript&#34;&gt;alert(&#39;CEP inválido !!!&#39;);&lt;/script&gt;&#34;;
 
 }else{
-echo "O CEP $cep foi validado com sucesso!!!";
+echo &#34;O CEP $cep foi validado com sucesso!!!&#34;;
 }
 }
-?>
+?&gt;
 ```
 
 Onde informamos que o CEP foi validado com sucesso, tu poderá customizar de acordo com suas necessidades!
 
-## <span id="Validando_Data">Validando Data</span>
+## &lt;span id=&#34;Validando_Data&#34;&gt;Validando Data&lt;/span&gt;
 
 O código abaixo valida a Data informada através do método POST (conforme script abaixo).
 
 ```php
-<?php
+&lt;?php
 
 // Validando Data
-if($_POST['data']){
-if (!eregi("^[0-9]{2}/[0-9]{2}/[0-9]{4}$", $_POST['data'])) {
-echo "<script language="JavaScript">alert('Data inválida !!!');</script>";
+if($_POST[&#39;data&#39;]){
+if (!eregi(&#34;^[0-9]{2}/[0-9]{2}/[0-9]{4}$&#34;, $_POST[&#39;data&#39;])) {
+echo &#34;&lt;script language=&#34;JavaScript&#34;&gt;alert(&#39;Data inválida !!!&#39;);&lt;/script&gt;&#34;;
 
 }else{
-echo "A Data $data foi validada com sucesso!!!";
+echo &#34;A Data $data foi validada com sucesso!!!&#34;;
 }
 }
-?>
+?&gt;
 ``` 
     
 
 Onde informamos que validação da Data foi efetuada com sucesso, tu poderá customizar de acordo com suas necessidades!
 
-## <span id="Validando_Endereco_de_EMail">Validando Endereço de EMail</span>
+## &lt;span id=&#34;Validando_Endereco_de_EMail&#34;&gt;Validando Endereço de EMail&lt;/span&gt;
 
 O código abaixo deverá validar o Endereço de Email informado através do método POST (conforme script abaixo).
 
 ```php 
-<?php
+&lt;?php
 
 // Validando o EMail
-if ($_POST['email']){
+if ($_POST[&#39;email&#39;]){
 
-if (!eregi("^[a-z0-9_.-]+@[a-z0-9_.-]*[a-z0-9_-]+.[a-z]{2,4}$", $_POST['email'])) {
-echo "<script language="JavaScript">alert('Email inválido !!!');</script>";
+if (!eregi(&#34;^[a-z0-9_.-]&#43;@[a-z0-9_.-]*[a-z0-9_-]&#43;.[a-z]{2,4}$&#34;, $_POST[&#39;email&#39;])) {
+echo &#34;&lt;script language=&#34;JavaScript&#34;&gt;alert(&#39;Email inválido !!!&#39;);&lt;/script&gt;&#34;;
 
 }else{
-echo "O EMail $email foi validado com sucesso!!!";
+echo &#34;O EMail $email foi validado com sucesso!!!&#34;;
 
 }
 }
-?>
+?&gt;
 ```
 
 Onde informamos que validação do EMail foi efetuado com sucesso, tu poderá customizar de acordo com suas necessidades!
 
-## <span id="Validando_Telefones">Validando Telefones</span>
+## &lt;span id=&#34;Validando_Telefones&#34;&gt;Validando Telefones&lt;/span&gt;
 
 Abaixo temos 2 exemplos de validação de telefone.
 
 Exemplo 01:
 
 ```php
-<?php
+&lt;?php
 
 // Validando Telefone no Formato xxxx-xxxx
-if($_POST['telefone']){
+if($_POST[&#39;telefone&#39;]){
 
-if (!eregi("^[0-9]{4}-[0-9]{4}$", $_POST['telefone'])) {
-echo "<script language="JavaScript">alert('Telefone inválido !!!');</script>";
+if (!eregi(&#34;^[0-9]{4}-[0-9]{4}$&#34;, $_POST[&#39;telefone&#39;])) {
+echo &#34;&lt;script language=&#34;JavaScript&#34;&gt;alert(&#39;Telefone inválido !!!&#39;);&lt;/script&gt;&#34;;
 
 }else{
-echo "O Telefone $telefone foi validado com sucesso!!!";
+echo &#34;O Telefone $telefone foi validado com sucesso!!!&#34;;
 
 }
 }
-?>
+?&gt;
 ```    
 
 Exemplo 02:
 
 ```php 
-<?php
+&lt;?php
 
 // Validando Telefone no Formato (DDD) xxxx-xxxx
-if($_POST['telefone']){
+if($_POST[&#39;telefone&#39;]){
 
-if (!eregi("^([0-9]{3}) [0-9]{4}-[0-9]{4}$", $_POST['telefone'])) {
-echo "<script language="JavaScript">alert('Telefone inválido !!!');</script>";
+if (!eregi(&#34;^([0-9]{3}) [0-9]{4}-[0-9]{4}$&#34;, $_POST[&#39;telefone&#39;])) {
+echo &#34;&lt;script language=&#34;JavaScript&#34;&gt;alert(&#39;Telefone inválido !!!&#39;);&lt;/script&gt;&#34;;
 
 }else{
-echo "O Telefone $telefone foi validado com sucesso!!!";
-<span style="font-family:Consolas, Monaco, monospace;">}</span>
+echo &#34;O Telefone $telefone foi validado com sucesso!!!&#34;;
+&lt;span style=&#34;font-family:Consolas, Monaco, monospace;&#34;&gt;}&lt;/span&gt;
 }
-?>
+?&gt;
 ```
 
 Onde informamos que a validação do Telefone foi efetuada com sucesso, tu poderá customizar de acordo com suas necessidades!
 
-## <span id="Validando_Pagina">Validando Página</span>
+## &lt;span id=&#34;Validando_Pagina&#34;&gt;Validando Página&lt;/span&gt;
 
 Esse script é especial e necessário para quem é desenvolvedor web!
 
@@ -124,26 +124,26 @@ Criptografando o código e colocando este conteúdo, você garantirá a seguran�
 Vamos dar uma olhada no código?
 
 ```php
-<?php
+&lt;?php
 
-<span style="font-family:Consolas, Monaco, monospace;">// Valida a cópia do Sistema</span>
+&lt;span style=&#34;font-family:Consolas, Monaco, monospace;&#34;&gt;// Valida a cópia do Sistema&lt;/span&gt;
 
-$server = $_SERVER['SERVER_NAME'];
-$endereco = $_SERVER ['REQUEST_URI'];
-$url ="http://" . $server . $endereco;
+$server = $_SERVER[&#39;SERVER_NAME&#39;];
+$endereco = $_SERVER [&#39;REQUEST_URI&#39;];
+$url =&#34;http://&#34; . $server . $endereco;
 
-$url_certa = "http://enderecodosite.com/";
+$url_certa = &#34;http://enderecodosite.com/&#34;;
 
 if($url != $url_certa) {
-echo "<script language="JavaScript">alert('VOCÊ NÃO TEM LICENÇA PARA USAR ESTA LOJA - Entre em contato com o EMail email@seuemail.com.br para validar sucópia.');</script>";
+echo &#34;&lt;script language=&#34;JavaScript&#34;&gt;alert(&#39;VOCÊ NÃO TEM LICENÇA PARA USAR ESTA LOJA - Entre em contato com o EMail email@seuemail.com.br para validar sucópia.&#39;);&lt;/script&gt;&#34;;
 
 }else{
 
-echo "COLOQUE AQUI O CÓDIGO DA PÁGINA";
+echo &#34;COLOQUE AQUI O CÓDIGO DA PÁGINA&#34;;
 }
-<span style="font-family:Consolas, Monaco, monospace;">?>
+&lt;span style=&#34;font-family:Consolas, Monaco, monospace;&#34;&gt;?&gt;
 
-<a href="http://www.webmaster.pt/como-validar-formulario-8269.html">Fonte</a></span>
+&lt;a href=&#34;http://www.webmaster.pt/como-validar-formulario-8269.html&#34;&gt;Fonte&lt;/a&gt;&lt;/span&gt;
 ```
 
 ---

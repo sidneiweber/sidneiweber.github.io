@@ -1,10 +1,10 @@
-# Os vingadores DevOps
+# Os Vingadores DevOps
 
-<!--more-->
+&lt;!--more--&gt;
 
-{{< admonition type=warning title="Aviso do autor" open=true >}}
+{{&lt; admonition type=warning title=&#34;Aviso do autor&#34; open=true &gt;}}
 Essa história pode ter sido baseada em fatos reais (ou não) e pode contar ironia (ou não).
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 
 ## Guerra Infinita da Tecnologia: Capítulo 1
@@ -17,13 +17,13 @@ Em uma bela noite, enquanto observavam as estrelas de suas respectivas varandas,
 
 ## A União Transformadora: Capítulo 2
 
-Unindo suas forças, Alex e Diana enfrentaram o ceticismo inicial das empresas de Techropolis. Com determinação inabalável, eles montaram a "Fortaleza da Colaboração", um espaço onde desenvolvedores e operadores poderiam trabalhar juntos em harmonia. Sua presença magnética e exemplo inspirador convenceram as equipes a se unirem para alcançar um objetivo comum.
+Unindo suas forças, Alex e Diana enfrentaram o ceticismo inicial das empresas de Techropolis. Com determinação inabalável, eles montaram a &#34;Fortaleza da Colaboração&#34;, um espaço onde desenvolvedores e operadores poderiam trabalhar juntos em harmonia. Sua presença magnética e exemplo inspirador convenceram as equipes a se unirem para alcançar um objetivo comum.
 
-Os dois heróis realizavam "Tarefas de Transformação", resolvendo bugs em tempo recorde e automatizando processos com a velocidade de um relâmpago. Enquanto isso, o sinistro vilão chamado "Desconexión" tentava semear a discórdia entre as equipes, mas a aliança de Alex e Diana se mostrava inquebrável. Eles até mesmo inventaram o "Amuleto de Integração Contínua", uma ferramenta mágica que mantinha o caos à distância.
+Os dois heróis realizavam &#34;Tarefas de Transformação&#34;, resolvendo bugs em tempo recorde e automatizando processos com a velocidade de um relâmpago. Enquanto isso, o sinistro vilão chamado &#34;Desconexión&#34; tentava semear a discórdia entre as equipes, mas a aliança de Alex e Diana se mostrava inquebrável. Eles até mesmo inventaram o &#34;Amuleto de Integração Contínua&#34;, uma ferramenta mágica que mantinha o caos à distância.
 
 ## A Era da Colaboração: Capítulo 3
 
-A dupla de heróis DevOps se tornou lendária, suas histórias sendo contadas por toda Techropolis. Eles receberam o "Título de Honra da Tecnologia" em uma cerimônia grandiosa, onde até mesmo os supercomputadores aplaudiram. Alex e Diana continuaram a inspirar uma nova geração de desenvolvedores e operadores, provando que, com a união certa, até mesmo os desafios tecnológicos mais formidáveis podem ser superados.
+A dupla de heróis DevOps se tornou lendária, suas histórias sendo contadas por toda Techropolis. Eles receberam o &#34;Título de Honra da Tecnologia&#34; em uma cerimônia grandiosa, onde até mesmo os supercomputadores aplaudiram. Alex e Diana continuaram a inspirar uma nova geração de desenvolvedores e operadores, provando que, com a união certa, até mesmo os desafios tecnológicos mais formidáveis podem ser superados.
 
 E assim, Techropolis se transformou de um lugar de desordem para um farol de colaboração e excelência tecnológica, graças à aliança heroica de Alex, o Prodigy Códigus, e Diana, a Executora Operativa, os guardiões da DevOps.
 

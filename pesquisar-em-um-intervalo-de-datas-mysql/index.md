@@ -1,14 +1,14 @@
-# Pesquisar em um intervalo de datas Mysql
+# Pesquisar Em Um Intervalo De Datas Mysql
 
 
 ```sql
-SELECT * FROM `contas_pagar` WHERE data BETWEEN ('2014-09-01') AND ('2014-09-31');
+SELECT * FROM `contas_pagar` WHERE data BETWEEN (&#39;2014-09-01&#39;) AND (&#39;2014-09-31&#39;);
 ```
 
 E para fazer uma soma em um intervalo de datas:
 
 ```sql
-SELECT SUM(valor) as total FROM contas_pagar WHERE valor BETWEEN ('2014-09-01') AND ('2014-09-31');
+SELECT SUM(valor) as total FROM contas_pagar WHERE valor BETWEEN (&#39;2014-09-01&#39;) AND (&#39;2014-09-31&#39;);
 ```
 
 ---

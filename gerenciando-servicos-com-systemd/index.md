@@ -1,4 +1,4 @@
-# Gerenciando serviços com SystemD
+# Gerenciando Serviços Com SystemD
 
 Com SystemD é possível gerenciar o sistema e serviços no seu Linux. Ele usa o **Control Groups (CGroups)**, cada serviço iniciado pelo systemd roda dentro de um cgroup separado, fazendo com que se tenha garantia que cada processo iniciado por serviço seja encerrado corretamente.
 

@@ -1,18 +1,18 @@
-# Kafka tudo o que precisamos saber
+# Kafka Tudo O Que Precisamos Saber
 
 
 ## O que é o Kafka
 
-Resumidamente o Kafka é usado para trabalhar com fila de mensagens e como uma plataforma de streaming de eventos, usando um modelo de "publicar/assinar". Foi criado e disponibilizado pelo [Linkedin](https://github.com/linkedin/kafka) em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidas por um ou mais consumidores. Esses registros não podem ser modificados após serem enviados para o Kafka.
+Resumidamente o Kafka é usado para trabalhar com fila de mensagens e como uma plataforma de streaming de eventos, usando um modelo de &#34;publicar/assinar&#34;. Foi criado e disponibilizado pelo [Linkedin](https://github.com/linkedin/kafka) em 2011. Ele permite que os produtores consigam gravar mensagens no Kafka, que posteriormente podem ser lidas por um ou mais consumidores. Esses registros não podem ser modificados após serem enviados para o Kafka.
 Ele é executado como um cluster de um ou mais servidores, ou seja, mesmo que só tenhamos um servidor ele mesmo assim é considerado um cluster. Cada nó desse cluster é também chamado de **broker**.
 
-![Kafka Cluster](cluster.png "Kafka cluster")
+![Kafka Cluster](cluster.png &#34;Kafka cluster&#34;)
 
 ### Tópicos
 
 Os registros são organizados em tópicos. Cada consumidor pode assinar um ou mais tópicos para ler os registros. Esses registros consistem em uma chave, um valor e data/hora. Cada tópico pode ser separado em várias partições dependendo do seu tamanho e configuração, por padrão só uma partição é utilizada, mas para escalar os consumidores o aumento de partições se faz necessária, pois cada partição é assinada por somente um consumidor por vez.
 
-![Kafka Tópico ><](topic.png "Anatomia de um tópico")
+![Kafka Tópico &gt;&lt;](topic.png &#34;Anatomia de um tópico&#34;)
 
 ### Grupo de consumidores
 
@@ -21,7 +21,7 @@ Os consumidores são identificados com um nome de **grupo de consumidores**. Ess
 ### Offset
 Uma questão bem importante para uso do Kafka é o entendimento dos **offsets**. O offset é quem controla a posição onde o consumidor parou de ler as mensagens ou qual a próxima mensagem. Esse controle é feito pelo próprio consumidor. Por exemplo, cada vez que um determinado consumidor ler uma mensagem, ele vai incrementando seu offset para saber exatamente onde ele parou e caso desconecte e conecte novamente, tenha um ponto de partida. O consumidor ainda pode ser configurado para iniciar seu offset, caso não tenha nenhum, da [primeira ou da última](https://kafka.apache.org/documentation/#auto.offset.reset) mensagem do tópico.
 
-![Kafka Offset ><](offset.png "Offset")
+![Kafka Offset &gt;&lt;](offset.png &#34;Offset&#34;)
 
 ### Tempo de retenção
 Um ponto que se deve ter bastante atenção em entender e configurar da maneira correta, para não termos dores de cabeça (experiência própria), é com o tempo de retenção dos dados. Vou citar aqui duas das principais configurações relativas à retenção, na [documentação](https://kafka.apache.org/documentation) podemos achar várias outras.
@@ -35,7 +35,7 @@ Existe um [movimento](https://www.confluent.io/blog/removing-zookeeper-dependenc
 
 ### Conclusão
 
-O Kafka se bem configurado e estruturado é uma ótima ferramenta para interligar serviços sem depender de uma conexão direta entre eles. Cada serviço manda e busca sua mensagem diretamente no Kafka tirando essa responsabilidade dos serviços. Como o Kafka já foi projetado para uma alta demanda, o crescimento em todos os aspectos é muito facilitado.<br>
+O Kafka se bem configurado e estruturado é uma ótima ferramenta para interligar serviços sem depender de uma conexão direta entre eles. Cada serviço manda e busca sua mensagem diretamente no Kafka tirando essa responsabilidade dos serviços. Como o Kafka já foi projetado para uma alta demanda, o crescimento em todos os aspectos é muito facilitado.&lt;br&gt;
 Em outro texto vou mostrar como fazer uma configuração e instalação básica do Kafka e como podemos produzir e consumir algumas mensagens de maneira bem simples.
 
 Documentação: [https://kafka.apache.org/documentation/](https://kafka.apache.org/documentation/)

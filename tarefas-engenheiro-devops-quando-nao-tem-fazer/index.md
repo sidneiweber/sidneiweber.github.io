@@ -1,11 +1,11 @@
-# Tarefas para um engenheiro DevOps fazer quando não tiver o que fazer
+# Tarefas Para Um Engenheiro DevOps Fazer Quando Não Tiver O Que Fazer
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 # Documentar
 
-Possivelmente nem todo mundo gosta de escrever documentação, mas é algo muito necessário. Aproveitar o tempo "livre" para documentar o que está fazendo ou já fez, pode trazer diversos benefícios. Durante o processo de documentação, você também estará revisando e ajudando a fixar o que fez. Pode encontrar algum ponto de melhoria no projeto, por que não, nem tudo é perfeito.
+Possivelmente nem todo mundo gosta de escrever documentação, mas é algo muito necessário. Aproveitar o tempo &#34;livre&#34; para documentar o que está fazendo ou já fez, pode trazer diversos benefícios. Durante o processo de documentação, você também estará revisando e ajudando a fixar o que fez. Pode encontrar algum ponto de melhoria no projeto, por que não, nem tudo é perfeito.
 
 Sua equipe também pode se beneficiar disso, tendo materiais de consulta sempre que necessário, diminuindo as interrupções por perguntas básicas sobre algum projeto. Por isso é muito importante documentar e também manter as documentações atualizadas, pior do que não documentar é ter algo documentado errado.
 
@@ -23,7 +23,7 @@ Bora analisar essas métricas e trazer melhorias?
 
 # Otimizar os custos
 
-![Não gaste seu dinheiro à toa](pica-pau.png "Money")
+![Não gaste seu dinheiro à toa](pica-pau.png &#34;Money&#34;)
 
 Eis um ponto indiscutível, ninguém gosta de gastar mais do que deveria. Não seria diferente no mundo da tecnologia (mesmo para aquela empresa enorme e cheio de investimentos), principalmente quando estamos trabalhando com serviços de cloud.
 
@@ -50,7 +50,7 @@ Também é possível passar conhecimento para pessoas de fora da sua empresa, co
 
 # Testes de caos
 
-![Não fique perdido](chaos.jpg "Chaos")
+![Não fique perdido](chaos.jpg &#34;Chaos&#34;)
 
 O que aconteceria se o principal banco de dados da sua empresa ficasse fora? Não sabe, então esse é um bom motivo para criar teste de caos. Em um ambiente muito parecido com produção, simule problemas e analise o comportamento. O sistema fica indisponível? Existem alternativas para que isso não ocorra? Existe formas de minimizar os impactos? São várias perguntas que podem ser resolvidas durante os testes.
 

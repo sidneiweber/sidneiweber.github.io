@@ -1,25 +1,25 @@
-# Limpar container antigos Docker
+# Limpar Container Antigos Docker
 
 Caso sua lista de container esteja muito grande e queira remover alguns containers do seu host, podemos usar o comando abaixo para remover container parados a mais tempo:
 
 ```shell
-docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm
+docker ps --filter &#34;status=exited&#34; | grep &#39;weeks ago&#39; | awk &#39;{print $1}&#39; | xargs --no-run-if-empty docker rm
 ```
 
 Explicando:
 
 ```shell
-docker ps --filter "status=exited"
+docker ps --filter &#34;status=exited&#34;
 ```
 Lista somente os containers parados, que não estão em execução
 
 ```shell
-grep 'weeks ago'
+grep &#39;weeks ago&#39;
 ```
 Filtra por containers criados a semanas atrás
 
 ```shell
-awk '{print $1}'
+awk &#39;{print $1}&#39;
 ```
 Exibe a primeira coluna, que refere ao CONTAINER ID
 

@@ -1,4 +1,4 @@
-# Comandos de manipulação de permissões no Linux
+# Comandos De Manipulação De Permissões No Linux
 
 ## Entenda um pouco o sistema de permissões no sistema Linux
 
@@ -13,11 +13,11 @@ Dentro de cada classe citada anteriormente, temos os tipos de acesso:
 
   * Leitura (r): permissão de leitura para arquivos. Caso seja um diretório permite a listagem do seu conteúdo.
   * Escrita (w): permite a escrita em arquivos ou criação dentro de pastas.
-  * Execução (x): permite a execução de um programa "executável".
+  * Execução (x): permite a execução de um programa &#34;executável&#34;.
 
 Quando a gente executa um ls -la no terminal, podemos ver como funciona:
 
-![ls ><](/img/uploads/2016/12/Selecao_003.png)
+![ls &gt;&lt;](/img/uploads/2016/12/Selecao_003.png)
 
 No começo de cada linha temos 10 colunas referente as permissões de cada arquivo, onde a primeira coluna identifica o tipo do arquivo, se é um arquivo, um diretório, um link, etc. Após a primeira coluna, temos um conjunto de três colunas para cada classe de permissões, ou seja, do dono, do grupo e outros contando da esquerda para direita.
 
@@ -58,10 +58,10 @@ _-R, --recursive_
 
 Muda permissões de acesso do _diretório/arquivo_ no diretório atual e sub-diretórios.
 
-ugoa+-=rwxXst
+ugoa&#43;-=rwxXst
 
   * _ugoa_ - Indica o nível de acesso será mudado. Especificam, em ordem, usuário (u), grupo (g), outros (o), todos (a).
-  * _+-=_ - _+_ adiciona a permissão, _&#8211;_ retira a permissão do arquivo e _=_ define a permissão exatamente como especificado.
+  * _&#43;-=_ - _&#43;_ adiciona a permissão, _&amp;#8211;_ retira a permissão do arquivo e _=_ define a permissão exatamente como especificado.
   * rwx - _r_ permissão de leitura do arquivo. _w_ permissão de gravação. _x_ permissão de execução (ou acesso a diretórios).
 
 #### Exemplos
@@ -69,13 +69,13 @@ ugoa+-=rwxXst
 ```shell
 chmod o-r teste.txt
 # Retira (-) a permissão de leitura (r) do arquivo teste.txt para os outros usuários (usuários que não são donos e não pertencem ao grupo do arquivo teste.txt).
-chmod a+x teste.txt
-# Inclui (+) a permissão de execução do arquivo teste.txt para o dono, grupo e outros usuários.
+chmod a&#43;x teste.txt
+# Inclui (&#43;) a permissão de execução do arquivo teste.txt para o dono, grupo e outros usuários.
 chmod 777 teste.txt
 # Coloca permissão total de escrita, leitura e execução no arquivo teste.txt para todos usuários
 ```
 
-![chmod ><](/img/uploads/2016/12/Selecao_004.png)
+![chmod &gt;&lt;](/img/uploads/2016/12/Selecao_004.png)
 
 ### chgrp
 

@@ -1,4 +1,4 @@
-# Identificar sistema operacional com ping
+# Identificar Sistema Operacional Com Ping
 
 O comando ping utiliza o protocolo icmp e é muito útil para alguns testes de rede. O que pouca gente sabe é que durante a resposta do comando ping, uma informação pode nos informar qual o sistema operacional está respondendo. Essa informação é TTL (Time to Live).
 

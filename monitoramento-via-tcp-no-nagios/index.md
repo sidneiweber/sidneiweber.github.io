@@ -1,4 +1,4 @@
-# Monitoramento via TCP no Nagios
+# Monitoramento via TCP No Nagios
 
 Hoje vamos dar seguinte a configuração do Nagios [que instalamos um tempo atrás](http://sidneiweber.com.br/instalando-nagios-instalacao-basica/).
 
@@ -26,7 +26,7 @@ define service{
 	register 0
 }
 
-#### Template "HOST" Windows
+#### Template &#34;HOST&#34; Windows
 define host{
 	name TemplateHostWindows
 	max_check_attempts 3
@@ -42,7 +42,7 @@ define host{
 	register 0
 }
 
-### Template "HOST" Linux
+### Template &#34;HOST&#34; Linux
 define host{
 	name TemplateHostLinux
 	check_command check-host-alive
@@ -57,7 +57,7 @@ define host{
 	notification_options d,u,r
 }
 
-### Template "HOST" Rede
+### Template &#34;HOST&#34; Rede
 define host{
 	name TemplateHostRede
 	check_command check-host-alive
@@ -72,7 +72,7 @@ define host{
 	notification_options d,u,r
 }
 
-# 'check_tcp' command definition
+# &#39;check_tcp&#39; command definition
 define command{
 	command_name check_tcpNP
 	command_line $USER1$/check_tcp -H $HOSTADDRESS$ -p $ARG1$ -w $ARG2$ -c $ARG3$

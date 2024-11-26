@@ -1,6 +1,6 @@
-# Como utilizar o Traefik como ingress controller no Kubernetes
+# Como Utilizar O Traefik Como Ingress Controller No Kubernetes
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## O que é Traefik
 
@@ -20,7 +20,7 @@ Alguns recursos úteis que o Traefik nos disponibiliza:
 - Canary deployments (Kubernetes)
 - Mirroring (Kubernetes)
 
-![Traefik](traefik.png "Traefik")
+![Traefik](traefik.png &#34;Traefik&#34;)
 
 ## Instalando Traefik
 
@@ -51,7 +51,7 @@ service:
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: nlb
 globalArguments:
-- "--api.insecure=true"
+- &#34;--api.insecure=true&#34;
 ```
 
 Bom o arquivo aqui é autodeclarativo, mas basicamente estamos dizendo para que durante a instalação seja criado o ingressClass do traefik no nosso cluster e o mesmo, seja utilizado como padrão. Também estamos desabilitando a rota para acessar o dashboard (configuraremos isso em outro post) e também estamos indicando que o tipo de balanceador de carga que iremos utilizar, e aqui será do tipo NLB (Network Load Balancer). Para mais detalhes sobe os valores disponíveis, podemos acessar o arquivo https://github.com/traefik/traefik-helm-chart/blob/master/traefik/values.yaml.
@@ -169,7 +169,7 @@ NAME           AGE
 ➜ kubectl describe ingressroute 2048-ingress 
 Name:         2048-ingress
 Namespace:    default
-Labels:       <none>
+Labels:       &lt;none&gt;
 Annotations:  kubernetes.io/ingress.class: traefik
 API Version:  traefik.containo.us/v1alpha1
 Kind:         IngressRoute
@@ -187,12 +187,12 @@ Spec:
     Services:
       Name:  service-2048
       Port:  80
-Events:      <none>
+Events:      &lt;none&gt;
 ```
 
 Bom, então agora só nos falta o teste final, vamos tentar abrir o endereço do load balancer diretamente no navegador:
 
-![Serviço rodando](2048.png "Serviço rodando")
+![Serviço rodando](2048.png &#34;Serviço rodando&#34;)
 
 E pronto, aí está nosso serviço sendo exposto através do Traefik. Poderíamos deixar nosso Traefik mais parrudo, adicionando certificado, criando regras especificas, adicionando health check e outros recursos que o Traefik disponibiliza, mas vamos deixar para um próximo artigo.
 
@@ -285,7 +285,7 @@ X-Forwarded-Server: traefik-6b894fd4d7-m9b7k
 X-Real-Ip: 192.168.3.224
 ```
 
-![That's It](image.gif "That's It")
+![That&#39;s It](image.gif &#34;That&#39;s It&#34;)
 
 https://traefik.io/blog/eks-clusters-with-traefik-proxy-as-the-ingress-controller/
 

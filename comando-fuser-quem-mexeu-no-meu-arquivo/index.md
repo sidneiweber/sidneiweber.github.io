@@ -1,4 +1,4 @@
-# Comando fuser - Quem mexeu no meu arquivo
+# Comando Fuser - Quem Mexeu No Meu Arquivo
 
 
 O **fuser** é um programa que permite que saibamos qual processo está utilizando determinado arquivo, socket (portas) e sistema de arquivos especificado. Aprender sua manipulação é essencial para poder administrar um servidor para saber o que está acontecendo principalmente nas conexões. É um comando extremamente flexível, vamos ver suas opções e seu uso.

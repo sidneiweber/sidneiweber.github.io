@@ -1,4 +1,4 @@
-# Comandos básicos Docker
+# Comandos Básicos Docker
 
 Docker é um ferramenta que venha aprendendo a pouco tempo, não explicarei o que é o docker, apenas alguns detalhes no uso. Caso queira uma explicação melhor sobre o que é docker, recomendo esse [artigo do Mundo Docker](http://www.mundodocker.com.br/o-que-e-docker/).
 
@@ -18,7 +18,7 @@ docker rm [id do container]
 Iniciar container com alguns detalhes a mais:
 
 ```shell
-docker run -it -p <porta_host>:<porta_container> --name <nome_container> <nome_imagem>
+docker run -it -p &lt;porta_host&gt;:&lt;porta_container&gt; --name &lt;nome_container&gt; &lt;nome_imagem&gt;
 ```
 
 Sendo que o -i significa interatividade e o -t que queremos um link com o terminal do container.
@@ -26,12 +26,12 @@ Sendo que o -i significa interatividade e o -t que queremos um link com o termin
 Iniciar uma sessão bash em um container que já esteja rodando:
 
 ```shell
-docker exec -it <nome_container> bash
+docker exec -it &lt;nome_container&gt; bash
 
 Verificar os logs de um container:
 
 ```shell
-docker logs <nome_container>
+docker logs &lt;nome_container&gt;
 ```
 
 Remover todos os containers parados:
@@ -43,13 +43,13 @@ docker rm -f $(docker ps -a -q)
 Remover uma imagem baixada:
 
 ```shell
-docker rmi -f <nome_imagem>
+docker rmi -f &lt;nome_imagem&gt;
 ```
 
 Copiar um arquivo do container para o host:
 
 ```shell
-docker cp <nome_container>:/caminho/no/container /caminho/no/host
+docker cp &lt;nome_container&gt;:/caminho/no/container /caminho/no/host
 ```
 
 ## Salvando alterações de um container modificado
@@ -59,7 +59,7 @@ Após instalar alguns programas ou fazer modificações no seu container, é pos
 ```shell
 docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
-f8d74ee7155a        7e616530e7ea        "/bin/bash"         12 minutes ago      Up 12 minutes       0.0.0.0:8080-&gt;80/tcp   lonely_mccarthy
+f8d74ee7155a        7e616530e7ea        &#34;/bin/bash&#34;         12 minutes ago      Up 12 minutes       0.0.0.0:8080-&amp;gt;80/tcp   lonely_mccarthy
 root@black:/home/sidnei#
 ```
 
@@ -130,7 +130,7 @@ ADD foo.txt /bar/foo.txt
 Permite que a imagem seja executada como uma aplicativo (a partir da linha de comando especificada).
 
 ```docker
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT [&#34;python&#34;, &#34;app.py&#34;]
 ```
 
 #### CMD
@@ -138,7 +138,7 @@ ENTRYPOINT ["python", "app.py"]
 Comando que será executado quando a execução do container for acionada.
 
 ```docker
-CMD ["supervisord"]
+CMD [&#34;supervisord&#34;]
 ```
 
 #### Exemplo de dockerfile
@@ -146,7 +146,7 @@ CMD ["supervisord"]
 ```docker
 FROM debian:lastest
 
-MAINTAINER Sidnei Weber <sidnei.weber@gmal.com>
+MAINTAINER Sidnei Weber &lt;sidnei.weber@gmal.com&gt;
 
 RUN apt-get update
 RUN apt-get install -y apache2

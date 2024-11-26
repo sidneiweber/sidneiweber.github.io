@@ -1,4 +1,4 @@
-# Pigz - Compactador eficiente e rápido
+# Pigz - Compactador Eficiente E Rápido
 
 
 Talvez nem todos saibam mas a compactação usando gzip temos uma limitação da ferramenta não conseguir executar com múltiplos processadores. Para contornos essa limitação podemos usar uma ferramenta chama [PIGZ](https://zlib.net/pigz/), que usando threads consegue utilizar múltiplos processadores.
@@ -39,9 +39,9 @@ Para teste vamos compactar uma mesma pasta usando as duas ferramentas, gzip e pi
 
 ```shell
 ╭─sidnei@black ~
-╰─$ time tar -cf - web/ |gzip -9 - &gt; web.tar.gz
+╰─$ time tar -cf - web/ |gzip -9 - &amp;gt; web.tar.gz
 tar -cf - web/  2,81s user 30,31s system 9% cpu 5:56,01 total
-gzip -9 - &gt; web.tar.gz  267,42s user 6,43s system 76% cpu 5:56,01 total
+gzip -9 - &amp;gt; web.tar.gz  267,42s user 6,43s system 76% cpu 5:56,01 total
 ╭─sidnei@black ~
 ╰─$ du -h web.tar.gz
 2,2G	web.tar.gz
@@ -51,8 +51,8 @@ gzip -9 - &gt; web.tar.gz  267,42s user 6,43s system 76% cpu 5:56,01 total
 
 ```shell
 ╭─sidnei@black ~
-╰─$ time tar -c --use-compress-program="pigz -9" -f web.tar.gz web/                                                                                                        130 ↵
-tar -c --use-compress-program="pigz -9" -f web.tar.gz web/  356,10s user 35,11s system 175% cpu 3:43,30 total
+╰─$ time tar -c --use-compress-program=&#34;pigz -9&#34; -f web.tar.gz web/                                                                                                        130 ↵
+tar -c --use-compress-program=&#34;pigz -9&#34; -f web.tar.gz web/  356,10s user 35,11s system 175% cpu 3:43,30 total
 ╭─sidnei@black ~
 ╰─$ du -sh web.tar.gz  
 2,2G	web.tar.gz

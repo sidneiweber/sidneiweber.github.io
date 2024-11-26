@@ -1,9 +1,9 @@
-# About me
+# About Me
 
 
-<p align="center">
-  <img src="/img/sidnei.png" />
-</p>
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;/img/sidnei.png&#34; /&gt;
+&lt;/p&gt;
 
 Hello, I am **Sidnei Weber** :wave:.
 
@@ -19,20 +19,20 @@ Graduated in Information Security, free software passionate, always looking to i
 * Monitoring systems and services (Nagios/Zabbix);
 * Containers (Docker);
 * Configuration Management (Ansible), Scheduler Jobs (Rundeck)
-* Linux's servers security;
+* Linux&#39;s servers security;
 * Firewall Iptables, Pfsense, Fortinet;
 * Internet access control (Proxy – Squid), DHCP Server, Web Server
 * Apache, Instant Messaging Server (Openfire), Printing Server (Cups), Files and Users Server (LDAP/ Samba), Remote Access Server (SSH/FTP), Databases (MYSQL, Postgresql).
 * Virtualization (VirtualBox, Vmware, Proxmox);
 * Cloud (AWS, GCloud)
 
-### Skills + used
+### Skills &#43; used
 * AWS
 * Terraform
 * Ansible
 * Docker
 
-### Languages + used
+### Languages &#43; used
 * Python
 * Shell Script
 
@@ -40,10 +40,10 @@ Graduated in Information Security, free software passionate, always looking to i
 ![](/img/certificacoes.png)
 
 ## Cursos
-> Information Security - UNIP (Finished in 2022)
+&gt; Information Security - UNIP (Finished in 2022)
 
 ---
 
-> Author: Sidnei Weber  
+> Author:   
 > URL: https://sidneiweber.com.br/en/about/  
 
