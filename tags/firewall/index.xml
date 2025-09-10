@@ -1,72 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Firewall - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/firewall/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Feb 2014 19:31:32 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/firewall/index.xml" rel="self" type="application/rss+xml"/><item><title>Proxy transparente</title><link>https://sidneiweber.com.br/proxy-transparente/</link><pubDate>Sun, 16 Feb 2014 19:31:32 -0300</pubDate><guid>https://sidneiweber.com.br/proxy-transparente/</guid><description>&lt;p>Fazer com que todas as conexões passem pelo proxy&lt;/p>
-&lt;p>Criar o arquivo:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /etc/init.d
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">touch rc.firewall&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Adicionar o código:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#! /bin/sh
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1"># Limpando tabelas do iptables&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -F
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t nat -F
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -F
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definição da rede local&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">rede_interna&lt;/span>&lt;span class="o">=&lt;/span>”192.168.0.0/16”
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Habilitando encaminhamento de pacotes e outras opções&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> “1″ &amp;gt; /proc/sys/net/ipv4/ip_forward
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> “1″ &amp;gt; /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> “1″ &amp;gt; /proc/sys/net/ipv4/icmp_echo_ignore_all
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Carregando modulos necessários para o iptables&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sbin/modprobe iptable_nat
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sbin/modprobe ip_tables
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sbin/modprobe ipt_state
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sbin/modprobe ip_conntrack
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sbin/modprobe ipt_multiport
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/sbin/modprobe iptable_mangle
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -I PREROUTING -t nat -p tcp -s &lt;span class="nv">$rede_interna&lt;/span> –dport &lt;span class="m">80&lt;/span> -j REDIRECT –to-port &lt;span class="m">3128&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t nat -I POSTROUTING -s &lt;span class="nv">$rede_interna&lt;/span> -j MASQUERADE
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -A FORWARD -s &lt;span class="nv">$rede_interna&lt;/span> -d loginnet.passport.com -j REJECT&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Permissao de execução&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Firewall on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/firewall/</link><description>Recent content in Firewall on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Sun, 16 Feb 2014 19:31:32 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/firewall/index.xml" rel="self" type="application/rss+xml"/><item><title>Proxy transparente</title><link>https://sidneiweber.com.br/posts/proxy-transparente/</link><pubDate>Sun, 16 Feb 2014 19:31:32 -0300</pubDate><guid>https://sidneiweber.com.br/posts/proxy-transparente/</guid><description>&lt;p&gt;Fazer com que todas as conexões passem pelo proxy&lt;/p&gt;
+&lt;p&gt;Criar o arquivo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /etc/init.d
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;touch rc.firewall
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Adicionar o código:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;#! /bin/sh
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Limpando tabelas do iptables&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -F
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -t nat -F
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -t mangle -F
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Definição da rede local&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;rede_interna&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;”192.168.0.0/16”
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Habilitando encaminhamento de pacotes e outras opções&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; “1″ &amp;gt; /proc/sys/net/ipv4/ip_forward
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; “1″ &amp;gt; /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; “1″ &amp;gt; /proc/sys/net/ipv4/icmp_echo_ignore_all
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Carregando modulos necessários para o iptables&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/sbin/modprobe iptable_nat
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/sbin/modprobe ip_tables
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/sbin/modprobe ipt_state
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/sbin/modprobe ip_conntrack
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/sbin/modprobe ipt_multiport
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/sbin/modprobe iptable_mangle
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -I PREROUTING -t nat -p tcp -s &lt;span class="nv"&gt;$rede_interna&lt;/span&gt; –dport &lt;span class="m"&gt;80&lt;/span&gt; -j REDIRECT –to-port &lt;span class="m"&gt;3128&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -t nat -I POSTROUTING -s &lt;span class="nv"&gt;$rede_interna&lt;/span&gt; -j MASQUERADE
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -A FORWARD -s &lt;span class="nv"&gt;$rede_interna&lt;/span&gt; -d loginnet.passport.com -j REJECT
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Permissao de execução&lt;/p&gt;</description></item></channel></rss>

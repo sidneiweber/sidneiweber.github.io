@@ -1,16 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Openfire - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/openfire/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Sep 2009 12:19:12 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/openfire/index.xml" rel="self" type="application/rss+xml"/><item><title>Atualizar Openfire</title><link>https://sidneiweber.com.br/atualizar-openfire/</link><pubDate>Tue, 29 Sep 2009 12:19:12 -0300</pubDate><guid>https://sidneiweber.com.br/atualizar-openfire/</guid><description>&lt;p>Uma dúvida muito constante dos usuários Openfire é como fazer para atualizarem seu servidor para uma versão mais recente.&lt;/p>
-&lt;p>Segue então um pequeno howto (adaptado do orginal da Ignite Realtime):&lt;/p>
-&lt;ul>
-&lt;li>Pare o Openfire&lt;/li>
-&lt;li>Faça um backup do diretório de instalação do Openfire (isso é preciso porque ao abrir o novo .tar.gz ou .zip os dados serão sobreescritos). No meu caso, que mantenho o openfire no /opt, um simples mv /opt/openfire /opt/openfire.old já resolve.&lt;/li>
-&lt;li>Backupeie o banco de dados (se você usar o DB interno, isso já foi feito no passo anterior). Se você usa MySQL, por exemplo, um simples mysqldump da base já resolve.&lt;/li>
-&lt;li>Abra o .tar.gz ou .zip (isso irá criar um novo diretório openfire, se você moveu o anterior, como eu costumo fazer)&lt;/li>
-&lt;li>Copie o diretório conf do backup para a nova instalação.&lt;/li>
-&lt;li>Se você usar o DB interno, copie o diretório embedded-db do backup para a nova instalação.&lt;/li>
-&lt;li>Copie o diretório enterprise do backup para a nova instalação (se ele existir)&lt;/li>
-&lt;li>Copie o diretório plugins do backup para a nova instalação, exceto por _plugins/admin_ (esse passo eu dispenso, e sempre instalo os plugins novamente, já que as configurações e dados dos mesmos estão no DB)&lt;/li>
-&lt;li>Copie os arquivos modificados localizados em resources/security do backup para a nova instalação.&lt;/li>
-&lt;li>Inicie o Openfire.&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ul>
-&lt;p>Voilà. Seu servidor está atualizado e no ar novamente.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Openfire on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/openfire/</link><description>Recent content in Openfire on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Tue, 29 Sep 2009 12:19:12 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/openfire/index.xml" rel="self" type="application/rss+xml"/><item><title>Atualizar Openfire</title><link>https://sidneiweber.com.br/posts/atualizar-openfire/</link><pubDate>Tue, 29 Sep 2009 12:19:12 -0300</pubDate><guid>https://sidneiweber.com.br/posts/atualizar-openfire/</guid><description>&lt;p&gt;Uma dúvida muito constante dos usuários Openfire é como fazer para atualizarem seu servidor para uma versão mais recente.&lt;/p&gt;
+&lt;p&gt;Segue então um pequeno howto (adaptado do orginal da Ignite Realtime):&lt;/p&gt;</description></item></channel></rss>

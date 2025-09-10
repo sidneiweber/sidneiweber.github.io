@@ -1,786 +1,386 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/linux/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Jun 2021 11:00:00 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Simular tráfego de usuário para um servidor</title><link>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</link><pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</guid><description> Quando queremos testar algumas coisas servidor, como teste de carga ou teste de desempenho podemos utilizar essa ferramenta que simula conexões dos usuários.</description></item><item><title>Criando arquivo de SWAP no Linux</title><link>https://sidneiweber.com.br/criando-araquivo-swap-linux/</link><pubDate>Fri, 29 Jan 2021 22:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/criando-araquivo-swap-linux/</guid><description>&lt;h2 id="o-que-é-o-swap" class="heading-element">&lt;span>O que é o SWAP&lt;/span>
- &lt;a href="#o-que-%c3%a9-o-swap" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>SWAP é um espaço no disco que é utilizado quando a quantidade de memória RAM física está cheia. Quando um sistema Linux fica sem RAM, os blocos de memória inativos são movidos da RAM para a área de SWAP.&lt;/p></description></item><item><title>Como redimensionar volume EBS no Linux sem downtime</title><link>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</link><pubDate>Fri, 13 Mar 2020 21:54:28 +0000</pubDate><guid>https://sidneiweber.com.br/como-redimensionar-volume-ebs-no-linux-sem-downtime/</guid><description>&lt;p>Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.&lt;/p>
-&lt;p>Alterações em produção? Nesse caso sim :)&lt;/p>
-&lt;ul>
-&lt;li>Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços&lt;/li>
-&lt;li>Clicamos em &amp;ldquo;Volumes&amp;rdquo; no menu &lt;strong>&amp;ldquo;ELASTIC BLOCK STORE&amp;rdquo;&lt;/strong>&lt;/li>
-&lt;li>Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em &lt;strong>&amp;ldquo;Modify Volume&amp;rdquo;&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>Verá uma janela como essa:
-&lt;img loading="lazy" src="https://sidneiweber.com.br/img/ebs/modify-volume.png" alt="Modify Volume &amp;gt;&amp;lt;" srcset="https://sidneiweber.com.br/img/ebs/modify-volume.png?size=small, https://sidneiweber.com.br/img/ebs/modify-volume.png?size=medium 1.5x, https://sidneiweber.com.br/img/ebs/modify-volume.png?size=large 2x" data-title="Modify Volume &amp;gt;&amp;lt;" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p></description></item><item><title>Exemplos de uso do comando ping</title><link>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</link><pubDate>Fri, 26 Apr 2019 09:56:31 -0300</pubDate><guid>https://sidneiweber.com.br/exemplos-de-uso-do-comando-ping/</guid><description>&lt;p>Segundo o Wikipédia ping é …&lt;/p>
-&lt;p>“&lt;strong>Ping&lt;/strong> ou &lt;strong>latência&lt;/strong> como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &amp;ldquo;pong&amp;rdquo;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. ”&lt;/p></description></item><item><title>Convertendo arquivos DOS ^M com Vim</title><link>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</link><pubDate>Tue, 06 Nov 2018 10:03:27 -0300</pubDate><guid>https://sidneiweber.com.br/convertendo-arquivos-dos-m-com-vim/</guid><description>&lt;p>Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.&lt;/p>
-&lt;p>Existem algumas formas de corrigir esse problema, a mais conhecida é usando o aplicativo &lt;a href="https://sourceforge.net/projects/dos2unix"target="_blank" rel="external nofollow noopener noreferrer">dos2unix&lt;/a>&lt;/p>
-&lt;p>Mas o quero apresentar hoje é usando o poderoso &lt;strong>Vim.&lt;/strong> Basta estando dentro do arquivo digitar o comando abaixo:&lt;/p></description></item><item><title>Comando fuser - Quem mexeu no meu arquivo</title><link>https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/</link><pubDate>Tue, 06 Nov 2018 09:28:53 -0300</pubDate><guid>https://sidneiweber.com.br/comando-fuser-quem-mexeu-no-meu-arquivo/</guid><description>&lt;p>O &lt;strong>fuser&lt;/strong> é um programa que permite que saibamos qual processo está utilizando determinado arquivo, socket (portas) e sistema de arquivos especificado. Aprender sua manipulação é essencial para poder administrar um servidor para saber o que está acontecendo principalmente nas conexões. É um comando extremamente flexível, vamos ver suas opções e seu uso.&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: center">Diretiva&lt;/th>
- &lt;th style="text-align: center">Descrição&lt;/th>
- &lt;th style="text-align: center">Exemplo&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: center">-a, &amp;ndash;all&lt;/td>
- &lt;td style="text-align: center">Mostra todos os arquivos, inclusive os que estão sem uso&lt;/td>
- &lt;td style="text-align: center">fuser -a *&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-k, &amp;ndash;kill&lt;/td>
- &lt;td style="text-align: center">Desativa/Mata os processos que estão utilizando determinado arquivo&lt;/td>
- &lt;td style="text-align: center">fuser -k /home/zonebin&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-i, &amp;ndash;interactive&lt;/td>
- &lt;td style="text-align: center">Pede confirmação sempre que for matar um processo utilizando um arquivo&lt;/td>
- &lt;td style="text-align: center">fuser -ik /home/zonebin&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-m, &amp;ndash;mount&lt;/td>
- &lt;td style="text-align: center">Especifica um sistema de arquivos para descobrir qual processo está sendo utilizado&lt;/td>
- &lt;td style="text-align: center">fuser -m /dev/sda1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-s, &amp;ndash;silent&lt;/td>
- &lt;td style="text-align: center">Realiza as operações indicadas silenciosamente, não use a opção -a, -u, -v&lt;/td>
- &lt;td style="text-align: center">fuser -ks /home&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-u, &amp;ndash;user&lt;/td>
- &lt;td style="text-align: center">Mostra o nome de usuário que iniciou o processo que está utilizando o arquivo&lt;/td>
- &lt;td style="text-align: center">fuser -u /var/log/messages&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-4, &amp;ndash;ipv4&lt;/td>
- &lt;td style="text-align: center">Mostra processos de IPV4 somente&lt;/td>
- &lt;td style="text-align: center">fuser -4 ssh/tcp -6&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: center">-ipv6&lt;/td>
- &lt;td style="text-align: center">Mostra somente processos de sockets IPV6&lt;/td>
- &lt;td style="text-align: center">fuser -6 25/tcp&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>Tipos de acesso:&lt;/strong>&lt;br>
-c  Diretório atual&lt;br>
-e  Arquivo executável rodando&lt;br>
-f  Arquivo aberto (omitido no modo de display padrão)&lt;br>
-F  arquivo aberto para escrita (omitido no modo de display padrão)&lt;br>
-r  Diretório root&lt;br>
-m  Arquivo mapeado ou biblioteca compartilhada&lt;/p></description></item><item><title>Review Emmi Linux por O Cara do TI [Vídeo]</title><link>https://sidneiweber.com.br/review-emmi-linux-por-o-cara-do-ti/</link><pubDate>Mon, 02 Jul 2018 19:52:42 -0300</pubDate><guid>https://sidneiweber.com.br/review-emmi-linux-por-o-cara-do-ti/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/dNl5cblJNhs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div></description></item><item><title>Review Emmi Linux por Prof. Juliano Ramos [Vídeo]</title><link>https://sidneiweber.com.br/review-emmi-linux-por-prof-juliano-ramos/</link><pubDate>Mon, 02 Jul 2018 19:51:27 -0300</pubDate><guid>https://sidneiweber.com.br/review-emmi-linux-por-prof-juliano-ramos/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/rUNrFIn9gT8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div></description></item><item><title>Reconhecer HD novo Linux sem reiniciar</title><link>https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/</link><pubDate>Tue, 30 Jan 2018 20:53:54 -0300</pubDate><guid>https://sidneiweber.com.br/reconhecer-hd-novo-linux-sem-reiniciar/</guid><description>&lt;p>Hoje vamos a mais uma dica rápida. Pra que usa seus servidores virtualizados e precisa adicionar um novo HD seja por falta de espaço ou pelo motivo que for, não precisa reiniciar o servidor para ter o HD reconhecido. Basta apenas executar um simples comando que ordena um &amp;ldquo;scan&amp;rdquo; no barramento.&lt;/p>
-&lt;p>Vale lembrar também que essa dica é para virtualizações com Hot plug habilitado.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;- – -&amp;#34;&lt;/span> &amp;gt; /sys/class/scsi_host/host0/scan&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Obrigado e até a próxima.&lt;/p></description></item><item><title>Configurar sudo sem senha</title><link>https://sidneiweber.com.br/configurar-sudo-sem-senha/</link><pubDate>Fri, 01 Dec 2017 21:29:13 -0300</pubDate><guid>https://sidneiweber.com.br/configurar-sudo-sem-senha/</guid><description>&lt;p>Para configurar o uso do uso sem senha, o que não é recomendado, somente em casos de algum programa precise de permissão para executar determinado comando. Podemos usar como exemplo o Zabbix que quer rodar algum programa com privilégio de root sem comprometer a segurança. O arquivo a ser editado será o /etc/sudoers:&lt;/p>
-&lt;p>Configurar sudo sem senha para tudo:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">zabbix &lt;span class="nv">ALL&lt;/span>&lt;span class="o">=&lt;/span>NOPASSWD: ALL&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Ou podemos configurar para executar somente algo em específico:&lt;/p></description></item><item><title>Hora mais legível no dmesg</title><link>https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/</link><pubDate>Fri, 20 Oct 2017 22:34:17 -0300</pubDate><guid>https://sidneiweber.com.br/hora-mais-legivel-no-dmesg/</guid><description>&lt;p>Saída padrão do &lt;strong>dmesg:&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 7515.054630&lt;span class="o">]&lt;/span> CPU7: Core temperature above threshold, cpu clock throttled &lt;span class="o">(&lt;/span>total &lt;span class="nv">events&lt;/span> &lt;span class="o">=&lt;/span> 29938&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 7515.055666&lt;span class="o">]&lt;/span> CPU3: Core temperature/speed normal
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 7515.055668&lt;span class="o">]&lt;/span> CPU7: Core temperature/speed normal
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 9253.929870&lt;span class="o">]&lt;/span> CPU4: Core temperature above threshold, cpu clock throttled &lt;span class="o">(&lt;/span>total &lt;span class="nv">events&lt;/span> &lt;span class="o">=&lt;/span> 5697&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 9253.929873&lt;span class="o">]&lt;/span> CPU0: Core temperature above threshold, cpu clock throttled &lt;span class="o">(&lt;/span>total &lt;span class="nv">events&lt;/span> &lt;span class="o">=&lt;/span> 5697&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 9253.930911&lt;span class="o">]&lt;/span> CPU4: Core temperature/speed normal
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> 9253.930913&lt;span class="o">]&lt;/span> CPU0: Core temperature/speed normal&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Saída do comando &lt;strong>dmesg -T:&lt;/strong>&lt;/p></description></item><item><title>Bloquear resposta ao ping com sysctl</title><link>https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/</link><pubDate>Fri, 20 Oct 2017 22:21:16 -0300</pubDate><guid>https://sidneiweber.com.br/bloquear-resposta-ao-ping-com-sysctl/</guid><description>&lt;p>A dica de hoje é super rápida e prática, para bloquear as respostas de ping podemos usar o comando sysctl:&lt;/p>
-&lt;p>Para bloquear:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sysctl -w net.ipv4.icmp_echo_ignore_all&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Para desbloquear:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sysctl -w net.ipv4.icmp_echo_ignore_all&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Alterar politica de senhas no Linux com PAM</title><link>https://sidneiweber.com.br/alterar-politica-de-senhas-no-linux/</link><pubDate>Tue, 17 Oct 2017 12:41:59 -0300</pubDate><guid>https://sidneiweber.com.br/alterar-politica-de-senhas-no-linux/</guid><description>&lt;p>Para podermos ter um controle maior sobre a segurança dos nossos sistemas e rede de computadores, podemos definir uma política de senhas onde as mesmas devem ter um grau alto de dificuldade. Podendo definir quantidade de caracteres especiais, números, tamanho da senha, tempo que ela vai expirar, não repetir a mesma senha digitada anteriormente, etc.&lt;/p>
-&lt;p>Como não podemos confiar totalmente nas instruções passadas para os usuários, devemos forçar essas opções. Usaremos o pam para realizar esses ajustes.&lt;/p></description></item><item><title>Extensões de arquivos no Linux</title><link>https://sidneiweber.com.br/extensoes-de-arquivos-no-linux/</link><pubDate>Tue, 19 Sep 2017 13:30:06 -0300</pubDate><guid>https://sidneiweber.com.br/extensoes-de-arquivos-no-linux/</guid><description>&lt;p>Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tipo de arquivo é reconhecido pelo seu conteúdo e não pela sua extensão. Mas para facilitar a vida é bom conhecer algumas extensões no Linux.&lt;/p>
-&lt;h4 id="span-idarquivos_executaveisarquivos-executáveisspan" class="heading-element">&lt;span>&lt;span id="Arquivos_Executaveis">Arquivos Executáveis&lt;/span>&lt;/span>
- &lt;a href="#span-idarquivos_executaveisarquivos-execut%c3%a1veisspan" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;p>&lt;strong>out&lt;/strong>: formato binário usado nas primeiras versões do GNU/Linux&lt;br>
-&lt;strong>pl&lt;/strong>: script em linguagem Perl&lt;br>
-&lt;strong>py&lt;/strong>: script em linguagem Python&lt;br>
-&lt;strong>sh&lt;/strong>: script de shell, usado para criar pequenos programas&lt;/p></description></item><item><title>Dica rápida - Verificar pastas que ocupam mais espaço</title><link>https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</link><pubDate>Thu, 17 Aug 2017 13:15:51 -0300</pubDate><guid>https://sidneiweber.com.br/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</guid><description>&lt;p>Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">du -Sh &lt;span class="p">|&lt;/span> sort -rh &lt;span class="p">|&lt;/span> head -5&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h4 id="saida" class="heading-element">&lt;span>Saida:&lt;/span>
- &lt;a href="#saida" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">2,1G	./log/journal/457f9ec73a36473ab3a70f2a1ebce863
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">196M	./lib/mysql
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">189M	./lib/docker/aufs/diff/105ad3b8329fb9264b17543f7d70746b1c330f18523f27cdee5ad3fdff966697/usr/bin
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">116M	./lib/nvidia
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">111M	./lib/docker/aufs/diff/105ad3b8329fb9264b17543f7d70746b1c330f18523f27cdee5ad3fdff966697/usr/share/cattle/0e44936b6b56ae4372799b0f48e6e934/WEB-INF/lib&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h4 id="explicando" class="heading-element">&lt;span>Explicando:&lt;/span>
- &lt;a href="#explicando" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;p>O comando &lt;strong>du&lt;/strong> faz a verificação do uso das pastas em si;&lt;br>
-O comando &lt;strong>sort&lt;/strong> faz a ordenação do maior pro menor;&lt;br>
-E o comando &lt;strong>head&lt;/strong> mostra os 5 primeiros, pode ser usado qualquer quantidade.&lt;/p></description></item><item><title>Gerar lista de pacotes instalados no Debian, Ubuntu, etc</title><link>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</link><pubDate>Thu, 22 Jun 2017 13:22:53 -0300</pubDate><guid>https://sidneiweber.com.br/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</guid><description>&lt;p>Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o &lt;strong>dpkg&lt;/strong> para isso. Pode ser muito útil na hora de criar sistemas com a mesma base&lt;/p>
-&lt;h4 id="gerando-lista-de-pacotes" class="heading-element">&lt;span>Gerando lista de pacotes&lt;/span>
- &lt;a href="#gerando-lista-de-pacotes" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo dpkg --get-selections &amp;gt; install.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h4 id="instalando-pacotes-a-partir-da-lista" class="heading-element">&lt;span>Instalando pacotes a partir da lista&lt;/span>
- &lt;a href="#instalando-pacotes-a-partir-da-lista" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo dpkg --set-selections &amp;lt; install.list
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get -y update
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get dselect-upgrade&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;a href="http://www.dicas-l.com.br/dicas-l/20161025.php"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Instalando servidor DHCP</title><link>https://sidneiweber.com.br/instalando-servidor-dhcp/</link><pubDate>Mon, 06 Mar 2017 14:55:51 -0300</pubDate><guid>https://sidneiweber.com.br/instalando-servidor-dhcp/</guid><description>&lt;h3 id="definição" class="heading-element">&lt;span>Definição:&lt;/span>
- &lt;a href="#defini%c3%a7%c3%a3o" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Resumidamente, o DHCP opera da seguinte forma:&lt;/p></description></item><item><title>Introdução Firewall Iptables - Começando</title><link>https://sidneiweber.com.br/introducao-firewall-iptables-comecando/</link><pubDate>Wed, 15 Feb 2017 10:44:41 -0300</pubDate><guid>https://sidneiweber.com.br/introducao-firewall-iptables-comecando/</guid><description>&lt;h3 id="conceito-de-firewall" class="heading-element">&lt;span>Conceito de Firewall:&lt;/span>
- &lt;a href="#conceito-de-firewall" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.&lt;br>
-Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o  redirecinamento correto, servindo de filtro.&lt;/p></description></item><item><title>Alterando hostname sem reiniciar computador</title><link>https://sidneiweber.com.br/alterando-hostname-sem-reiniciar-computador/</link><pubDate>Fri, 03 Feb 2017 14:15:55 -0300</pubDate><guid>https://sidneiweber.com.br/alterando-hostname-sem-reiniciar-computador/</guid><description>&lt;p>Para podermos alterar o nome da máquina sem precisar reiniciar é muito simples. Primeiramente precisamos alterar o arquivo /etc/hostname. Mas após a alteração notamos que o nome não muda, mesmo dando o comando hostname, o nome continua o antigo. Para essa alteração valer sem precisar reiniciar, pois as vezes pode se tratar de um servidor que não pode parar no momento, basta digitar o comando abaixo:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;novo-hostname&amp;#34;&lt;/span> &amp;gt; /proc/sys/kernel/hostname&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Pronto, problema resolvido.&lt;/p></description></item><item><title>Usando o bashrc como uma ferramenta de trabalho</title><link>https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</link><pubDate>Fri, 16 Dec 2016 15:45:29 -0300</pubDate><guid>https://sidneiweber.com.br/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</guid><description>&lt;p>Segue o meu .bashrc com vários atalhos e alterações.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;span class="lnt">38
-&lt;/span>&lt;span class="lnt">39
-&lt;/span>&lt;span class="lnt">40
-&lt;/span>&lt;span class="lnt">41
-&lt;/span>&lt;span class="lnt">42
-&lt;/span>&lt;span class="lnt">43
-&lt;/span>&lt;span class="lnt">44
-&lt;/span>&lt;span class="lnt">45
-&lt;/span>&lt;span class="lnt">46
-&lt;/span>&lt;span class="lnt">47
-&lt;/span>&lt;span class="lnt">48
-&lt;/span>&lt;span class="lnt">49
-&lt;/span>&lt;span class="lnt">50
-&lt;/span>&lt;span class="lnt">51
-&lt;/span>&lt;span class="lnt">52
-&lt;/span>&lt;span class="lnt">53
-&lt;/span>&lt;span class="lnt">54
-&lt;/span>&lt;span class="lnt">55
-&lt;/span>&lt;span class="lnt">56
-&lt;/span>&lt;span class="lnt">57
-&lt;/span>&lt;span class="lnt">58
-&lt;/span>&lt;span class="lnt">59
-&lt;/span>&lt;span class="lnt">60
-&lt;/span>&lt;span class="lnt">61
-&lt;/span>&lt;span class="lnt">62
-&lt;/span>&lt;span class="lnt">63
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Cor Verde (Usuario comum)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PS1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Cor Vermelha (root)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\$ &amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Completion&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f /etc/bash_completion &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> . /etc/bash_completion
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Configurações Historico&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">HISTIGNORE&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&amp;amp;:ls:[bf]g:exit:reset:clear:cd*&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">HISTSIZE&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">4096&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">HISTCONTROL&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;ignoreboth:erasedups&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">shopt&lt;/span> -s histreedit&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Mans coloridas&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">MANPAGER&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;/usr/bin/most -s&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Alias&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">update&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;pacman -Syu&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">ls&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;ls --color=auto&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">grep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;grep --color=auto&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">fgrep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;fgrep --color=auto&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">egrep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;egrep --color=auto&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Extração de arquivos&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Uso: extrair &amp;lt; arquivo &amp;gt; &lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">extrair&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f &lt;span class="nv">$1&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">case&lt;/span> &lt;span class="nv">$1&lt;/span> in
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar.bz2&lt;span class="o">)&lt;/span> tar xvjf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar.gz&lt;span class="o">)&lt;/span> tar xvzf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar.xz&lt;span class="o">)&lt;/span> tar xvJf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.bz2&lt;span class="o">)&lt;/span> bunzip2 &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.rar&lt;span class="o">)&lt;/span> unrar x &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.gz&lt;span class="o">)&lt;/span> gunzip &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tar&lt;span class="o">)&lt;/span> tar xvf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tbz2&lt;span class="o">)&lt;/span> tar xvjf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.tgz&lt;span class="o">)&lt;/span> tar xvzf &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.zip&lt;span class="o">)&lt;/span> unzip &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.Z&lt;span class="o">)&lt;/span> uncompress &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.7z&lt;span class="o">)&lt;/span> 7z x &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.xz&lt;span class="o">)&lt;/span> unxz &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*.exe&lt;span class="o">)&lt;/span> cabextract &lt;span class="nv">$1&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*&lt;span class="o">)&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;\`&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#39;: unrecognized file compression&amp;#34;&lt;/span> &lt;span class="p">;;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">esac&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;\`&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#39; is not a valid file&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Misc&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">musica&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;mocp -m /media/Documentos/Musica/&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Top 10 ( mostra os 10 comandos mais utilizados ). copyright 2007 - 2010 Christopher Bratusek &lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">function&lt;/span> top10&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">history&lt;/span> &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{a[$2]++ } END{for(i in a){print a[i] &amp;#34; &amp;#34; i}}&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> sort -rn &lt;span class="p">|&lt;/span> head
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># alisa previsao tempo&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> &lt;span class="nv">tempo&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;curl http://wttr.in/sapiranga&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Comandos de manipulação de permissões no Linux</title><link>https://sidneiweber.com.br/comandos-de-manipulacao-de-permissoes-no-linux/</link><pubDate>Tue, 13 Dec 2016 15:54:07 -0300</pubDate><guid>https://sidneiweber.com.br/comandos-de-manipulacao-de-permissoes-no-linux/</guid><description>&lt;h2 id="entenda-um-pouco-o-sistema-de-permissões-no-sistema-linux" class="heading-element">&lt;span>Entenda um pouco o sistema de permissões no sistema Linux&lt;/span>
- &lt;a href="#entenda-um-pouco-o-sistema-de-permiss%c3%b5es-no-sistema-linux" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>Pelo fato do Linux ser multiusuário, as permissões deve estar bem alinhadas para que o usuário tenha acesso somente aquilo que é de seu direito, incluindo pastas, arquivos e inclusive periféricos, como impressoras e drivers de CD por exemplo.&lt;br>
-A Estrtutura básica das permissões é separada em três classes:&lt;/p></description></item><item><title>[Dica rápida] Meus 10 comandos mais rodados no linux</title><link>https://sidneiweber.com.br/dica-rapida-meus-10-comandos-mais-rodados-no-linux/</link><pubDate>Mon, 28 Nov 2016 15:39:52 -0300</pubDate><guid>https://sidneiweber.com.br/dica-rapida-meus-10-comandos-mais-rodados-no-linux/</guid><description>&lt;p>Com este comando podemos conferir quais os 10 comandos mais rodados em nossa máquina:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">history&lt;span class="p">|&lt;/span>awk &lt;span class="s1">&amp;#39;{print $2}&amp;#39;&lt;/span>&lt;span class="p">|&lt;/span>awk &lt;span class="s1">&amp;#39;BEGIN {FS=&amp;#34;|&amp;#34;} {print $1}&amp;#39;&lt;/span>&lt;span class="p">|&lt;/span>sort&lt;span class="p">|&lt;/span>uniq -c&lt;span class="p">|&lt;/span>sort -rn&lt;span class="p">|&lt;/span>head -10&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Meu resultado foi:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">history&lt;span class="p">|&lt;/span>awk &lt;span class="s1">&amp;#39;{print $2}&amp;#39;&lt;/span>&lt;span class="p">|&lt;/span>awk &lt;span class="s1">&amp;#39;BEGIN {FS=&amp;#34;|&amp;#34;} {print $1}&amp;#39;&lt;/span>&lt;span class="p">|&lt;/span>sort&lt;span class="p">|&lt;/span>uniq -c&lt;span class="p">|&lt;/span>sort -rn&lt;span class="p">|&lt;/span>head -10
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">248&lt;/span> sudo
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">148&lt;/span> vi
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">101&lt;/span> sh
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">49&lt;/span> ping
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">49&lt;/span> ls
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">40&lt;/span> systemctl
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">38&lt;/span> ifconfig
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">38&lt;/span> htop
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">31&lt;/span> ps
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">26&lt;/span> du
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sidnei@black:~$&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Reforçando segurança servidor ssh</title><link>https://sidneiweber.com.br/reforcando-seguranca-servidor-ssh/</link><pubDate>Wed, 23 Nov 2016 10:07:22 -0300</pubDate><guid>https://sidneiweber.com.br/reforcando-seguranca-servidor-ssh/</guid><description>&lt;h3 id="introdução" class="heading-element">&lt;span>Introdução&lt;/span>
- &lt;a href="#introdu%c3%a7%c3%a3o" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Nos dias de hoje é de suma importância proteger nossos servidores contra ataques e invasões. Nesse caso especifico do ssh é importante mantê-lo bem seguro pois é a nossa porta de entrada para o servidor, qualquer brecha pode causar uma catástrofe. Não devemos pensar que por ser um servidor de uma pequena empresa ou um &lt;a href="https://www.melhorhospedagemdesites.com/servidor-vps/"target="_blank" rel="external nofollow noopener noreferrer">servidor VPS&lt;/a> que não devemos ter esse cuidado, hoje a informação disponível pode estar valendo muito. É uma questão de segurança básica que devemos estar atentos para não termos dores de cabeça e continuar com nossos servidores e serviços intactos.&lt;/p></description></item><item><title>Gestão corporativa com Software Livre</title><link>https://sidneiweber.com.br/gestao-corporativa-com-software-livre/</link><pubDate>Wed, 05 Oct 2016 12:41:19 -0300</pubDate><guid>https://sidneiweber.com.br/gestao-corporativa-com-software-livre/</guid><description>&lt;p>Segue um trabalho que fiz na faculdade sobre gestão corporativa com software livre.&lt;/p>
-&lt;p>&lt;a href="https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000"target="_blank" rel="external nofollow noopener noreferrer">&lt;img loading="lazy" src="https://sidneiweber.com.br/img/gestao_corporativa.png" alt="Video" srcset="https://sidneiweber.com.br/img/gestao_corporativa.png?size=small, https://sidneiweber.com.br/img/gestao_corporativa.png?size=medium 1.5x, https://sidneiweber.com.br/img/gestao_corporativa.png?size=large 2x" data-title="Video" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;/p>
-&lt;p>Também listarei aqui meu rascunho para apresentação do slide, caso alguem tenha interesse.&lt;/p>
-&lt;h3 id="slide-1--apresentação" class="heading-element">&lt;span>Slide 1 = Apresentação&lt;/span>
- &lt;a href="#slide-1--apresenta%c3%a7%c3%a3o" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Assunto&lt;br>
-Nome&lt;/p></description></item><item><title>Instalar Java 8 no Manjaro/Archlinux</title><link>https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/</link><pubDate>Thu, 12 Nov 2015 00:10:33 -0300</pubDate><guid>https://sidneiweber.com.br/instalar-java-8-no-manjaroarchlinux/</guid><description>&lt;p>Primeiro atualize o sistema&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pacman -Sy&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Após isso baixamos a última versão (Na data da postagem essa era última versão)&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">wget http://javadl.sun.com/webapps/download/AutoDL?BundleId&lt;span class="o">=&lt;/span>&lt;span class="m">111679&lt;/span> -O Java-latest&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Descompactamos&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">tar -zxvf Java-latest&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Copiamos para a pasta correta&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">cp -pr jre1.8.0_60 /opt&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Criamos o link para o programa&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">ln -s /opt/jre1.8.0_60/bin/java /usr/bin/java&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>E o link para os plugins:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">ln  -s /opt/jre1.8.0_65/lib/amd64/libnpjp2.so  ~/.mozilla/plugins/libnpjp2.so&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;a href="http://www.unixmen.com/install-java-8-manjaroarchlinux/"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Colocando uma firula no terminal</title><link>https://sidneiweber.com.br/colocando-uma-firula-no-terminal/</link><pubDate>Mon, 06 Jul 2015 15:48:53 -0300</pubDate><guid>https://sidneiweber.com.br/colocando-uma-firula-no-terminal/</guid><description>&lt;p>Editar o arquivo .bashrc e adicionar a linha a seguir&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#PS1=&amp;#39;[u@h W]$ &amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PS1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;┌─[u@h W][e[0;32m][${cwd}t][&amp;lt;wbr /&amp;gt;033[0m] ${fill}n[\033[0m]└─■ &amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Backup Mysql - Linha comando</title><link>https://sidneiweber.com.br/backup-mysql-linha-comando/</link><pubDate>Mon, 06 Jul 2015 15:48:02 -0300</pubDate><guid>https://sidneiweber.com.br/backup-mysql-linha-comando/</guid><description>&lt;p>Backup de uma base específica&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">mysqldump --database -d NOME DA BASE DE DADOS -u USUARIO -p &amp;gt; c:meu_db.sql&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Backup de todas as bases&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">mysqldump --all-databases -u USUARIO -p &amp;gt; meu_mysql.sql&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Diminuindo tentativas de invasão via SSH</title><link>https://sidneiweber.com.br/diminuindo-tentativas-de-invasao-via-ssh/</link><pubDate>Mon, 06 Jul 2015 15:45:47 -0300</pubDate><guid>https://sidneiweber.com.br/diminuindo-tentativas-de-invasao-via-ssh/</guid><description>&lt;p>Dentro do arquivo &lt;code>/etc/ssh/sshd_config&lt;/code> altere as seguintes linhas:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">LoginGraceTime 2m
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">MaxStartups 3:50:6&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Explicando:&lt;/p>
-&lt;p>O primeiro parâmetro informa que a conexão será cortada caso fique inativa por 2 minutos.&lt;/p>
-&lt;p>O segundo quer dizer que depois de 3 tentativas não autenticadas, 50% das conexões do IP são recusadas e quando o número de de tentavivas chegar a 6 todas as tentativas de conexões do IP serão recusadas.&lt;/p>
-&lt;p>Fonte: Dicas-l&lt;/p></description></item><item><title>Utilizando o Crontab</title><link>https://sidneiweber.com.br/utilizando-o-crontab/</link><pubDate>Mon, 06 Jul 2015 15:45:15 -0300</pubDate><guid>https://sidneiweber.com.br/utilizando-o-crontab/</guid><description>&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Comando&lt;/th>
- &lt;th>Função&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>crontab -e&lt;/td>
- &lt;td>Edita o crontab atual do usuário&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>crontab -l&lt;/td>
- &lt;td>Exibe o atual conteúdo do crontab do usuário&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>crontab -r&lt;/td>
- &lt;td>Remove o crontab do usuário&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>A linha é dividida em 6 campos separados por tabs ou espaço:&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Campo&lt;/th>
- &lt;th>Função&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>1°&lt;/td>
- &lt;td>Minuto&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2°&lt;/td>
- &lt;td>Hora&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>3°&lt;/td>
- &lt;td>Dia do mês&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>4°&lt;/td>
- &lt;td>Mês&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>5°&lt;/td>
- &lt;td>Dia da semana&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>6°&lt;/td>
- &lt;td>Programa para execução&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Campo&lt;/th>
- &lt;th>Valores&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Minuto&lt;/td>
- &lt;td>0-59&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Hora&lt;/td>
- &lt;td>0-23&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Dia do mês&lt;/td>
- &lt;td>1-31&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Mês&lt;/td>
- &lt;td>1-12&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Dia da semana&lt;/td>
- &lt;td>0-6 (o “0″ é domingo), 1 é segunda, etc.&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;a href="http://www.devin.com.br/crontab/"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Atalhos úteis para a linha de comando</title><link>https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/</link><pubDate>Mon, 06 Jul 2015 15:38:45 -0300</pubDate><guid>https://sidneiweber.com.br/atalhos-uteis-para-a-linha-de-comando/</guid><description>&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Atalho&lt;/th>
- &lt;th>Ação&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Ctrl+A&lt;/td>
- &lt;td>move o cursor para o começo da linha&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+E&lt;/td>
- &lt;td>move o cursor para o fim da linha&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Alt+F&lt;/td>
- &lt;td>move o cursor para o fim da próxima palavra&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Alt+B&lt;/td>
- &lt;td>move o cursor para o começo da palavra anterior&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+T&lt;/td>
- &lt;td>troca os dois últimos caracteres de posição, por exemplos “sl” se torna “ls”&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Alt+T&lt;/td>
- &lt;td>troca as duas últimas palavras de posição, por exemplo “list cat” se torna “cat list”&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+U&lt;/td>
- &lt;td>corta o texto do começo da linha até o começo da palavra antes do cursor&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+W&lt;/td>
- &lt;td>corta apenas a palavra antes do cursor&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+K&lt;/td>
- &lt;td>cut the text of the current command after the cursor.&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+Y&lt;/td>
- &lt;td>cola o texto cortado anteriormente após o cursor. Este recurso é útil quando você acabou de digitar um comando longo e concluiu que esqueceu de fazer algo antes&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Alt+U&lt;/td>
- &lt;td>converte para maiúsculas próxima palavra&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Alt+L&lt;/td>
- &lt;td>converte para minúsculas a próxima palavra&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Alt+C&lt;/td>
- &lt;td>converte para maiúsculas a primeira letra da próxima palavra&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+L&lt;/td>
- &lt;td>limpa a tela, deixando a linha corrente no topo&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Ctrl+_&lt;/td>
- &lt;td>undo (incremental).&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;a href="http://www.quora.com/Bash-shell/What-are-some-useful-Bash-tricks"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>netstat -putona - Um comando para monitorar as conexões de rede</title><link>https://sidneiweber.com.br/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/</link><pubDate>Mon, 06 Jul 2015 15:37:42 -0300</pubDate><guid>https://sidneiweber.com.br/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">netstat -putona&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Onde os parâmetros significam:&lt;/p>
-&lt;p>p Mostra as conexões para o protocolo especificado pelo TCP ou UDP&lt;br>
-u Lista todas as portas UDP&lt;br>
-t Lista portas em TCP&lt;br>
-o Exibe temporizadores&lt;br>
-n Exibe o número da porta&lt;br>
-a Exibe todas as conexões do sistema ativo&lt;/p>
-&lt;p>Por exemplo, para saber que processo ocupa a porta 1521 pode utilizar:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">netstat -putona &lt;span class="p">|&lt;/span> grep :1521&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;a href="http://ubuntulife.wordpress.com/2014/03/11/netstat-putona-un-comando-que-no-olvidaras-para-monitorizar-las-conexiones-en-linux/"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Instalando um dashboard para seu servidor linux</title><link>https://sidneiweber.com.br/instalando-um-dashboard-para-seu-servidor-linux/</link><pubDate>Tue, 04 Feb 2014 23:31:35 -0300</pubDate><guid>https://sidneiweber.com.br/instalando-um-dashboard-para-seu-servidor-linux/</guid><description>&lt;p>&lt;img loading="lazy" src="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png" alt="dash &amp;gt;&amp;lt;" srcset="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?size=small, https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?size=medium 1.5x, https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?size=large 2x" data-title="dash &amp;gt;&amp;lt;" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /var/www/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/afaqurk/linux-dash.git
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum -y install php php-common php-gd php-mbstring php-xml php-xmlrpc
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/etc/init.d/httpd start&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Agora acesse: &lt;a href="http://endereco.ip.do.server/linux-dash"target="_blank" rel="external nofollow noopener noreferrer">http://endereco.ip.do.server/linux-dash&lt;/a>&lt;/p>
-&lt;p>&lt;a href="http://www.ricardomartins.com.br/dashboard-lindao-para-seu-servidor-linux/"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Configurando troca de senha de usuário no próximo login</title><link>https://sidneiweber.com.br/configurando-troca-de-senha-de-usuario-no-proximo-login/</link><pubDate>Sun, 12 Jan 2014 18:51:44 -0300</pubDate><guid>https://sidneiweber.com.br/configurando-troca-de-senha-de-usuario-no-proximo-login/</guid><description>&lt;p>Para isso, utilizaremos o comando chage. Antes, listamos as propriedades de login deste usuário:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">chage -l&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Exemplo:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">chage -l perm
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Última mudança de senha : Jan 07, &lt;span class="m">2014&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Senha expira : nunca
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Senha inativa : nunca
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Conta expira : nunca
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Número mínimo de dias entre troca de senhas : &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Número máximo de dias entre troca de senhas : &lt;span class="m">99999&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Número de dias de avisos antes da expiração da senha : &lt;span class="m">7&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Como podemos visualizar, a senha deste usuário “nunca expira”. Então, forçaremos a expiração de senha para o próximo login que este usuário venha fazer, executando o comando a seguir:&lt;/p></description></item><item><title>Comando para saber quando foi instalado o seu Linux</title><link>https://sidneiweber.com.br/comando-para-saber-quando-foi-instalado-o-seu-linux/</link><pubDate>Wed, 20 Nov 2013 19:29:00 -0300</pubDate><guid>https://sidneiweber.com.br/comando-para-saber-quando-foi-instalado-o-seu-linux/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">ls -lct /etc &lt;span class="p">|&lt;/span> tail -1 &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{print $6, $7, $8}&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Desligar ou reiniciar o computador com hora marcada</title><link>https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/</link><pubDate>Tue, 23 Apr 2013 12:02:44 -0300</pubDate><guid>https://sidneiweber.com.br/desligar-ou-reiniciar-o-computador-com-hora-marcada/</guid><description>&lt;p>Para programar o computador para desligar em um certo horário, basta como root usar o seguinte comando:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">shutdown -h hh:mm&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Sendo que hh são as horas no formato de 24 horas e mm são os minutos.&lt;/p>
-&lt;p>Outra maneira para programar o desligamento do seu pc é usar o seguinte comando:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">shutdown -h +m&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Sendo que m é o número de minutos que você deseja até o computador desligar.&lt;/p></description></item><item><title>Mudando o nome da placa de rede</title><link>https://sidneiweber.com.br/mudando-o-nome-da-placa-de-rede/</link><pubDate>Tue, 23 Apr 2013 12:00:50 -0300</pubDate><guid>https://sidneiweber.com.br/mudando-o-nome-da-placa-de-rede/</guid><description>&lt;p>Semana passada me deparei com a seguinte situação, tinha um servidor com  duas placas de rede , eth0 e eth1 , só que a placa de rede eth0 deu pau e foi trocada, porem, quando foi instalada a nova placa o servidor reconheceu como eth2s.&lt;/p>
-&lt;p>Para resolver essa situação faça o seguinte:&lt;/p>
-&lt;p>Com o usuário root edite o arquivo:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">vi /etc/udev/rules.d/70-persistent-net.rules&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Apague as linhas:&lt;/p>
-&lt;p>&lt;img loading="lazy" src="http://ediomaico.files.wordpress.com/2011/03/70-persistent-net-rules.jpg" alt="netrules" srcset="http://ediomaico.files.wordpress.com/2011/03/70-persistent-net-rules.jpg?size=small, http://ediomaico.files.wordpress.com/2011/03/70-persistent-net-rules.jpg?size=medium 1.5x, http://ediomaico.files.wordpress.com/2011/03/70-persistent-net-rules.jpg?size=large 2x" data-title="netrules" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p></description></item><item><title>Rarcrack - Quebrando senhas de arquivos rar, 7z e zip</title><link>https://sidneiweber.com.br/rarcrack-quebrando-senhas-de-arquivos-rar-7z-e-zip/</link><pubDate>Tue, 23 Apr 2013 11:58:04 -0300</pubDate><guid>https://sidneiweber.com.br/rarcrack-quebrando-senhas-de-arquivos-rar-7z-e-zip/</guid><description>&lt;p>Ontem fiz download de um arquivo RAR e para minha surpresa o mesmo estava com senha. Antes de procurar outros links resolvi tentar quebrar a senha deste arquivo mesmo, e buscando uma solução no Google eis que acho o &lt;em>rarcrack&lt;/em>, um brute force para arquivos .rar, .zip e 7-zip.&lt;/p>
-&lt;p>Faça download do arquivo em:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="http://sourceforge.net/projects/rarcrack/files/rarcrack-0.2/%5BUnnamed%20release%5D/"target="_blank" rel="external nofollow noopener noreferrer">http://sourceforge.net/projects/rarcrack/files/rarcrack-0.2/%5BUnnamed%20release%5D/&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Feito o download, como root, navegue até a pasta onde salvou o arquivo e faça:&lt;/p></description></item><item><title>Verificar máquinas ligadas com shell script</title><link>https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/</link><pubDate>Mon, 28 Jan 2013 22:58:55 -0300</pubDate><guid>https://sidneiweber.com.br/verificar-maquinas-ligadas-do-shell-script/</guid><description>&lt;p>Estava interessado em criar uma forma de scannear a rede para saber quantos micros estavam conectados a ela, saber nome, grupo, MAC ADDRESS.&lt;/p>
-&lt;p>Para que o script funcione será preciso instalar alguns softwares:&lt;/p>
-&lt;p>dialog:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get install dialog&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>nmap:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get install nmap&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Copie o código e cole em um arquivo texto e salve com um nome de sua preferência, de permissão para executar (chmod +x nome_do_arquivo.sh) e em seguida execute-o (./nome_do_arquivo.sh):&lt;/p></description></item><item><title>Parâmetros de Inicialização</title><link>https://sidneiweber.com.br/parametros-de-inicializacao/</link><pubDate>Thu, 24 Sep 2009 20:10:48 -0300</pubDate><guid>https://sidneiweber.com.br/parametros-de-inicializacao/</guid><description>&lt;p>linux apm=off acpi=off noapic nolapic nopcmcia noapci nosmp pnpbios=off nomce – Se quiser pode substituir&lt;br>
-o correspondente por algum destes aqui: (apm=power-off ou noapm) (pci=noacpi) (apci=off ou pci=noapci)&lt;/p>
-&lt;p>&lt;strong>APM&lt;/strong> – Advanced Power Management: Esse comando de inicialização do x86 desativa o Gerenciador Avançado de Energia. É útil porque algumas BIOS têm erros no gerenciamento de energia e tendem a travar&lt;br>
-&lt;strong>ACPI&lt;/strong> – Advanced Configuration and Power Interface: Desliga o recurso, responsável pela configuração e gerenciamento de energia no computador. É usado em notebooks e desktops para, por exemplo, colocar o computador em estado de hibernação. Algumas placas simplesmente têm uma implementação furada da ACPI ou precisam de configuração especial pra funcionar corretamente. Outras placas, por outro lado, precisam do parâmetro acpi=force porque têm problemas se o ACPI não estiver ativado.&lt;br>
-&lt;strong>APIC&lt;/strong> – Advanced Programmable Interrupt Controller: É um controlador de interrupções integrado no processador. Esse comando de inicialização do x86 diz ao kernel para não utilizar o chip APIC. Pode ser útil para algumas placas-mãe com um APIC danificado (como o Abit BP6) ou com um BIOS cheio de erros. Sistemas baseados nos chips nForce3 da NVIDIA (como o ASUS SK8N) foram conhecidos por caírem durante a detecção do IDE no momento da inicialização ou por apresentarem outros problemas de interrupção.&lt;br>
-&lt;strong>PCMCIA&lt;/strong> – Esse comando ignora qualquer controlador PCMCIA no sistema, que geralmente são de notebook/laptop pelo que sei&lt;br>
-&lt;strong>NOSMP&lt;/strong> – Desativa o suporte da placa mãe a multi-processamento e hyperthreading. Algumas placas sequer têm um segundo processador, mas são esquizofrênicas, acreditam que têm e reclamam bem alto se você não concordar com&lt;br>
-elas.&lt;br>
-&lt;strong>PNPBIOS=OFF&lt;/strong> – Desliga o recurso plug-and-play do barramento ISA. Isso resolve nos casos em que a placa-mãe acha que é uma boa idéia reservar um monte de interrupções para dispositivos não existentes ou interrupções que&lt;br>
-deveriam ficar com dispositivos on-board no barramento PCI.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/linux/</link><description>Recent content in Linux on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Wed, 09 Jun 2021 11:00:00 +0000</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Simular tráfego de usuário para um servidor</title><link>https://sidneiweber.com.br/posts/simular-trafego-usuario-servidor/</link><pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/posts/simular-trafego-usuario-servidor/</guid><description/></item><item><title>Criando arquivo de SWAP no Linux</title><link>https://sidneiweber.com.br/posts/criando-araquivo-swap-linux/</link><pubDate>Fri, 29 Jan 2021 22:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/posts/criando-araquivo-swap-linux/</guid><description>&lt;h2 class="relative group"&gt;O que é o SWAP
+&lt;div id="o-que-é-o-swap" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#o-que-%c3%a9-o-swap" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;SWAP é um espaço no disco que é utilizado quando a quantidade de memória RAM física está cheia. Quando um sistema Linux fica sem RAM, os blocos de memória inativos são movidos da RAM para a área de SWAP.&lt;/p&gt;</description></item><item><title>Como redimensionar volume EBS no Linux sem downtime</title><link>https://sidneiweber.com.br/posts/como-redimensionar-volume-ebs-no-linux-sem-downtime/</link><pubDate>Fri, 13 Mar 2020 21:54:28 +0000</pubDate><guid>https://sidneiweber.com.br/posts/como-redimensionar-volume-ebs-no-linux-sem-downtime/</guid><description>&lt;p&gt;Esse processo pode ser feito sempre que precisar aumentar o volume sem precisar desligar a instância ou desanexar o volume.&lt;/p&gt;
+&lt;p&gt;Alterações em produção? Nesse caso sim :)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Após estar logado em sua conta AWS vamos escolher a opção EC2 na lista de serviços&lt;/li&gt;
+&lt;li&gt;Clicamos em &amp;ldquo;Volumes&amp;rdquo; no menu &lt;strong&gt;&amp;ldquo;ELASTIC BLOCK STORE&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Escolha o volume que deseja redimensionar e com o botão direito do mouse clique em &lt;strong&gt;&amp;ldquo;Modify Volume&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Verá uma janela como essa:
+&lt;figure&gt;
+&lt;img
+class="my-0 rounded-md"
+loading="lazy"
+decoding="async"
+fetchpriority="low"
+alt="Modify Volume &amp;gt;&amp;lt;"
+srcset="
+/img/ebs/modify-volume_hu_52579af5337893d4.png 330w,
+/img/ebs/modify-volume_hu_7c50a115604836e8.png 660w,
+/img/ebs/modify-volume_hu_837168b703860647.png 1280w
+"
+data-zoom-src="https://sidneiweber.com.br/img/ebs/modify-volume.png"
+src="https://sidneiweber.com.br/img/ebs/modify-volume.png"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description></item><item><title>Exemplos de uso do comando ping</title><link>https://sidneiweber.com.br/posts/exemplos-de-uso-do-comando-ping/</link><pubDate>Fri, 26 Apr 2019 09:56:31 -0300</pubDate><guid>https://sidneiweber.com.br/posts/exemplos-de-uso-do-comando-ping/</guid><description>&lt;p&gt;Segundo o Wikipédia ping é …&lt;/p&gt;
+&lt;p&gt;“&lt;strong&gt;Ping&lt;/strong&gt; ou &lt;strong&gt;latência&lt;/strong&gt; como podemos chamar, é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na escuta das respostas. Se o equipamento de destino estiver ativo, uma resposta &amp;ldquo;pong&amp;rdquo;, uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. ”&lt;/p&gt;</description></item><item><title>Convertendo arquivos DOS ^M com Vim</title><link>https://sidneiweber.com.br/posts/convertendo-arquivos-dos-m-com-vim/</link><pubDate>Tue, 06 Nov 2018 10:03:27 -0300</pubDate><guid>https://sidneiweber.com.br/posts/convertendo-arquivos-dos-m-com-vim/</guid><description>&lt;p&gt;Quem nunca passou pela situação de executar um script e o mesmo apresentar erro. Normal, mas algumas vezes o erro ocorre pela formatação, principalmente se foi escrito ou salvo em um Windows. Ocorre de no final de cada linha ele acrescentar um ^M, o que não o Linux não consegue interpretar.&lt;/p&gt;</description></item><item><title>Comando fuser - Quem mexeu no meu arquivo</title><link>https://sidneiweber.com.br/posts/comando-fuser-quem-mexeu-no-meu-arquivo/</link><pubDate>Tue, 06 Nov 2018 09:28:53 -0300</pubDate><guid>https://sidneiweber.com.br/posts/comando-fuser-quem-mexeu-no-meu-arquivo/</guid><description>&lt;p&gt;O &lt;strong&gt;fuser&lt;/strong&gt; é um programa que permite que saibamos qual processo está utilizando determinado arquivo, socket (portas) e sistema de arquivos especificado. Aprender sua manipulação é essencial para poder administrar um servidor para saber o que está acontecendo principalmente nas conexões. É um comando extremamente flexível, vamos ver suas opções e seu uso.&lt;/p&gt;</description></item><item><title>Review Emmi Linux por O Cara do TI [Vídeo]</title><link>https://sidneiweber.com.br/posts/review-emmi-linux-por-o-cara-do-ti/</link><pubDate>Mon, 02 Jul 2018 19:52:42 -0300</pubDate><guid>https://sidneiweber.com.br/posts/review-emmi-linux-por-o-cara-do-ti/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dNl5cblJNhs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Review Emmi Linux por Prof. Juliano Ramos [Vídeo]</title><link>https://sidneiweber.com.br/posts/review-emmi-linux-por-prof-juliano-ramos/</link><pubDate>Mon, 02 Jul 2018 19:51:27 -0300</pubDate><guid>https://sidneiweber.com.br/posts/review-emmi-linux-por-prof-juliano-ramos/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rUNrFIn9gT8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Reconhecer HD novo Linux sem reiniciar</title><link>https://sidneiweber.com.br/posts/reconhecer-hd-novo-linux-sem-reiniciar/</link><pubDate>Tue, 30 Jan 2018 20:53:54 -0300</pubDate><guid>https://sidneiweber.com.br/posts/reconhecer-hd-novo-linux-sem-reiniciar/</guid><description>&lt;p&gt;Hoje vamos a mais uma dica rápida. Pra que usa seus servidores virtualizados e precisa adicionar um novo HD seja por falta de espaço ou pelo motivo que for, não precisa reiniciar o servidor para ter o HD reconhecido. Basta apenas executar um simples comando que ordena um &amp;ldquo;scan&amp;rdquo; no barramento.&lt;/p&gt;</description></item><item><title>Configurar sudo sem senha</title><link>https://sidneiweber.com.br/posts/configurar-sudo-sem-senha/</link><pubDate>Fri, 01 Dec 2017 21:29:13 -0300</pubDate><guid>https://sidneiweber.com.br/posts/configurar-sudo-sem-senha/</guid><description>&lt;p&gt;Para configurar o uso do uso sem senha, o que não é recomendado, somente em casos de algum programa precise de permissão para executar determinado comando. Podemos usar como exemplo o Zabbix que quer rodar algum programa com privilégio de root sem comprometer a segurança. O arquivo a ser editado será o /etc/sudoers:&lt;/p&gt;</description></item><item><title>Hora mais legível no dmesg</title><link>https://sidneiweber.com.br/posts/hora-mais-legivel-no-dmesg/</link><pubDate>Fri, 20 Oct 2017 22:34:17 -0300</pubDate><guid>https://sidneiweber.com.br/posts/hora-mais-legivel-no-dmesg/</guid><description>&lt;p&gt;Saída padrão do &lt;strong&gt;dmesg:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 7515.054630&lt;span class="o"&gt;]&lt;/span&gt; CPU7: Core temperature above threshold, cpu clock throttled &lt;span class="o"&gt;(&lt;/span&gt;total &lt;span class="nv"&gt;events&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 29938&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 7515.055666&lt;span class="o"&gt;]&lt;/span&gt; CPU3: Core temperature/speed normal
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 7515.055668&lt;span class="o"&gt;]&lt;/span&gt; CPU7: Core temperature/speed normal
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 9253.929870&lt;span class="o"&gt;]&lt;/span&gt; CPU4: Core temperature above threshold, cpu clock throttled &lt;span class="o"&gt;(&lt;/span&gt;total &lt;span class="nv"&gt;events&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 5697&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 9253.929873&lt;span class="o"&gt;]&lt;/span&gt; CPU0: Core temperature above threshold, cpu clock throttled &lt;span class="o"&gt;(&lt;/span&gt;total &lt;span class="nv"&gt;events&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 5697&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 9253.930911&lt;span class="o"&gt;]&lt;/span&gt; CPU4: Core temperature/speed normal
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt; 9253.930913&lt;span class="o"&gt;]&lt;/span&gt; CPU0: Core temperature/speed normal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Saída do comando &lt;strong&gt;dmesg -T:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Bloquear resposta ao ping com sysctl</title><link>https://sidneiweber.com.br/posts/bloquear-resposta-ao-ping-com-sysctl/</link><pubDate>Fri, 20 Oct 2017 22:21:16 -0300</pubDate><guid>https://sidneiweber.com.br/posts/bloquear-resposta-ao-ping-com-sysctl/</guid><description>&lt;p&gt;A dica de hoje é super rápida e prática, para bloquear as respostas de ping podemos usar o comando sysctl:&lt;/p&gt;
+&lt;p&gt;Para bloquear:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sysctl -w net.ipv4.icmp_echo_ignore_all&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para desbloquear:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sysctl -w net.ipv4.icmp_echo_ignore_all&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Alterar politica de senhas no Linux com PAM</title><link>https://sidneiweber.com.br/posts/alterar-politica-de-senhas-no-linux/</link><pubDate>Tue, 17 Oct 2017 12:41:59 -0300</pubDate><guid>https://sidneiweber.com.br/posts/alterar-politica-de-senhas-no-linux/</guid><description>&lt;p&gt;Para podermos ter um controle maior sobre a segurança dos nossos sistemas e rede de computadores, podemos definir uma política de senhas onde as mesmas devem ter um grau alto de dificuldade. Podendo definir quantidade de caracteres especiais, números, tamanho da senha, tempo que ela vai expirar, não repetir a mesma senha digitada anteriormente, etc.&lt;/p&gt;</description></item><item><title>Extensões de arquivos no Linux</title><link>https://sidneiweber.com.br/posts/extensoes-de-arquivos-no-linux/</link><pubDate>Tue, 19 Sep 2017 13:30:06 -0300</pubDate><guid>https://sidneiweber.com.br/posts/extensoes-de-arquivos-no-linux/</guid><description>&lt;p&gt;Primeiramente o que devemos saber é que no Linux a extensão é opcional, o tipo de arquivo é reconhecido pelo seu conteúdo e não pela sua extensão. Mas para facilitar a vida é bom conhecer algumas extensões no Linux.&lt;/p&gt;</description></item><item><title>Dica rápida - Verificar pastas que ocupam mais espaço</title><link>https://sidneiweber.com.br/posts/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</link><pubDate>Thu, 17 Aug 2017 13:15:51 -0300</pubDate><guid>https://sidneiweber.com.br/posts/dica-rapida-verificar-pastas-que-ocupam-mais-espaco/</guid><description>&lt;p&gt;Bom essa dica é bem simples mas muito útil, vamos usar uma combinação de comandos para listar as 5 pastas que mais utilizam espaço no diretório corrente. O bom comando seria esse:&lt;/p&gt;</description></item><item><title>Gerar lista de pacotes instalados no Debian, Ubuntu, etc</title><link>https://sidneiweber.com.br/posts/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</link><pubDate>Thu, 22 Jun 2017 13:22:53 -0300</pubDate><guid>https://sidneiweber.com.br/posts/gerar-lista-de-pacotes-instalados-no-debian-ubuntu-etc/</guid><description>&lt;p&gt;Para gerar uma lista dos pacotes instalados no sistema, poderemos usar o &lt;strong&gt;dpkg&lt;/strong&gt; para isso. Pode ser muito útil na hora de criar sistemas com a mesma base&lt;/p&gt;
+&lt;h4 class="relative group"&gt;Gerando lista de pacotes
+&lt;div id="gerando-lista-de-pacotes" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#gerando-lista-de-pacotes" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo dpkg --get-selections &amp;gt; install.list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class="relative group"&gt;Instalando pacotes a partir da lista
+&lt;div id="instalando-pacotes-a-partir-da-lista" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#instalando-pacotes-a-partir-da-lista" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo dpkg --set-selections &amp;lt; install.list
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt-get -y update
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt-get dselect-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a
+href="http://www.dicas-l.com.br/dicas-l/20161025.php"
+target="_blank"
+&gt;Fonte&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Instalando servidor DHCP</title><link>https://sidneiweber.com.br/posts/instalando-servidor-dhcp/</link><pubDate>Mon, 06 Mar 2017 14:55:51 -0300</pubDate><guid>https://sidneiweber.com.br/posts/instalando-servidor-dhcp/</guid><description>&lt;h3 class="relative group"&gt;Definição:
+&lt;div id="definição" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#defini%c3%a7%c3%a3o" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;p&gt;Resumidamente, o DHCP opera da seguinte forma:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Um cliente envia um pacote UDP em &lt;em&gt;broadcast&lt;/em&gt; (destinado a todas as máquinas) com uma requisição DHCP (para a porta 67);&lt;/li&gt;
+&lt;li&gt;Os servidores DHCP que capturarem este pacote irão responder (se o cliente se enquadrar numa série de critérios — ver abaixo) para a porta 68 do &lt;em&gt;Host&lt;/em&gt; solicitante com um pacote com configurações onde constará, pelo menos, um endereço IP, uma máscara de rede e outros dados opcionais, como o gateway, servidores de DNS, etc…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fonte: &lt;a
+href="https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"
+target="_blank"
+&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Introdução Firewall Iptables - Começando</title><link>https://sidneiweber.com.br/posts/introducao-firewall-iptables-comecando/</link><pubDate>Wed, 15 Feb 2017 10:44:41 -0300</pubDate><guid>https://sidneiweber.com.br/posts/introducao-firewall-iptables-comecando/</guid><description>&lt;h3 class="relative group"&gt;Conceito de Firewall:
+&lt;div id="conceito-de-firewall" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#conceito-de-firewall" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;p&gt;O firewall é usado basicamente como um meio de proteção. Dividindo a rede que se pretende deixar segura da rede não segura.&lt;br&gt;
+Geralmente um firewall é instalado na borta da rede, sendo a entrada e saida dos pacotes da mesma, fazendo a leitura de cada pacote e fazendo o controle do que pode passar para rede interna, ou dando o  redirecinamento correto, servindo de filtro.&lt;/p&gt;</description></item><item><title>Alterando hostname sem reiniciar computador</title><link>https://sidneiweber.com.br/posts/alterando-hostname-sem-reiniciar-computador/</link><pubDate>Fri, 03 Feb 2017 14:15:55 -0300</pubDate><guid>https://sidneiweber.com.br/posts/alterando-hostname-sem-reiniciar-computador/</guid><description>&lt;p&gt;Para podermos alterar o nome da máquina sem precisar reiniciar é muito simples. Primeiramente precisamos alterar o arquivo /etc/hostname. Mas após a alteração notamos que o nome não muda, mesmo dando o comando hostname, o nome continua o antigo. Para essa alteração valer sem precisar reiniciar, pois as vezes pode se tratar de um servidor que não pode parar no momento, basta digitar o comando abaixo:&lt;/p&gt;</description></item><item><title>Usando o bashrc como uma ferramenta de trabalho</title><link>https://sidneiweber.com.br/posts/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</link><pubDate>Fri, 16 Dec 2016 15:45:29 -0300</pubDate><guid>https://sidneiweber.com.br/posts/usando-o-bashrc-como-uma-ferramenta-de-trabalho/</guid><description>&lt;p&gt;Segue o meu .bashrc com vários atalhos e alterações.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Cor Verde (Usuario comum)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;PS1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Cor Vermelha (root)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;#PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\$ &amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Completion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -f /etc/bash_completion &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; . /etc/bash_completion
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Configurações Historico&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HISTIGNORE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&amp;amp;:ls:[bf]g:exit:reset:clear:cd*&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HISTSIZE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4096&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;HISTCONTROL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;ignoreboth:erasedups&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;shopt&lt;/span&gt; -s histreedit&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Mans coloridas&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;MANPAGER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/usr/bin/most -s&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Alias&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;update&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pacman -Syu&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;ls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls --color=auto&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;grep&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;grep --color=auto&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;fgrep&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;fgrep --color=auto&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;egrep&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;egrep --color=auto&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Extração de arquivos&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Uso: extrair &amp;lt; arquivo &amp;gt; &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;extrair&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -f &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nv"&gt;$1&lt;/span&gt; in
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.tar.bz2&lt;span class="o"&gt;)&lt;/span&gt; tar xvjf &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.tar.gz&lt;span class="o"&gt;)&lt;/span&gt; tar xvzf &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.tar.xz&lt;span class="o"&gt;)&lt;/span&gt; tar xvJf &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.bz2&lt;span class="o"&gt;)&lt;/span&gt; bunzip2 &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.rar&lt;span class="o"&gt;)&lt;/span&gt; unrar x &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.gz&lt;span class="o"&gt;)&lt;/span&gt; gunzip &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.tar&lt;span class="o"&gt;)&lt;/span&gt; tar xvf &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.tbz2&lt;span class="o"&gt;)&lt;/span&gt; tar xvjf &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.tgz&lt;span class="o"&gt;)&lt;/span&gt; tar xvzf &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.zip&lt;span class="o"&gt;)&lt;/span&gt; unzip &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.Z&lt;span class="o"&gt;)&lt;/span&gt; uncompress &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.7z&lt;span class="o"&gt;)&lt;/span&gt; 7z x &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.xz&lt;span class="o"&gt;)&lt;/span&gt; unxz &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.exe&lt;span class="o"&gt;)&lt;/span&gt; cabextract &lt;span class="nv"&gt;$1&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;\`&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39;: unrecognized file compression&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;esac&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;\`&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; is not a valid file&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Misc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;musica&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;mocp -m /media/Documentos/Musica/&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Top 10 ( mostra os 10 comandos mais utilizados ). copyright 2007 - 2010 Christopher Bratusek &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;function&lt;/span&gt; top10&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;history&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#39;{a[$2]++ } END{for(i in a){print a[i] &amp;#34; &amp;#34; i}}&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sort -rn &lt;span class="p"&gt;|&lt;/span&gt; head
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# alisa previsao tempo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;tempo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;curl http://wttr.in/sapiranga&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Comandos de manipulação de permissões no Linux</title><link>https://sidneiweber.com.br/posts/comandos-de-manipulacao-de-permissoes-no-linux/</link><pubDate>Tue, 13 Dec 2016 15:54:07 -0300</pubDate><guid>https://sidneiweber.com.br/posts/comandos-de-manipulacao-de-permissoes-no-linux/</guid><description>&lt;h2 class="relative group"&gt;Entenda um pouco o sistema de permissões no sistema Linux
+&lt;div id="entenda-um-pouco-o-sistema-de-permissões-no-sistema-linux" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#entenda-um-pouco-o-sistema-de-permiss%c3%b5es-no-sistema-linux" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;Pelo fato do Linux ser multiusuário, as permissões deve estar bem alinhadas para que o usuário tenha acesso somente aquilo que é de seu direito, incluindo pastas, arquivos e inclusive periféricos, como impressoras e drivers de CD por exemplo.&lt;br&gt;
+A Estrtutura básica das permissões é separada em três classes:&lt;/p&gt;</description></item><item><title>[Dica rápida] Meus 10 comandos mais rodados no linux</title><link>https://sidneiweber.com.br/posts/dica-rapida-meus-10-comandos-mais-rodados-no-linux/</link><pubDate>Mon, 28 Nov 2016 15:39:52 -0300</pubDate><guid>https://sidneiweber.com.br/posts/dica-rapida-meus-10-comandos-mais-rodados-no-linux/</guid><description>&lt;p&gt;Com este comando podemos conferir quais os 10 comandos mais rodados em nossa máquina:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;history&lt;span class="p"&gt;|&lt;/span&gt;awk &lt;span class="s1"&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;awk &lt;span class="s1"&gt;&amp;#39;BEGIN {FS=&amp;#34;|&amp;#34;} {print $1}&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;sort&lt;span class="p"&gt;|&lt;/span&gt;uniq -c&lt;span class="p"&gt;|&lt;/span&gt;sort -rn&lt;span class="p"&gt;|&lt;/span&gt;head -10
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Meu resultado foi:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;history&lt;span class="p"&gt;|&lt;/span&gt;awk &lt;span class="s1"&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;awk &lt;span class="s1"&gt;&amp;#39;BEGIN {FS=&amp;#34;|&amp;#34;} {print $1}&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;sort&lt;span class="p"&gt;|&lt;/span&gt;uniq -c&lt;span class="p"&gt;|&lt;/span&gt;sort -rn&lt;span class="p"&gt;|&lt;/span&gt;head -10
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;248&lt;/span&gt; sudo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;148&lt;/span&gt; vi
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;101&lt;/span&gt; sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;49&lt;/span&gt; ping
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;49&lt;/span&gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;40&lt;/span&gt; systemctl
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;38&lt;/span&gt; ifconfig
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;38&lt;/span&gt; htop
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;31&lt;/span&gt; ps
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="m"&gt;26&lt;/span&gt; du
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sidnei@black:~$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Reforçando segurança servidor ssh</title><link>https://sidneiweber.com.br/posts/reforcando-seguranca-servidor-ssh/</link><pubDate>Wed, 23 Nov 2016 10:07:22 -0300</pubDate><guid>https://sidneiweber.com.br/posts/reforcando-seguranca-servidor-ssh/</guid><description>&lt;h3 class="relative group"&gt;Introdução
+&lt;div id="introdução" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#introdu%c3%a7%c3%a3o" aria-label="Âncora"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;p&gt;Nos dias de hoje é de suma importância proteger nossos servidores contra ataques e invasões. Nesse caso especifico do ssh é importante mantê-lo bem seguro pois é a nossa porta de entrada para o servidor, qualquer brecha pode causar uma catástrofe. Não devemos pensar que por ser um servidor de uma pequena empresa ou um &lt;a
+href="https://www.melhorhospedagemdesites.com/servidor-vps/"
+target="_blank"
+&gt;servidor VPS&lt;/a&gt; que não devemos ter esse cuidado, hoje a informação disponível pode estar valendo muito. É uma questão de segurança básica que devemos estar atentos para não termos dores de cabeça e continuar com nossos servidores e serviços intactos.&lt;/p&gt;</description></item><item><title>Gestão corporativa com Software Livre</title><link>https://sidneiweber.com.br/posts/gestao-corporativa-com-software-livre/</link><pubDate>Wed, 05 Oct 2016 12:41:19 -0300</pubDate><guid>https://sidneiweber.com.br/posts/gestao-corporativa-com-software-livre/</guid><description>&lt;p&gt;Segue um trabalho que fiz na faculdade sobre gestão corporativa com software livre.&lt;/p&gt;
+&lt;p&gt;&lt;a
+href="https://docs.google.com/presentation/d/1Bj5g6ap66Pqf0QXYHzEi7vGIzzvzpiLqS82jyZcJg58/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000"
+target="_blank"
+&gt;
+&lt;figure&gt;
+&lt;img
+class="my-0 rounded-md"
+loading="lazy"
+decoding="async"
+fetchpriority="low"
+alt="Video"
+srcset="
+/img/gestao_corporativa_hu_ff65f0a2bcb88a.png 330w,
+/img/gestao_corporativa_hu_a78b24bc8371f951.png 660w,
+/img/gestao_corporativa_hu_720e6b748fc96395.png 1280w
+"
+data-zoom-src="https://sidneiweber.com.br/img/gestao_corporativa.png"
+src="https://sidneiweber.com.br/img/gestao_corporativa.png"&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Também listarei aqui meu rascunho para apresentação do slide, caso alguem tenha interesse.&lt;/p&gt;</description></item><item><title>Instalar Java 8 no Manjaro/Archlinux</title><link>https://sidneiweber.com.br/posts/instalar-java-8-no-manjaroarchlinux/</link><pubDate>Thu, 12 Nov 2015 00:10:33 -0300</pubDate><guid>https://sidneiweber.com.br/posts/instalar-java-8-no-manjaroarchlinux/</guid><description>&lt;p&gt;Primeiro atualize o sistema&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pacman -Sy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Após isso baixamos a última versão (Na data da postagem essa era última versão)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget http://javadl.sun.com/webapps/download/AutoDL?BundleId&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;111679&lt;/span&gt; -O Java-latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Descompactamos&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tar -zxvf Java-latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Copiamos para a pasta correta&lt;/p&gt;</description></item><item><title>Colocando uma firula no terminal</title><link>https://sidneiweber.com.br/posts/colocando-uma-firula-no-terminal/</link><pubDate>Mon, 06 Jul 2015 15:48:53 -0300</pubDate><guid>https://sidneiweber.com.br/posts/colocando-uma-firula-no-terminal/</guid><description>&lt;p&gt;Editar o arquivo .bashrc e adicionar a linha a seguir&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;#PS1=&amp;#39;[u@h W]$ &amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;PS1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;┌─[u@h W][e[0;32m][${cwd}t][&amp;lt;wbr /&amp;gt;033[0m] ${fill}n[\033[0m]└─■ &amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Backup Mysql - Linha comando</title><link>https://sidneiweber.com.br/posts/backup-mysql-linha-comando/</link><pubDate>Mon, 06 Jul 2015 15:48:02 -0300</pubDate><guid>https://sidneiweber.com.br/posts/backup-mysql-linha-comando/</guid><description>&lt;p&gt;Backup de uma base específica&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mysqldump --database -d NOME DA BASE DE DADOS -u USUARIO -p &amp;gt; c:meu_db.sql
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Backup de todas as bases&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mysqldump --all-databases -u USUARIO -p &amp;gt; meu_mysql.sql
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Diminuindo tentativas de invasão via SSH</title><link>https://sidneiweber.com.br/posts/diminuindo-tentativas-de-invasao-via-ssh/</link><pubDate>Mon, 06 Jul 2015 15:45:47 -0300</pubDate><guid>https://sidneiweber.com.br/posts/diminuindo-tentativas-de-invasao-via-ssh/</guid><description>&lt;p&gt;Dentro do arquivo &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt; altere as seguintes linhas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;LoginGraceTime 2m
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;MaxStartups 3:50:6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Explicando:&lt;/p&gt;
+&lt;p&gt;O primeiro parâmetro informa que a conexão será cortada caso fique inativa por 2 minutos.&lt;/p&gt;
+&lt;p&gt;O segundo quer dizer que depois de 3 tentativas não autenticadas, 50% das conexões do IP são recusadas e quando o número de de tentavivas chegar a 6 todas as tentativas de conexões do IP serão recusadas.&lt;/p&gt;</description></item><item><title>Utilizando o Crontab</title><link>https://sidneiweber.com.br/posts/utilizando-o-crontab/</link><pubDate>Mon, 06 Jul 2015 15:45:15 -0300</pubDate><guid>https://sidneiweber.com.br/posts/utilizando-o-crontab/</guid><description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Comando&lt;/th&gt;
+&lt;th&gt;Função&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;crontab -e&lt;/td&gt;
+&lt;td&gt;Edita o crontab atual do usuário&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;crontab -l&lt;/td&gt;
+&lt;td&gt;Exibe o atual conteúdo do crontab do usuário&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;crontab -r&lt;/td&gt;
+&lt;td&gt;Remove o crontab do usuário&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A linha é dividida em 6 campos separados por tabs ou espaço:&lt;/p&gt;</description></item><item><title>Atalhos úteis para a linha de comando</title><link>https://sidneiweber.com.br/posts/atalhos-uteis-para-a-linha-de-comando/</link><pubDate>Mon, 06 Jul 2015 15:38:45 -0300</pubDate><guid>https://sidneiweber.com.br/posts/atalhos-uteis-para-a-linha-de-comando/</guid><description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Atalho&lt;/th&gt;
+&lt;th&gt;Ação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+A&lt;/td&gt;
+&lt;td&gt;move o cursor para o começo da linha&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+E&lt;/td&gt;
+&lt;td&gt;move o cursor para o fim da linha&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alt+F&lt;/td&gt;
+&lt;td&gt;move o cursor para o fim da próxima palavra&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alt+B&lt;/td&gt;
+&lt;td&gt;move o cursor para o começo da palavra anterior&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+T&lt;/td&gt;
+&lt;td&gt;troca os dois últimos caracteres de posição, por exemplos “sl” se torna “ls”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alt+T&lt;/td&gt;
+&lt;td&gt;troca as duas últimas palavras de posição, por exemplo “list cat” se torna “cat list”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+U&lt;/td&gt;
+&lt;td&gt;corta o texto do começo da linha até o começo da palavra antes do cursor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+W&lt;/td&gt;
+&lt;td&gt;corta apenas a palavra antes do cursor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+K&lt;/td&gt;
+&lt;td&gt;cut the text of the current command after the cursor.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+Y&lt;/td&gt;
+&lt;td&gt;cola o texto cortado anteriormente após o cursor. Este recurso é útil quando você acabou de digitar um comando longo e concluiu que esqueceu de fazer algo antes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alt+U&lt;/td&gt;
+&lt;td&gt;converte para maiúsculas próxima palavra&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alt+L&lt;/td&gt;
+&lt;td&gt;converte para minúsculas a próxima palavra&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alt+C&lt;/td&gt;
+&lt;td&gt;converte para maiúsculas a primeira letra da próxima palavra&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+L&lt;/td&gt;
+&lt;td&gt;limpa a tela, deixando a linha corrente no topo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl+_&lt;/td&gt;
+&lt;td&gt;undo (incremental).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a
+href="http://www.quora.com/Bash-shell/What-are-some-useful-Bash-tricks"
+target="_blank"
+&gt;Fonte&lt;/a&gt;&lt;/p&gt;</description></item><item><title>netstat -putona - Um comando para monitorar as conexões de rede</title><link>https://sidneiweber.com.br/posts/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/</link><pubDate>Mon, 06 Jul 2015 15:37:42 -0300</pubDate><guid>https://sidneiweber.com.br/posts/netstat-putona-um-comando-para-monitorar-as-conexoes-de-rede/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;netstat -putona
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Onde os parâmetros significam:&lt;/p&gt;
+&lt;p&gt;p Mostra as conexões para o protocolo especificado pelo TCP ou UDP&lt;br&gt;
+u Lista todas as portas UDP&lt;br&gt;
+t Lista portas em TCP&lt;br&gt;
+o Exibe temporizadores&lt;br&gt;
+n Exibe o número da porta&lt;br&gt;
+a Exibe todas as conexões do sistema ativo&lt;/p&gt;</description></item><item><title>Instalando um dashboard para seu servidor linux</title><link>https://sidneiweber.com.br/posts/instalando-um-dashboard-para-seu-servidor-linux/</link><pubDate>Tue, 04 Feb 2014 23:31:35 -0300</pubDate><guid>https://sidneiweber.com.br/posts/instalando-um-dashboard-para-seu-servidor-linux/</guid><description>&lt;p&gt;
+&lt;figure&gt;
+&lt;img
+class="my-0 rounded-md"
+loading="lazy"
+decoding="async"
+fetchpriority="low"
+alt="dash &amp;gt;&amp;lt;"
+srcset="
+/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031_hu_da8851f6b90b994a.png 330w,
+/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031_hu_647944d59c7952b.png 660w,
+/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031_hu_556921090fa33a90.png 1280w
+"
+data-zoom-src="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png"
+src="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /var/www/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/afaqurk/linux-dash.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yum -y install php php-common php-gd php-mbstring php-xml php-xmlrpc
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/etc/init.d/httpd start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora acesse: &lt;a
+href="http://endereco.ip.do.server/linux-dash"
+target="_blank"
+&gt;http://endereco.ip.do.server/linux-dash&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+href="http://www.ricardomartins.com.br/dashboard-lindao-para-seu-servidor-linux/"
+target="_blank"
+&gt;Fonte&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Configurando troca de senha de usuário no próximo login</title><link>https://sidneiweber.com.br/posts/configurando-troca-de-senha-de-usuario-no-proximo-login/</link><pubDate>Sun, 12 Jan 2014 18:51:44 -0300</pubDate><guid>https://sidneiweber.com.br/posts/configurando-troca-de-senha-de-usuario-no-proximo-login/</guid><description>&lt;p&gt;Para isso, utilizaremos o comando chage. Antes, listamos as propriedades de login deste usuário:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;chage -l
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;chage -l perm
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Última mudança de senha : Jan 07, &lt;span class="m"&gt;2014&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Senha expira : nunca
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Senha inativa : nunca
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Conta expira : nunca
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Número mínimo de dias entre troca de senhas : &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Número máximo de dias entre troca de senhas : &lt;span class="m"&gt;99999&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Número de dias de avisos antes da expiração da senha : &lt;span class="m"&gt;7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Como podemos visualizar, a senha deste usuário “nunca expira”. Então, forçaremos a expiração de senha para o próximo login que este usuário venha fazer, executando o comando a seguir:&lt;/p&gt;</description></item><item><title>Comando para saber quando foi instalado o seu Linux</title><link>https://sidneiweber.com.br/posts/comando-para-saber-quando-foi-instalado-o-seu-linux/</link><pubDate>Wed, 20 Nov 2013 19:29:00 -0300</pubDate><guid>https://sidneiweber.com.br/posts/comando-para-saber-quando-foi-instalado-o-seu-linux/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ls -lct /etc &lt;span class="p"&gt;|&lt;/span&gt; tail -1 &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#39;{print $6, $7, $8}&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Desligar ou reiniciar o computador com hora marcada</title><link>https://sidneiweber.com.br/posts/desligar-ou-reiniciar-o-computador-com-hora-marcada/</link><pubDate>Tue, 23 Apr 2013 12:02:44 -0300</pubDate><guid>https://sidneiweber.com.br/posts/desligar-ou-reiniciar-o-computador-com-hora-marcada/</guid><description>&lt;p&gt;Para programar o computador para desligar em um certo horário, basta como root usar o seguinte comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;shutdown -h hh:mm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sendo que hh são as horas no formato de 24 horas e mm são os minutos.&lt;/p&gt;</description></item><item><title>Mudando o nome da placa de rede</title><link>https://sidneiweber.com.br/posts/mudando-o-nome-da-placa-de-rede/</link><pubDate>Tue, 23 Apr 2013 12:00:50 -0300</pubDate><guid>https://sidneiweber.com.br/posts/mudando-o-nome-da-placa-de-rede/</guid><description>&lt;p&gt;Semana passada me deparei com a seguinte situação, tinha um servidor com  duas placas de rede , eth0 e eth1 , só que a placa de rede eth0 deu pau e foi trocada, porem, quando foi instalada a nova placa o servidor reconheceu como eth2s.&lt;/p&gt;</description></item><item><title>Rarcrack - Quebrando senhas de arquivos rar, 7z e zip</title><link>https://sidneiweber.com.br/posts/rarcrack-quebrando-senhas-de-arquivos-rar-7z-e-zip/</link><pubDate>Tue, 23 Apr 2013 11:58:04 -0300</pubDate><guid>https://sidneiweber.com.br/posts/rarcrack-quebrando-senhas-de-arquivos-rar-7z-e-zip/</guid><description>&lt;p&gt;Ontem fiz download de um arquivo RAR e para minha surpresa o mesmo estava com senha. Antes de procurar outros links resolvi tentar quebrar a senha deste arquivo mesmo, e buscando uma solução no Google eis que acho o &lt;em&gt;rarcrack&lt;/em&gt;, um brute force para arquivos .rar, .zip e 7-zip.&lt;/p&gt;</description></item><item><title>Verificar máquinas ligadas com shell script</title><link>https://sidneiweber.com.br/posts/verificar-maquinas-ligadas-do-shell-script/</link><pubDate>Mon, 28 Jan 2013 22:58:55 -0300</pubDate><guid>https://sidneiweber.com.br/posts/verificar-maquinas-ligadas-do-shell-script/</guid><description>&lt;p&gt;Estava interessado em criar uma forma de scannear a rede para saber quantos micros estavam conectados a ela, saber nome, grupo, MAC ADDRESS.&lt;/p&gt;
+&lt;p&gt;Para que o script funcione será preciso instalar alguns softwares:&lt;/p&gt;</description></item><item><title>Parâmetros de Inicialização</title><link>https://sidneiweber.com.br/posts/parametros-de-inicializacao/</link><pubDate>Thu, 24 Sep 2009 20:10:48 -0300</pubDate><guid>https://sidneiweber.com.br/posts/parametros-de-inicializacao/</guid><description>&lt;p&gt;linux apm=off acpi=off noapic nolapic nopcmcia noapci nosmp pnpbios=off nomce – Se quiser pode substituir&lt;br&gt;
+o correspondente por algum destes aqui: (apm=power-off ou noapm) (pci=noacpi) (apci=off ou pci=noapci)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;APM&lt;/strong&gt; – Advanced Power Management: Esse comando de inicialização do x86 desativa o Gerenciador Avançado de Energia. É útil porque algumas BIOS têm erros no gerenciamento de energia e tendem a travar&lt;br&gt;
+&lt;strong&gt;ACPI&lt;/strong&gt; – Advanced Configuration and Power Interface: Desliga o recurso, responsável pela configuração e gerenciamento de energia no computador. É usado em notebooks e desktops para, por exemplo, colocar o computador em estado de hibernação. Algumas placas simplesmente têm uma implementação furada da ACPI ou precisam de configuração especial pra funcionar corretamente. Outras placas, por outro lado, precisam do parâmetro acpi=force porque têm problemas se o ACPI não estiver ativado.&lt;br&gt;
+&lt;strong&gt;APIC&lt;/strong&gt; – Advanced Programmable Interrupt Controller: É um controlador de interrupções integrado no processador. Esse comando de inicialização do x86 diz ao kernel para não utilizar o chip APIC. Pode ser útil para algumas placas-mãe com um APIC danificado (como o Abit BP6) ou com um BIOS cheio de erros. Sistemas baseados nos chips nForce3 da NVIDIA (como o ASUS SK8N) foram conhecidos por caírem durante a detecção do IDE no momento da inicialização ou por apresentarem outros problemas de interrupção.&lt;br&gt;
+&lt;strong&gt;PCMCIA&lt;/strong&gt; – Esse comando ignora qualquer controlador PCMCIA no sistema, que geralmente são de notebook/laptop pelo que sei&lt;br&gt;
+&lt;strong&gt;NOSMP&lt;/strong&gt; – Desativa o suporte da placa mãe a multi-processamento e hyperthreading. Algumas placas sequer têm um segundo processador, mas são esquizofrênicas, acreditam que têm e reclamam bem alto se você não concordar com&lt;br&gt;
+elas.&lt;br&gt;
+&lt;strong&gt;PNPBIOS=OFF&lt;/strong&gt; – Desliga o recurso plug-and-play do barramento ISA. Isso resolve nos casos em que a placa-mãe acha que é uma boa idéia reservar um monte de interrupções para dispositivos não existentes ou interrupções que&lt;br&gt;
+deveriam ficar com dispositivos on-board no barramento PCI.&lt;/p&gt;</description></item></channel></rss>

@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Systemctl - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/systemctl/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 02 Jul 2018 21:31:31 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/systemctl/index.xml" rel="self" type="application/rss+xml"/><item><title>Gerenciando serviços com SystemD</title><link>https://sidneiweber.com.br/gerenciando-servicos-com-systemd/</link><pubDate>Mon, 02 Jul 2018 21:31:31 -0300</pubDate><guid>https://sidneiweber.com.br/gerenciando-servicos-com-systemd/</guid><category domain="https://sidneiweber.com.br/categories/linux/">Linux</category><description>&lt;p>Com SystemD é possível gerenciar o sistema e serviços no seu Linux. Ele usa o &lt;strong>Control Groups (CGroups)&lt;/strong>, cada serviço iniciado pelo systemd roda dentro de um cgroup separado, fazendo com que se tenha garantia que cada processo iniciado por serviço seja encerrado corretamente.&lt;/p>
-&lt;p>Para listar todos os serviços em execução:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">systemctl -t service&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Para ver o status de um serviço:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">systemctl status cups.service&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Para ativar um serviço na inicialização:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Systemctl on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/systemctl/</link><description>Recent content in Systemctl on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Mon, 02 Jul 2018 21:31:31 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/systemctl/index.xml" rel="self" type="application/rss+xml"/><item><title>Gerenciando serviços com SystemD</title><link>https://sidneiweber.com.br/posts/gerenciando-servicos-com-systemd/</link><pubDate>Mon, 02 Jul 2018 21:31:31 -0300</pubDate><guid>https://sidneiweber.com.br/posts/gerenciando-servicos-com-systemd/</guid><description>&lt;p&gt;Com SystemD é possível gerenciar o sistema e serviços no seu Linux. Ele usa o &lt;strong&gt;Control Groups (CGroups)&lt;/strong&gt;, cada serviço iniciado pelo systemd roda dentro de um cgroup separado, fazendo com que se tenha garantia que cada processo iniciado por serviço seja encerrado corretamente.&lt;/p&gt;</description></item></channel></rss>

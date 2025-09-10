@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/postgresql/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 May 2018 21:28:13 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Instalação Postresql no Centos a partir do código fonte</title><link>https://sidneiweber.com.br/instalacao-postresql-no-centos-a-partir-do-codigo-fonte/</link><pubDate>Thu, 03 May 2018 21:28:13 -0300</pubDate><guid>https://sidneiweber.com.br/instalacao-postresql-no-centos-a-partir-do-codigo-fonte/</guid><description>&lt;p>Estou realizando a instalação na última versão do Centos no momento, que seria a 7. Porém o procedimento para outras versões deve seguir o mesmo padrão.&lt;/p>
-&lt;p>Instalando dependências:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">yum install -y make wget gcc readline-devel zlib-devel&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Vamos baixar a última versão do Postresql (10.3 no momento dos testes) e após o download concluído iremos descompactar:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">wget -c https://ftp.postgresql.org/pub/source/v10.3/postgresql-10.3.tar.gz
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tar -xzvf postgresql-10.3.tar.gz&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Após isso vamos realizar o processo de compilação, instalação e criação do usuário &lt;strong>postgres&lt;/strong>. Dependendo da configuração de sua máquina esse processo pode demorar um pouco:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/postgresql/</link><description>Recent content in Postgresql on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Thu, 03 May 2018 21:28:13 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Instalação Postresql no Centos a partir do código fonte</title><link>https://sidneiweber.com.br/posts/instalacao-postresql-no-centos-a-partir-do-codigo-fonte/</link><pubDate>Thu, 03 May 2018 21:28:13 -0300</pubDate><guid>https://sidneiweber.com.br/posts/instalacao-postresql-no-centos-a-partir-do-codigo-fonte/</guid><description>&lt;p&gt;Estou realizando a instalação na última versão do Centos no momento, que seria a 7. Porém o procedimento para outras versões deve seguir o mesmo padrão.&lt;/p&gt;
+&lt;p&gt;Instalando dependências:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yum install -y make wget gcc readline-devel zlib-devel
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vamos baixar a última versão do Postresql (10.3 no momento dos testes) e após o download concluído iremos descompactar:&lt;/p&gt;</description></item></channel></rss>

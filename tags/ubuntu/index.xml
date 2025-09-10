@@ -1,65 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ubuntu/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Apr 2013 16:58:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Pac-Man no terminal Ubuntu</title><link>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</link><pubDate>Fri, 19 Apr 2013 16:58:35 -0300</pubDate><guid>https://sidneiweber.com.br/pac-man-no-terminal-ubuntu/</guid><description>&lt;p>Mais uma dica rápida sobre o jogo &lt;em>Pac-Man&lt;/em> para o &lt;em>Ubuntu&lt;/em>.&lt;/p>
-&lt;p>Instalação:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt-get install pacman4console&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>E depois, com o terminal aberto, digite:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pacman4console&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Aparecerá esta mensagem:&lt;/p>
-&lt;blockquote>&lt;p>Sorry.&lt;br>
-To play Pacman for Console, your console window must be at least 32×29&lt;br>
-Please resize your window/resolution and re-run the game.&lt;/p>
-&lt;/blockquote>&lt;p>Resumindo, o terminal tem que estar maximizado.&lt;/p>
-&lt;p>E pronto. Já poderá jogar:&lt;/p>
-&lt;p>&lt;img loading="lazy" src="http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png" alt="pacman &amp;gt;&amp;lt;" srcset="http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=small, http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=medium 1.5x, http://img.vivaolinux.com.br/imagens/dicas/comunidade/thumb_pacman4console.png?size=large 2x" data-title="pacman &amp;gt;&amp;lt;" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p></description></item><item><title>Mudando a posição dos botões do menu ubuntu 12.10</title><link>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</link><pubDate>Mon, 31 Dec 2012 13:24:56 -0300</pubDate><guid>https://sidneiweber.com.br/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</guid><description>&lt;p>Abra o terminal e digite o comando:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">gsettings set org.gnome.desktop.wm.preferences button-layout &amp;#39;menu:minimize,maximize,close&amp;#39;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Codecs ubuntu 9.04</title><link>https://sidneiweber.com.br/codecs-ubuntu-904/</link><pubDate>Wed, 23 Sep 2009 19:27:02 -0300</pubDate><guid>https://sidneiweber.com.br/codecs-ubuntu-904/</guid><description>&lt;p>Paso #1: Agregar el Repositorio de Medibuntu&lt;br>
-Abre el terminal ubicado en Aplicaciones/Accesorios/Terminal, y ejecuta el siguiente comando:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo wget http://www.medibuntu.org/sources.list.d/jaunty.list –output-document&lt;span class="o">=&lt;/span>/etc/apt/sources.list.d/medibuntu.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Paso #2: Agregar la llave GPG
-Ahora ejecuta este otro comando:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt-get install medibuntu-keyring &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt-get update&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Paso #3: Instalar Codec’s&lt;br>
-Ahora podemos instalar los codec’s que necesitemos. Ejecuta cada linea en el Terminal para instalar el codec nombrado:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install libdvdcss2 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install w32codecs 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install non-free-codecs 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install ffmpeg&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Si deseas instalar todo de una sola vez solo ejecuta esto:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/ubuntu/</link><description>Recent content in Ubuntu on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Fri, 19 Apr 2013 16:58:35 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Pac-Man no terminal Ubuntu</title><link>https://sidneiweber.com.br/posts/pac-man-no-terminal-ubuntu/</link><pubDate>Fri, 19 Apr 2013 16:58:35 -0300</pubDate><guid>https://sidneiweber.com.br/posts/pac-man-no-terminal-ubuntu/</guid><description>&lt;p&gt;Mais uma dica rápida sobre o jogo &lt;em&gt;Pac-Man&lt;/em&gt; para o &lt;em&gt;Ubuntu&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Instalação:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt-get install pacman4console
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E depois, com o terminal aberto, digite:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pacman4console
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Aparecerá esta mensagem:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sorry.&lt;br&gt;
+To play Pacman for Console, your console window must be at least 32×29&lt;br&gt;
+Please resize your window/resolution and re-run the game.&lt;/p&gt;</description></item><item><title>Mudando a posição dos botões do menu ubuntu 12.10</title><link>https://sidneiweber.com.br/posts/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</link><pubDate>Mon, 31 Dec 2012 13:24:56 -0300</pubDate><guid>https://sidneiweber.com.br/posts/mudando-a-posicao-dos-botoes-do-menu-ubuntu-12-10/</guid><description>&lt;p&gt;Abra o terminal e digite o comando:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;gsettings set org.gnome.desktop.wm.preferences button-layout &amp;#39;menu:minimize,maximize,close&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Codecs ubuntu 9.04</title><link>https://sidneiweber.com.br/posts/codecs-ubuntu-904/</link><pubDate>Wed, 23 Sep 2009 19:27:02 -0300</pubDate><guid>https://sidneiweber.com.br/posts/codecs-ubuntu-904/</guid><description>&lt;p&gt;Paso #1: Agregar el Repositorio de Medibuntu&lt;br&gt;
+Abre el terminal ubicado en Aplicaciones/Accesorios/Terminal, y ejecuta el siguiente comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo wget http://www.medibuntu.org/sources.list.d/jaunty.list –output-document&lt;span class="o"&gt;=&lt;/span&gt;/etc/apt/sources.list.d/medibuntu.list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Paso #2: Agregar la llave GPG
+Ahora ejecuta este otro comando:&lt;/p&gt;</description></item></channel></rss>

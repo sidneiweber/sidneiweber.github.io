@@ -1,272 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Servidores - Tag - Sidnei Weber</title><link>https://sidneiweber.com.br/tags/servidores/</link><description>Sidnei Weber</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.11</generator><language>pt-br</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 17 Nov 2016 10:33:43 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/servidores/index.xml" rel="self" type="application/rss+xml"/><item><title>Comandos básicos Docker</title><link>https://sidneiweber.com.br/comandos-basicos-docker/</link><pubDate>Thu, 17 Nov 2016 10:33:43 -0300</pubDate><guid>https://sidneiweber.com.br/comandos-basicos-docker/</guid><description>&lt;p>Docker é um ferramenta que venha aprendendo a pouco tempo, não explicarei o que é o docker, apenas alguns detalhes no uso. Caso queira uma explicação melhor sobre o que é docker, recomendo esse &lt;a href="http://www.mundodocker.com.br/o-que-e-docker/"target="_blank" rel="external nofollow noopener noreferrer">artigo do Mundo Docker&lt;/a>.&lt;/p>
-&lt;p>Segue abaixo alista dos comandos mais básicos e explicações básicas sobre o docker:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">docker search ubuntu &lt;span class="c1"># Procura versões do sistema ubuntu&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker pull &lt;span class="o">[&lt;/span>nome da imagem&lt;span class="o">]&lt;/span> &lt;span class="c1"># baixar imagem&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker images &lt;span class="c1"># listar imagens&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker run &lt;span class="o">[&lt;/span>nome da imagem ou id&lt;span class="o">]&lt;/span> &lt;span class="c1"># iniciar container com a imagem baixada&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker ps &lt;span class="c1"># listar containers&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker ps -a &lt;span class="c1"># Verifica todos os containers, inclusive os que estão parados&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker &lt;span class="nb">exec&lt;/span> &lt;span class="o">[&lt;/span>id &lt;span class="k">do&lt;/span> container&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>comando&lt;span class="o">]&lt;/span> &lt;span class="c1"># executa comandos no container&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker rm &lt;span class="o">[&lt;/span>id &lt;span class="k">do&lt;/span> container&lt;span class="o">]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Iniciar container com alguns detalhes a mais:&lt;/p></description></item><item><title>Evitando encerramento acidental de sessões bash</title><link>https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/</link><pubDate>Mon, 06 Jul 2015 15:50:35 -0300</pubDate><guid>https://sidneiweber.com.br/evitando-encerramento-acidental-de-sessoes-bash/</guid><description>&lt;p>A sequência de teclas &amp;ldquo;&lt;code>CTRL+D&lt;/code>&amp;rdquo; encerra uma sessão bash. Às vezes digitamos estas teclas por acidente e encerramos uma sessão acidentalmente.&lt;/p>
-&lt;p>Para evitar que isto ocorra, definimos a variável de ambiente &lt;code>IGNOREEOF&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">IGNOREEOF&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Desta forma, para encerrar uma sessão bash, precisamos digitar a sequência &lt;code>CTRL+D&lt;/code> duas vezes ou então digitar &lt;code>exit&lt;/code>.&lt;/p>
-&lt;p>Esta variável de ambiente deve ser definida no arquivo &lt;code>.bashrc&lt;/code>.&lt;/p>
-&lt;p>Fonte: &lt;a href="http://www.dicas-l.com.br/arquivo/encerramento_acidental_de_sessoes_bash.php#.VDVCZdRdW2w"target="_blank" rel="external nofollow noopener noreferrer">Dicas-L&lt;/a>&lt;/p></description></item><item><title>Diminuindo tentativas de invasão via SSH</title><link>https://sidneiweber.com.br/diminuindo-tentativas-de-invasao-via-ssh/</link><pubDate>Mon, 06 Jul 2015 15:45:47 -0300</pubDate><guid>https://sidneiweber.com.br/diminuindo-tentativas-de-invasao-via-ssh/</guid><description>&lt;p>Dentro do arquivo &lt;code>/etc/ssh/sshd_config&lt;/code> altere as seguintes linhas:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">LoginGraceTime 2m
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">MaxStartups 3:50:6&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Explicando:&lt;/p>
-&lt;p>O primeiro parâmetro informa que a conexão será cortada caso fique inativa por 2 minutos.&lt;/p>
-&lt;p>O segundo quer dizer que depois de 3 tentativas não autenticadas, 50% das conexões do IP são recusadas e quando o número de de tentavivas chegar a 6 todas as tentativas de conexões do IP serão recusadas.&lt;/p>
-&lt;p>Fonte: Dicas-l&lt;/p></description></item><item><title>Servidor Proxy com squid</title><link>https://sidneiweber.com.br/servidor-proxy-com-squid/</link><pubDate>Sun, 16 Feb 2014 18:53:08 -0300</pubDate><guid>https://sidneiweber.com.br/servidor-proxy-com-squid/</guid><description>&lt;p>Instalação:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get install squid&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Arquivo base de configuração (/etc/squid/squid.conf):&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;span class="lnt">38
-&lt;/span>&lt;span class="lnt">39
-&lt;/span>&lt;span class="lnt">40
-&lt;/span>&lt;span class="lnt">41
-&lt;/span>&lt;span class="lnt">42
-&lt;/span>&lt;span class="lnt">43
-&lt;/span>&lt;span class="lnt">44
-&lt;/span>&lt;span class="lnt">45
-&lt;/span>&lt;span class="lnt">46
-&lt;/span>&lt;span class="lnt">47
-&lt;/span>&lt;span class="lnt">48
-&lt;/span>&lt;span class="lnt">49
-&lt;/span>&lt;span class="lnt">50
-&lt;/span>&lt;span class="lnt">51
-&lt;/span>&lt;span class="lnt">52
-&lt;/span>&lt;span class="lnt">53
-&lt;/span>&lt;span class="lnt">54
-&lt;/span>&lt;span class="lnt">55
-&lt;/span>&lt;span class="lnt">56
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_port&lt;/span> &lt;span class="mi">3128&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">visible_hostname&lt;/span> &lt;span class="n">KORZOS&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">all&lt;/span> &lt;span class="n">src&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">0.0&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mf">0.0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">manager&lt;/span> &lt;span class="n">proto&lt;/span> &lt;span class="n">cache_object&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">localhost&lt;/span> &lt;span class="n">src&lt;/span> &lt;span class="mf">127.0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">0.1&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mf">255.255&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">255.255&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">SSL_ports&lt;/span> &lt;span class="n">port&lt;/span> &lt;span class="mi">443&lt;/span> &lt;span class="mi">563&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">Safe_ports&lt;/span> &lt;span class="n">port&lt;/span> &lt;span class="mi">21&lt;/span> &lt;span class="mi">80&lt;/span> &lt;span class="mi">443&lt;/span> &lt;span class="mi">563&lt;/span> &lt;span class="mi">70&lt;/span> &lt;span class="mi">210&lt;/span> &lt;span class="mi">280&lt;/span> &lt;span class="mi">488&lt;/span> &lt;span class="mi">59&lt;/span> &lt;span class="mi">777&lt;/span> &lt;span class="mi">901&lt;/span> &lt;span class="mi">1025&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">65535&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">purge&lt;/span> &lt;span class="n">method&lt;/span> &lt;span class="n">PURGE&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">CONNECT&lt;/span> &lt;span class="n">method&lt;/span> &lt;span class="n">CONNECT&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">allow&lt;/span> &lt;span class="n">manager&lt;/span> &lt;span class="n">localhost&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">deny&lt;/span> &lt;span class="n">manager&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">allow&lt;/span> &lt;span class="n">purge&lt;/span> &lt;span class="n">localhost&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">deny&lt;/span> &lt;span class="n">purge&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">deny&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="n">Safe_ports&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">deny&lt;/span> &lt;span class="n">CONNECT&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="n">SSL_ports&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">redelocal&lt;/span> &lt;span class="n">src&lt;/span> &lt;span class="mf">192.168&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">0.0&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">24&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">allow&lt;/span> &lt;span class="n">localhost&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">allow&lt;/span> &lt;span class="n">redelocal&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">http_access&lt;/span> &lt;span class="n">deny&lt;/span> &lt;span class="n">all&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Define o caminho das páginas de erro do squid.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">error_directory&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">usr&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">share&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">squid&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">errors&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">Portuguese&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Define o e-mail que vai aparecer na página de erro do Squid, assim o usuário terá mais informações para interagir com o responsável.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache_mgr&lt;/span> &lt;span class="n">admin&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">seu_dominio&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">br&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Esta ACL é responsável por não armazenar conteúdo CGI em cache.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">acl&lt;/span> &lt;span class="n">QUERY&lt;/span> &lt;span class="n">urlpath_regex&lt;/span> &lt;span class="n">cgi&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bin&lt;/span> &lt;span class="err">?&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">no_cache&lt;/span> &lt;span class="n">deny&lt;/span> &lt;span class="n">QUERY&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Define a quantidade de memória RAM reservada para o uso do Squid.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache_mem&lt;/span> &lt;span class="mi">64&lt;/span> &lt;span class="n">MB&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Esta linha é responsável por limitar o tamanho dos arquivos que serão armazenados no cache da memória RAM.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">maximum_object_size_in_memory&lt;/span> &lt;span class="mi">64&lt;/span> &lt;span class="n">KB&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Aqui definimos o tamanho máximo e mínimo respectivamente dos arquivos que serão armazenados no cache do HD.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">maximum_object_size&lt;/span> &lt;span class="mi">512&lt;/span> &lt;span class="n">MB&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">minimum_object_size&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="n">KB&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Com essas duas linhas podemos definir a porcentagem de atualização do cache, estamos dizendo que quando o cache chegar em 95% o Squid irá apagar os arquivos mais antigos até chegar a 90%.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache_swap_low&lt;/span> &lt;span class="mi">90&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache_swap_high&lt;/span> &lt;span class="mi">95&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Nessa linha conseguimos definir o tamanho e alguns parâmetros do cache feito em HD, a linha é composta por quatro valores, o 1º define o caminho do cache (/var/spool/squid), o 2º o tamanho que será alocado em MB para o cache (2Gb), o 3º a quantidade de diretórios criados para o cache (16) e o 4º é o numero de subdiretórios que serão criados. Se você possuir bastante espaço em disco e quiser armazenar os arquivos por mais tempo, aumente a opção do tamanha do cache.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache_dir&lt;/span> &lt;span class="n">ufs&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="k">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">spool&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">squid&lt;/span> &lt;span class="mi">2048&lt;/span> &lt;span class="mi">16&lt;/span> &lt;span class="mi">256&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Define onde serão armazenados os registros de log do Squid.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache_access_log&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="k">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nb">log&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">squid&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">access&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">log&lt;/span> 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">refresh_pattern&lt;/span> &lt;span class="o">^&lt;/span>&lt;span class="n">ftp&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">15&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="o">%&lt;/span> &lt;span class="mi">2280&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">refresh_pattern&lt;/span> &lt;span class="o">^&lt;/span>&lt;span class="n">gopher&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">15&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="o">%&lt;/span> &lt;span class="mi">2280&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">refresh_pattern&lt;/span> &lt;span class="o">.&lt;/span> &lt;span class="mi">15&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="o">%&lt;/span> &lt;span class="mi">2280&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Reiniciar squid:&lt;/p></description></item><item><title>Instalar servidor Samba [Dica rápida]</title><link>https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/</link><pubDate>Tue, 11 Feb 2014 23:59:10 -0300</pubDate><guid>https://sidneiweber.com.br/instalar-servidor-samba-dica-rapida/</guid><description>&lt;p>Primeiramente instalaremos o pacote:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get install samba&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Depois alteramos a configuração do arquivo:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">vi /etc/samba/smb.conf&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>E alteramos alguns parametros:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[global]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#nome do grupo de trabalho
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">workgroup = casa
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#como a maquina irá aparecer na rede Windows
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">netbios name = servidor de arquivos
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#autenticação
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#modo de acesso ao servidor
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">security = user / share
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#lembrado que user é quando se criará um usuário no sistema, e share sem usuário
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#compartilhamentos
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[arquivos]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#descrição do compartilhamento
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">comment = meus arquivos
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#caminho da pasta no servidor
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">path = /arquivos # ou o diretório desejado
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">public = yes
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">browseable = yes #se está visível ou oculto na rede
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">writeable = yes #permite escrita
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">read only = no #somente leitura
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">valid users = VOCE
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># define a mascara em que os arquivos serão criados
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">create mask = 0700 #(terão a permissão rwx somente para o root)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># define a mascara em que os diretórios serão criados
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">directory mask = 0700&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Vamos criar o diretório compartilhado no servidor:&lt;/p></description></item><item><title>Instalando um dashboard para seu servidor linux</title><link>https://sidneiweber.com.br/instalando-um-dashboard-para-seu-servidor-linux/</link><pubDate>Tue, 04 Feb 2014 23:31:35 -0300</pubDate><guid>https://sidneiweber.com.br/instalando-um-dashboard-para-seu-servidor-linux/</guid><description>&lt;p>&lt;img loading="lazy" src="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png" alt="dash &amp;gt;&amp;lt;" srcset="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?size=small, https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?size=medium 1.5x, https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png?size=large 2x" data-title="dash &amp;gt;&amp;lt;" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /var/www/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/afaqurk/linux-dash.git
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum -y install php php-common php-gd php-mbstring php-xml php-xmlrpc
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/etc/init.d/httpd start&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Agora acesse: &lt;a href="http://endereco.ip.do.server/linux-dash"target="_blank" rel="external nofollow noopener noreferrer">http://endereco.ip.do.server/linux-dash&lt;/a>&lt;/p>
-&lt;p>&lt;a href="http://www.ricardomartins.com.br/dashboard-lindao-para-seu-servidor-linux/"target="_blank" rel="external nofollow noopener noreferrer">Fonte&lt;/a>&lt;/p></description></item><item><title>Ativando o suporte a SSL em servidores web</title><link>https://sidneiweber.com.br/ativando-o-suporte-a-ssl-em-servidores-web/</link><pubDate>Tue, 23 Apr 2013 11:55:16 -0300</pubDate><guid>https://sidneiweber.com.br/ativando-o-suporte-a-ssl-em-servidores-web/</guid><description>&lt;p>O SSL (Secure Socket Layer) é o protocolo usado para criar páginas seguras, encriptando toda a transmissão entre o cliente e o servidor. Os dois usos mais comuns são em páginas de comércio eletrônico, onde é necessário oferecer um ambiente seguro para concluir a transação e transmitir dados confidenciais e também na criação de ambientes administrativos, como os usados pela maioria dos gestores de conteúdo, que permitem que você gerencie o conteúdo do site.&lt;/p></description></item><item><title>Esconder versão dos serviços de rede</title><link>https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/</link><pubDate>Tue, 29 Sep 2009 12:16:09 -0300</pubDate><guid>https://sidneiweber.com.br/esconder-versao-dos-servicos-de-rede/</guid><description>&lt;p>Escondendo a versão dos serviços que estão rodando em seu servidor para aumentar a segurança Pessoal.&lt;/p>
-&lt;p>Importante para a segurança de um servidor é esconder a versão de seus serviços para que o invasor não fique procurando uma falha de segurança para aquela versão específica do daemon.&lt;/p>
-&lt;p>Então vamos ocultar alguns serviços mais utilizados:&lt;/p>
-&lt;h1 id="proftpd" class="heading-element">&lt;span>&lt;strong>Proftpd&lt;/strong>&lt;/span>
- &lt;a href="#proftpd" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h1>&lt;p>Basta adicionar a seguinte linha no proftpd.conf:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Servidores on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/servidores/</link><description>Recent content in Servidores on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Thu, 17 Nov 2016 10:33:43 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/servidores/index.xml" rel="self" type="application/rss+xml"/><item><title>Comandos básicos Docker</title><link>https://sidneiweber.com.br/posts/comandos-basicos-docker/</link><pubDate>Thu, 17 Nov 2016 10:33:43 -0300</pubDate><guid>https://sidneiweber.com.br/posts/comandos-basicos-docker/</guid><description>&lt;p&gt;Docker é um ferramenta que venha aprendendo a pouco tempo, não explicarei o que é o docker, apenas alguns detalhes no uso. Caso queira uma explicação melhor sobre o que é docker, recomendo esse &lt;a
+href="http://www.mundodocker.com.br/o-que-e-docker/"
+target="_blank"
+&gt;artigo do Mundo Docker&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Evitando encerramento acidental de sessões bash</title><link>https://sidneiweber.com.br/posts/evitando-encerramento-acidental-de-sessoes-bash/</link><pubDate>Mon, 06 Jul 2015 15:50:35 -0300</pubDate><guid>https://sidneiweber.com.br/posts/evitando-encerramento-acidental-de-sessoes-bash/</guid><description>&lt;p&gt;A sequência de teclas &amp;ldquo;&lt;code&gt;CTRL+D&lt;/code&gt;&amp;rdquo; encerra uma sessão bash. Às vezes digitamos estas teclas por acidente e encerramos uma sessão acidentalmente.&lt;/p&gt;
+&lt;p&gt;Para evitar que isto ocorra, definimos a variável de ambiente &lt;code&gt;IGNOREEOF&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Diminuindo tentativas de invasão via SSH</title><link>https://sidneiweber.com.br/posts/diminuindo-tentativas-de-invasao-via-ssh/</link><pubDate>Mon, 06 Jul 2015 15:45:47 -0300</pubDate><guid>https://sidneiweber.com.br/posts/diminuindo-tentativas-de-invasao-via-ssh/</guid><description>&lt;p&gt;Dentro do arquivo &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt; altere as seguintes linhas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;LoginGraceTime 2m
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;MaxStartups 3:50:6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Explicando:&lt;/p&gt;
+&lt;p&gt;O primeiro parâmetro informa que a conexão será cortada caso fique inativa por 2 minutos.&lt;/p&gt;
+&lt;p&gt;O segundo quer dizer que depois de 3 tentativas não autenticadas, 50% das conexões do IP são recusadas e quando o número de de tentavivas chegar a 6 todas as tentativas de conexões do IP serão recusadas.&lt;/p&gt;</description></item><item><title>Servidor Proxy com squid</title><link>https://sidneiweber.com.br/posts/servidor-proxy-com-squid/</link><pubDate>Sun, 16 Feb 2014 18:53:08 -0300</pubDate><guid>https://sidneiweber.com.br/posts/servidor-proxy-com-squid/</guid><description>&lt;p&gt;Instalação:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt-get install squid
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Arquivo base de configuração (/etc/squid/squid.conf):&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;http_port 3128
+visible_hostname KORZOS
+acl all src 0.0.0.0/0.0.0.0
+acl manager proto cache_object
+acl localhost src 127.0.0.1/255.255.255.255
+acl SSL_ports port 443 563
+acl Safe_ports port 21 80 443 563 70 210 280 488 59 777 901 1025-65535
+acl purge method PURGE
+acl CONNECT method CONNECT
+http_access allow manager localhost
+http_access deny manager
+http_access allow purge localhost
+http_access deny purge
+http_access deny !Safe_ports
+http_access deny CONNECT !SSL_ports
+acl redelocal src 192.168.0.0/24
+http_access allow localhost
+http_access allow redelocal
+http_access deny all
+# Define o caminho das páginas de erro do squid.
+error_directory /usr/share/squid/errors/Portuguese
+# Define o e-mail que vai aparecer na página de erro do Squid, assim o usuário terá mais informações para interagir com o responsável.
+cache_mgr admin@seu_dominio.com.br
+# Esta ACL é responsável por não armazenar conteúdo CGI em cache.
+acl QUERY urlpath_regex cgi-bin ?
+no_cache deny QUERY
+# Define a quantidade de memória RAM reservada para o uso do Squid.
+cache_mem 64 MB
+# Esta linha é responsável por limitar o tamanho dos arquivos que serão armazenados no cache da memória RAM.
+maximum_object_size_in_memory 64 KB
+# Aqui definimos o tamanho máximo e mínimo respectivamente dos arquivos que serão armazenados no cache do HD.
+maximum_object_size 512 MB
+minimum_object_size 0 KB
+# Com essas duas linhas podemos definir a porcentagem de atualização do cache, estamos dizendo que quando o cache chegar em 95% o Squid irá apagar os arquivos mais antigos até chegar a 90%.
+cache_swap_low 90
+cache_swap_high 95
+# Nessa linha conseguimos definir o tamanho e alguns parâmetros do cache feito em HD, a linha é composta por quatro valores, o 1º define o caminho do cache (/var/spool/squid), o 2º o tamanho que será alocado em MB para o cache (2Gb), o 3º a quantidade de diretórios criados para o cache (16) e o 4º é o numero de subdiretórios que serão criados. Se você possuir bastante espaço em disco e quiser armazenar os arquivos por mais tempo, aumente a opção do tamanha do cache.
+cache_dir ufs /var/spool/squid 2048 16 256
+# Define onde serão armazenados os registros de log do Squid.
+cache_access_log /var/log/squid/access.log
+refresh_pattern ^ftp: 15 20% 2280
+refresh_pattern ^gopher: 15 0% 2280
+refresh_pattern . 15 20% 2280
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reiniciar squid:&lt;/p&gt;</description></item><item><title>Instalar servidor Samba [Dica rápida]</title><link>https://sidneiweber.com.br/posts/instalar-servidor-samba-dica-rapida/</link><pubDate>Tue, 11 Feb 2014 23:59:10 -0300</pubDate><guid>https://sidneiweber.com.br/posts/instalar-servidor-samba-dica-rapida/</guid><description>&lt;p&gt;Primeiramente instalaremos o pacote:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt-get install samba
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois alteramos a configuração do arquivo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;vi /etc/samba/smb.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E alteramos alguns parametros:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[global]
+#nome do grupo de trabalho
+workgroup = casa
+#como a maquina irá aparecer na rede Windows
+netbios name = servidor de arquivos
+#autenticação
+#modo de acesso ao servidor
+security = user / share
+#lembrado que user é quando se criará um usuário no sistema, e share sem usuário
+#compartilhamentos
+[arquivos]
+#descrição do compartilhamento
+comment = meus arquivos
+#caminho da pasta no servidor
+path = /arquivos # ou o diretório desejado
+public = yes
+browseable = yes #se está visível ou oculto na rede
+writeable = yes #permite escrita
+read only = no #somente leitura
+valid users = VOCE
+# define a mascara em que os arquivos serão criados
+create mask = 0700 #(terão a permissão rwx somente para o root)
+# define a mascara em que os diretórios serão criados
+directory mask = 0700
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vamos criar o diretório compartilhado no servidor:&lt;/p&gt;</description></item><item><title>Instalando um dashboard para seu servidor linux</title><link>https://sidneiweber.com.br/posts/instalando-um-dashboard-para-seu-servidor-linux/</link><pubDate>Tue, 04 Feb 2014 23:31:35 -0300</pubDate><guid>https://sidneiweber.com.br/posts/instalando-um-dashboard-para-seu-servidor-linux/</guid><description>&lt;p&gt;
+&lt;figure&gt;
+&lt;img
+class="my-0 rounded-md"
+loading="lazy"
+decoding="async"
+fetchpriority="low"
+alt="dash &amp;gt;&amp;lt;"
+srcset="
+/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031_hu_da8851f6b90b994a.png 330w,
+/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031_hu_647944d59c7952b.png 660w,
+/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031_hu_556921090fa33a90.png 1280w
+"
+data-zoom-src="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png"
+src="https://sidneiweber.com.br/img/uploads/2014/02/screen-shot-2014-01-28-at-11-09-031.png"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /var/www/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/afaqurk/linux-dash.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yum -y install php php-common php-gd php-mbstring php-xml php-xmlrpc
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/etc/init.d/httpd start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora acesse: &lt;a
+href="http://endereco.ip.do.server/linux-dash"
+target="_blank"
+&gt;http://endereco.ip.do.server/linux-dash&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+href="http://www.ricardomartins.com.br/dashboard-lindao-para-seu-servidor-linux/"
+target="_blank"
+&gt;Fonte&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Ativando o suporte a SSL em servidores web</title><link>https://sidneiweber.com.br/posts/ativando-o-suporte-a-ssl-em-servidores-web/</link><pubDate>Tue, 23 Apr 2013 11:55:16 -0300</pubDate><guid>https://sidneiweber.com.br/posts/ativando-o-suporte-a-ssl-em-servidores-web/</guid><description>&lt;p&gt;O SSL (Secure Socket Layer) é o protocolo usado para criar páginas seguras, encriptando toda a transmissão entre o cliente e o servidor. Os dois usos mais comuns são em páginas de comércio eletrônico, onde é necessário oferecer um ambiente seguro para concluir a transação e transmitir dados confidenciais e também na criação de ambientes administrativos, como os usados pela maioria dos gestores de conteúdo, que permitem que você gerencie o conteúdo do site.&lt;/p&gt;</description></item><item><title>Esconder versão dos serviços de rede</title><link>https://sidneiweber.com.br/posts/esconder-versao-dos-servicos-de-rede/</link><pubDate>Tue, 29 Sep 2009 12:16:09 -0300</pubDate><guid>https://sidneiweber.com.br/posts/esconder-versao-dos-servicos-de-rede/</guid><description>&lt;p&gt;Escondendo a versão dos serviços que estão rodando em seu servidor para aumentar a segurança Pessoal.&lt;/p&gt;
+&lt;p&gt;Importante para a segurança de um servidor é esconder a versão de seus serviços para que o invasor não fique procurando uma falha de segurança para aquela versão específica do daemon.&lt;/p&gt;</description></item></channel></rss>
