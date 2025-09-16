@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Squid on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/squid/</link><description>Recent content in Squid on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Mon, 06 Jul 2015 15:44:15 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/squid/index.xml" rel="self" type="application/rss+xml"/><item><title>Códigos do Squid</title><link>https://sidneiweber.com.br/posts/codigos-do-squid/</link><pubDate>Mon, 06 Jul 2015 15:44:15 -0300</pubDate><guid>https://sidneiweber.com.br/posts/codigos-do-squid/</guid><description>&lt;p&gt;COD DESCRIÇÃO&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Squid on Sidnei Weber</title><link>https://sidneiweber.com.br/tags/squid/</link><description>Recent content in Squid on Sidnei Weber</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>© 2025 Sidnei Weber</copyright><lastBuildDate>Mon, 06 Jul 2015 15:44:15 -0300</lastBuildDate><atom:link href="https://sidneiweber.com.br/tags/squid/index.xml" rel="self" type="application/rss+xml"/><item><title>Códigos do Squid</title><link>https://sidneiweber.com.br/codigos-do-squid/</link><pubDate>Mon, 06 Jul 2015 15:44:15 -0300</pubDate><guid>https://sidneiweber.com.br/codigos-do-squid/</guid><description>&lt;p&gt;COD DESCRIÇÃO&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;0 Resposta não recebida&lt;/li&gt;
 &lt;/ul&gt;
@@ -18,7 +18,7 @@
 &lt;li&gt;206 Conteúdo parcial&lt;/li&gt;
 &lt;li&gt;207 Status múltiplos&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Redirecionamentos:&lt;/p&gt;</description></item><item><title>Proxy transparente</title><link>https://sidneiweber.com.br/posts/proxy-transparente/</link><pubDate>Sun, 16 Feb 2014 19:31:32 -0300</pubDate><guid>https://sidneiweber.com.br/posts/proxy-transparente/</guid><description>&lt;p&gt;Fazer com que todas as conexões passem pelo proxy&lt;/p&gt;
+&lt;p&gt;Redirecionamentos:&lt;/p&gt;</description></item><item><title>Proxy transparente</title><link>https://sidneiweber.com.br/proxy-transparente/</link><pubDate>Sun, 16 Feb 2014 19:31:32 -0300</pubDate><guid>https://sidneiweber.com.br/proxy-transparente/</guid><description>&lt;p&gt;Fazer com que todas as conexões passem pelo proxy&lt;/p&gt;
 &lt;p&gt;Criar o arquivo:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /etc/init.d
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;touch rc.firewall
@@ -50,7 +50,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -t nat -I POSTROUTING -s &lt;span class="nv"&gt;$rede_interna&lt;/span&gt; -j MASQUERADE
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;iptables -A FORWARD -s &lt;span class="nv"&gt;$rede_interna&lt;/span&gt; -d loginnet.passport.com -j REJECT
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Permissao de execução&lt;/p&gt;</description></item><item><title>Servidor Proxy com squid</title><link>https://sidneiweber.com.br/posts/servidor-proxy-com-squid/</link><pubDate>Sun, 16 Feb 2014 18:53:08 -0300</pubDate><guid>https://sidneiweber.com.br/posts/servidor-proxy-com-squid/</guid><description>&lt;p&gt;Instalação:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Permissao de execução&lt;/p&gt;</description></item><item><title>Servidor Proxy com squid</title><link>https://sidneiweber.com.br/servidor-proxy-com-squid/</link><pubDate>Sun, 16 Feb 2014 18:53:08 -0300</pubDate><guid>https://sidneiweber.com.br/servidor-proxy-com-squid/</guid><description>&lt;p&gt;Instalação:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt-get install squid
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Arquivo base de configuração (/etc/squid/squid.conf):&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;http_port 3128
@@ -96,7 +96,7 @@ cache_access_log /var/log/squid/access.log
 refresh_pattern ^ftp: 15 20% 2280
 refresh_pattern ^gopher: 15 0% 2280
 refresh_pattern . 15 20% 2280
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reiniciar squid:&lt;/p&gt;</description></item><item><title>Acesso negado - Squid</title><link>https://sidneiweber.com.br/posts/acesso-negado-squid/</link><pubDate>Mon, 28 Sep 2009 19:11:41 -0300</pubDate><guid>https://sidneiweber.com.br/posts/acesso-negado-squid/</guid><description>&lt;p&gt;ACESSO NEGADO: A página não pode ser exibida&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reiniciar squid:&lt;/p&gt;</description></item><item><title>Acesso negado - Squid</title><link>https://sidneiweber.com.br/acesso-negado-squid/</link><pubDate>Mon, 28 Sep 2009 19:11:41 -0300</pubDate><guid>https://sidneiweber.com.br/acesso-negado-squid/</guid><description>&lt;p&gt;ACESSO NEGADO: A página não pode ser exibida&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# ACESSO NEGADO
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
