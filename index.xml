@@ -2,151 +2,431 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;COPY&lt;/span&gt; app.py /app/&lt;span class="err"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;e:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;ADD&lt;/span&gt; app.py /app/&lt;span class="err"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;À primeira vista, parecem fazer exatamente a mesma coisa. E, na maioria dos casos simples, realmente fazem. Mas existe uma diferença importante:&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/diferenca-entre-docker-add-e-copy/feature-image.png"/></item><item><title>Criando seu primeiro módulo personalizado para Ansible</title><link>https://sidneiweber.com.br/criando-modulos-personalizados-para-ansible/</link><pubDate>Thu, 20 Aug 2026 21:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/criando-modulos-personalizados-para-ansible/</guid><description>&lt;p&gt;Ansible é uma ferramenta de automação conhecida por sua abordagem &lt;em&gt;agentless&lt;/em&gt;, ou seja, não é preciso instalar nada nos nós gerenciados, e pela simplicidade dos playbooks escritos em YAML. Por baixo dos panos, ele se conecta aos hosts e executa pequenos programas chamados &lt;strong&gt;módulos&lt;/strong&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/criando-modulos-personalizados-para-ansible/featured-image.jpeg"/></item><item><title>As melhores ferramentas para gerenciar Kubernetes (na minha opinião)</title><link>https://sidneiweber.com.br/melhores-ferramentas-para-gerenciar-kubernetes/</link><pubDate>Wed, 02 Jul 2025 20:30:00 +0000</pubDate><guid>https://sidneiweber.com.br/melhores-ferramentas-para-gerenciar-kubernetes/</guid><description>Se você trabalha com Kubernetes no dia a dia, sabe que escolher as ferramentas certas pode te ajudar muito a otimizar o trabalho. Caso contrário gerenciar seu kubernetes pode virar uma dor de cabeça. Neste post, compartilho as ferramentas que uso diariamente para tornar a gestão de clusters Kubernetes mais produtiva, segura e eficiente.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/melhores-ferramentas-para-gerenciar-kubernetes/featured-image.png"/></item><item><title>O que é engenharia do caos</title><link>https://sidneiweber.com.br/o-que-e-engenharia-do-caos/</link><pubDate>Tue, 26 Nov 2024 08:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/o-que-e-engenharia-do-caos/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/o-que-e-engenharia-do-caos/featured-image.jpeg"/></item><item><title>4 Alternativas ao Redis</title><link>https://sidneiweber.com.br/4-alternativas-ao-redis/</link><pubDate>Tue, 02 Apr 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/4-alternativas-ao-redis/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/4-alternativas-ao-redis/featured-image.png"/></item><item><title>Como utilizar o Traefik como ingress controller no Kubernetes</title><link>https://sidneiweber.com.br/como-utilizar-traefik-ingress-controller-no-kubernetes/</link><pubDate>Fri, 22 Mar 2024 10:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/como-utilizar-traefik-ingress-controller-no-kubernetes/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/como-utilizar-traefik-ingress-controller-no-kubernetes/featured-image.png"/></item><item><title>Criando uma API REST em Python com Flask</title><link>https://sidneiweber.com.br/criando-api-rest-em-python-com-flask/</link><pubDate>Thu, 07 Mar 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/criando-api-rest-em-python-com-flask/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/criando-api-rest-em-python-com-flask/featured-image.png"/></item><item><title>Um pouco sobre SLA, SLI e SLO</title><link>https://sidneiweber.com.br/um-pouco-sobre-sla-sli-slo/</link><pubDate>Fri, 23 Feb 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/um-pouco-sobre-sla-sli-slo/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/um-pouco-sobre-sla-sli-slo/featured-image.png"/></item><item><title>Como criar um cluster kubernetes EKS na AWS com eksctl</title><link>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</link><pubDate>Wed, 07 Feb 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/featured-image.gif"/></item><item><title>3 maneiras de iniciar um cluster Kubernetes localmente</title><link>https://sidneiweber.com.br/3-maneiras-iniciar-cluster-kubernetes-localmente/</link><pubDate>Thu, 18 Jan 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/3-maneiras-iniciar-cluster-kubernetes-localmente/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/3-maneiras-iniciar-cluster-kubernetes-localmente/featured-image.png"/></item><item><title>Instalação servidor Kafka no Ubuntu Server</title><link>https://sidneiweber.com.br/instalacao-servidor-kafka-ubuntu-server/</link><pubDate>Wed, 10 Jan 2024 10:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/instalacao-servidor-kafka-ubuntu-server/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/instalacao-servidor-kafka-ubuntu-server/featured-image.png"/></item><item><title>Tarefas para um engenheiro DevOps fazer quando não tiver o que fazer</title><link>https://sidneiweber.com.br/tarefas-engenheiro-devops-fazer-quando-nao-tem-o-que-fazer/</link><pubDate>Mon, 27 Nov 2023 09:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/tarefas-engenheiro-devops-fazer-quando-nao-tem-o-que-fazer/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/tarefas-engenheiro-devops-fazer-quando-nao-tem-o-que-fazer/featured-image.jpg"/></item><item><title>Os vingadores DevOps</title><link>https://sidneiweber.com.br/os-vingadores-devops/</link><pubDate>Thu, 10 Aug 2023 21:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/os-vingadores-devops/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/os-vingadores-devops/featured-image.png"/></item><item><title>Os quatro sinais de ouro da observabilidade</title><link>https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/</link><pubDate>Thu, 02 Feb 2023 16:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/</guid><description>&lt;p&gt;Muito além das métricas de CPU e memória podemos ter métricas efetivas e que nos ajudam a entender a saúde do nosso ambiente e resolver problemas de forma mais rápida caso eles ocorram.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/featured-image.jpg"/></item><item><title>Resume</title><link>https://sidneiweber.com.br/curriculo/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://sidneiweber.com.br/curriculo/</guid><description>&lt;h2 class="relative group"&gt;Experience
-&lt;div id="experience" class="anchor"&gt;&lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;À primeira vista, parecem fazer exatamente a mesma coisa. E, na maioria dos casos simples, realmente fazem. Mas existe uma diferença importante:&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/diferenca-entre-docker-add-e-copy/feature-image.png"/></item><item><title>Criando seu primeiro módulo personalizado para Ansible</title><link>https://sidneiweber.com.br/criando-modulos-personalizados-para-ansible/</link><pubDate>Thu, 20 Aug 2026 21:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/criando-modulos-personalizados-para-ansible/</guid><description>&lt;p&gt;Ansible é uma ferramenta de automação conhecida por sua abordagem &lt;em&gt;agentless&lt;/em&gt;, ou seja, não é preciso instalar nada nos nós gerenciados, e pela simplicidade dos playbooks escritos em YAML. Por baixo dos panos, ele se conecta aos hosts e executa pequenos programas chamados &lt;strong&gt;módulos&lt;/strong&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/criando-modulos-personalizados-para-ansible/featured-image.jpeg"/></item><item><title>As melhores ferramentas para gerenciar Kubernetes (na minha opinião)</title><link>https://sidneiweber.com.br/melhores-ferramentas-para-gerenciar-kubernetes/</link><pubDate>Wed, 02 Jul 2025 20:30:00 +0000</pubDate><guid>https://sidneiweber.com.br/melhores-ferramentas-para-gerenciar-kubernetes/</guid><description>Se você trabalha com Kubernetes no dia a dia, sabe que escolher as ferramentas certas pode te ajudar muito a otimizar o trabalho. Caso contrário gerenciar seu kubernetes pode virar uma dor de cabeça. Neste post, compartilho as ferramentas que uso diariamente para tornar a gestão de clusters Kubernetes mais produtiva, segura e eficiente.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/melhores-ferramentas-para-gerenciar-kubernetes/featured-image.png"/></item><item><title>O que é engenharia do caos</title><link>https://sidneiweber.com.br/o-que-e-engenharia-do-caos/</link><pubDate>Tue, 26 Nov 2024 08:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/o-que-e-engenharia-do-caos/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/o-que-e-engenharia-do-caos/featured-image.jpeg"/></item><item><title>4 Alternativas ao Redis</title><link>https://sidneiweber.com.br/4-alternativas-ao-redis/</link><pubDate>Tue, 02 Apr 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/4-alternativas-ao-redis/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/4-alternativas-ao-redis/featured-image.png"/></item><item><title>Como utilizar o Traefik como ingress controller no Kubernetes</title><link>https://sidneiweber.com.br/como-utilizar-traefik-ingress-controller-no-kubernetes/</link><pubDate>Fri, 22 Mar 2024 10:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/como-utilizar-traefik-ingress-controller-no-kubernetes/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/como-utilizar-traefik-ingress-controller-no-kubernetes/featured-image.png"/></item><item><title>Criando uma API REST em Python com Flask</title><link>https://sidneiweber.com.br/criando-api-rest-em-python-com-flask/</link><pubDate>Thu, 07 Mar 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/criando-api-rest-em-python-com-flask/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/criando-api-rest-em-python-com-flask/featured-image.png"/></item><item><title>Um pouco sobre SLA, SLI e SLO</title><link>https://sidneiweber.com.br/um-pouco-sobre-sla-sli-slo/</link><pubDate>Fri, 23 Feb 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/um-pouco-sobre-sla-sli-slo/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/um-pouco-sobre-sla-sli-slo/featured-image.png"/></item><item><title>Como criar um cluster kubernetes EKS na AWS com eksctl</title><link>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</link><pubDate>Wed, 07 Feb 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/como-criar-cluster-kubernetes-eks-na-aws-com-eksctl/featured-image.gif"/></item><item><title>3 maneiras de iniciar um cluster Kubernetes localmente</title><link>https://sidneiweber.com.br/3-maneiras-iniciar-cluster-kubernetes-localmente/</link><pubDate>Thu, 18 Jan 2024 12:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/3-maneiras-iniciar-cluster-kubernetes-localmente/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/3-maneiras-iniciar-cluster-kubernetes-localmente/featured-image.png"/></item><item><title>Instalação servidor Kafka no Ubuntu Server</title><link>https://sidneiweber.com.br/instalacao-servidor-kafka-ubuntu-server/</link><pubDate>Wed, 10 Jan 2024 10:20:00 +0000</pubDate><guid>https://sidneiweber.com.br/instalacao-servidor-kafka-ubuntu-server/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/instalacao-servidor-kafka-ubuntu-server/featured-image.png"/></item><item><title>Tarefas para um engenheiro DevOps fazer quando não tiver o que fazer</title><link>https://sidneiweber.com.br/tarefas-engenheiro-devops-fazer-quando-nao-tem-o-que-fazer/</link><pubDate>Mon, 27 Nov 2023 09:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/tarefas-engenheiro-devops-fazer-quando-nao-tem-o-que-fazer/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/tarefas-engenheiro-devops-fazer-quando-nao-tem-o-que-fazer/featured-image.jpg"/></item><item><title>Os vingadores DevOps</title><link>https://sidneiweber.com.br/os-vingadores-devops/</link><pubDate>Thu, 10 Aug 2023 21:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/os-vingadores-devops/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/os-vingadores-devops/featured-image.png"/></item><item><title>Os quatro sinais de ouro da observabilidade</title><link>https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/</link><pubDate>Thu, 02 Feb 2023 16:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/</guid><description>&lt;p&gt;Muito além das métricas de CPU e memória podemos ter métricas efetivas e que nos ajudam a entender a saúde do nosso ambiente e resolver problemas de forma mais rápida caso eles ocorram.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://sidneiweber.com.br/os-quatro-sinais-ouro-observabilidade/featured-image.jpg"/></item><item><title>Currículo</title><link>https://sidneiweber.com.br/curriculo/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://sidneiweber.com.br/curriculo/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl"&gt;
+DevOps Engineer com mais de 7 anos de experiência em cloud, infraestrutura como código, observabilidade e automação, e mais de 10 anos de carreira em TI.
+&lt;/div&gt;
+&lt;h2 class="relative group"&gt;Experiência
+&lt;div id="experiência" class="anchor"&gt;&lt;/div&gt;
+&lt;/h2&gt;
+&lt;ol class="border-l-2 border-primary-500 dark:border-primary-300 list-none"&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;DevOps Engineer&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+nov. 2025 – atual
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Saipos · Remoto
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+Sistema para restaurantes.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;DevOps Engineer&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+abr. 2024 – out. 2025
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Accountfy · Remoto
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+Kubernetes, Google Cloud Platform (GCP).
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;DevOps Specialist&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+set. 2023 – abr. 2024
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+GFT Technologies · Remoto
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+Amazon Web Services (AWS), Terraform.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;DevOps Engineer&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+fev. 2023 – set. 2023
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+MUSA · Remoto
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+- Migração do monolito para containers
+- Estruturação do ambiente para expansão e redução de custos
+- Implementação da cultura DevOps e melhorias no processo de entrega de software
+- Scan de vulnerabilidades no pipeline (GitHub Actions), com resultado comentado no PR e bloqueio de merge em caso de vulnerabilidade crítica
+- Plan do Terraform comentado automaticamente nos PRs do repositório de IaC
+- Automações com Ansible e AWX: backup e restore de bancos, execução de scripts e tarefas repetitivas
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;SRE&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+out. 2022 – jan. 2023
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Quanto · Remoto
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+- Sustentação dos produtos e da plataforma
+- Criação e manutenção das stacks com IaC
+- Observabilidade das aplicações e automação de processos
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;Tech Lead · DevOps Engineer&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+set. 2018 – set. 2022
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Warren Investimentos · Remoto
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+**Tech Lead** (abr. 2022 – set. 2022) · **DevOps Engineer** (set. 2018 – mar. 2022)
+- Criação e implementação dos ambientes do Elliot e da Warren
+- Estrutura para receber, gerenciar e pesquisar logs dos serviços
+- Padrões de observabilidade: métricas, alarmes e dashboards centralizados; workshop sobre observabilidade e traces
+- Automação da criação de recursos na nuvem e pipelines de CI/CD
+- Cluster de mensageria com Kafka, incluindo workshops internos sobre a ferramenta
+- Qualidade de código com SonarQube
+- Redução de custos na AWS com ECS Fargate Spot em todos os ambientes, incluindo produção
+- Orquestração de containers, bancos de dados e rotinas de backup e restore
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;DevOps Engineer&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+set. 2018 – dez. 2021
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Elliot
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+- Build e deploy de aplicativos iOS (Fastlane, Bitrise, TestFlight) e Android (Bitrise, Gradle)
+- Monitoramento do cluster Kafka com Prometheus, exporters e Grafana
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;Suporte técnico&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+nov. 2017 – set. 2018
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Grupo Herval · Presencial
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+Suporte à infraestrutura e aos sistemas da empresa e filiais, em ambiente misto (Linux e Windows).
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;Analista de infraestrutura&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+mai. 2016 – nov. 2017
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Getnet Brasil · Campo Bom, RS
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+- Monitoramento da infraestrutura e do transacional
+- Documentação e instruções de trabalho
+- Suporte ao data center: servidores, cabeamento estruturado, geradores e rotinas de backup
+- Ambiente misto (Windows, AIX, Linux) e alterações de artefatos Oracle (ODI, OSB, SOA)
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;Analista de sistemas de TI&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+dez. 2010 – dez. 2012
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Prefeitura Municipal de Sapiranga · Sapiranga, RS
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+Infraestrutura de rede e gestão de infraestrutura de TI.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 class="relative group"&gt;Formação
+&lt;div id="formação" class="anchor"&gt;&lt;/div&gt;
+&lt;/h2&gt;
+&lt;ol class="border-l-2 border-primary-500 dark:border-primary-300 list-none"&gt;
+&lt;li&gt;
+&lt;div class="flex flex-start"&gt;
+&lt;div
+class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"&gt;
+&lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;
+&lt;path fill="currentColor" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"&gt;
+&lt;div class="flex justify-between"&gt;
+&lt;h2 class="mt-0"&gt;Segurança da Informação&lt;/h2&gt;
+&lt;h3 class=""&gt;
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+2022
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;h4 class="mt-0"&gt;
+Tecnólogo · UNIP
+&lt;/h4&gt;
+&lt;div class="mb-6"&gt;
+Curso concluído em 2022.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 class="relative group"&gt;Certificações
+&lt;div id="certificações" class="anchor"&gt;&lt;/div&gt;
 &lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Company&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;th&gt;Role&lt;/th&gt;
-&lt;th&gt;Dates&lt;/th&gt;
-&lt;th&gt;Location&lt;/th&gt;
+&lt;th&gt;Certificação&lt;/th&gt;
+&lt;th&gt;Emissor&lt;/th&gt;
+&lt;th&gt;Emissão&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td rowspan=3&gt;&lt;img class="customEntitityLogo" src="docker.png"/&gt;&lt;/td&gt;
-&lt;td rowspan=3&gt;&lt;a href="https://www.docker.com/" target="_blank"&gt;Docker&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;AWS Certified Solutions Architect – Professional&lt;/td&gt;
+&lt;td&gt;Amazon Web Services&lt;/td&gt;
+&lt;td&gt;jun. 2023&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Principal Product Manager&lt;/td&gt;
-&lt;td&gt;2024 - Present&lt;/td&gt;
-&lt;td&gt;Full Remote &lt;/br&gt; Lisbon, PT&lt;/td&gt;
+&lt;td&gt;AWS Certified Solutions Architect – Associate&lt;/td&gt;
+&lt;td&gt;Amazon Web Services&lt;/td&gt;
+&lt;td&gt;set. 2020&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Staff Product Manager&lt;/td&gt;
-&lt;td&gt;2022 - 2024&lt;/td&gt;
-&lt;td&gt;Full Remote &lt;/br&gt; Lisbon, PT&lt;/td&gt;
+&lt;td&gt;CompTIA Linux+&lt;/td&gt;
+&lt;td&gt;CompTIA&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img class="customEntitityLogo" src="aws.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://aws-startup-lofts.com/emea" target="_blank"&gt;AWS Startup Loft&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Startup Advisor&lt;/td&gt;
-&lt;td&gt;2022 - 2024&lt;/td&gt;
-&lt;td&gt;Full Remote &lt;/br&gt; Lisbon, PT&lt;/td&gt;
+&lt;td&gt;LPIC-1&lt;/td&gt;
+&lt;td&gt;Linux Professional Institute&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td rowspan=3&gt;&lt;img class="customEntitityLogo" src="truphone.png"/&gt;&lt;/td&gt;
-&lt;td rowspan=3&gt;&lt;a href="https://www.truphone.com/" target="_blank"&gt;Truphone&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DevOps Essentials Professional Certificate (DEPC)&lt;/td&gt;
+&lt;td&gt;Certiprof&lt;/td&gt;
+&lt;td&gt;jul. 2020&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Group Product Manager&lt;/td&gt;
-&lt;td&gt;2021 - 2022&lt;/td&gt;
-&lt;td rowspan=2&gt;Hybrid &lt;/br&gt; Lisbon, PT&lt;/td&gt;
+&lt;td&gt;Scrum Foundation Professional Certificate&lt;/td&gt;
+&lt;td&gt;Certiprof&lt;/td&gt;
+&lt;td&gt;jun. 2020&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Senior Product Manager&lt;/td&gt;
-&lt;td&gt;2020 - 2021&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td rowspan=3&gt;&lt;img class="customEntitityLogo" src="vodafone.png"/&gt;&lt;/td&gt;
-&lt;td rowspan=3&gt;&lt;a href="https://www.vodafone.com/" target="_blank"&gt;Vodafone Group&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Analytics Squad Lead &lt;/td&gt;
-&lt;td&gt;2019 - 2020&lt;/td&gt;
-&lt;td rowspan=2&gt;Lisbon, PT &lt;/br&gt; London, UK&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Senior Product Manager&lt;/td&gt;
-&lt;td&gt;2018 - 2019&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img class="customEntitityLogo" src="sky.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.sky.de/" target="_blank"&gt;Sky Deutschland&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Senior Product Architect&lt;/td&gt;
-&lt;td&gt;2016 - 2018&lt;/td&gt;
-&lt;td&gt;Munich, DE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img class="customEntitityLogo" src="skimic.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://skimic.com" target="_blank"&gt;Skimic&lt;/a&gt; &lt;/td&gt;
-&lt;td&gt;Founder&lt;/td&gt;
-&lt;td&gt;2016 - 2017&lt;/td&gt;
-&lt;td&gt;Munich, DE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img class="customEntitityLogo" src="vodafone.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.vodafone.com/" target="_blank"&gt;Vodafone Group&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Product Manager&lt;/td&gt;
-&lt;td&gt;2015 - 2016&lt;/td&gt;
-&lt;td&gt;Lisbon, PT&lt;/br&gt;London, UK&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td rowspan=3&gt;&lt;img class="customEntitityLogo" src="nos.png"/&gt;&lt;/td&gt;
-&lt;td rowspan=3&gt;&lt;a href="https://www.nos.pt" target="_blank"&gt;NOS&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Product Manager&lt;/td&gt;
-&lt;td&gt;2014 - 2015&lt;/td&gt;
-&lt;td rowspan=2&gt;Lisbon, PT&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Solutions Architect&lt;/td&gt;
-&lt;td&gt;2012 - 2014&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img class="customEntitityLogo" src="inesc.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.inesc-id.pt/" target="_blank"&gt;Inesc-ID&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Junior Researcher&lt;/td&gt;
-&lt;td&gt;2011 - 2012&lt;/td&gt;
-&lt;td&gt;Lisbon, PT&lt;/td&gt;
+&lt;td&gt;Agile Scrum Foundation&lt;/td&gt;
+&lt;td&gt;Estabilis&lt;/td&gt;
+&lt;td&gt;mai. 2020&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 class="relative group"&gt;Education
-&lt;div id="education" class="anchor"&gt;&lt;/div&gt;
+&lt;h2 class="relative group"&gt;Cursos
+&lt;div id="cursos" class="anchor"&gt;&lt;/div&gt;
 &lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;School&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;th&gt;Degree&lt;/th&gt;
-&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Curso&lt;/th&gt;
+&lt;th&gt;Instituição&lt;/th&gt;
+&lt;th&gt;Ano&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td rowspan=4&gt;&lt;img class="customEntitityLogo" src="hbs.svg"/&gt;&lt;/td&gt;
-&lt;td rowspan=4&gt;&lt;a href="https://online.hbs.edu/" target="_blank"&gt;Harvard Business School Online&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Treinamento Trino&lt;/td&gt;
+&lt;td&gt;Ambiente Livre&lt;/td&gt;
+&lt;td&gt;2025&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Launching Tech Ventures&lt;/td&gt;
+&lt;td&gt;Uncomplicating Kubernetes 2024&lt;/td&gt;
+&lt;td&gt;LINUXtips&lt;/td&gt;
+&lt;td&gt;2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Uncomplicating Kubernetes&lt;/td&gt;
+&lt;td&gt;LINUXtips&lt;/td&gt;
 &lt;td&gt;2023&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Entrepreneurship Essentials&lt;/td&gt;
-&lt;td&gt;2022&lt;/td&gt;
+&lt;td&gt;Introdução ao Pentest na Prática&lt;/td&gt;
+&lt;td&gt;Desec Security&lt;/td&gt;
+&lt;td&gt;2023&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Disruptive Strategy&lt;/td&gt;
+&lt;td&gt;RU330: Redis Security&lt;/td&gt;
+&lt;td&gt;Redis&lt;/td&gt;
 &lt;td&gt;2021&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td rowspan=3&gt;&lt;img class="customEntitityLogo" src="ist.png"/&gt;&lt;/td&gt;
-&lt;td rowspan=3&gt;&lt;a href="https://tecnico.ulisboa.pt/en/" target="_blank"&gt;Tecnico Lisboa&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MSc in Computer Science - Distributed Systems&lt;/td&gt;
-&lt;td&gt;2012&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;BSc, Computer Science&lt;/td&gt;
-&lt;td&gt;2010&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;</description></item><item><title>Projetos</title><link>https://sidneiweber.com.br/projetos/</link><pubDate>Mon, 13 Jun 2022 20:55:37 +0100</pubDate><guid>https://sidneiweber.com.br/projetos/</guid><description>&lt;p&gt;Sempre tentando trabalhar ou estudar algo novo e isso pode por ventura virar um projeto. Aqui listo alguns dos projetos nos quais trabalho ou trabalhei.&lt;/p&gt;
@@ -245,7 +525,10 @@ Emmi Linux (Parado)
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</description></item><item><title>Sobre</title><link>https://sidneiweber.com.br/sobre/</link><pubDate>Mon, 13 Jun 2022 20:55:37 +0100</pubDate><guid>https://sidneiweber.com.br/sobre/</guid><description>&lt;p&gt;Olá eu sou &lt;strong&gt;Sidnei Weber&lt;/strong&gt; &amp;#x1f44b;.&lt;/p&gt;
+&lt;/table&gt;</description></item><item><title>Sobre</title><link>https://sidneiweber.com.br/sobre/</link><pubDate>Mon, 13 Jun 2022 20:55:37 +0100</pubDate><guid>https://sidneiweber.com.br/sobre/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl"&gt;
+Olá, eu sou &lt;strong&gt;Sidnei Weber&lt;/strong&gt; &amp;#x1f44b;&lt;br&gt;
+DevOps · SRE · Software livre · Linux · Cloud
+&lt;/div&gt;
 &lt;p&gt;Formado em Segurança da Informação, apaixonado por software livre, sempre buscando me aperfeiçoar e aprender novas tecnologias e tendências do mercado. Em busca de conhecimento (como diria o ET Bilu).&lt;/p&gt;</description></item><item><title>Simular tráfego de usuário para um servidor</title><link>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</link><pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate><guid>https://sidneiweber.com.br/simular-trafego-usuario-servidor/</guid><description/></item><item><title>Reduzindo custos na AWS (EC2) - Parte 1</title><link>https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/</link><pubDate>Tue, 16 Feb 2021 09:27:08 -0300</pubDate><guid>https://sidneiweber.com.br/reduzindo-custos-na-aws-ec2-parte-1/</guid><description>&lt;p&gt;A redução de custos no ambiente de nuvem é um assunto constante, a utlização é simples porém o desperdício de recursos pode ocorrer com bastante facilidade. Para te ajudar vou dividir as dicas em três partes, dividindo em EC2, ECS e RDS, três serviços distintos da &lt;a
 href="https://aws.amazon.com/pt/"
 target="_blank"
