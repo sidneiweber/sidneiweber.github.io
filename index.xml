@@ -441,7 +441,7 @@ Curso concluído em 2022.
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="mecanicontrol.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="mecanicontrol.svg"/&gt;&lt;/td&gt;
 &lt;td&gt;
 MecaniControl
 &lt;span class="flex cursor-pointer"&gt;
@@ -453,6 +453,76 @@ Active
 &lt;/td&gt;
 &lt;td&gt;Software para gestão de oficinas mecânicas.&lt;/td&gt;
 &lt;td&gt;&lt;a target="_blank" href="https://www.mecanicontrol.com.br"&gt;site&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="alertally.svg"/&gt;&lt;/td&gt;
+&lt;td&gt;
+Alertally
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+Active
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/td&gt;
+&lt;td&gt;Dashboard de alertas que centraliza GCP Cloud Monitoring, Prometheus Alertmanager e AWS CloudWatch.&lt;/td&gt;
+&lt;td&gt;&lt;a target="_blank" href="https://alertally.sidneiweber.com.br"&gt;site&lt;/a&gt;&lt;/br&gt;&lt;a target="_blank" href="https://github.com/sidneiweber/alertally"&gt;github&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="cursolinux.svg"/&gt;&lt;/td&gt;
+&lt;td&gt;
+Curso Linux
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+Active
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/td&gt;
+&lt;td&gt;Curso de Linux gratuito, do básico a serviços e segurança.&lt;/td&gt;
+&lt;td&gt;&lt;a target="_blank" href="https://cursolinux.sidneiweber.com.br"&gt;site&lt;/a&gt;&lt;/br&gt;&lt;a target="_blank" href="https://github.com/sidneiweber/curso-linux"&gt;github&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="caderninho.svg"/&gt;&lt;/td&gt;
+&lt;td&gt;
+Caderninho de Jogos
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+Active
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/td&gt;
+&lt;td&gt;Jogos educativos em português para crianças em fase de alfabetização (PWA).&lt;/td&gt;
+&lt;td&gt;&lt;a target="_blank" href="https://caderninho-de-jogos.vercel.app"&gt;site&lt;/a&gt;&lt;/br&gt;&lt;a target="_blank" href="https://github.com/sidneiweber/caderninho-de-jogos"&gt;github&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="kubedesk.svg"/&gt;&lt;/td&gt;
+&lt;td&gt;
+KubeDesk
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+Active
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/td&gt;
+&lt;td&gt;Aplicação desktop (Electron) para gerenciar múltiplos clusters Kubernetes de forma visual, usando o kubeconfig existente.&lt;/td&gt;
+&lt;td&gt;&lt;a target="_blank" href="https://github.com/sidneiweber/KubeDesk"&gt;github&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="masksync.svg"/&gt;&lt;/td&gt;
+&lt;td&gt;
+MaskSync (antigo Neosync)
+&lt;span class="flex cursor-pointer"&gt;
+&lt;span
+class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"&gt;
+Active
+&lt;/span&gt;
+&lt;/span&gt;
+&lt;/td&gt;
+&lt;td&gt;Continuação do Neosync: plataforma open source para anonimizar dados de produção, gerar dados sintéticos e sincronizá-los entre ambientes.&lt;/td&gt;
+&lt;td&gt;&lt;a target="_blank" href="https://github.com/sidneiweber/neosync"&gt;github&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;img class="customEntitityAlbum" style="background-color:transparent" src="github.png"/&gt;&lt;/td&gt;
